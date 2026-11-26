@@ -1,0 +1,21 @@
+"""Cell text of the comparability matrix (Table 7), shared by the manuscript build and the supplement."""
+CELLS = {
+ 'P016': ['6 ülke', '4', 'Resmî eğitim 7:3', 'Resmî gizli', 'F1 0,696; doğrulama %62,5', '(i)'],
+ 'P334': ['6 ülke; ayrıca Çin', '4', 'Resmî eğitim 8:2; Çin 8:1:1', 'Resmî gizli', 'F1 0,803; Çin %84,4', '(i)'],
+ 'P002': ['6 ülkeden 10.000 görüntü', '4', '8:2', '**Doğrulama**', '%70,6', '(ii)'],
+ 'P011': ['5 ülke (Norveç hariç)', '4', 'Yalnızca eğitim sayısı', '**Tanımsız**', '%93,5*', '(ii)'],
+ 'P019': ['6 ülke (Çin İHA hariç)', '4', '7:2:1 (sayılar çelişkili)', 'Test bölmesi tanımlı', '%67,8', '(ii)'],
+ 'P033': ['6 ülke', '4', '7:1:2 (sayılar çelişkili)', 'Test bölmesi tanımlı', '%65,7', '(ii)'],
+ 'P161': ['Çin + Çekya + ABD', '**5**', '7:1:2', 'Test bölmesi tanımlı', '%71,5', '(ii)'],
+ 'P260': ['6 ülke', '4', '8:1:1 (sayılar çelişkili)', 'Test bölmesi tanımlı§', '%65,3', '(ii)'],
+ 'P000': ['Çin', '**5**', '8:1:1', 'Test bölmesi tanımlı§', '%90,7', '(iii)'],
+ 'P010': ['Çin; ABD ve Hindistan ayrı', '**6**', '8:1:1', 'Test bölmesi tanımlı§', 'Çin %75,7; ABD %57,9; Hindistan %42,1', '(iii)'],
+ 'P026': ['Çin’den 2.000 görüntü', '**5**', '7:2:1', 'Test bölmesi tanımlı§', '%77,4', '(iii)'],
+ 'P035': ['Çin; Japonya ayrı', '**5**', '8:1:1', 'Test bölmesi tanımlı§', '%86,0', '(iii)'],
+ 'P046': ['Çin İHA; motosiklet ayrı', '4', 'İHA: yok; motosiklet 1.977/500', '**Doğrulama**; motosiklet belirsiz', '%67,6; %86,6', '(iii)'],
+ 'P075': ['Çin; ayrıca “küresel” deney', '**5**', 'Yaklaşık 7:2:1', 'Test bölmesi tanımlı§', 'Çin %91,4; küresel %90,1‡', '(iii)'],
+ 'P106': ['Çin İHA, motosiklet, ABD ayrı (genelleme deneyi)', '4', '8:1:1 (sayılar çelişkili)', 'Test bölmesi tanımlı§', '%51,7; %79,1; ABD %35,6', '(iii)'],
+ 'P401': ['Çin (3.853 görüntü)', '4', '8:1:1 (sayılar çelişkili)', 'Test bölmesi tanımlı', '%86,0', '(iii)'],
+ 'P003': ['Çin İHA (bir bölümü) + İspanya', '**5**', '4.000 / 584 / 289 (sayılar çelişkili)', '**Doğrulama**', '%73,2 (özgün tabloda %73,7)', '(iv)'],
+ 'P027': ['Japonya; Japonya + Hindistan + ABD', '4', '9:1', 'Test bölmesi tanımlı', 'Merkezî %60,8; federe %45,5†', '(iv)'],
+}

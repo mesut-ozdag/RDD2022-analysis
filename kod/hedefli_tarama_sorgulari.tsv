@@ -1,0 +1,108 @@
+tarih	sorgu_grubu	sorgu	baglanti_sayisi
+2026-10-12	turkish-ecosystem	"""RDD2022"" yol hasarı tespiti dergipark"	27
+2026-10-12	turkish-ecosystem	"dergipark ""yol hasarı"" tespiti YOLO derin öğrenme RDD"	18
+2026-10-12	turkish-ecosystem	"""çukur tespiti"" derin öğrenme YOLO dergipark"	9
+2026-10-12	turkish-ecosystem	"""asfalt çatlak"" YOLOv8 tespit makale"	9
+2026-10-12	missing-papers	"""RDD2022"" road damage detection arXiv"	9
+2026-10-12	missing-papers	"""RDD2022"" YOLOv8 road damage arxiv.org"	9
+2026-10-12	missing-papers	"""CRDDC2022"" OR ""CRDDC'2022"" road damage detection"	10
+2026-10-12	turkish-ecosystem	"""Road Damage Detection"" RDD2022 Turkey university YOLO dergipark"	9
+2026-10-12	turkish-ecosystem	"""yol kusurları"" OR ""yol bozulmaları"" tespiti derin öğrenme tez YÖK"	18
+2026-10-12	turkish-ecosystem	"""pothole detection"" YOLO dergipark.org.tr"	18
+2026-10-12	turkish-ecosystem	"""road damage"" RDD2022 SIU OR ASYU OR UBMK OR ISMSIT OR ICAIAME conference"	29
+2026-10-12	missing-papers	"""RDD2022"" YOLOv10 road damage detection"	10
+2026-10-12	missing-papers	"""RDD2022"" YOLO11 road damage lightweight 2025"	9
+2026-10-12	turkish-ecosystem	"tezara ""RDD2022"""	9
+2026-10-12	turkish-ecosystem	"dergipark ""RDD2022"""	9
+2026-10-12	turkish-ecosystem	"""Road Damage Dataset"" OR ""RDD2022"" ""Turkish Journal of Electrical Engineering"" OR ""Gazi University"" OR ""Avrupa Bilim ve Teknoloji"" road damage YOLO"	47
+2026-10-12	turkish-ecosystem	"""yol hasarlarının"" tespiti YOLOv8 OR YOLOv5 makale ""RDD"""	28
+2026-10-12	missing-papers	"""YOLO-RDD: A road defect detection algorithm based on YOLO"""	9
+2026-10-12	missing-papers	"""RDD2022"" RT-DETR road damage detection"	9
+2026-10-12	missing-papers	"""RDD2022"" transformer road damage detection Swin DETR"	9
+2026-10-12	missing-papers	"""RDD2022"" Mamba road damage"	9
+2026-10-12	turkish-ecosystem	Ömer Kaya Çodur road defects global-scale YOLO RDD2022 Erzurum	18
+2026-10-12	missing-papers	"""SDD-RTDETR"" lightweight real-time detection transformer surface defect RDD2022"	9
+2026-10-12	missing-papers	"""RDD2022"" knowledge distillation road damage"	9
+2026-10-12	missing-papers	"""RDD2022"" diffusion model data augmentation road damage synthetic images"	9
+2026-10-12	missing-papers	"""RDD2022"" vision-language model road damage zero-shot"	10
+2026-10-12	turkish-ecosystem	"""RDD2022"" Türkiye yol hasarı veri seti Türk yolları"	10
+2026-10-12	turkish-ecosystem	"""road damage detection"" ""Turkey"" OR ""Turkish roads"" dataset YOLO RDD2022 comparison 2024 2025"	37
+2026-10-12	turkish-ecosystem	tezara.org yol hasarı tespiti derin öğrenme yüksek lisans tezi YOLO çatlak çukur	18
+2026-10-12	turkish-ecosystem	"""road damage"" thesis Turkey university ""RDD2022"" master's YOLOv8 OR YOLOv5 OR ""Faster R-CNN"""	10
+2026-10-12	missing-papers	RoadDiffBox road distress diagnosis controlled image generation semi-supervised RDD2022	9
+2026-10-12	missing-papers	"IEEE BigData 2022 road damage detection challenge ensemble YOLOv5 ""RDD2022"" team"	20
+2026-10-12	turkish-ecosystem	"ieeexplore ""road damage detection"" ""UBMK"" OR ""ASYU"" OR ""Signal Processing and Communications Applications Conference"" YOLO"	9
+2026-10-12	turkish-ecosystem	"""Yol Hasarı Tespiti"" OR ""Yol Hasarlarının Tespiti"" IEEE SIU bildiri derin öğrenme"	29
+2026-10-12	missing-papers	"""2022 IEEE International Conference on Big Data"" road damage detection"	10
+2026-10-12	turkish-ecosystem	"dergipark.org.tr ""road damage detection"" YOLOv8 article"	9
+2026-10-12	turkish-ecosystem	"dergipark ""pothole"" OR ""road crack"" detection YOLO ""RDD"" dataset Turkish journal 2025"	46
+2026-10-12	turkish-ecosystem	"""Küresel Ölçekli Otomatik Yol Kusur Tespit Sistemi"" Ömer Kaya tez"	9
+2026-10-12	turkish-ecosystem	"Kaya Çodur ""road defects"" YOLOv8 ""N-RDD2024"" OR ""RDD2022"" Erzurum Technical University paper"	19
+2026-10-12	missing-papers	Okran Abdel-Nasser Rashwan Puig road damage detection 2022 IEEE Big Data YOLOv7 ensemble	19
+2026-10-12	missing-papers	Saha Sekimoto road damage detection YOLOv7 data augmentation CRDDC 2022 IEEE Big Data	10
+2026-10-12	missing-papers	Shihao Han Guoping Jiang Yingjiang Zhou road damage detection YOLOv7 YOLOv5 transformer ensemble 2022	19
+2026-10-12	turkish-ecosystem	"""RDD2022"" ""Fen Bilimleri Enstitüsü"" OR ""Lisansüstü Eğitim Enstitüsü"" tez"	10
+2026-10-12	turkish-ecosystem	"acikerisim ""RDD2022"" road damage"	9
+2026-10-12	turkish-ecosystem	"""RDD2022"" YOLO road damage ""Istanbul"" OR ""Ankara"" OR ""Konya"" OR ""Izmir"" university authors 2024 2025 paper"	37
+2026-10-12	turkish-ecosystem	"""Turkish road"" OR ""roads in Turkey"" damage detection dataset deep learning crack pothole new dataset"	9
+2026-10-12	missing-papers	"""RDD2022"" semi-supervised OR self-supervised road damage detection"	18
+2026-10-12	missing-papers	"""RDD2022"" domain adaptation OR domain generalization road damage cross-country"	10
+2026-10-12	missing-papers	"""RDD2022"" YOLOv9 road damage detection GELAN"	9
+2026-10-12	turkish-ecosystem	"Kaya Çodur ""Automatic detection and classification of road defects on a global-scale"" embedded system Measurement RDD2022 mAP"	65
+2026-10-12	turkish-ecosystem	"github ""RDD2022"" ""veri seti"" yol hasar tespiti"	18
+2026-10-12	missing-papers	Xi Xiao Tianyang Wang road damage detection arXiv CRDDC'22 CNRDD	10
+2026-10-12	missing-papers	"""RDD2022"" pothole segmentation instance segmentation road damage"	9
+2026-10-12	missing-papers	"""RDD2022"" edge device Jetson real-time road damage TensorRT"	9
+2026-10-12	missing-papers	"""RDD2022"" thesis road damage detection master's dissertation"	9
+2026-10-12	missing-papers	"""RDD2022"" ScienceDirect road damage detection 2025 ""Automation in Construction"" OR ""Measurement"" OR ""Engineering Applications of Artificial Intelligence"""	36
+2026-10-12	missing-papers	"""Road surface damage detection based on enhanced YOLOv8"" Computers in Industry RDD-2022"	27
+2026-10-12	missing-papers	"""ARDs-YOLO"" asphalt road damages pavement condition complex scenarios RDD2022"	18
+2026-10-12	missing-papers	"site:arxiv.org ""RDD2022"" road damage 2025"	9
+2026-10-12	missing-papers	"site:arxiv.org ""RDD2022"" pavement distress detection"	9
+2026-10-12	missing-papers	"site:arxiv.org ""RDD2022"" pothole detection"	9
+2026-10-12	turkish-ecosystem	universe.roboflow.com RDD2022 road damage dataset model mAP	9
+2026-10-12	missing-papers	"""RDD2022"" road damage IEEE Access 2024 OR 2025 YOLO improved"	18
+2026-10-12	missing-papers	"""RDD2022"" Scientific Reports road damage detection"	9
+2026-10-12	missing-papers	ORDDC'2024 optimized road damage detection challenge IEEE BigData 2024 team paper YOLO inference speed F1	18
+2026-10-12	missing-papers	"""RDD2022"" Faster R-CNN OR EfficientDet OR SSD road damage comparison"	9
+2026-10-12	missing-papers	"""RDD2022"" MDPI Sensors OR ""Applied Sciences"" OR Electronics OR Buildings road damage 2025"	9
+2026-10-12	missing-papers	"""China_MotorBike"" OR ""China MotorBike"" RDD2022 detection paper"	9
+2026-10-12	missing-papers	NTNU master thesis road damage detection Norway RDD2022 deep learning	18
+2026-10-12	turkish-ecosystem	"""road damage"" OR ""pavement distress"" ""RDD2022"" ""Turkish Journal of Engineering"" OR ""International Journal of Engineering and Geosciences"" OR ""Journal of Innovative Science"" OR ""Gazi Journal"""	10
+2026-10-12	turkish-ecosystem	"""yol yüzeyi"" OR ""kaplama bozulmaları"" OR ""üstyapı bozulmaları"" tespiti YOLO derin öğrenme makale 2024 2025 dergipark"	37
+2026-10-12	missing-papers	"link.springer.com chapter ""RDD2022"" road damage detection"	10
+2026-10-12	missing-papers	"ieeexplore ""RDD2022"" road damage detection conference 2023"	9
+2026-10-12	turkish-ecosystem	"""Asfalt Kaplamalarda Yapay Zeka Tabanlı Yol Hasarı Tespiti"" YOLO Gemini TriRoad"	9
+2026-10-12	missing-papers	"""RDD-DETR"" end-to-end real-time road damage detection algorithm PRCV"	10
+2026-10-12	missing-papers	"""Deep Learning and UAV Pictures for Automated Road Damage Identification"""	9
+2026-10-12	turkish-ecosystem	Ahmet Cihangir Kavcı tez yol hasar tespiti İskenderun Teknik Üniversitesi YOLO	18
+2026-10-12	missing-papers	"""RDD2022"" YOLOv12 OR ""YOLO-NAS"" road damage detection paper"	20
+2026-10-12	missing-papers	"""RDD2022"" BiFPN attention small object road crack detection improved"	9
+2026-10-12	missing-papers	"""RDD2022"" smartphone application road damage India Japan detection system"	9
+2026-10-12	missing-papers	road damage detection YOLO crack pothole 2024 preprint	19
+2026-10-12	missing-papers	road damage detection generalization across countries dataset bias preprint	9
+2026-10-12	missing-papers	"""LMFE-RDD"" road damage detector lightweight multi-feature extraction network RDD2022"	9
+2026-10-12	missing-papers	"""Lightweight pruning model for road distress detection using unmanned aerial vehicles"" RDD2022"	18
+2026-10-12	missing-papers	"""YOLOv8-EHG"" UAV pavement distress lightweight RDD2022"	10
+2026-10-12	missing-papers	"""Road Damage Detection Across Borders"" federated learning Japan China Norway USA Dwivedi Arya Sekimoto"	10
+2026-10-12	missing-papers	"""Consistency-guided model-contrastive federated learning for scalable road damage detection"""	9
+2026-10-12	missing-papers	"""DSWMamba"" deep feature fusion mamba asphalt pavement distress dataset"	18
+2026-10-12	missing-papers	RDD2022 yol hasarı tespiti YOLO yüksek lisans tezi	10
+2026-10-12	missing-papers	"""RDD2022"" dergipark yol hasar tespiti derin öğrenme"	9
+2026-10-12	missing-papers	"""RDD2022"" thesis pdf ""road damage"" university repository YOLOv8 2024"	18
+2026-10-12	missing-papers	"""Improved Pothole Detection Using YOLOv7 and ESRGAN"" arXiv RDD2022"	10
+2026-10-12	missing-papers	"""Domain-Invariant Feature Enhancement Domain Adaptation for Cross-Scene Road Damage Detection"""	9
+2026-10-12	missing-papers	"""RPDNet"" street-level road pavement damage detection real-time anchor-free network"	27
+2026-10-12	missing-papers	"""Revisiting multi-scale feature representation and fusion for UAV-based road distress detection"""	9
+2026-10-12	missing-papers	"""China_Drone"" RDD2022 UAV pavement distress detection YOLO improved mAP50"	9
+2026-10-12	missing-papers	"""RDD2022"" GAN OR CycleGAN OR ""style transfer"" road damage augmentation detection"	10
+2026-10-12	missing-papers	"kaggle notebook ""rdd-2022"" aliabdelmenam road damage YOLOv8"	9
+2026-10-12	missing-papers	huggingface model RDD2022 road damage YOLO trained mAP	9
+2026-10-12	missing-papers	"""Insights from the Road Damage Detection Challenge Series"" Nature Machine Intelligence Arya Maeda Sekimoto"	10
+2026-10-12	missing-papers	"""Accelerating Road Maintenance and Repair Processes"" YOLO Large Language Model flexible pavements Kaya Çodur"	10
+2026-10-12	missing-papers	"""RIEC-YOLO"" improved road defect detection YOLOv8 RepViT RDD2022 mAP50"	27
+2026-10-12	missing-papers	Kaya Çodur YOLO road defects flexible pavements large language model 2025 Springer RDD2022 dataset Erzurum	9
+2026-10-12	missing-papers	"""SDC-YOLO"" road damage RDD2022 YOLOv8 mAP@0.5 2.3%"	9
+2026-10-12	missing-papers	"""SN-YOLO"" road damage RDD2022 street-view video system"	9
+2026-10-12	missing-papers	RDD2022 数据集 道路病害检测 改进YOLOv8 mAP	9
+2026-10-12	missing-papers	"""RDD2022"" 路面缺陷检测 轻量化 YOLO11 论文"	9
