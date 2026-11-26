@@ -1,0 +1,7532 @@
+{
+"A": {
+"P260": {
+"id": "P260",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "omurgaya SCConv; boyuna EMA dikkat (yalnız dikkat, füzyon kodu yok); \"lightweight network\", hesaplama yükü"
+},
+"P251": {
+"id": "P251",
+"codes": [
+"deployment/system/app",
+"new-dataset",
+"segmentation",
+"drone/UAV"
+],
+"basis": "GIS'e coğrafi haritalama hattı; \"introduce and publicly release a UAV-based road defect dataset\"; semantik segmentasyon; İHA odaklı"
+},
+"P253": {
+"id": "P253",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"data-augmentation/synthetic",
+"loss/IoU"
+],
+"basis": "SDP-MoE modülü; MEGCSA çapraz ölçek dikkat, çok ölçekli öznitelik bütünleştirme; \"expert-oriented data augmentation\"; \"load-balancing loss\""
+},
+"P255": {
+"id": "P255",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "kenar güçlendirmeli öznitelik modülü, uyarlamalı yukarı örnekleme; alt/üst düzey öznitelik füzyon oranı ayarı"
+},
+"P257": {
+"id": "P257",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "裂缝高效注意力机制; 动态采样金字塔; 轻量化主干+检测头, 边缘设备; Powerful IoU; 自建数据集 2985 张"
+},
+"P390": {
+"id": "P390",
+"codes": [
+"architecture-improvement",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "ortogonal evrişim modülü; \"geometric IoU loss\"; platformlar ve bölgeler arası genelleme doğrulaması"
+},
+"P410": {
+"id": "P410",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "omurga TransXNet ile değiştirildi; dönüştürücü öz-dikkat, D-Mixer'e dikkat gömüldü"
+},
+"P430": {
+"id": "P430",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "P2 dalı ve CARAFE yukarı örnekleme; yön duyarlı modül; Varifocal+Alpha-IoU+NWD kaybı; \"small-scale\" hasar hedefi"
+},
+"P440": {
+"id": "P440",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization",
+"drone/UAV"
+],
+"basis": "CG öznitelik füzyon bloğu; MSDA dikkat; RDD2022 alt kümelerine \"direct-transfer\"; İHA görüntüleri odakta"
+},
+"P450": {
+"id": "P450",
+"codes": [
+"other"
+],
+"basis": "HOG+SVM sınıflandırma, beton dayanımı regresyonu ve optimizasyon içeren analitik karar çerçevesi; tanımlı türlerin hiçbiri uymuyor"
+},
+"P391": {
+"id": "P391",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge",
+"transfer/domain-generalization",
+"new-dataset"
+],
+"basis": "yeniden parametrelemeli omurga, DynamicHead; \"content-adaptive feature fusion\"; hafif, 2.11M parametre; UAV-PDD2023 ve kaynaklar arası testler; \"self-collected field test set\""
+},
+"P401": {
+"id": "P401",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "LQE başlığı; P3/P4'e EMA dikkat; Wise-IoU kaybı; \"lightweight\", 2.7M parametre"
+},
+"P421": {
+"id": "P421",
+"codes": [
+"new-dataset",
+"transfer/domain-generalization",
+"benchmark/comparison"
+],
+"basis": "EcuPDD ilk Ekvador veri seti; uluslararası ağlar arası alan transferi; beş YOLOv8n sürümü karşılaştırması ve Domain Gap Index"
+},
+"P431": {
+"id": "P431",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"comparatively evaluate YOLOv8s, YOLOv10s, YOLOv11s\"; sistematik nesiller arası karşılaştırma"
+},
+"P441": {
+"id": "P441",
+"codes": [
+"deployment/system/app",
+"lightweight/edge",
+"multimodal/VLM/LLM",
+"segmentation"
+],
+"basis": "\"Road Guard\" uyarı sistemi, coğrafi çit; \"edge-compatible\"; görsel derinlik + GPS füzyonu; Fast-SCNN semantik segmentasyon"
+},
+"P451": {
+"id": "P451",
+"codes": [
+"semi/self-supervised",
+"segmentation",
+"architecture-improvement"
+],
+"basis": "öğretmen-öğrenci öz-eğitim, yarı denetimli; 11 sınıflı piksel düzeyi segmentasyon; FLDE güdümlü F-UNet"
+},
+"P382": {
+"id": "P382",
+"codes": [
+"data-augmentation/synthetic",
+"lightweight/edge"
+],
+"basis": "başlıkta \"Hybrid Data Augmentation\"; 22 MB model, \"small edge devices\""
+},
+"P392": {
+"id": "P392",
+"codes": [
+"benchmark/comparison",
+"severity/quantification"
+],
+"basis": "MobileNetV2, ResNet50, EfficientNetB0, InceptionV3 karşılaştırması; \"severity assessment\", şiddet tahmini"
+},
+"P402": {
+"id": "P402",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "EAFE ve MSDC modülleri; MSAGN ile anlamsal düzeyler arası füzyon; drone ve motosiklet görüntülerinde veri setleri arası genelleme"
+},
+"P442": {
+"id": "P442",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"segmentation",
+"new-dataset",
+"lightweight/edge"
+],
+"basis": "TCR dönüştürücü modülü, DDH, CRM, sınır duyarlı başlık; tespit+segmentasyon; Kazakistan'dan toplanmış ek görüntüler; gerçek zamanlı hedef"
+},
+"P452": {
+"id": "P452",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv12 mimari iyileştirme, EVCBlock; self-attention (SA) modülü"
+},
+"P383": {
+"id": "P383",
+"codes": [
+"lightweight/edge",
+"transfer/domain-generalization",
+"benchmark/comparison"
+],
+"basis": "\"CPU-only\", hesaplama kısıtlı; coğrafi ve sensör alanları, alan duyarlı bölme; tekrarlanabilir temel ve COCO değerlendirme protokolü"
+},
+"P413": {
+"id": "P413",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "MS-SPPFCSPC modülü; CA, SE, CBAM dikkat; ASFF çok ölçekli füzyon; SVRDD üzerinde veri setleri arası değerlendirme"
+},
+"P423": {
+"id": "P423",
+"codes": [
+"multimodal/VLM/LLM",
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "görünür + termal (RGBT) füzyonu; PSConv evrişim değişikliği; P6 katmanıyla dört ölçekli yapı"
+},
+"P433": {
+"id": "P433",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "omurga sonuna EMA dikkat mekanizması eklendi; \"lightweight\", 5.9 GFLOPs, gömülü cihazlar"
+},
+"P503": {
+"id": "P503",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "\"UAV imagery\" odakta; YOLOv5, YOLOv7, YOLOv8 uygulanıp değerlendiriliyor, yöntem ayrıntısı yok"
+},
+"P384": {
+"id": "P384",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv8'e \"CA attention mechanism\" gömülüyor; veri temizleme yeni veri seti değil"
+},
+"P404": {
+"id": "P404",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "Yeni WMS-Net, wavelet modülü, \"multi-stage feature aggregation\"; \"cross-scene applicability\" üç veri setinde"
+},
+"P454": {
+"id": "P454",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA",
+"transfer/domain-generalization"
+],
+"basis": "EMA eklenmiş YOLOv8 + Faster R-CNN, \"Weighted Boxes Fusion\"; RDD2020 Hindistan/Çekya \"cross-dataset validation\""
+},
+"P484": {
+"id": "P484",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "Yeni omurga DFSA-Net ve \"multi-scale ... feature fusion pyramid network\""
+},
+"P385": {
+"id": "P385",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "Basicblock_Star modülü; Transformer kodlayıcısındaki AIFI bloğu SEFN ve DyT ile genişletiliyor"
+},
+"P395": {
+"id": "P395",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "CBAM ve BoTNet ekleniyor, CIoU yerine SIoU; başlıkta \"Small Object Detection\""
+},
+"P405": {
+"id": "P405",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "RoadRep-C3, EMA, boyunda hipergraf füzyonu, \"slide loss\"; \"improving the detection of small objects\""
+},
+"P415": {
+"id": "P415",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "ConvSmart, DSA dikkat, \"P2-level small-object detection path\"; başlıkta \"lightweight\", \"feature fusion\"; \"low-power devices\"; RDD2022'de \"generalization\""
+},
+"P425": {
+"id": "P425",
+"codes": [
+"drone/UAV",
+"lightweight/edge",
+"attention-module",
+"architecture-improvement",
+"ensemble/TTA",
+"small-object"
+],
+"basis": "\"UAV road damage detection\", \"lightweight\", SE dikkat, deformable conv, \"TTA ... WBF\"; \"small object size\" hedefi"
+},
+"P435": {
+"id": "P435",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"segmentation",
+"neck/feature-fusion",
+"severity/quantification"
+],
+"basis": "YOLO-CGR (CBAM, Res-EMA), \"lightweight\", hesap yükü %31 azalıyor; DeepLabv3+ çatlak segmentasyonu, UFF füzyon modülü; çatlak ölçümü"
+},
+"P445": {
+"id": "P445",
+"codes": [
+"deployment/system/app",
+"ensemble/TTA",
+"segmentation",
+"severity/quantification"
+],
+"basis": "\"End-to-End System\", PWA, WhatsApp botu; \"three-model fusion pipeline\", çatlak segmentasyon modeli; onarım maliyeti ve şiddet puanı"
+},
+"P455": {
+"id": "P455",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "\"混合注意力模块\", \"跨尺度特征交叉融合模块\" ile boyun, iyileştirilmiş C3K2; \"跨数据集测试与泛化测试\""
+},
+"P545": {
+"id": "P545",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "Star-Chain omurga \"reduce computational overhead\", %49,4 daha az parametre; \"Hierarchical Content-Aware Feature Fusion Module\""
+},
+"P396": {
+"id": "P396",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge",
+"small-object"
+],
+"basis": "StarNet omurga, SimAM dikkat, Shape-IoU; \"lightweight\", parametre %52,7 azalıyor; \"detecting small objects\" sorunu"
+},
+"P406": {
+"id": "P406",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "Boyunda MSCA dikkat, SADH başlık, bilgi damıtma; \"embedded devices\", Jetson Orin Nano; \"in-house set of asphalt potholes\""
+},
+"P426": {
+"id": "P426",
+"codes": [
+"deployment/system/app",
+"severity/quantification",
+"new-dataset"
+],
+"basis": "\"sistem inventarisasi\", görüntü/video menüleri; PCI değerlendirmesi; RDD2022 + \"data lokal\""
+},
+"P436": {
+"id": "P436",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "Context-guided modül, boyun ASF füzyonuyla değiştiriliyor; \"lightweight\" RepViT, parametre %33,6 azalıyor"
+},
+"P446": {
+"id": "P446",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "\"UAV images\" odakta; CLAHE, Unsharp, Retinex ön işlemenin modellere etkisi karşılaştırılıyor"
+},
+"P397": {
+"id": "P397",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object",
+"new-dataset"
+],
+"basis": "Omurgaya CBAM, NWD kaybı, \"small targets\" hedefi; \"self-built dataset\"; Mosaic standart"
+},
+"P407": {
+"id": "P407",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "C3k2-SHSA-CGLU bloğu, başlıkta \"attention mechanisms\", GLSABiFPN boyun; \"Lightweight\", parametre azalıyor; GRDDC2020'de \"cross-dataset\""
+},
+"P427": {
+"id": "P427",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "DSC şerit evrişim modülü; \"multi-level feature fusion\" için MFE modülü"
+},
+"P437": {
+"id": "P437",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "C2f_PBA \"parallel attention\", boyunda CARAFE, yeni WPIoU kaybı; SVRDD'de \"generalization\""
+},
+"P447": {
+"id": "P447",
+"codes": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "YOLOv12 altı veri setinde değerlendiriliyor: \"Cross-Dataset Performance Comparison\""
+},
+"P388": {
+"id": "P388",
+"codes": [
+"architecture-improvement",
+"loss/IoU",
+"lightweight/edge",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "\"multiple modules and loss functions\", \"lightweight design\" 2.7M parametre; MRDD veri seti kuruluyor; RDD2022'de \"cross-scene generalization\""
+},
+"P408": {
+"id": "P408",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "CBAM omurgaya ekleniyor; 'small-target omission', mikro çatlaklar; NMS için ATM"
+},
+"P498": {
+"id": "P498",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "yeni çok görevli YOLO-Lite mimarisi; 1.2M parametre, INT8, uç cihaz; 'composite multi-task objective'; 'cross-dataset' genelleme"
+},
+"P508": {
+"id": "P508",
+"codes": [
+"deployment/system/app"
+],
+"basis": "Streamlit web arayüzü, GPS konum haritalama, gösterge paneli"
+},
+"P389": {
+"id": "P389",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "CLAHE, Gaussian Blur, parlaklık ayarı YOLOv8n ile karşılaştırılıyor; yeni yöntem yok"
+},
+"P399": {
+"id": "P399",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object",
+"drone/UAV"
+],
+"basis": "ADown, Slim-Neck çok ölçekli füzyon, iEMA dikkat; hesap yükü %25 azalıyor, uç dağıtım; küçük hedef; İHA görüntüsü"
+},
+"P409": {
+"id": "P409",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "çoklu dikkat başlığı, yeniden parametrelenmiş VGG, MGD damıtma; başlıkta 'Small-Target'"
+},
+"P419": {
+"id": "P419",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "EfficientNetV2 hafif omurga, uç cihaz; iyileştirilmiş BiFPN; WIoU esinli kayıp"
+},
+"P429": {
+"id": "P429",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "MiM modülü; DDF çok ölçekli füzyon; SPT dönüştürücü dikkat, hesabı azaltıp hızı artırıyor"
+},
+"P439": {
+"id": "P439",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge",
+"small-object",
+"new-dataset"
+],
+"basis": "LRFEM_Block omurga, MLA-IFI boyun, BABF-FPN füzyon; parametre %24,5 azalıyor; küçük nesne sınırları; 'self-built dataset'"
+},
+"P449": {
+"id": "P449",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "LMSFA, TADDH başlık; SPPFMPF kanal dikkati ve uyarlamalı füzyon; RDD2022'de 'cross-dataset' genelleme"
+},
+"P469": {
+"id": "P469",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "BasicBlock_DCNv2 omurga; MCFI çok ölçekli etkileşim; UAPD_5cls ile 'adaptability across different road image sources'"
+},
+"W042": {
+"id": "W042",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "omurga mobil/gömülü cihaz için MobileNetV3 ile değiştiriliyor; RDD2022-SVRDD arası transfer öğrenme"
+},
+"W043": {
+"id": "W043",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "rezidüel CBAM, gamma düzeltme ve gürültü modülleri; hafif tasarım, uç cihaz; araç ve gözetim kamerasıyla toplanmış özel veri"
+},
+"W044": {
+"id": "W044",
+"codes": [
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"basis": "görsel-dil modeli PaveGPT; 278.889 talimat-yanıt çifti içeren yeni PaveInstruct seti"
+},
+"W045": {
+"id": "W045",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV"
+],
+"basis": "RMA ve CMGLA dikkat, AGFPN füzyon; parametre %29,1 azalıyor, RK3588; İHA görüntüsü"
+},
+"W046": {
+"id": "W046",
+"codes": [
+"benchmark/comparison",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "YOLO26s başka YOLO'larla karşılaştırılıyor; uç cihaz, parametre azalıyor; dört ülke arası 'cross-domain generalization'"
+},
+"W047": {
+"id": "W047",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "C3k2_DSConv, VimLayer, AIFI; EMA dikkat; 'missed detection of small targets'"
+},
+"W048": {
+"id": "W048",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "BRA dikkat, DySnakeConv; CARAFE ile çok ölçekli füzyon iyileştiriliyor"
+},
+"W049": {
+"id": "W049",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "koordinat dikkati; hafif dinamik evrişim, parametre ve FLOPs azalıyor; füzyon yolu yeniden kuruluyor"
+},
+"W052": {
+"id": "W052",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv7-tiny'ye SE ve CA dikkat ekleniyor"
+},
+"W053": {
+"id": "W053",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "CBAM ekleniyor; ECIoU kaybı; 'small road defects'"
+},
+"W054": {
+"id": "W054",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "DAC modülü kanal ağırlıklandırma; SPP yerine CSGRM çapraz dikkatle çok ölçekli füzyon"
+},
+"W055": {
+"id": "W055",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "MobileViT, EMA dikkat; GhostConv ile hafifletme, parametre %16,3 azalıyor"
+},
+"W056": {
+"id": "W056",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "omurga ve boyunda GFB ve MBFF; ECA dikkatle çok dallı öznitelik füzyonu"
+},
+"W058": {
+"id": "W058",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"small-object",
+"new-dataset"
+],
+"basis": "HeteroFusionNet hesap fazlasını azaltıyor; MOSAIN P3 yolu küçük kusur; GATM dikkat; kendi kurdukları köprü veri seti"
+},
+"W062": {
+"id": "W062",
+"codes": [
+"deployment/system/app",
+"ensemble/TTA"
+],
+"basis": "araç üstü çukur izleme sistemi, haritalama; YOLOv12 dedektör + EfficientNet-B2 sınıflandırıcı kaskadı"
+},
+"P035": {
+"id": "P035",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "ODConv, omurgaya BoTNet (Transformer), boyuna CA dikkat"
+},
+"P046": {
+"id": "P046",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"drone/UAV"
+],
+"basis": "BMS-SPPF, spatial-channel attention, parametre 3.01M->0.89M, small targets, China Drone verisi"
+},
+"P047": {
+"id": "P047",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "SOM, MAF füzyon modülü, WTC; küçük hasar tespitinde iyileşme"
+},
+"P056": {
+"id": "P056",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "Transformer tabanlı yardımcı modül, geliştirilmiş öznitelik katmanları"
+},
+"P066": {
+"id": "P066",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge",
+"small-object"
+],
+"basis": "Rep-GD boyun yerine, çok ölçekli füzyon, Wise-IoU, hesaplama verimliliği, small targets"
+},
+"P067": {
+"id": "P067",
+"codes": [
+"deployment/system/app",
+"lightweight/edge",
+"multimodal/VLM/LLM",
+"severity/quantification"
+],
+"basis": "edge-cloud sistemi, uçta MobileNetV3, T5-XL ile doğal dil raporu, severity ve road quality metrics"
+},
+"P068": {
+"id": "P068",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object",
+"deployment/system/app",
+"new-dataset"
+],
+"basis": "MobileNetV3 omurga, ESPP tiny entities, progresif füzyon ağı, gömülü cihaz, araçta saha testi, self-made dataset"
+},
+"P075": {
+"id": "P075",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"neck/feature-fusion"
+],
+"basis": "Tiny Object Detection Layer, multi-scale fusion, Global Attention, hafif konvolüsyon modülleri"
+},
+"P076": {
+"id": "P076",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"drone/UAV",
+"ensemble/TTA"
+],
+"basis": "ek tahmin başlığı/TPH, CBAM, multi-scale feature fusion, İHA görüntüleri, multi-scale testing ve model integration"
+},
+"P081": {
+"id": "P081",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "EDCM dinamik konvolüsyon (küçük çatlaklar), SGAM dikkat, Wise-IoU"
+},
+"P091": {
+"id": "P091",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "M2SA öz-dikkat, MCF çok ölçekli çapraz füzyon, üç veri setinde generalization"
+},
+"P104": {
+"id": "P104",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "SBS hafifletme, boyuna EMA, adaptif dikkat öznitelik piramidi, LSCD-Head parametre azaltma"
+},
+"P106": {
+"id": "P106",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"drone/UAV",
+"transfer/domain-generalization"
+],
+"basis": "ghost conv + SE, coordinate attention, parametre azaltma, UAV görüntüleri, İHA dışı veride generalization"
+},
+"P114": {
+"id": "P114",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "GhostNetv2 omurga (parametre azaltma), EMA dikkat, CIoU->SIoU"
+},
+"P122": {
+"id": "P122",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization",
+"new-dataset"
+],
+"basis": "C2f-DCNv2, boyunda GSConv/VoVGSCSP, GCH başlık, uç cihaza kurulum, generalization deneyleri, self-built dataset"
+},
+"P123": {
+"id": "P123",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "çift omurga, DIFF füzyon modülü, DIA dikkatli başlık, UAV-PDD2023'te generalization"
+},
+"P125": {
+"id": "P125",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"drone/UAV"
+],
+"basis": "GhostNet omurga, GFLOPs 15.8->7.7, edge deployment, China_Drone alt kümesi ve drones"
+},
+"P161": {
+"id": "P161",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "RHGNetv2 omurga, RepConv, SEAM modülü, parametre %21 azalma, edge deployment"
+},
+"P162": {
+"id": "P162",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "ASDown, C2f-MSD, lightweight framework 2.47M parametre, 370 FPS"
+},
+"P154": {
+"id": "P154",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "CCFM cross-scale füzyon, ADown, DyHead, parametre %33.3 azalma, mobil platform"
+},
+"P155": {
+"id": "P155",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "MFFBN, BiFPN + Cross-Attention (BiMCNet), CGeoCIoU kaybı, minute cracks"
+},
+"P156": {
+"id": "P156",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"segmentation",
+"severity/quantification",
+"new-dataset"
+],
+"basis": "DBBPN, deformable attention, piksel düzeyi segmentasyon, morfolojik nicelleştirme, MaskRDD-140"
+},
+"P180": {
+"id": "P180",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"lightweight/edge"
+],
+"basis": "RF attention conv + CA, MARA füzyon (MAFPN+CARAFE), small targets, karmaşıklık nedeniyle dağıtım zorluğu hedefi"
+},
+"P181": {
+"id": "P181",
+"codes": [
+"architecture-improvement"
+],
+"basis": "custom enhancements to the Faster R-CNN architecture; karşılaştırma doğrulama amaçlı"
+},
+"P183": {
+"id": "P183",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset",
+"multimodal/VLM/LLM"
+],
+"basis": "EfficientViM omurga, DefMamba blokları, GG-SSM; self-attention füzyonu; 1.8M parametre, Jetson Orin Nano; consistency loss; 'new RoadGraph-RDD benchmark'; OpenStreetMap yol segmentleri girdisi"
+},
+"P186": {
+"id": "P186",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "PEFNet, SDCLD başlık; RFCBAM dikkat; parametre/hesap %10 azalma, 'lightweight'; GDSFPN füzyon piramidi; Wise-IoU"
+},
+"P230": {
+"id": "P230",
+"codes": [
+"deployment/system/app"
+],
+"basis": "'real-time pothole detection system', araç kamerası, Geolocation API ile çukur haritalama"
+},
+"P250": {
+"id": "P250",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "adaptif evrişim ve adaptif alt-örnekleme modülleri; CBAM; 'optimized lightweight' algoritma"
+},
+"P231": {
+"id": "P231",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "DWConv, C3K2-MCFN yapısı; parametre azaltma, çıkarımı hızlandırma; CVIM omurga ve boyun özniteliklerini birleştiriyor"
+},
+"P232": {
+"id": "P232",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "EIEStem ön modül; boyunda çok ölçekli füzyon dikkati; DySample üst-örnekleyici; hafif başlık, hesap %7 azalma, gömülü/mobil cihaz"
+},
+"P224": {
+"id": "P224",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"loss/IoU"
+],
+"basis": "iAFF+C2f modülü, başlıkta ASFF öznitelik füzyonu; 'Attentional Feature Fusion'; DIoU kaybı"
+},
+"P234": {
+"id": "P234",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "GhostPercepC2f, SC2f modülleri; axis-aware ve uzamsal dikkat; 2.2M parametre; SAFPN; İHA platformu; 'newly constructed LCrack dataset'; RDD2022 üzerinde çapraz veri seti genelleme"
+},
+"P225": {
+"id": "P225",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"transfer/domain-generalization"
+],
+"basis": "Coordinate Attention eklenmiş değiştirilmiş YOLOv8 (M1-M5); Mısır yol videosunda çıkarım, farklı ülkelere genellenebilirlik"
+},
+"P235": {
+"id": "P235",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "FreSCal uzay-frekans çift alan modülü; RSDFPN bağlam güdümlü öznitelik füzyon piramidi"
+},
+"P245": {
+"id": "P245",
+"codes": [
+"architecture-improvement"
+],
+"basis": "STG-Mamba-YOLO: omurgada Mamba, kare içi graf ağı, Temporal Graph Mamba modülü"
+},
+"P226": {
+"id": "P226",
+"codes": [
+"severity/quantification"
+],
+"basis": "ResNet50 + bulanık mantık ile hasar şiddeti değerlendirme ('severity assessment')"
+},
+"P227": {
+"id": "P227",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "'Evaluating the Impact of Data Cleaning'; yeni yöntem yok, YOLOS yapılandırmasının değerlendirilmesi"
+},
+"P228": {
+"id": "P228",
+"codes": [
+"segmentation",
+"semi/self-supervised",
+"architecture-improvement",
+"attention-module",
+"new-dataset"
+],
+"basis": "çatlak segmentasyonu; 'weakly guided', kutu maskeleriyle zayıf denetim; Bounding Box Encoder + ConvNeXt/U-Net; çok ölçekli dikkat haritaları; 1.428 görüntülük özel etiketli set"
+},
+"P229": {
+"id": "P229",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"basis": "MixStructure modülü; paralel dikkat ve Kernel Selection Fusion Attention; 'small-target', küçük çukurlar; Adaptive Threshold Focal loss; başlıkta 'Multi-Scale Feature Fusion'"
+},
+"P239": {
+"id": "P239",
+"codes": [
+"semi/self-supervised"
+],
+"basis": "görüntü düzeyi etiketlerle 'weakly supervised' kusur konumlama, MIL çerçevesi"
+},
+"P249": {
+"id": "P249",
+"codes": [
+"transfer/domain-generalization",
+"new-dataset"
+],
+"basis": "Güney Afrika-Hindistan alanlar arası transfer, ince ayar; 'locally developed RDD2024_SA'"
+},
+"P300": {
+"id": "P300",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "'Comparative Analysis' YOLOv8 ile ViT karşılaştırması, yeni yöntem yok"
+},
+"P310": {
+"id": "P310",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "SPDConv dinamik evrişim; boyunda hafif katmanlar arası füzyon modülü; ADown ile hesap yükü azaltma, 'lightweight'"
+},
+"P320": {
+"id": "P320",
+"codes": [
+"ensemble/TTA",
+"architecture-improvement"
+],
+"basis": "görev özel modelleri birleştiren 'multi-model pipeline'; GhostConv ile YOLOv11 iyileştirme"
+},
+"P330": {
+"id": "P330",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "omurgaya RFAConv, SPPFCSPPC modülü; RFAConv ve LKCA dikkat; 'small damage patterns' tanıma"
+},
+"P340": {
+"id": "P340",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "omurgaya Swin Transformer eklenmesi (kaydırmalı pencere dikkati); gerçek zamanlı, mobil cihazda dağıtım"
+},
+"P380": {
+"id": "P380",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "ağa CBAM eklenmesi, K-means++ çapa kutuları"
+},
+"P301": {
+"id": "P301",
+"codes": [
+"semi/self-supervised",
+"lightweight/edge"
+],
+"basis": "yama tabanlı öz-denetimli öğrenme (SSL); 'lightweight', MobileNetV2 uç cihaz uyumu"
+},
+"P311": {
+"id": "P311",
+"codes": [
+"deployment/system/app",
+"benchmark/comparison"
+],
+"basis": "Android uygulaması, WebSocket arka uç sistemi; Faster R-CNN ile YOLOv12m karşılaştırılıp seçim"
+},
+"P321": {
+"id": "P321",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "\"lightweight ... architecture\", GAM eklenmesi, Wise-IoU kaybı"
+},
+"P331": {
+"id": "P331",
+"codes": [
+"benchmark/comparison",
+"new-dataset"
+],
+"basis": "YOLOv9 varyantlarının \"comparative evaluation\"; 15.109 görüntülü \"custom dataset\" derlendi"
+},
+"P341": {
+"id": "P341",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "PartialBlock/IDBlock/ID-Detect, 轻量级 ve parametre azaltma, 特征融合网络 VanillaBlock, RDD2022 ve VOC2012'de 适应性"
+},
+"P361": {
+"id": "P361",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8-m ve RT-DETR \"comparative analysis\", aynı eğitim ayarları"
+},
+"P381": {
+"id": "P381",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "\"leveraging transfer learning\"; başlıkta Transfer Learning"
+},
+"P312": {
+"id": "P312",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "GhostNet ile \"lightweight\", GAM içine DSC, BiFPN ve CAM eklenmesi"
+},
+"P322": {
+"id": "P322",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "RFCAConv/MSDFConv modülleri, \"coordinate attention\", \"small-scale defects\" için yardımcı başlık, NEU ve RDD2022 ile \"cross-dataset validation\""
+},
+"P332": {
+"id": "P332",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "\"lightweight algorithm\", \"multi-scale feature fusion\" MPFCSP, 1-2 piksellik \"micro-cracks\" hedefi"
+},
+"P362": {
+"id": "P362",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "\"UAV imagery\"; YOLOv4, v5, v7 karşılaştırması"
+},
+"P313": {
+"id": "P313",
+"codes": [
+"other"
+],
+"basis": "Yalnızca mevcut YOLOv8'in RDD2022'de eğitilip değerlendirilmesi; karşılaştırma ya da yeni yöntem yok"
+},
+"P323": {
+"id": "P323",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "C3K2-DTAB \"global attention in the backbone\", CAFMFusion füzyonu, \"small, low-contrast defects\""
+},
+"P304": {
+"id": "P304",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv9s/v10s/v11s \"fair comparison\", \"benchmark\""
+},
+"P314": {
+"id": "P314",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "PTCB bloğu, RDGFPN \"multi-scale feature fusion and small-defect detection\", ADown \"reduce computation\", WIoU"
+},
+"P324": {
+"id": "P324",
+"codes": [
+"data-augmentation/synthetic",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "üretici ile \"synthesized defect patches\" artırma, önerilen \"FID loss\", \"edge devices\" ve %20'den az parametre"
+},
+"P334": {
+"id": "P334",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "SPM/SRFM/SSEM modülleri, LSKA \"attention\", \"multi-scale feature aggregation\", P2 ile \"small-object detection\""
+},
+"P305": {
+"id": "P305",
+"codes": [
+"transfer/domain-generalization",
+"ensemble/TTA",
+"deployment/system/app"
+],
+"basis": "RoadDamageDetection'a \"Fine-Tuning\", \"Model Soups\" + \"Weighted Boxes Fusion\", \"sistema\"; başlıkta \"mapping\""
+},
+"P315": {
+"id": "P315",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "yeni C2f yapısı, \"triplet attention module\", başlığın \"reducing computational costs\" ile yeniden tasarlanması"
+},
+"P325": {
+"id": "P325",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "ERFCBAMConv \"dynamic attention mechanism\", LSK ve C3K2-RO modülleri"
+},
+"P335": {
+"id": "P335",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "DR-DETR, kanal-uzamsal arıtma, \"contrastive perceptual attention\", FGAF-Fusion, \"small targets\""
+},
+"P306": {
+"id": "P306",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "CARAFE upsampling, \"TripletAttention\", \"LIOU loss function\""
+},
+"P316": {
+"id": "P316",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "\"lightweight model\", MSGRConv/MAFP, \"MD-BiFPN\" füzyonu, 2,312M parametre"
+},
+"P326": {
+"id": "P326",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "GLFE, \"Adaptive-GFPN\" + CAFM füzyonu, \"Lightweight Detection Head\" ve \"edge deployment\""
+},
+"P336": {
+"id": "P336",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "C3K2-SC, \"attention mechanism CAA\", \"reducing the number of model parameters\", boyunda hypergraph ile füzyon, \"small targets\""
+},
+"P307": {
+"id": "P307",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "\"EMA module\", MSConv'un yeniden kurulması, \"replacing the loss function\""
+},
+"P317": {
+"id": "P317",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "omurga yerine RepViT, \"lightweight\", parametre %37 azaldı, HS-FPN \"integrates multi-scale features\""
+},
+"P327": {
+"id": "P327",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "MobileNetV3 omurga + ECA; SE/ECA ablasyonu; FLOP yarıya, Android TFLite"
+},
+"P337": {
+"id": "P337",
+"codes": [
+"benchmark/comparison",
+"lightweight/edge"
+],
+"basis": "YOLOv8 uygulanıp Faster R-CNN/SSD ile karşılaştırma; gerçek zamanlı, mobil cihaz verimliliği"
+},
+"P357": {
+"id": "P357",
+"codes": [
+"loss/IoU"
+],
+"basis": "CIoU yerine FOCAL_GIoU; diğer kayıplar da sınanmış"
+},
+"P308": {
+"id": "P308",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app",
+"severity/quantification"
+],
+"basis": "üç YOLO karşılaştırması; React Native uygulama + Django; şiddet sınıflandırması"
+},
+"P318": {
+"id": "P318",
+"codes": [
+"other"
+],
+"basis": "XAI (Grad-CAM, LIME) ile ResNet/EfficientNet sınıflandırma; listelenen türlere uymuyor"
+},
+"P328": {
+"id": "P328",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "boyuna SPPCSPC, omurgada C3k2_DWR; çapraz aşama füzyon; hesaplama maliyetini azaltma"
+},
+"P338": {
+"id": "P338",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "NextViT+DSConv omurga; hibrit kodlayıcıda AttentionGate kanal ağırlıklandırma"
+},
+"P309": {
+"id": "P309",
+"codes": [
+"architecture-improvement"
+],
+"basis": "YOLOv11 omurgası Starnet ile değiştirilmiş"
+},
+"P319": {
+"id": "P319",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "PConv + SE modülü; hesaplama karmaşıklığını azaltma, 51.7 FPS; custom-collected samples"
+},
+"P329": {
+"id": "P329",
+"codes": [
+"ensemble/TTA",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "YOLOv5mu/v8m/v8x topluluğu; ülkeler arası genelleme; çıkarım hızına vurgu"
+},
+"P339": {
+"id": "P339",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "kanal-uzamsal dikkat damıtma; FGAF-Fusion; yeni kayıp fonksiyonu; small-scale targets"
+},
+"P349": {
+"id": "P349",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV"
+],
+"basis": "ShuffleNetV2 omurga, parametre %40.93 azalma; multi-scale feature-fusion; İHA görüntüleri"
+},
+"W017": {
+"id": "W017",
+"codes": [
+"new-dataset",
+"architecture-improvement",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "TD-RD veri seti; TD-YOLOV10 bileşen ablasyonu; CRDDC'22/CNRDD genelleme; Real-Time Framework"
+},
+"W018": {
+"id": "W018",
+"codes": [
+"multimodal/VLM/LLM",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "RoadCLIP görsel-dil modeli; RoadBench çok modlu benchmark; çapraz veri seti genellemesi"
+},
+"W019": {
+"id": "W019",
+"codes": [
+"semi/self-supervised",
+"transfer/domain-generalization"
+],
+"basis": "öz-denetimli alan uyarlama; Japonya->Hindistan/Çekya aktarım"
+},
+"W022": {
+"id": "W022",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "DBB başlık, boyunda mg_conv füzyon; FLOPs YOLOv8n'in %46.3'ü"
+},
+"W023": {
+"id": "W023",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "boyunda CARAFE upsampling; SCSA dikkat; SIoU kaybı"
+},
+"W024": {
+"id": "W024",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"basis": "SimAM dikkat; DySample, PConv; Slideless loss; small-target defects; kaynak kısıtlı cihaz, 2.84MB"
+},
+"W027": {
+"id": "W027",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8'de aktivasyon fonksiyonları karşılaştırması (ReLU, Mish, Hardswish...)"
+},
+"W034": {
+"id": "W034",
+"codes": [
+"deployment/system/app",
+"lightweight/edge",
+"severity/quantification",
+"benchmark/comparison"
+],
+"basis": "Raspberry Pi prototip, bulut, araç uyarısı; boyut sınıflandırma; YOLO modelleri karşılaştırma"
+},
+"W036": {
+"id": "W036",
+"codes": [
+"data-augmentation/synthetic",
+"attention-module",
+"architecture-improvement",
+"severity/quantification"
+],
+"basis": "GAN ile veri artırma; self-attention/SWIN; modified YOLOv8l; çukur boyutlarının 3B dönüşümü"
+},
+"W038": {
+"id": "W038",
+"codes": [
+"architecture-improvement",
+"small-object"
+],
+"basis": "SPDconv, DySample, CSC2f; düşük çözünürlüklü küçük hasarlar"
+},
+"W039": {
+"id": "W039",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "EEFM, MATIDH başlık; çift zincirli öznitelik piramidi DCFRPN; PWIoU"
+},
+"W040": {
+"id": "W040",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "bağlam yönlendirmeli blok, çapraz ölçekli füzyon; küçük hedefli kusurlar; RDD2020'de genelleme"
+},
+"P002": {
+"id": "P002",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "BOT modülü; LKSA dikkat; boyunda C2fGhost; LSCD-Head, parametre %74.1"
+},
+"P010": {
+"id": "P010",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "C2f-Faster-EMA, SimSPPF, Dyhead; EMA dikkat; uç dağıtım, boyut/parametre azalması"
+},
+"P011": {
+"id": "P011",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "LSKA dikkat, Ghost omurga; boyunda GSConv/VoV-GSCSP; 'lightweight', mobil terminal, 88 FPS"
+},
+"P012": {
+"id": "P012",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"basis": "FPDDN: deformable transformer, D2f 'lightweight', SFB 'small-sized objects'"
+},
+"P016": {
+"id": "P016",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "SimAM dikkat; boyunda GhostConv ile parametre azalması; boyunda bilinear upsampling"
+},
+"P018": {
+"id": "P018",
+"codes": [
+"new-dataset",
+"severity/quantification",
+"deployment/system/app",
+"transfer/domain-generalization"
+],
+"basis": "7099 görüntülük yeni veri seti; ASPDI durum indeksi; yazılım uygulaması; out-of-sample, açık veri setlerinde doğrulama"
+},
+"P026": {
+"id": "P026",
+"codes": [
+"architecture-improvement",
+"small-object",
+"neck/feature-fusion",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "SPD-Conv 'small-sized defects'; ASF-YOLO boyun; FasterNet 'redundant computations'; WIoU"
+},
+"P027": {
+"id": "P027",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "federe öğrenme; tek/çok ülkeli modeller, küresel test verisinde genelleme"
+},
+"P030": {
+"id": "P030",
+"codes": [
+"benchmark/comparison",
+"drone/UAV",
+"lightweight/edge"
+],
+"basis": "Faster R-CNN, SSD, YOLOv5, EfficientDet karşılaştırması; UAV; Tiny ML uç cihaz"
+},
+"P033": {
+"id": "P033",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "Deformable Attention Transformer, GSConv slim-neck, MPDIoU; 'embedded systems'"
+},
+"P048": {
+"id": "P048",
+"codes": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"basis": "ön inceleme notu: 'gömülü bir sistem' (Embedded system)"
+},
+"P052": {
+"id": "P052",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "MLCA dikkat; BiFPN-D yeni boyun; DIoU; hafif başlık, parametre %37 azalma"
+},
+"P055": {
+"id": "P055",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"deployment/system/app",
+"new-dataset"
+],
+"basis": "SN-YOLO slim-neck, GSConv hafifletme; takip ile istatistik sistemi; 'proprietary dataset'"
+},
+"P065": {
+"id": "P065",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "VanillaNet omurga + ODConv; SE dikkat; WIoU kaybı"
+},
+"P072": {
+"id": "P072",
+"codes": [
+"benchmark/comparison",
+"lightweight/edge"
+],
+"basis": "ORDDC'2024 yarışma özeti, standart değerlendirme platformu; çıkarım hızı ölçütü"
+},
+"P073": {
+"id": "P073",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "C3ghost hız/FLOPs azalması; EVC ile feature pyramid; DyHead başlık"
+},
+"P074": {
+"id": "P074",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset"
+],
+"basis": "LHA-Net, DGFM/HLFM; AWAM çok ölçekli füzyon; 2.5M parametre; RDD-CC veri seti"
+},
+"P080": {
+"id": "P080",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "SPPCSPC_G, GELU, K-means++ çapa; parametre/hesap azalması, FPS artışı, gerçek zamanlı"
+},
+"P086": {
+"id": "P086",
+"codes": [
+"data-augmentation/synthetic",
+"attention-module"
+],
+"basis": "AsphaltGAN sentetik görüntülerle veri artırma; 'attention mechanisms'"
+},
+"P109": {
+"id": "P109",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "MPCA dikkat; Slim-neck ile hesap azalması; 'self-built data set'"
+},
+"P133": {
+"id": "P133",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "DSConv tabanlı C2DS modülü; CBAM; F-EIOU kaybı"
+},
+"P134": {
+"id": "P134",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"small-object",
+"drone/UAV"
+],
+"basis": "ELA-HSFPN PAN yerine; hafif Detect-T3G; 'small target size'; UAV görüntüleri"
+},
+"P135": {
+"id": "P135",
+"codes": [
+"segmentation",
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "MFE-UNet piksel segmentasyonu; EMA dikkat; MGFF füzyon; China_MCrack veri seti; Bochum genelleme deneyi"
+},
+"P137": {
+"id": "P137",
+"codes": [
+"transfer/domain-generalization",
+"attention-module"
+],
+"basis": "test-time adaptation, 'cross-scenario', üç ülke; 'global attention maps'"
+},
+"P138": {
+"id": "P138",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "Context Guided Block; GSConv/VoV-GSCSP hafif boyun, öznitelik füzyonu; parametre %73.5 azalma"
+},
+"P151": {
+"id": "P151",
+"codes": [
+"other"
+],
+"basis": "RDD2022 Hindistan alt kümesiyle YOLOv5s eğitimi; başka katkı türü yok"
+},
+"P152": {
+"id": "P152",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"ensemble/TTA"
+],
+"basis": "\"custom YOLOv7 with Coordinate Attention layers\"; \"optimizations for inference speed\", \"lightweight models\", reparametrize; \"trained and combined\" / \"ensemble\""
+},
+"P170": {
+"id": "P170",
+"codes": [
+"lightweight/edge",
+"data-augmentation/synthetic",
+"ensemble/TTA"
+],
+"basis": "\"resource optimization\", \"inference speed\"; \"advanced data augmentation methods\" (BBox-Safe Random Crop); \"Optimized Test-Time Augmentation\""
+},
+"P171": {
+"id": "P171",
+"codes": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"basis": "\"combining models ... using ensemble methods\"; \"enhance the speed of inference\", \"small models ... given priority\""
+},
+"P173": {
+"id": "P173",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "\"combines multiple state-of-the-art object detection models\", mutual learning ve knowledge distillation"
+},
+"P167": {
+"id": "P167",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "\"domain generalization training algorithm\", \"unseen data sources\", altı ülke veri kaynağı"
+},
+"P168": {
+"id": "P168",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "SPPELAN, Adown; \"BiFPN\", \"bidirectional feature fusion\"; \"EMA attention\"; \"reducing the number of parameters\", \"mobile devices\""
+},
+"P210": {
+"id": "P210",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"attention-module",
+"loss/IoU"
+],
+"basis": "\"GhostNet\" ile hafifletme, \"parameter size is reduced\"; \"CBAM attention\"; \"F-EIOU Loss\""
+},
+"P220": {
+"id": "P220",
+"codes": [
+"data-augmentation/synthetic",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "\"augmentation pipeline stage-switching strategy\"; \"transfer learning by pretraining\", \"improving generalization\"; \"resource-constrained\", \"inference speed\""
+},
+"P211": {
+"id": "P211",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv8-ACD, \"integrates a global attention mechanism\""
+},
+"P212": {
+"id": "P212",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"basis": "\"several variants of YOLO and RT-DETR\" karşılaştırması; \"geo-tagged and plotted on OpenStreetMap\""
+},
+"P213": {
+"id": "P213",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "\"Spatial Fusion Module\"; \"large-kernel convolution attention\"; \"cross-scale feature fusion unit\" reparametrize; \"optimizing ... detection speed\""
+},
+"P215": {
+"id": "P215",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"loss/IoU"
+],
+"basis": "\"MASE\" dikkat modülü; \"PANet ... CLEN\"; \"tiny disease features\"; \"Hybrid IoU Loss (HIoU)\""
+},
+"P216": {
+"id": "P216",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "decoupled head, yeni tespit katmanı, C2f; \"multi-scale feature fusion structure ... skip connection\"; \"coordinate attention\""
+},
+"P217": {
+"id": "P217",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "\"multiscale dilated convolution\", deformable conv; \"attention mechanism\"; \"cross-layer feature fusion\"; \"minor road damage\""
+},
+"P218": {
+"id": "P218",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"lightweight attention mechanisms\"; \"lightweight YOLO\", \"significantly improves inference speed\""
+},
+"P209": {
+"id": "P209",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "\"RFAConv ... feature extraction module\"; \"four-layered scale feature fusion\"; \"small target feature detection heads\""
+},
+"P219": {
+"id": "P219",
+"codes": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"basis": "\"ensemble model based on Faster R-CNN\"; \"resource optimization through improvements in inference speed\", YOLOv9 hız için"
+},
+"P290": {
+"id": "P290",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8n/s/m/l sürümleri karşılaştırılıp \"YOLOv8m ... рекомендовать\""
+},
+"P281": {
+"id": "P281",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"comparisons on the performance of ... SSD, YOLO and Faster-RCNN\""
+},
+"P275": {
+"id": "P275",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "anchor tasarımı, \"extra detection layer\"; \"CBAM is inserted\"; \"ASFF is embedded in the Neck\""
+},
+"P276": {
+"id": "P276",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "\"Transformer\" tabanlı model, \"MobileNet as the backbone\"; \"simplify the network structure\", \"reduces the computational load\""
+},
+"P288": {
+"id": "P288",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"tried five different models\", omurga/başlık eşleşmeleri, optimizer ve batch size karşılaştırması"
+},
+"P289": {
+"id": "P289",
+"codes": [
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "\"Türkiye dataset ... Hatay ... labeled\"; \"datasets obtained from different geographies\", ülke kombinasyonları"
+},
+"W006": {
+"id": "W006",
+"codes": [
+"data-augmentation/synthetic"
+],
+"basis": "\"Content and Perspective-aware Data Augmentation\", yol bölgesi/perspektife göre yapıştırma"
+},
+"W007": {
+"id": "W007",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"YOLOv5 ve YOLOv8 karşılaştırılıyor\", basit ön işlemlerin etkisi"
+},
+"W008": {
+"id": "W008",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "yeni öznitelik çıkarma ve füzyon yaklaşımı, DSC-C2f modülü, katmanlar arası bağlantılar, coordinate attention"
+},
+"W015": {
+"id": "W015",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "ConvNeXt V2 omurga, GhostNetV2 C2f, boyunda PConv; daha hafif, mobil cihazlara yönelik"
+},
+"W041": {
+"id": "W041",
+"codes": [
+"deployment/system/app",
+"transfer/domain-generalization"
+],
+"basis": "Google Street View ile etkileşimli haritada hasar noktaları; farklı coğrafyada F1 düşüşü (İsveç, Caturtunggal)"
+},
+"P000": {
+"id": "P000",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "BiFPN ile boyun yeniden kurulumu, SimSPPF, LSK-attention; parametre ve hesaplama yükü azalması"
+},
+"P003": {
+"id": "P003",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "UAV görüntüleri; YOLOv4, YOLOv5, YOLOv7 eğitilip karşılaştırılıyor"
+},
+"P019": {
+"id": "P019",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "ECA-Net, ek tahmin katmanı, Focal Loss ve label smoothing"
+},
+"P020": {
+"id": "P020",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "SimAM dikkat, hız için Ghost modülü, SIoU kaybı; Params ve FLOPs azalıyor"
+},
+"P034": {
+"id": "P034",
+"codes": [
+"segmentation",
+"deployment/system/app"
+],
+"basis": "üç aşamalı yöntem, LaneNet semantik segmentasyon ile şerit konumlandırma, köprüde uygulama"
+},
+"P058": {
+"id": "P058",
+"codes": [
+"new-dataset"
+],
+"basis": "Malezya yollarından toplanan ikinci veri seti (custom dataset)"
+},
+"P089": {
+"id": "P089",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "özellik piramidi eklenmesi, deformable convolution, FPN son katmanında dilated (cavity) convolution"
+},
+"P098": {
+"id": "P098",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"attention-module",
+"new-dataset"
+],
+"basis": "Ghost-CANet omurga, hafif model, coordinate attention; Çin'de toplanan görüntülerle RDD2022 genişletiliyor"
+},
+"P099": {
+"id": "P099",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"basis": "GM-SPPF ile küçük/ince çatlak tespiti, ShuffleAttention, parametre azaltan CARAFE"
+},
+"P108": {
+"id": "P108",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "dense attention fusion modülü, çok ölçekli füzyon, channel correlation loss, toplanan RDDA veri seti"
+},
+"P267": {
+"id": "P267",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "Transformer tabanlı yeni omurga CrackNet, gated convolution, öz-dikkat bloklarına evrişim"
+},
+"P268": {
+"id": "P268",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "SENet kanal dikkati eklenmesi, Wise-IoU regresyon kaybı"
+},
+"W003": {
+"id": "W003",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8 ile YOLOv5 ve YOLOv8 ön-eğitimli modellerinin karşılaştırılması"
+},
+"W004": {
+"id": "W004",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"deployment/system/app"
+],
+"basis": "transformer yapısı ve explicit vision center, GELU; UAV uçuş platformu kuruldu"
+},
+"P007": {
+"id": "P007",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "CRDDC yarışma özeti; ilk 11 çözüm, beş liderlik tablosu ile değerlendirme ve karşılaştırma"
+},
+"P051": {
+"id": "P051",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "ensemble learning ve test time augmentation"
+},
+"P060": {
+"id": "P060",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"basis": "dikkat modüllü beş geliştirilmiş YOLOv5, ensemble ve TTA"
+},
+"P071": {
+"id": "P071",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "ülkeye özgü modeller ile genel modelin birleştirilmesi (country-specific ensemble)"
+},
+"P083": {
+"id": "P083",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "YOLOv7 varyantlarının NMS ile birleştirildiği ensemble model"
+},
+"P129": {
+"id": "P129",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "farklı ülkelerin hasar verisini birleştirmenin uygulanabilirliği araştırılıyor"
+},
+"P148": {
+"id": "P148",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "farklı mimari ve artırma ayarlarıyla çeşitlendirilmiş ensemble, verimli GPU eğitimi"
+},
+"W000": {
+"id": "W000",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"basis": "YOLOv7'ye koordinat dikkati ve model topluluğu eklenmesi"
+},
+"W001": {
+"id": "W001",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "\"trained twelve YOLOv5x models to use the ensemble method\"; görüntü döşeme ön işlem, artırma değil"
+},
+"P024": {
+"id": "P024",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"novel lightweight\" model, \"partial attention block\", \"136 FPS\" ve hesaplama verimliliği"
+},
+"P028": {
+"id": "P028",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "SWC2f modülü, \"Cross-Scale Attention Fusion Module\" ile çok ölçekli füzyon, Dyhead \"self-attention\""
+},
+"P054": {
+"id": "P054",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "\"new backbone\", \"optimizes the attention mechanism\", \"fusion module\", hesap %35,4 ve parametre %25,7 azalma"
+},
+"P090": {
+"id": "P090",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "\"yerel algılama özellik ağı\" önerisi, \"LSF-Net boynu\""
+},
+"P120": {
+"id": "P120",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"çok koordinatlı toplama dikkati\", \"paylaşımlı konvolüsyon\", \"hafif\", parametre %46,4 azalma, 212 FPS"
+},
+"P124": {
+"id": "P124",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "\"BRA-DropKey dikkati\", \"Dynamic Snake Convolution\", \"Wise-IoU kaybı\""
+},
+"P164": {
+"id": "P164",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"YOLOv4 ve YOLOv5 mimarilerinin karşılaştırmalı çalışması\""
+},
+"P174": {
+"id": "P174",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "\"enhanced PAN ve BiFPN\", \"weighted feature fusion\", \"SimAM\" ve \"Shuffle Attention\""
+},
+"P194": {
+"id": "P194",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "omurgada \"GSPConv\", \"optimized RepGFPN\" füzyonu, \"WNIoU loss\", \"relatively small defects\""
+},
+"P200": {
+"id": "P200",
+"codes": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "başlık \"Faster R-CNN vs. Detection Transformer: Transfer Learning Approaches\""
+},
+"P233": {
+"id": "P233",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "C2f-faster, LSDECD başlığı, FDPN boyun \"attention gating\", \"Inner-WIoU loss\", \"small cracks\", parametre %55,6 azalma, araç üstü cihaz"
+},
+"P244": {
+"id": "P244",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"small-object"
+],
+"basis": "\"multi-branch feature pyramid\" MSPP-KAN, RepDySnake modülü, \"CoordAtt attention\", \"small crack detection\""
+},
+"P278": {
+"id": "P278",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "C2f'e \"MCA\" dikkati, \"MFF\" füzyon modülü, \"sample correlated weighting loss\", başlıkta \"fast\" ve \"maintaining speed\""
+},
+"P394": {
+"id": "P394",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"drone/UAV"
+],
+"basis": "C2f'e SVD ile \"reduce model parameters\", parametre/GFLOPs azalma, \"UAV inspection\" sorunu"
+},
+"P414": {
+"id": "P414",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "başlık \"Multiscale Feature Fusion and Receptive Field Enhancement\", ECD-YOLO"
+},
+"P420": {
+"id": "P420",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "başlık \"Lightweight\" ve \"Multi-branch Attention with Contextual Guidance\""
+},
+"P432": {
+"id": "P432",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"benchmark/comparison",
+"transfer/domain-generalization",
+"ensemble/TTA",
+"drone/UAV"
+],
+"basis": "\"Lightweight ... Detector\", \"one controlled protocol\" çok tohumlu karşılaştırma, Jetson'da uç dağıtım, \"aerial-to-ground transfer\", \"TTA\", China Drone"
+},
+"P434": {
+"id": "P434",
+"codes": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"basis": "\"mobil dağıtım çerçevesi\", \"TensorFlow Lite\", \"Classification System\""
+},
+"P464": {
+"id": "P464",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"severity/quantification",
+"deployment/system/app"
+],
+"basis": "YOLOv8'e \"Coordinate Attention\", \"Road Health Index\" ile hasar ölçümü/önceliklendirme, \"decision support framework\""
+},
+"P474": {
+"id": "P474",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "omurgaya \"CGLU\" ve \"DyT\", \"Context-Guided Rectangular Feature Pyramid Network\""
+},
+"P483": {
+"id": "P483",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "\"Difficulty-Aware Module\" dinamik hesap yolu, hesap %17,1 azalma, karşıtsal \"hybrid objective\" kaybı"
+},
+"P494": {
+"id": "P494",
+"codes": [
+"deployment/system/app"
+],
+"basis": "\"Real-Time Road Damage Detection System\", \"vehicle-mounted cameras\" için dağıtım"
+},
+"P043": {
+"id": "P043",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"small-object"
+],
+"basis": "ağ derinlik/genişlik optimizasyonu, \"Ghost module ... lightweight\", FPS artışı, \"Space-to-depth-Conv ... small object\""
+},
+"P189": {
+"id": "P189",
+"codes": [
+"new-dataset",
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "\"we introduce a comprehensive benchmark dataset\" 52.747 görüntü, YOLOv8–v12/Faster R-CNN/DETR kıyası, \"zero-shot transfer to new environments\""
+},
+"P193": {
+"id": "P193",
+"codes": [
+"other"
+],
+"basis": "Metin kesik; yalnızca 'YOLOv11 Empowered ... Model' başlığı, açık katkı belirtilmemiş"
+},
+"P417": {
+"id": "P417",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "'Context-Guided BasicBlock omurgası', 'kapılı çapraz ölçekli füzyon', 'SIoU kaybı', 'lightweight', parametre %32,7 azalma"
+},
+"P428": {
+"id": "P428",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "'Crack-Out omurgası', 'kanal sınıflandırmalı füzyon modülü', 'küçük hedefleri güçlendiren BDD kodlayıcısı'"
+},
+"P493": {
+"id": "P493",
+"codes": [
+"drone/UAV"
+],
+"basis": "Yalnızca başlık: 'using UAV Images'"
+},
+"P526": {
+"id": "P526",
+"codes": [
+"new-dataset",
+"benchmark/comparison"
+],
+"basis": "'novel dataset, StructDamage' 78.093 görüntü; 'baseline ... fifteen DL architectures'"
+},
+"N001": {
+"id": "N001",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"segmentation"
+],
+"basis": "'transformer-based contextual refinement', 'contextual attention', 'multi-scale alignment', 'boundary-aware segmentation module'"
+},
+"N002": {
+"id": "N002",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "LSKA'nın SPPF'ye eklenmesi, 'DIoU loss', 'Low-Computing-Power', 'low-cost CPU laptop' 68 FPS"
+},
+"N006": {
+"id": "N006",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "'multi-scale attention mechanism (MsCGA)', 'avoid fusing low-level features', 'attention fusion strategy', 'small-scale cracks'"
+},
+"N007": {
+"id": "N007",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "Omurgada 'DCNv2', boyunda 'CSFCN ... feature fusion', CBAM tabanlı 'CRAM'"
+},
+"N010": {
+"id": "N010",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "'DCNv-C2f', 'AKConv', 'G-Head', 'Global Attention Module', 'Wise-IoU', 'lightweight'"
+},
+"N011": {
+"id": "N011",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "'GSConv-DV', 'VoV-DV', CNN-Transformer 'HybridC2f' (ViT), 'Lightweight Modules', parametre %22,5 azalma"
+},
+"N012": {
+"id": "N012",
+"codes": [
+"drone/UAV",
+"multimodal/VLM/LLM",
+"new-dataset",
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "'UAV-based', 'multimodal ... image-text' veri seti kuruluyor, 'MCSG module', 'KAN-CA' kanal dikkati, 'Crack-Aware Slenderness Loss'"
+},
+"N014": {
+"id": "N014",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "'CSP-MobileMamba backbone', 'Small Object Enhance Pyramid', 'matching aware Loss', 'low inference efficiency', parametre %22,6 azalma"
+},
+"N015": {
+"id": "N015",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"new-dataset",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "Yeni 'backbone', 'multiple attention', 'bi-directional feature fusion path', 'tiny damage', 'built a road dataset', 'generalization performance', 'computational cost'"
+},
+"N016": {
+"id": "N016",
+"codes": [
+"deployment/system/app",
+"severity/quantification"
+],
+"basis": "'Raspberry Pi' ve 'GPS receiver' ile sistem; 'estimates the pothole parameters and the percentage of road damage'"
+},
+"N017": {
+"id": "N017",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv8'e 'Convolutional Block Attention Module (CBAM)' ekleniyor"
+},
+"N018": {
+"id": "N018",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "'GhostHGNetV2' omurga, 'C2f_ConvFormerCGLU', 'lightweight', 'WIoU loss', 'self-collected images'"
+},
+"N021": {
+"id": "N021",
+"codes": [
+"loss/IoU"
+],
+"basis": "Başlıkta 'CAC Loss' ile açık küme tanıma; özet sayısal sonuç vermiyor"
+},
+"N022": {
+"id": "N022",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "Omurgada 'EFWaveletpool', 'C3K2-DCNv4'; 'WDRGFPN ... multi-scale feature fusion'"
+},
+"N023": {
+"id": "N023",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "'dynamic receptive fields and lightweight design'; parametre ~%12, hesap ~%33 düşüş"
+},
+"X001": {
+"id": "X001",
+"codes": [
+"lightweight/edge"
+],
+"basis": "Başlık: 'Lightweight ... Based on Improved YOLOv8n'; yapısal değişiklik metinde belirtilmemiş"
+},
+"X002": {
+"id": "X002",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"basis": "'YOLOv7 vs YOLOv8' karşılaştırması, araç hızı etkisi; 'in-vehicle integrated system', 'Mobile Phone'"
+}
+},
+"B": {
+"P260": {
+"id": "P260",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "omurgaya SCConv; boyuna EMA dikkat (yalnız dikkat, boyun kodu yok); \"achieve a lightweight network\""
+},
+"P251": {
+"id": "P251",
+"codes": [
+"deployment/system/app",
+"new-dataset",
+"segmentation",
+"drone/UAV"
+],
+"basis": "GIS haritalama hattı; \"introduce and publicly release a UAV-based road defect dataset\"; semantic segmentation; UAV denetimi odakta"
+},
+"P253": {
+"id": "P253",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"data-augmentation/synthetic",
+"loss/IoU"
+],
+"basis": "SDP-MoE modülü; MEGCSA cross-scale attention ile çok ölçekli bütünleştirme; expert-oriented data augmentation; load-balancing loss"
+},
+"P255": {
+"id": "P255",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "kenar güçlendirme ve upsampling modülleri; düşük/yüksek seviye öznitelik füzyon oranını uyarlayan modül"
+},
+"P257": {
+"id": "P257",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "裂缝高效注意力机制; 动态采样金字塔; 轻量化主干与检测头, 边缘设备; Powerful IoU; 自建数据集2985张"
+},
+"P390": {
+"id": "P390",
+"codes": [
+"architecture-improvement",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "orthogonal convolution module; geometric IoU loss; cross-platform/bölgeler arası genelleme doğrulaması"
+},
+"P410": {
+"id": "P410",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "omurga TransXNet ile değiştirildi; D-Mixer içine self-attention gömüldü"
+},
+"P430": {
+"id": "P430",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "P2 dalı, CARAFE upsampling, yön duyarlı modül; Varifocal+Alpha-IoU+NWD kaybı; küçük ölçekli kusurlar hedef"
+},
+"P440": {
+"id": "P440",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization",
+"drone/UAV"
+],
+"basis": "CG feature-fusion bloğu ve MSDA dikkat P3'te; RDD2022 alt setlerine direct-transfer; UAV görüntüleri odakta"
+},
+"P450": {
+"id": "P450",
+"codes": [
+"other"
+],
+"basis": "HOG+SVM sınıflandırma, beton dayanımı regresyonu ve optimizasyon içeren karar çerçevesi; listedeki türlere uymuyor"
+},
+"P391": {
+"id": "P391",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge",
+"transfer/domain-generalization",
+"new-dataset"
+],
+"basis": "re-param omurga, DynamicHead; content-adaptive feature fusion; lightweight 2.11M param; UAV-PDD2023 ve kaynaklar arası testler; self-collected field test set"
+},
+"P401": {
+"id": "P401",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "P3/P4'te EMA bloğu; LQE başlığı; Wise-IoU kaybı; lightweight, 2.7M parametre"
+},
+"P421": {
+"id": "P421",
+"codes": [
+"new-dataset",
+"transfer/domain-generalization",
+"benchmark/comparison"
+],
+"basis": "EcuPDD veri seti tanıtılıyor; uluslararası ağlar arası domain transfer; veri birleşimi sürümleri karşılaştırması ve Domain Gap Index"
+},
+"P431": {
+"id": "P431",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8s/v10s/v11s ve optimize v11s'nin sistematik karşılaştırması ana katkı"
+},
+"P441": {
+"id": "P441",
+"codes": [
+"deployment/system/app",
+"segmentation",
+"multimodal/VLM/LLM",
+"lightweight/edge"
+],
+"basis": "\"Road Guard\" sistemi, geofencing uyarıları; Fast-SCNN semantic segmentation; GPS ile sensör füzyonu; edge-compatible"
+},
+"P451": {
+"id": "P451",
+"codes": [
+"semi/self-supervised",
+"segmentation",
+"architecture-improvement"
+],
+"basis": "teacher-student self-training; 11 sınıflı piksel segmentasyonu; FLDE güdümlü F-UNet uzantısı"
+},
+"P382": {
+"id": "P382",
+"codes": [
+"data-augmentation/synthetic",
+"lightweight/edge"
+],
+"basis": "başlıkta \"Hybrid Data Augmentation\"; 22 MB model, \"suitable for deployment in small edge devices\""
+},
+"P392": {
+"id": "P392",
+"codes": [
+"benchmark/comparison",
+"severity/quantification"
+],
+"basis": "MobileNetV2, ResNet50, EfficientNetB0, InceptionV3 karşılaştırması; \"predicting severity\""
+},
+"P402": {
+"id": "P402",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "EAFE ve MSDC modülleri; dynamic channel recalibration; MSAGN ile seviyeler arası füzyon; drone/motosiklet verisinde cross-dataset değerlendirme"
+},
+"P442": {
+"id": "P442",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"segmentation",
+"new-dataset",
+"lightweight/edge"
+],
+"basis": "TCR transformer modülü; DDH, CRM, sınır duyarlı segmentasyon başlığı; Kazakistan'dan toplanan ek veri; başlıkta Real-Time"
+},
+"P452": {
+"id": "P452",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv12'ye self-attention (SA) modülü ve EVCBlock eklendi"
+},
+"P383": {
+"id": "P383",
+"codes": [
+"lightweight/edge",
+"transfer/domain-generalization",
+"benchmark/comparison"
+],
+"basis": "compute-constrained, CPU-only baseline; coğrafi ve sensör alanları, domain-aware splitting; tekrarlanabilir baseline/değerlendirme protokolü"
+},
+"P413": {
+"id": "P413",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "MS-SPPFCSPC + Coordinate Attention, SE ve CBAM; ASFF çok ölçekli füzyon; SVRDD'de cross-dataset değerlendirme"
+},
+"P423": {
+"id": "P423",
+"codes": [
+"architecture-improvement",
+"multimodal/VLM/LLM"
+],
+"basis": "PSConv ve P6 tespit katmanı; görünür ışık + termal kızılötesi (RGBT) füzyonu"
+},
+"P433": {
+"id": "P433",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"basis": "omurga sonuna EMA dikkat; lightweight, 5.9 GFLOPs, gömülü cihazlar; small-scale defects hedef"
+},
+"P503": {
+"id": "P503",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "\"UAV imagery\" odakta; YOLOv5, YOLOv7, YOLOv8 uygulanıp karşılaştırılıyor"
+},
+"P384": {
+"id": "P384",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv8'e \"CA attention mechanism\" gömüldü"
+},
+"P404": {
+"id": "P404",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "WMS-Net, dalgacık enjeksiyonu, \"multi-stage feature aggregation\"; \"cross-scene applicability\""
+},
+"P454": {
+"id": "P454",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA",
+"transfer/domain-generalization"
+],
+"basis": "EMA eklenmiş YOLOv8 + Faster R-CNN, WBF füzyonu; RDD2020 Hindistan/Çekya ile \"cross-dataset validation\""
+},
+"P484": {
+"id": "P484",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "DFSA-Net omurgası ve \"multi-scale ... feature fusion pyramid network\""
+},
+"P385": {
+"id": "P385",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "Basicblock_Star modülü; Transformer'ın AIFI modülü SEFN ve DyT ile genişletildi"
+},
+"P395": {
+"id": "P395",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "CBAM, BoTNet, CIoU yerine SIoU; başlıkta \"Small Object Detection\""
+},
+"P405": {
+"id": "P405",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "RoadRep-C3, EMA, boyunda hipergraf füzyonu, slide loss; \"improving the detection of small objects\""
+},
+"P415": {
+"id": "P415",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "ConvSmart, DSA dikkati, P2 küçük nesne yolu, başlıkta \"feature fusion\"; \"lightweight\", \"low-power devices\"; RDD2022'de \"generalization\""
+},
+"P425": {
+"id": "P425",
+"codes": [
+"drone/UAV",
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA",
+"lightweight/edge",
+"small-object"
+],
+"basis": "\"UAV road damage detection\"; SE dikkati, deformable conv; TTA+WBF; \"lightweight\", gerçek zamanlı; \"small object size\""
+},
+"P435": {
+"id": "P435",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"segmentation",
+"severity/quantification"
+],
+"basis": "YOLO-CGR (CBAM, Res-EMA), \"lightweight\"; DeepLabv3+ çatlak segmentasyonu, UFF füzyon modülü; çatlak ölçümü (\"quantification\")"
+},
+"P445": {
+"id": "P445",
+"codes": [
+"deployment/system/app",
+"ensemble/TTA",
+"segmentation",
+"severity/quantification"
+],
+"basis": "CrackWatch uçtan uca sistem, PWA, WhatsApp bot; \"three-model fusion pipeline\"; \"crack-segmentation model\"; onarım maliyeti ve şiddet puanlaması"
+},
+"P455": {
+"id": "P455",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "混合注意力模块; 跨尺度特征交叉融合, 颈部架构优化; 跨数据集测试与泛化测试"
+},
+"P545": {
+"id": "P545",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "Star-Chain omurgası, \"reduce computational overhead\", %49,4 daha az parametre; \"Hierarchical Content-Aware Feature Fusion Module\""
+},
+"P396": {
+"id": "P396",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge",
+"small-object"
+],
+"basis": "StarNet omurgası, SimAM dikkati, Shape-IoU; parametre azaltımı; \"detecting small objects\" sorunu"
+},
+"P406": {
+"id": "P406",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "MSCA dikkati, SADH başlığı, bilgi damıtma; Jetson Orin Nano'da gömülü çalıştırma; \"in-house set of asphalt potholes\""
+},
+"P426": {
+"id": "P426",
+"codes": [
+"deployment/system/app",
+"severity/quantification",
+"new-dataset"
+],
+"basis": "görüntü ve video menülü envanter sistemi; PCI değerlendirmesi; \"data lokal (2.272 objek)\""
+},
+"P436": {
+"id": "P436",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "context-guided modül; boyun ASF (\"attention scale sequence fusion\") ile değiştirildi; RepViT ile parametre azaltımı"
+},
+"P446": {
+"id": "P446",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "\"UAV images\"; CLAHE, Unsharp Masking, Retinex ön işleme etkisinin karşılaştırmalı incelenmesi"
+},
+"P397": {
+"id": "P397",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object",
+"new-dataset"
+],
+"basis": "omurgaya CBAM; NWD kaybı; \"small targets\"; \"self-built dataset\""
+},
+"P407": {
+"id": "P407",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "C3k2-SHSA-CGLU bloğu, başlıkta \"attention mechanisms\"; GLSABiFPN boyun; hafif başlık, parametre azaltımı; GRDDC2020 \"cross-dataset\" genelleme"
+},
+"P427": {
+"id": "P427",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "DSC şerit evrişim modülü; MFE \"multi-level feature fusion\" modülü"
+},
+"P437": {
+"id": "P437",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "C2f_PBA paralel dikkat; boyunda CARAFE; WPIoU kaybı; SVRDD ile \"generalization\""
+},
+"P447": {
+"id": "P447",
+"codes": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "YOLOv12'nin altı veri setinde \"cross-dataset performance evaluation\"ı"
+},
+"P388": {
+"id": "P388",
+"codes": [
+"architecture-improvement",
+"loss/IoU",
+"lightweight/edge",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "çoklu modül ve kayıp fonksiyonu optimizasyonu; \"lightweight design\"; MRDD veri seti kuruldu; RDD2022'de \"cross-scene generalization\""
+},
+"P408": {
+"id": "P408",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "CBAM omurgaya ekleniyor; \"small targets such as micro-cracks\"; ATM ile NMS iyileştirme"
+},
+"P498": {
+"id": "P498",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"basis": "çok görevli YOLO-Lite mimarisi, 1.2M parametre, INT8 ve edge; \"composite multi-task objective\"; \"cross-dataset\" genelleme"
+},
+"P508": {
+"id": "P508",
+"codes": [
+"deployment/system/app"
+],
+"basis": "Streamlit web arayüzü, GPS konumlama, gösterge paneli"
+},
+"P389": {
+"id": "P389",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "CLAHE, Gaussian Blur, parlaklık gibi mevcut iyileştirme tekniklerinin YOLOv8n ile karşılaştırılması"
+},
+"P399": {
+"id": "P399",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object",
+"drone/UAV"
+],
+"basis": "ADown, Slim-Neck füzyonu, iEMA dikkat; hesaplama %25 azalıyor, edge; küçük hedefler; UAV görüntüleri"
+},
+"P409": {
+"id": "P409",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "çoklu dikkatli tespit başlığı, yeniden parametrelenmiş VGG, MGD damıtma; \"small-target\" hedefi"
+},
+"P419": {
+"id": "P419",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "EfficientNetV2 hafif omurga, geliştirilmiş BiFPN, WIoU tabanlı kayıp; edge odaklı"
+},
+"P429": {
+"id": "P429",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "MiM modülü, DDF çok ölçekli füzyon, SPT dönüştürücü (attention parametreleri); hesaplamayı azaltma ve hız artışı hedefi"
+},
+"P439": {
+"id": "P439",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge",
+"small-object",
+"new-dataset"
+],
+"basis": "LRFEM_Block omurgada, MLA-IFI ve BABF-FPN füzyonu; parametre %24.5 azalıyor; küçük nesne sınırları; self-built veri seti"
+},
+"P449": {
+"id": "P449",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "LMSFA, kanal dikkatli SPPFMPF ile uyarlanabilir füzyon, TADDH başlık; RDD2022 üzerinde cross-dataset genelleme"
+},
+"P469": {
+"id": "P469",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "omurgada BasicBlock_DCNv2; kodlayıcıda çok ölçekli MCFI etkileşim modülü"
+},
+"W042": {
+"id": "W042",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"transfer/domain-generalization",
+"ensemble/TTA"
+],
+"basis": "YOLOv8 omurgası mobil/gömülü cihazlar için MobileNetV3; RDD2022-SVRDD transfer öğrenme; TTA uygulanıyor"
+},
+"W043": {
+"id": "W043",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "rezidüel CBAM, gamma düzeltme ve gürültü modülleri; edge cihazlarda gerçek zamanlı hafif tasarım; araç ve gözetim kamerasından toplanan özel veri"
+},
+"W044": {
+"id": "W044",
+"codes": [
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"basis": "PaveInstruct görüntü-talimat-yanıt seti ve PaveGPT görsel-dil modeli"
+},
+"W045": {
+"id": "W045",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV"
+],
+"basis": "RMA ve CMGLA dikkat, AGFPN; parametre %29.1 azalıyor, RK3588 edge; UAV görüntüleri"
+},
+"W046": {
+"id": "W046",
+"codes": [
+"benchmark/comparison",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "\"Evaluating YOLO26s\", temel modellerle karşılaştırma; edge dağıtımı; dört ülke arası \"cross-domain generalization\""
+},
+"W047": {
+"id": "W047",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "C3k2_DSConv, VimLayer, AIFI, EMA dikkat; \"missed detection of small targets\""
+},
+"W048": {
+"id": "W048",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "Bi-level Routing Attention, DySnakeConv, CARAFE ile çok ölçekli füzyon"
+},
+"W049": {
+"id": "W049",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "omurgada coordinate attention, parametre azaltan hafif dinamik evrişim, füzyon yolunu yeniden kuran dinamik örnekleme"
+},
+"W052": {
+"id": "W052",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv7-tiny omurgasına SE, kodlamaya CA dikkat ekleniyor"
+},
+"W053": {
+"id": "W053",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "CBAM ekleniyor, ECIoU kaybı; \"small road defects\""
+},
+"W054": {
+"id": "W054",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "DAC modülü (kanal ağırlıklandırma), SPP yerine çok başlı çapraz dikkatli CSGRM çok ölçekli füzyon"
+},
+"W055": {
+"id": "W055",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "MobileViT ve EMA dikkat; GhostConv ile hafifletme, parametre %16.3 azalıyor"
+},
+"W056": {
+"id": "W056",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "omurga ve boyunda GFB ve MBFF füzyon modülü; ECA dikkat"
+},
+"W058": {
+"id": "W058",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "HeteroFusionNet gereksiz hesaplamayı azaltıyor, P3 yoluna MOSAIN, GATM dikkat; küçük kusur tanıma; kendi oluşturulan köprü veri seti"
+},
+"W062": {
+"id": "W062",
+"codes": [
+"deployment/system/app",
+"ensemble/TTA",
+"lightweight/edge",
+"benchmark/comparison"
+],
+"basis": "\"vehicle-based pothole-monitoring system\", YOLOv12+EfficientNet-B2 \"cascade\", \"edge-deployed\", montaj düzenlerinin \"controlled field comparisons\""
+},
+"P035": {
+"id": "P035",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "ODConv bloğu, omurgaya BoTNet (CNN+Transformer), boyuna CA dikkati"
+},
+"P046": {
+"id": "P046",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "BMS-SPPF modülü, \"spatial-channel attention\", parametre 3.01M->0.89M, \"small targets\", Motorbike veri setinde \"generalization\""
+},
+"P047": {
+"id": "P047",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "SOM, MAF \"Auxiliary Fusion\" ve WTC modülleri; \"small-scale damage\", küçük nesnede %4.93 artış"
+},
+"P056": {
+"id": "P056",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"Transformer-based auxiliary module\", \"enhanced feature extraction layers\"; \"real-time\", \"fast processing\" hedefi"
+},
+"P066": {
+"id": "P066",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "Rep-GD modülü boynu değiştiriyor, \"multi-scale feature fusion\", \"Wise-IoU loss\""
+},
+"P067": {
+"id": "P067",
+"codes": [
+"deployment/system/app",
+"lightweight/edge",
+"multimodal/VLM/LLM",
+"severity/quantification"
+],
+"basis": "\"edge-cloud framework\", \"lightweight AI on edge devices\", T5-XL ile \"natural language reporting\", \"severity information\", derinlik ve \"road quality metrics\""
+},
+"P068": {
+"id": "P068",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object",
+"deployment/system/app",
+"new-dataset"
+],
+"basis": "MobileNetV3 omurga, parametre %32.5 azalma, \"progressive feature fusion network\", \"tiny entities\", \"cloud-edge\" sistem araçta test, \"self-made dataset\""
+},
+"P075": {
+"id": "P075",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"neck/feature-fusion"
+],
+"basis": "\"Tiny Object Detection Layer\", \"multi-scale feature fusion\", \"Global Attention Mechanism\", hafif C3k2Ghost ile hesap yükü azaltma"
+},
+"P076": {
+"id": "P076",
+"codes": [
+"drone/UAV",
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"ensemble/TTA"
+],
+"basis": "\"drone-captured images\"/UAV, ek tahmin başlığı ve TPH, CBAM, \"multi-scale feature fusion\", \"multi-scale testing, model integration\""
+},
+"P081": {
+"id": "P081",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "yeni EDCM dinamik evrişim, yeni SGAM dikkat, \"Wise-IoU\", \"small fractures\""
+},
+"P091": {
+"id": "P091",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "M2SA \"self-attention\", MCF \"multi-scale cross fusion\", UAPD/UAVPDD/RDD2022'de \"generalization\""
+},
+"P104": {
+"id": "P104",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "SBS modülü ve LSCD-Head ile parametre azaltma, boyuna EMA dikkati, \"adaptive attention feature pyramid\""
+},
+"P106": {
+"id": "P106",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"drone/UAV",
+"transfer/domain-generalization"
+],
+"basis": "ghost evrişim+SE, CA, parametre azaltma, \"UAV imagery\", UAV dışı veri setlerinde \"generalization\""
+},
+"P114": {
+"id": "P114",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "GhostNetv2 omurga ile parametre azaltma, EMA dikkati, CIoU yerine \"SIoU loss\""
+},
+"P122": {
+"id": "P122",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization",
+"new-dataset"
+],
+"basis": "C2f-DCNv2, boyunda GSConv/VoVGSCSP, GCH başlığı, parametre %22 azalma, \"edge computing devices\", \"generalization experiments\", \"self-built datasets\""
+},
+"P123": {
+"id": "P123",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "\"dual backbone\", DIFF \"adaptive fusion\" modülü, \"Deformable Interactive Attention\", UAV-PDD2023'te \"generalization\""
+},
+"P125": {
+"id": "P125",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "YOLOv5 omurgası GhostNet ile değiştiriliyor, GFLOPs 15.8->7.7, \"edge devices\""
+},
+"P161": {
+"id": "P161",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "RHGNetv2 omurga, RepConv, SEAM modülü; parametre %21 azalma, \"edge deployment efficiency\""
+},
+"P162": {
+"id": "P162",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "ASDown ve C2f-MSD modülleri, \"lightweight framework\", 2.47M parametre, 370 FPS"
+},
+"P154": {
+"id": "P154",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "\"Cross-Scale Feature Fusion Module\", ADown, DyHead; parametre %33.3 azalma, \"resource-constrained mobile platforms\""
+},
+"P155": {
+"id": "P155",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "MFFBN omurga, BiFPN+\"Cross-Attention\" (BiMCNet), \"CGeoCIoU loss\", \"minute cracks\""
+},
+"P156": {
+"id": "P156",
+"codes": [
+"segmentation",
+"severity/quantification",
+"architecture-improvement",
+"attention-module",
+"new-dataset"
+],
+"basis": "\"pixel-wise segmentation\", \"quantification of morphological features\", DBBPN ağı ve Dy-detect head, \"deformable attention\", \"MaskRDD-140\" kendi veri seti"
+},
+"P180": {
+"id": "P180",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"lightweight/edge"
+],
+"basis": "RFAConv ve CA dikkati, MARA füzyonu (MAFPN+CARAFE), \"small targets\", \"high complexity and computational requirements\" gerekçesi"
+},
+"P181": {
+"id": "P181",
+"codes": [
+"architecture-improvement",
+"benchmark/comparison"
+],
+"basis": "\"custom enhancements to the Faster R-CNN architecture\", \"we benchmark multiple object detection models\""
+},
+"P183": {
+"id": "P183",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"basis": "EfficientViM omurga, DefMamba blokları, GG-SSM; 1.8M parametre, Jetson Orin Nano; consistency loss; OpenStreetMap girdisi; yeni RoadGraph-RDD benchmark"
+},
+"P186": {
+"id": "P186",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "RFCBAMConv/PEFNet, SDCLD hafif başlık; parametre %10.3 azalma; GDSFPN füzyon piramidi; Wise-IoU"
+},
+"P230": {
+"id": "P230",
+"codes": [
+"deployment/system/app"
+],
+"basis": "araç kamerasıyla gerçek zamanlı tespit sistemi, Geolocation API ile çukur haritalama"
+},
+"P250": {
+"id": "P250",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "adaptif evrişim ve adaptif alt örnekleme modülü; CBAM eklenmesi; 'optimized lightweight' algoritma"
+},
+"P231": {
+"id": "P231",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "DWConv, C3K2-MCFN; parametre azaltma ve çıkarım hızlanması; CVIM omurga-boyun öznitelik füzyonu"
+},
+"P232": {
+"id": "P232",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "EIEStem modülü; boyunda multi-scale fusion attention; DySample üst örnekleyici; hafif başlık, gömülü/mobil cihaz hedefi"
+},
+"P224": {
+"id": "P224",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "iAFF (dikkatli öznitelik füzyonu) + C2f, başlıkta ASFF füzyonu; DIoU kaybı"
+},
+"P234": {
+"id": "P234",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "GhostPercepC2f, axis-aware/spatial attention; 2.2M parametre; SAFPN; İHA tabanlı tespit; yeni LCrack veri seti; RDD2022 çapraz veri seti doğrulaması"
+},
+"P225": {
+"id": "P225",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"transfer/domain-generalization"
+],
+"basis": "YOLOv8'e Coordinate Attention eklenmiş M1-M5 modeller; Mısır videosunda farklı ülkede genelleme"
+},
+"P235": {
+"id": "P235",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "RT-DETR'e FreSCal uzay-frekans modülü; RSDFPN bağlam güdümlü özellik piramidi ve dinamik füzyon"
+},
+"P245": {
+"id": "P245",
+"codes": [
+"architecture-improvement"
+],
+"basis": "STG-Mamba-YOLO: omurgada Mamba, çerçeve içi graf ağı, Temporal Graph Mamba modülü"
+},
+"P226": {
+"id": "P226",
+"codes": [
+"severity/quantification"
+],
+"basis": "bulanık mantık ile hasar şiddeti değerlendirmesi (size, position girdileri)"
+},
+"P227": {
+"id": "P227",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "başlık: veri temizlemenin etkisinin değerlendirilmesi; yeni yöntem yok, YOLOS değerlendirmesi"
+},
+"P228": {
+"id": "P228",
+"codes": [
+"segmentation",
+"semi/self-supervised",
+"architecture-improvement",
+"attention-module"
+],
+"basis": "çatlak segmentasyonu; weakly guided, az güçlü etiket; Bounding Box Encoder + ConvNeXt/U-Net; kutu maskelerinden attention map"
+},
+"P229": {
+"id": "P229",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"basis": "MixStructure, Kernel Selection Fusion Attention; small-target/small potholes; ALT Focal loss; başlıkta multi-scale feature fusion"
+},
+"P239": {
+"id": "P239",
+"codes": [
+"semi/self-supervised"
+],
+"basis": "görüntü düzeyi etiketle weakly supervised MIL çerçevesi (RFL, RIS)"
+},
+"P249": {
+"id": "P249",
+"codes": [
+"transfer/domain-generalization",
+"new-dataset",
+"benchmark/comparison"
+],
+"basis": "Hindistan-Güney Afrika arası transfer ve ince ayar; yerel RDD2024_SA veri seti; beş eğitim-test senaryosu karşılaştırması"
+},
+"P300": {
+"id": "P300",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8 ile ViT'nin RDD2022 üzerinde karşılaştırmalı analizi"
+},
+"P310": {
+"id": "P310",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "SPDConv, ADown; hesaplama yükünü azaltan hafif şema; boyunda cross-layer feature fusion modülü"
+},
+"P320": {
+"id": "P320",
+"codes": [
+"ensemble/TTA",
+"architecture-improvement",
+"deployment/system/app"
+],
+"basis": "görev özel modelleri birleştiren multi-model pipeline; GhostConv ile YOLOv11; HPC pipeline ve GIS uygulamalarına entegrasyon"
+},
+"P330": {
+"id": "P330",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"basis": "RFAConv, SPPFCSPPC, LKCA dikkat modülü; 'small damage patterns' tanıma"
+},
+"P340": {
+"id": "P340",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "omurgaya Swin Transformer eklenmesi; hafif model, mobil cihazda dağıtım, gerçek zamanlılık"
+},
+"P380": {
+"id": "P380",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv7'ye CBAM eklenmesi; K-means++ ile anchor belirleme"
+},
+"P301": {
+"id": "P301",
+"codes": [
+"semi/self-supervised",
+"lightweight/edge"
+],
+"basis": "patch tabanlı self-supervised learning; lightweight MobileNetV2, edge-device uyumu"
+},
+"P311": {
+"id": "P311",
+"codes": [
+"deployment/system/app",
+"benchmark/comparison"
+],
+"basis": "Android uygulaması, WebSocket ile gerçek zamanlı sistem; Faster R-CNN ve YOLOv12m karşılaştırılıp seçim"
+},
+"P321": {
+"id": "P321",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "GAM entegrasyonu; Wise-IoU kaybı; \"lightweight CNN architecture\", gerçek zamanlı"
+},
+"P331": {
+"id": "P331",
+"codes": [
+"benchmark/comparison",
+"new-dataset"
+],
+"basis": "YOLOv9 varyantlarının \"comparative evaluation\"; 15.109 görüntülük \"custom dataset compiled\""
+},
+"P341": {
+"id": "P341",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"basis": "PartialBlock/IDBlock/ID-Detect, parametre azaltma; füzyon ağında VanillaBlock; RDD2022 ve VOC2012'de uyum/sağlamlık"
+},
+"P361": {
+"id": "P361",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8-m ile RT-DETR \"comparative analysis\", aynı eğitim ayarları"
+},
+"P381": {
+"id": "P381",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "\"leveraging transfer learning\"; yeni yöntem yok"
+},
+"P312": {
+"id": "P312",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "GhostNet ile hafifletme; GAM içine DSC; BiFPN ve CAM"
+},
+"P322": {
+"id": "P322",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "RFCAConv/MSDFConv/Auxiliary Head; coordinate attention; küçük kusurlar; NEU ve RDD2022 ile \"cross-dataset validation\""
+},
+"P332": {
+"id": "P332",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "\"lightweight algorithm\"; DOCDE/HIR/MPFCSP; çok ölçekli füzyon; 1-2 piksel mikro çatlaklar"
+},
+"P362": {
+"id": "P362",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "İHA görüntüleri; YOLOv4/v5/v7 karşılaştırması"
+},
+"P313": {
+"id": "P313",
+"codes": [
+"other"
+],
+"basis": "Tek model (YOLOv8) değerlendirmesi; karşılaştırma ya da yeni yöntem yok"
+},
+"P323": {
+"id": "P323",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "C3K2-DTAB global attention; CAFMFusion füzyonu; \"small, low-contrast defects\""
+},
+"P304": {
+"id": "P304",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv9s/10s/11s \"fair comparison\", benchmark"
+},
+"P314": {
+"id": "P314",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "PTCB bloğu; boyunda RDGFPN, küçük kusur tespiti; ADown ile hesaplama azaltma; WIoU"
+},
+"P324": {
+"id": "P324",
+"codes": [
+"data-augmentation/synthetic",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "Üretici ile sentetik görüntü/veri artırma; CLIP tabanlı FID kaybı; uç cihaz, %20'den az parametre"
+},
+"P334": {
+"id": "P334",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "SPM/SRFM/SSEM; LSKA dikkat; P2 haritası ve dinamik örnekleme; \"small-object detection\""
+},
+"P305": {
+"id": "P305",
+"codes": [
+"transfer/domain-generalization",
+"ensemble/TTA",
+"deployment/system/app"
+],
+"basis": "RoadDamageDetection'da fine-tuning; Model Soups ve WBF; başlıkta \"mapping\", \"sistema\""
+},
+"P315": {
+"id": "P315",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "Yeni C2f ve yeniden tasarlanan başlık; boyunda triplet attention; hesaplama maliyetini azaltma"
+},
+"P325": {
+"id": "P325",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "ERFCBAMConv, LSK, C3K2-RO modülleri; \"dynamic attention mechanism\""
+},
+"P335": {
+"id": "P335",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "DR-DETR, Res-DCNv3; kanal/uzamsal ayrıştırma ve algısal dikkat; FGAF-Fusion; \"small targets\""
+},
+"P306": {
+"id": "P306",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "CARAFE üst örnekleme; TripletAttention; LIOU kaybı"
+},
+"P316": {
+"id": "P316",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "\"lightweight model\", 2,3M parametre; MSGRConv/MAFP; MD-BiFPN"
+},
+"P326": {
+"id": "P326",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "GLFE; Adaptive-GFPN, CAFM, DySample; LDH ile uç cihaz ve parametre azaltma"
+},
+"P336": {
+"id": "P336",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "C3K2-SC, CAA dikkati; StarBlock ile parametre azaltma; boyunda hipergraf füzyonu; küçük hedefler"
+},
+"P307": {
+"id": "P307",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "MSConv modülü; EMA dikkat; \"replacing the loss function\""
+},
+"P317": {
+"id": "P317",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "RepViT ana ağ değişimi; parametre %37, hesaplama %29 azaltma; HS-FPN"
+},
+"P327": {
+"id": "P327",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "MobileNetV3 omurga; ECA dikkat, SE/ECA ablasyonu; FLOP yarıya, Android TFLite cihaz üstü"
+},
+"P337": {
+"id": "P337",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8 uygulanıyor, yeni yöntem yok; Faster R-CNN ve SSD ile karşılaştırma"
+},
+"P357": {
+"id": "P357",
+"codes": [
+"loss/IoU"
+],
+"basis": "CIoU yerine FOCAL_GIoU kaybı; diğer kayıplar da deneniyor"
+},
+"P308": {
+"id": "P308",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app",
+"severity/quantification"
+],
+"basis": "üç YOLO karşılaştırması; React Native uygulama + Django; şiddet sınıflandırması"
+},
+"P318": {
+"id": "P318",
+"codes": [
+"other"
+],
+"basis": "açıklanabilir yapay zekâ (Grad-CAM, LIME) ile sınıflandırma; veri mevcut kaynaklardan derlenmiş"
+},
+"P328": {
+"id": "P328",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "boyuna SPPCSPC, ölçekler arası füzyon; omurgada C3k2_DWR; 'reducing computational cost'"
+},
+"P338": {
+"id": "P338",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "DSConv'lu NextViT omurga; hibrit kodlayıcıda AttentionGate kanal ağırlıklandırması, çok ölçekli füzyon"
+},
+"P309": {
+"id": "P309",
+"codes": [
+"architecture-improvement"
+],
+"basis": "omurga olarak Starnet kullanılıyor"
+},
+"P319": {
+"id": "P319",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "PConv ile hesaplama azaltma; SE modülü; RDD2022 + 'custom-collected samples'"
+},
+"P329": {
+"id": "P329",
+"codes": [
+"ensemble/TTA",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "YOLO modelleri topluluğu; ülkeler arası genelleme; çıkarım hızına vurgu"
+},
+"P339": {
+"id": "P339",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object"
+],
+"basis": "kanal-uzamsal algı damıtması; FGAF-Fusion modülü; yeni kayıp fonksiyonu; küçük ölçekli hedefler"
+},
+"P349": {
+"id": "P349",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV"
+],
+"basis": "hafif ShuffleNetV2 omurga, parametre %40,93 az; çok ölçekli füzyon mimarisi; İHA görüntüleri"
+},
+"W017": {
+"id": "W017",
+"codes": [
+"new-dataset",
+"architecture-improvement",
+"transfer/domain-generalization"
+],
+"basis": "TD-RD veri seti; TD-YOLOV10 ve bileşen ablasyonu; CRDDC'22 ve CNRDD'de genellenebilirlik"
+},
+"W018": {
+"id": "W018",
+"codes": [
+"multimodal/VLM/LLM",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "görsel-dil modeli RoadCLIP; çok modlu benchmark RoadBench; çapraz veri seti genellemesi"
+},
+"W019": {
+"id": "W019",
+"codes": [
+"semi/self-supervised",
+"transfer/domain-generalization"
+],
+"basis": "öz-denetimli alan uyarlama; Japonya->Hindistan/Çekya aktarımı, zero/few-shot"
+},
+"W022": {
+"id": "W022",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "başlıkta DBB, boyunda mg_conv füzyon; FLOPs YOLOv8n'in %46,3'ü"
+},
+"W023": {
+"id": "W023",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"loss/IoU"
+],
+"basis": "boyunda CARAFE üst örnekleme; SCSA dikkat; SIoU kaybı"
+},
+"W024": {
+"id": "W024",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"basis": "SimAM dikkat; PConv, DySample; Slideless kaybı; küçük hedefli kusurlar; 2,84MB, kısıtlı cihaz"
+},
+"W027": {
+"id": "W027",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8'de aktivasyon fonksiyonlarının karşılaştırılması"
+},
+"W034": {
+"id": "W034",
+"codes": [
+"deployment/system/app",
+"severity/quantification",
+"benchmark/comparison",
+"lightweight/edge"
+],
+"basis": "Raspberry Pi prototip, bulut ve araç uyarısı; boyut sınıflandırma; YOLO modelleri karşılaştırılıyor"
+},
+"W036": {
+"id": "W036",
+"codes": [
+"data-augmentation/synthetic",
+"attention-module",
+"architecture-improvement",
+"severity/quantification"
+],
+"basis": "GAN ile veri artırma; öz-dikkatli SWIN; değiştirilmiş YOLOv8; çukur boyutlarının 3B ölçümü"
+},
+"W038": {
+"id": "W038",
+"codes": [
+"architecture-improvement",
+"small-object"
+],
+"basis": "SPDconv, DySample, CSC2f modülü; düşük çözünürlüklü küçük hasarlar"
+},
+"W039": {
+"id": "W039",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "kenar odaklı modül ve yeni başlık; çift zincirli öznitelik piramidi; PWIoU"
+},
+"W040": {
+"id": "W040",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"transfer/domain-generalization"
+],
+"basis": "bağlam yönlendirmeli blok; çapraz ölçekli füzyon; küçük hedefli kusurlar; RDD2020'de genelleme"
+},
+"P002": {
+"id": "P002",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "BOT modülü, LSCD-Head; LKSA dikkat; boyunda C2fGhost; parametre %74,1"
+},
+"P010": {
+"id": "P010",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "C2f-Faster-EMA, SimSPPF, Detect-Dyhead; EMA dikkat; 'edge deployment', boyut/parametre azalması"
+},
+"P011": {
+"id": "P011",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "LSKA dikkat modülü, Ghost omurga; boyunda GSConv/VoV-GSCSP; 'lightweight', 'mobile terminals'"
+},
+"P012": {
+"id": "P012",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"basis": "FPDDN: deformable transformer, D2f, SFB; D2f 'lightweight... inference speed'; 'small-sized objects'"
+},
+"P016": {
+"id": "P016",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "SimAM dikkat omurgada; boyunda GhostConv ve bilinear upsampling; parametre/hesap azalması"
+},
+"P018": {
+"id": "P018",
+"codes": [
+"new-dataset",
+"severity/quantification",
+"deployment/system/app",
+"transfer/domain-generalization"
+],
+"basis": "7099 görüntülük yeni açık veri seti; ASPDI durum indeksi; yazılım uygulaması; 'out-of-sample' açık veri setlerinde doğrulama"
+},
+"P026": {
+"id": "P026",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"basis": "SPD-Conv 'small-sized defects'; ASF-YOLO boynu; FasterNet 'redundant computations'; WIoU kaybı"
+},
+"P027": {
+"id": "P027",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "federe öğrenme; 'single- and multi-country' modeller, 'global test data' genelleme"
+},
+"P030": {
+"id": "P030",
+"codes": [
+"benchmark/comparison",
+"drone/UAV",
+"lightweight/edge"
+],
+"basis": "Faster R-CNN, SSD, YOLOv5, EfficientDet karşılaştırması; İHA ve 'Tiny ML... edge devices'"
+},
+"P033": {
+"id": "P033",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "Deformable Attention Transformer, GSConv slim-neck, MPDIoU kaybı; 'suitable for embedded systems'"
+},
+"P048": {
+"id": "P048",
+"codes": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"basis": "ön inceleme notu: küresel ölçekte tespit yapan 'gömülü sistem'"
+},
+"P052": {
+"id": "P052",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"loss/IoU"
+],
+"basis": "MLCA dikkat, BiFPN-D yeni boyun, Detect-T3 hafif başlık, DIoU kaybı; parametre %37 azaldı"
+},
+"P055": {
+"id": "P055",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"deployment/system/app"
+],
+"basis": "SN-YOLO slim-neck, GSConv/VoVGSCSP 'lightweighting'; Deep OC-SORT ile konuşlandırılabilir tespit ve istatistik sistemi"
+},
+"P065": {
+"id": "P065",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "VanillaNet omurga, SE dikkat, ODConv; WIoU kaybı"
+},
+"P072": {
+"id": "P072",
+"codes": [
+"benchmark/comparison",
+"lightweight/edge"
+],
+"basis": "ORDDC'2024 yarışma özeti; standart değerlendirme platformu, çıkarım hızı ölçütü"
+},
+"P073": {
+"id": "P073",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "C3ghost 'improve detection speed', EVC ile özellik piramidi, DyHead; FLOPs azalması"
+},
+"P074": {
+"id": "P074",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset"
+],
+"basis": "LHA-Net: DGFM, HLFM, AWAM çok ölçekli füzyon, LDH; 2.5M parametre; Çin'de toplanan RDD-CC veri seti"
+},
+"P080": {
+"id": "P080",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "SPPCSPC_G modülü, GELU aktivasyon, K-means++ çapa; 'fusion speed', parametre azalması, gerçek zamanlı"
+},
+"P086": {
+"id": "P086",
+"codes": [
+"data-augmentation/synthetic",
+"architecture-improvement",
+"attention-module"
+],
+"basis": "AsphaltGAN: dikkatli yeni koşullu GAN; sentetik görüntülerle veri artırma iş akışı"
+},
+"P109": {
+"id": "P109",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "MPCA dikkat omurgada; Slim-neck yapısı 'reduce the computation'; hafiflik amacı"
+},
+"P133": {
+"id": "P133",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "DSConv tabanlı C2DS modülü, CBAM dikkat, F-EIOU kaybı"
+},
+"P134": {
+"id": "P134",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"drone/UAV",
+"small-object"
+],
+"basis": "İHA görüntüleri, 'small target size'; ELA-HSFPN PAN yerine; Detect-T3G hafif başlık; parametre %46.9 azaldı"
+},
+"P135": {
+"id": "P135",
+"codes": [
+"segmentation",
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "piksel düzeyi segmentasyon MFE-UNet; EMA dikkat, MGFF çok ölçekli füzyon; China_MCrack veri seti; Bochum genelleme deneyi"
+},
+"P137": {
+"id": "P137",
+"codes": [
+"transfer/domain-generalization",
+"attention-module"
+],
+"basis": "test-time adaptation, 'cross-scenario', üç ülke ve dört bakış açısı; 'global attention maps'"
+},
+"P138": {
+"id": "P138",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "Context Guided Block omurga; GSConv/VoV-GSCSP hafif boyun, özellik füzyonu; parametre %73.5 azaldı"
+},
+"P151": {
+"id": "P151",
+"codes": [
+"other"
+],
+"basis": "RDD2022 Hindistan alt kümesinde YOLOv5s eğitimi; yöntem katkısı yok"
+},
+"P152": {
+"id": "P152",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"ensemble/TTA"
+],
+"basis": "\"custom YOLOv7 with Coordinate Attention layers\"; \"optimizations for inference speed\", \"lightweight models\"; modeller \"trained and combined\", \"ensemble\""
+},
+"P170": {
+"id": "P170",
+"codes": [
+"lightweight/edge",
+"ensemble/TTA"
+],
+"basis": "\"resource optimization\", \"balance detection accuracy and inference speed\"; \"Optimized Test-Time Augmentation\" (artırmalar standart, yeni değil)"
+},
+"P171": {
+"id": "P171",
+"codes": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"basis": "\"combining models ... using ensemble methods\"; \"enhance the speed of inference\", \"small models ... given priority\""
+},
+"P173": {
+"id": "P173",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "\"combines multiple state-of-the-art object detection models\", mutual learning ve knowledge distillation"
+},
+"P167": {
+"id": "P167",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "\"domain generalization training algorithm\", \"unseen data sources\", altı ülke veri kaynağı"
+},
+"P168": {
+"id": "P168",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "SPPELAN, Adown; \"EMA attention mechanism\"; BiFPN esinli \"bidirectional feature fusion\"; parametre %12 azaltma, \"deployment on mobile devices\""
+},
+"P210": {
+"id": "P210",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"attention-module",
+"loss/IoU"
+],
+"basis": "GhostNet tabanlı YOLOv8, \"reduces ... number of parameters\"; \"CBAM attention\"; \"F-EIOU Loss\""
+},
+"P220": {
+"id": "P220",
+"codes": [
+"data-augmentation/synthetic",
+"transfer/domain-generalization",
+"lightweight/edge"
+],
+"basis": "\"augmentation pipeline stage-switching strategy\"; \"transfer learning by pretraining\", \"improving generalization\"; \"real-time\", \"resource-constrained\", çıkarım hızı"
+},
+"P211": {
+"id": "P211",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "YOLOv8-ACD, \"integrates a global attention mechanism\""
+},
+"P212": {
+"id": "P212",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"basis": "\"several variants of YOLO and RT-DETR\" karşılaştırması; \"geo-tagged and plotted on OpenStreetMap\""
+},
+"P213": {
+"id": "P213",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "\"Spatial Fusion Module\", \"large-kernel convolution attention\"; \"cross-scale feature fusion unit\"e yeniden parametreleme, \"optimizing ... detection speed\""
+},
+"P215": {
+"id": "P215",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"loss/IoU"
+],
+"basis": "\"MASE\" dikkat modülü; PANet'e \"CLEN\"; \"tiny disease features\", \"small-scale features\"; \"Hybrid IoU Loss (HIoU)\""
+},
+"P216": {
+"id": "P216",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "decoupled head, yeni tespit katmanı, C2f; \"coordinate attention\"; \"new multi-scale feature fusion structure ... skip connection\""
+},
+"P217": {
+"id": "P217",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "\"multiscale dilated convolution module\", deformable conv; \"attention mechanism\"; \"cross-layer feature fusion\"; \"minor road damage\" hedefi"
+},
+"P218": {
+"id": "P218",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"lightweight YOLO\", \"lightweight attention mechanisms\"; \"significantly improves inference speed\" (artırma standart)"
+},
+"P209": {
+"id": "P209",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "RFAConv modülü; \"four-layered scale feature fusion\"; \"small target feature detection heads\""
+},
+"P219": {
+"id": "P219",
+"codes": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"basis": "\"ensemble model based on Faster R-CNN\"; \"focus on resource optimization ... inference speed\", YOLOv9 \"optimized for fast processing\""
+},
+"P290": {
+"id": "P290",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8n/s/m/l sürümlerinin RDD2022 ile karşılaştırılması, YOLOv8m önerisi"
+},
+"P281": {
+"id": "P281",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"conduct comparisons\" SSD, YOLO, Faster-RCNN"
+},
+"P275": {
+"id": "P275",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "anchor tasarımı, \"extra detection layer\"; \"CBAM is inserted into C3\"; \"ASFF is embedded in the Neck\""
+},
+"P276": {
+"id": "P276",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "Transformer tabanlı model, \"MobileNet as the backbone\", \"reduces the computational load\""
+},
+"P288": {
+"id": "P288",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"tried five different models\", omurga/başlık kombinasyonları, optimizer ve batch size ayarı"
+},
+"P289": {
+"id": "P289",
+"codes": [
+"new-dataset",
+"transfer/domain-generalization"
+],
+"basis": "Hatay yollarından kaydedilip VoTT ile etiketlenen \"Türkiye dataset\"; farklı coğrafya çiftleri, hasar görünümü coğrafyaya göre değişiyor"
+},
+"W006": {
+"id": "W006",
+"codes": [
+"data-augmentation/synthetic"
+],
+"basis": "yol bölgesi ve perspektife duyarlı cut-and-paste \"veri artırma yöntemi\""
+},
+"W007": {
+"id": "W007",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"YOLOv5 ve YOLOv8 karşılaştırılıyor\"; kırpma, maskeleme gibi ön işlem denemeleri"
+},
+"W008": {
+"id": "W008",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "yeni öznitelik çıkarma ve füzyon yaklaşımı, DSC-C2f modülü, omurga-boyun-başlık arası çapraz katman bağlantıları, koordinat dikkati"
+},
+"W015": {
+"id": "W015",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "ConvNeXt V2 omurga, GhostNetV2 tabanlı C2f, boyunda PConv; daha hafif, mobil cihazlara yönelik"
+},
+"W041": {
+"id": "W041",
+"codes": [
+"deployment/system/app",
+"transfer/domain-generalization"
+],
+"basis": "Google Street View'e uygulayıp etkileşimli haritada gösterme; farklı coğrafyada (İsveç, Caturtunggal) F1 düşüşü"
+},
+"P000": {
+"id": "P000",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"basis": "BiFPN ile boyun yeniden kurgulanıyor, SimSPPF hız için, LSK-attention; parametre %29,92 ve hesaplama yükü azalıyor"
+},
+"P003": {
+"id": "P003",
+"codes": [
+"drone/UAV",
+"benchmark/comparison"
+],
+"basis": "UAV görüntüleri; YOLOv4, YOLOv5, YOLOv7 eğitilip karşılaştırılıyor"
+},
+"P019": {
+"id": "P019",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "ECA-Net dikkat modülü, ek tahmin katmanı, Focal Loss"
+},
+"P020": {
+"id": "P020",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "SimAM dikkat, hız için Ghost modülü, SIoU kaybı; Params ve FLOPs düşüyor"
+},
+"P034": {
+"id": "P034",
+"codes": [
+"segmentation",
+"deployment/system/app"
+],
+"basis": "LaneNet'in anlamsal segmentasyon kısmıyla şerit çizgisi; üç aşamalı konumlandırma yöntemi köprüde uygulanıyor"
+},
+"P058": {
+"id": "P058",
+"codes": [
+"new-dataset"
+],
+"basis": "Malezya yollarından toplanan ikinci veri seti (custom dataset)"
+},
+"P089": {
+"id": "P089",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "öznitelik piramidi eklenmesi, deforme edilebilir evrişim, FPN son katmanında genişletilmiş (cavity) evrişim"
+},
+"P098": {
+"id": "P098",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"basis": "yeni Ghost-CANet omurgası, koordinat dikkati, hafif model; RDD2022'yi genişletmek için Çin'de görüntü toplanıyor"
+},
+"P099": {
+"id": "P099",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"basis": "GM-SPPF modülü, küçük/ince çatlak tespiti hedefi, ShuffleAttention, parametre azaltmak için hafif CARAFE"
+},
+"P108": {
+"id": "P108",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "yoğun dikkat füzyon modülü, çok ölçekli füzyon öznitelikleri, kanal korelasyon kaybı, toplanan RDDA veri seti"
+},
+"P267": {
+"id": "P267",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"basis": "Transformer tabanlı yeni CrackNet omurgası, öz-dikkat bloklarına evrişim eklenmesi"
+},
+"P268": {
+"id": "P268",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "SENet kanal dikkati eklenmesi, Wise-IoU regresyon kaybı"
+},
+"W003": {
+"id": "W003",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "YOLOv8 ile YOLOv5 ve YOLOv8 ön eğitimli modellerinin karşılaştırılması"
+},
+"W004": {
+"id": "W004",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV"
+],
+"basis": "transformer yapısı ve explicit vision center (öz-dikkat), GELU ile aktivasyon değişimi, UAV uçuş platformu"
+},
+"P007": {
+"id": "P007",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "CRDDC yarışmasının özeti; ilk 11 çözüm, beş liderlik tablosu ve geçmiş yarışmalarla karşılaştırma"
+},
+"P051": {
+"id": "P051",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "YOLO ve Faster RCNN topluluğu, ensemble learning ve test time augmentation"
+},
+"P060": {
+"id": "P060",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"basis": "dikkat modüllü beş iyileştirilmiş YOLOv5, topluluk öğrenmesi ve TTA"
+},
+"P071": {
+"id": "P071",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "ülke bazlı modeller ile genel modelin birleştirildiği ensemble learning"
+},
+"P083": {
+"id": "P083",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "YOLOv7 varyantları NMS ile birleştirilerek topluluk modeli kuruluyor"
+},
+"P129": {
+"id": "P129",
+"codes": [
+"transfer/domain-generalization"
+],
+"basis": "farklı ülkelerin hasar verisini birleştirmenin uygulanabilirliği sınanıyor"
+},
+"P148": {
+"id": "P148",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "farklı mimari ve artırma ayarlarıyla çeşitlendirilmiş model topluluğu"
+},
+"W000": {
+"id": "W000",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"basis": "YOLOv7'ye koordinat dikkati eklenmesi, model topluluğu"
+},
+"W001": {
+"id": "W001",
+"codes": [
+"ensemble/TTA"
+],
+"basis": "\"twelve YOLOv5x models ... ensemble method\"; tiling bir ön işleme adımı, artırma kodu verilmedi"
+},
+"P024": {
+"id": "P024",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"novel lightweight\" model, \"partial attention block\", 136 FPS, mimari değişiklikler"
+},
+"P028": {
+"id": "P028",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"basis": "SWC2f modülü, \"Cross-Scale Attention Fusion Module ... feature fusion\", Dyhead \"self-attention\"; artırma standart"
+},
+"P054": {
+"id": "P054",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "\"new backbone\", \"optimizes the attention mechanism\", \"fusion module\", hesap %35,4 ve parametre %25,7 azalıyor"
+},
+"P090": {
+"id": "P090",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "\"local sensing feature network\", LSF-Net boynu"
+},
+"P120": {
+"id": "P120",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"çok koordinatlı toplama dikkati\", \"paylaşımlı konvolüsyon\", \"hafif\", parametre %46 azalıyor, 212 FPS"
+},
+"P124": {
+"id": "P124",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"basis": "\"BRA-DropKey dikkati\", \"Dynamic Snake Convolution\", \"Wise-IoU kaybı\""
+},
+"P164": {
+"id": "P164",
+"codes": [
+"benchmark/comparison"
+],
+"basis": "\"Comparative Study of YOLO V4 and V5\", iki veri setinde karşılaştırma"
+},
+"P174": {
+"id": "P174",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "\"enhanced PAN and BiFPN\", \"weighted feature fusion\", \"SimAM\", \"Shuffle Attention\""
+},
+"P194": {
+"id": "P194",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"basis": "GSPConv omurgada, RepGFPN füzyonu ve \"reduces the computational ... load\", WNIoU kaybı, \"relatively small defects\""
+},
+"P200": {
+"id": "P200",
+"codes": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "\"Faster R-CNN vs. Detection Transformer\" karşılaştırması, \"Transfer Learning Approaches\""
+},
+"P233": {
+"id": "P233",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"basis": "C2f-faster, LSDECD başlığı, \"Vehicle-Mounted Devices\", parametre %55,6 azalıyor, FDPN \"attention gating\", \"Inner-WIoU\", \"small cracks\""
+},
+"P244": {
+"id": "P244",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module",
+"small-object"
+],
+"basis": "\"multi-branch feature pyramid\", RepDySnake, \"CoordAtt attention\", \"small crack detection\""
+},
+"P278": {
+"id": "P278",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"basis": "MCA dikkati C2f'te, \"multilevel feature fusion\", \"sample correlated weighting loss\", \"minor defects\", \"fast\", \"maintaining speed\""
+},
+"P394": {
+"id": "P394",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"drone/UAV"
+],
+"basis": "C2f içinde SVD, \"excessive parameters\", parametre %22,9 azalıyor, \"UAV inspection\""
+},
+"P414": {
+"id": "P414",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "\"Multiscale Feature Fusion and Receptive Field Enhancement\", ECD-YOLO"
+},
+"P420": {
+"id": "P420",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "\"Lightweight\", \"Multi-branch Attention with Contextual Guidance\""
+},
+"P432": {
+"id": "P432",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"benchmark/comparison",
+"transfer/domain-generalization",
+"ensemble/TTA",
+"drone/UAV"
+],
+"basis": "\"lightweight YOLO-RCD variants\", Jetson'da uç kurulum, \"controlled protocol\" ve çok tohumlu karşılaştırma, \"aerial-to-ground transfer\", TTA, \"China Drone\""
+},
+"P434": {
+"id": "P434",
+"codes": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"basis": "\"Mobile Deployment Framework\", \"TensorFlow Lite\""
+},
+"P464": {
+"id": "P464",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"severity/quantification",
+"deployment/system/app"
+],
+"basis": "\"Coordinate Attention\" YOLOv8'e ekleniyor, RHI skoru \"damage types, geometric scales\", karar destek çerçevesi"
+},
+"P474": {
+"id": "P474",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"basis": "omurgada CGLU ve DyT, CGRFPN, \"Real-Time\", \"highly efficient and deployable\""
+},
+"P483": {
+"id": "P483",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU"
+],
+"basis": "\"Difficulty-Aware Module\" ve \"early exiting\", hesap %17,1 azalıyor, karşıtlıklı \"hybrid objective\""
+},
+"P494": {
+"id": "P494",
+"codes": [
+"deployment/system/app"
+],
+"basis": "\"Real-Time Road Damage Detection System\", \"vehicle-mounted cameras\""
+},
+"P043": {
+"id": "P043",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"small-object"
+],
+"basis": "derinlik/genişlik ayarı, \"Ghost module ... lightweight\", FPS artışı, SPD-Conv \"small object detection\""
+},
+"P189": {
+"id": "P189",
+"codes": [
+"new-dataset",
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"basis": "\"we introduce a comprehensive benchmark dataset\", YOLOv8-12, Faster R-CNN ve DETR ile kıyaslama, \"zero-shot transfer\""
+},
+"P193": {
+"id": "P193",
+"codes": [
+"other"
+],
+"basis": "Metin kesik; yalnızca \"YOLOv11 Empowered ... Model\", yapısal katkı belirtilmiyor"
+},
+"P417": {
+"id": "P417",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "Context-Guided BasicBlock omurgası, kapılı çapraz ölçekli füzyon modülü, SIoU kaybı, \"lightweight\", parametre %32,7 azalma"
+},
+"P428": {
+"id": "P428",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "Crack-Out omurgası, kanal sınıflandırmalı füzyon modülü, küçük hedefleri güçlendiren BDD kodlayıcı"
+},
+"P493": {
+"id": "P493",
+"codes": [
+"drone/UAV"
+],
+"basis": "Yalnızca başlık: \"using UAV Images\""
+},
+"P526": {
+"id": "P526",
+"codes": [
+"new-dataset",
+"benchmark/comparison"
+],
+"basis": "\"novel dataset, StructDamage\" 78.093 görüntü; on beş DL mimarisiyle temel sınıflandırma sonuçları"
+},
+"N001": {
+"id": "N001",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"segmentation"
+],
+"basis": "Yeni çok görevli mimari, \"transformer-based contextual refinement\", \"contextual attention mechanisms\", \"boundary-aware segmentation module\""
+},
+"N002": {
+"id": "N002",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "SPPF içine LSKA dikkat, CIoU yerine DIoU kaybı, Soft-NMS; \"Low-Computing-Power\", düşük maliyetli CPU'da 68 FPS"
+},
+"N006": {
+"id": "N006",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"basis": "MsCGA çok ölçekli dikkat, MLCA tabanlı füzyon stratejisi, düşük seviye füzyonundan kaçınma; küçük ölçekli çatlak hedefi"
+},
+"N007": {
+"id": "N007",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"attention-module"
+],
+"basis": "Omurgada C2f yerine DCNv2, boyuna CSFCN füzyon modülü, CBAM tabanlı CRAM"
+},
+"N010": {
+"id": "N010",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "DCNv-C2f, GAM dikkat, AKConv, Ghost-Head; Wise-IoU kaybı; \"lightweight\" tasarım, GFLOPS düşüşü"
+},
+"N011": {
+"id": "N011",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"basis": "GSConv-DV, VoV-DV, CNN-Transformer HybridC2f (ViT); parametre %22,5, hesap %19,1 azalma, kısıtlı ortama uygunluk"
+},
+"N012": {
+"id": "N012",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"multimodal/VLM/LLM",
+"drone/UAV",
+"new-dataset"
+],
+"basis": "İHA tabanlı görüntü-metin veri seti kuruluyor; MCSG çok kipli modül, KAN-CA kanal dikkati, CASL kaybı"
+},
+"N014": {
+"id": "N014",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"loss/IoU",
+"lightweight/edge"
+],
+"basis": "CSP-MobileMamba omurga, Small Object Enhance Pyramid, derin-sığ öznitelik etkileşimi, matching aware Loss; parametre %22,6 azalma, gerçek zaman"
+},
+"N015": {
+"id": "N015",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object",
+"new-dataset",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"basis": "Yeni omurga, çoklu dikkat, iki yönlü füzyon yolu/öznitelik piramidi; küçük hasar odağı; kendi veri seti; doğruluk-hesap dengesi; iki veri setinde genelleme"
+},
+"N016": {
+"id": "N016",
+"codes": [
+"deployment/system/app",
+"severity/quantification"
+],
+"basis": "Raspberry Pi ve GPS ile otomatik tespit çerçevesi; çukur parametreleri ve yol hasarı yüzdesi tahmini"
+},
+"N017": {
+"id": "N017",
+"codes": [
+"attention-module",
+"architecture-improvement"
+],
+"basis": "YOLOv8'e CBAM (kanal ve uzamsal dikkat) eklenmesi"
+},
+"N018": {
+"id": "N018",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset"
+],
+"basis": "GhostHGNetV2 omurga, C2f_ConvFormerCGLU; WIoU kaybı; parametre %32,2 azalma; \"self-collected images\""
+},
+"N021": {
+"id": "N021",
+"codes": [
+"loss/IoU"
+],
+"basis": "Başlık: açık küme tanıma için \"CAC Loss\" kullanımı"
+},
+"N022": {
+"id": "N022",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"basis": "EFWaveletPool omurga, C3K2-DCNv4; RepGFPN tabanlı WDRGFPN ile çok ölçekli füzyon"
+},
+"N023": {
+"id": "N023",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "\"dynamic receptive fields and lightweight design\"; parametre %12, hesap maliyeti %33 düşüş"
+},
+"X001": {
+"id": "X001",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"basis": "Başlık: \"Lightweight ... Based on Improved YOLOv8n\" (YOLOv8-Crack)"
+},
+"X002": {
+"id": "X002",
+"codes": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"basis": "YOLOv7 ile YOLOv8 karşılaştırması, araç hızı etkisi; cep telefonlu araç içi entegre sistem planı"
+}
+},
+"ADJ": {
+"P402": {
+"id": "P402",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"reason": "A korunur. EAFE ve MSDC modülleri mimari iyileştirme, MSAGN ile anlamsal düzeyler arası uyarlanır füzyon öznitelik füzyonu, drone ve motosiklet görüntülerinde veri setleri arası genelleme de transfer kodudur. Metin bir dikkat mekanizması adı vermiyor; kapı mekanizması ve kanal yeniden ayarlama füzyon ağının iç işleyişi olarak anlatılıyor. Bundan dikkat modülü çıkarmak, kod kitabının yalnızca açıkça belirtilen katkıyı kodla kuralını aşar. Drone verisi yalnızca ek değerlendirmede kullanılıyor, çalışmanın odağında değil; bu yüzden drone/UAV kodu verilmez."
+},
+"P423": {
+"id": "P423",
+"codes": [
+"architecture-improvement",
+"multimodal/VLM/LLM"
+],
+"reason": "B korunur. PSConv evrişim değişikliği ve P6 tespit katmanı mimari iyileştirmedir. Görünür ışık ile termal kızılötesinin (RGBT) birlikte girdi olarak kullanılması çok kipli girdidir. P6 metinde dört ölçekli bir tespit katmanı olarak tanımlanıyor; boyun yapısının ya da ölçekler arası öznitelik füzyonunun değiştirildiği söylenmiyor. Metindeki 'early-stage fusion' ifadesi çok ölçekli öznitelik füzyonunu değil RGBT girdi füzyonunu anlatıyor, bu yüzden neck/feature-fusion verilmez. P6 büyük çatlaklar için olduğundan small-object de verilmez."
+},
+"P433": {
+"id": "P433",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"reason": "A korunur. Omurganın sonuna EMA dikkat mekanizması eklenmesi hem mimari iyileştirme hem dikkat modülüdür. 'Lightweight' ifadesi, parametrelerin sınırlanması, 5.9 GFLOPs ve gömülü cihaz hedefi lightweight/edge kodunu karşılar. Küçük ölçekli hasarlar yalnızca mevcut yöntemlerin sınırlılığı olarak, sorun tanımında geçiyor. Önerilen yöntemde küçük nesneye özgü bir bileşen (ör. küçük nesne katmanı) ya da küçük hasarlara dönük bir değerlendirme yok; EMA'nın amacı arka plan karmaşasını bastırmak olarak anlatılıyor. Bu yüzden small-object açık bir katkı hedefi sayılmaz."
+},
+"P436": {
+"id": "P436",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"reason": "A korundu. Özette ASF yalnızca adıyla anılıyor ve işlevi çok ölçekli öznitelik füzyonu olarak tanımlanıyor. Kanal, uzamsal ya da öz-dikkat mekanizmasının eklendiği katkı olarak belirtilmiyor. Kod kitabı da adlardan çıkarım yapmayı yasaklıyor, bu yüzden attention-module verilmedi. Bağlam rehberli modül evrişim tabanlı. Boyun ASF ile değiştiriliyor (neck/feature-fusion). Omurgaya RepViT konuyor ve parametre ile hesaplama yükü azalıyor (lightweight/edge). Bunların hepsi yapısal değişiklik (architecture-improvement). Çalışma yalnızca RDD2022 Çin İHA alt kümesinde değerlendiriliyor ama İHA çalışmanın odağı olarak sunulmuyor, bu yüzden drone/UAV eklenmedi."
+},
+"P469": {
+"id": "P469",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"reason": "B kabul edildi. Omurgaya BasicBlock_DCNv2 ekleniyor, kodlayıcıda da çok ölçekli MCFI etkileşim modülü kullanılıyor. UAPD_5cls yalnızca 'supplementary validation' olarak geçiyor ve model o veri setinde de taban modelle kıyaslanıyor. Metinde bir veri setinde eğitip başka bir veri setinde sınama, transfer ya da alan uyarlaması anlatılmıyor. 'Adaptability' ifadesi ikinci bir veri setinde yapılan ek değerlendirmeyi anlatıyor. Kod kitabının istediği gibi veri setleri arası genelleme katkı olarak sınanmadığı için transfer/domain-generalization verilmedi."
+},
+"W042": {
+"id": "W042",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"reason": "A kabul edildi. YOLOv8 omurgası mobil/gömülü cihazlar için MobileNetV3 ile değiştiriliyor; bu architecture-improvement ve lightweight/edge kodlarını karşılıyor. RDD2022 ile SVRDD arasında transfer öğrenme açıkça yapılıyor. TTA ise yalnızca denenen bir son işlem olarak geçiyor: RDD2022 yapısına uymadığı ve performansı düşürdüğü raporlanıyor (%53'ten %51,6 mAP'ye). Asıl sonuç son işlemsiz model ile veriliyor, yani TTA ana yöntemin parçası değil. Bu yüzden ensemble/TTA verilmedi."
+},
+"W062": {
+"id": "W062",
+"codes": [
+"deployment/system/app",
+"ensemble/TTA"
+],
+"reason": "A seçildi. Metin açıkça araç üstü çukur izleme ve haritalama sistemi kuruyor (deployment/system/app). YOLOv12 dedektör ile EfficientNet-B2 sınıflandırıcıyı birleştiren heterojen kaskad ana yöntemin parçası (ensemble/TTA). benchmark/comparison verilmedi: kod kitabı bu kodu yeni yöntem önermeyen çalışmalara ayırıyor, oysa çalışma yeni bir doğrulama boru hattı öneriyor. lightweight/edge de verilmedi: \"edge-deployed\" yalnızca sistem mimarisinin bir parçası olarak geçiyor; parametre veya hesaplama yükünü azaltmak ya da hızı artırmak hedef olarak belirtilmiyor."
+},
+"P046": {
+"id": "P046",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"transfer/domain-generalization"
+],
+"reason": "B seçildi. BMS-SPPF modülü, uzamsal-kanal dikkati, parametre sayısının 3.01M'den 0.89M'ye inmesi ve küçük hedefler (D40) açıkça belirtilmiş. RDD2022-China Motorbike veri setindeki genelleme özette sınanan bir sonuç olarak raporlanıyor, bu yüzden transfer/domain-generalization kodu veriliyor. drone/UAV verilmedi: İHA metinde yalnızca kullanılan veri setinin adında (China Drone) geçiyor; problem tanımında ya da katkıda İHA odağı yok."
+},
+"P056": {
+"id": "P056",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"reason": "B seçildi. Dönüştürücü tabanlı yardımcı modül ve geliştirilmiş öznitelik katmanları mimari iyileştirme ile dikkat modülü kodlarını karşılıyor. Model, aşılması gereken zorluklar arasında sayılan \"need for fast processing to enable real-time decision-making\" sorununu çözmek için öneriliyor; başlıktaki \"Real-Time\" de bunu destekliyor. Bu, çıkarım hızını açık bir hedef olarak belirtiyor, dolayısıyla lightweight/edge koşulu sağlanıyor."
+},
+"P066": {
+"id": "P066",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"lightweight/edge"
+],
+"reason": "Yeni bir küme seçildi. Rep-GD modülünün boynun yerine geçmesi ve çok ölçekli füzyon üç ortak kodu karşılıyor. Wise-IoU kaybı da loss/IoU kodunu karşılıyor. Metin, Rep-GD değişikliğinin \"significantly enhances computational efficiency\" sağladığını modülün kendi katkısı olarak açıkça yazıyor; bu yüzden lightweight/edge veriliyor. small-object verilmedi: küçük hedefler (çatlaklar) büyük hedeflerle (çukurlar) birlikte, genel bir çok ölçekli tespitin örneği olarak anılıyor; küçük nesne tespiti ayrı bir hedef değil."
+},
+"P125": {
+"id": "P125",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"drone/UAV"
+],
+"reason": "A seçildi. GhostNet omurga değişikliği, GFLOPs'un 15.8'den 7.7'ye düşmesi ve uç cihaz hedefi metinde açık. Deneyler yalnızca China_Drone alt kümesinde yapılıyor. Ayrıca metin yöntemi açıkça \"roadside sensing units and drones\" senaryolarında kullanıma uygun bir çözüm olarak sunuyor. İHA burada yalnızca veri setinin adında kalmıyor, çalışmanın hedef uygulamasında da yer alıyor (P046'dan farkı bu)."
+},
+"P181": {
+"id": "P181",
+"codes": [
+"architecture-improvement"
+],
+"reason": "A seçildi. Çalışmanın yeniliği, Faster R-CNN mimarisine yapılan özel iyileştirmeler. Birden fazla modelin karşılaştırılması ise metinde açıkça \"To validate this framework\" amacıyla yapılıyor, yani önerilen yöntemi doğrulamak için. Kod kitabı benchmark/comparison kodunu yalnızca yeni yöntem önermeyen çalışmalara verdiği için bu kod uygulanmıyor."
+},
+"P183": {
+"id": "P183",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"reason": "B seçildi. EfficientViM-T1 omurga, DefMamba blokları ve GG-SSM mimari katkı. 1.8M parametre ve Jetson Orin Nano hedefi hafif/uç cihaz kodunu karşılıyor. Consistency loss kayıp kodunu, OpenStreetMap yol segmentlerinin girdi olarak kullanılması çok kipli girdi kodunu, 'new RoadGraph-RDD benchmark' ise yeni veri seti kodunu karşılıyor. Füzyon modülü dedektörde zaten var olan self-attention'ı simetri öncülleriyle birleştiriyor. Metin yeni bir dikkat mekanizması eklendiğini ya da var olanın değiştirildiğini söylemiyor, bu yüzden attention-module verilmedi."
+},
+"P228": {
+"id": "P228",
+"codes": [
+"segmentation",
+"semi/self-supervised",
+"architecture-improvement",
+"attention-module"
+],
+"reason": "B seçildi. Çatlak segmentasyonu yapılıyor. Kutu maskeleriyle 'weakly guided' denetim zayıf denetimli öğrenme sayılıyor. Bounding Box Encoder ile ConvNeXt/U-Net yapısı mimari katkı. Kutu maskelerinden üretilen çok ölçekli dikkat haritaları öznitelikleri modüle ettiği için dikkat modülü kodu da veriliyor. 1.428 görüntülük set 'derived from RDD2022' olarak geçiyor. Yani RDD2022 dışında yeni toplanmış bir set değil ve metin bunu katkı olarak tanıtmıyor, bu yüzden new-dataset verilmedi."
+},
+"P249": {
+"id": "P249",
+"codes": [
+"transfer/domain-generalization",
+"new-dataset",
+"benchmark/comparison"
+],
+"reason": "B seçildi. Güney Afrika ile Hindistan arasında alanlar arası transfer ve ince ayar sınanıyor. Yerel olarak geliştirilen RDD2024_SA yeni bir veri seti. Çalışma yeni bir yöntem önermiyor, kendi ifadesiyle bir 'comparative evaluation' ve beş eğitim-test senaryosu tasarlıyor. Sınıf sayısının azaltılması gibi yapılandırmaları da karşılaştırıyor. Bu, kod kitabındaki 'yapılandırmaların karşılaştırılması / karşılaştırma protokolü' koşulunu karşılıyor."
+},
+"P320": {
+"id": "P320",
+"codes": [
+"ensemble/TTA",
+"architecture-improvement"
+],
+"reason": "A seçildi. Göreve özel modelleri birleştiren multi-model pipeline ana yöntem, topluluk kodunu alıyor. GhostConv ile YOLOv11 iyileştirmesi mimari katkı. HPC sistemi yalnızca eğitim için kullanılıyor. GeoSevak/GeoSadak GIS entegrasyonu ise 'can be seamlessly integrated' diye yalnızca bir olasılık olarak anılıyor. Tespitin etrafında kurulmuş bir uygulama ya da sistem yok, bu yüzden deployment/system/app verilmedi."
+},
+"P337": {
+"id": "P337",
+"codes": [
+"benchmark/comparison"
+],
+"reason": "B korunur. Çalışma hazır YOLOv8'i uygulayıp Faster R-CNN ve SSD ile karşılaştırıyor, yeni yöntem yok. Parametre ya da hesaplama yükünü azaltmıyor, çıkarım hızını artırmıyor. Mobil cihazda çalıştırma da sınanmamış; özette yalnızca sonuçtan çıkarılan bir uygunluk iddiası olarak geçiyor. Bu yüzden lightweight/edge için 'açık hedef' koşulu karşılanmıyor."
+},
+"P338": {
+"id": "P338",
+"codes": [
+"architecture-improvement",
+"attention-module"
+],
+"reason": "A korunur. NextViT+DSConv omurga mimari iyileştirme, AttentionGate kanal ağırlıklandırması dikkat modülü. Füzyondaki değişiklik ise hibrit kodlayıcıda (boyunda) birleştirme sonrasına bir dikkat kapısı eklenmesinden ibaret. Kod kitabına göre boyuna yalnızca dikkat bloğu eklenmesi neck/feature-fusion kodunu almaz; FPN/PAN yapısı ya da ölçekler arası bağlantılar değiştirilmiyor."
+},
+"W017": {
+"id": "W017",
+"codes": [
+"new-dataset",
+"architecture-improvement",
+"transfer/domain-generalization"
+],
+"reason": "B korunur. TD-RD yeni veri seti, TD-YOLOV10 ve bileşen ablasyonu mimari katkı, CRDDC'22 ve CNRDD'de genellenebilirlik sınanıyor. Lightweight/edge için ise elde yalnızca başlıktaki 'Real-Time Framework' ifadesi var. Ön inceleme notunda parametre ya da hesaplama azaltımı, hız artışı veya uç cihazda çalıştırma geçmiyor. P337 ile tutarlı olarak, tek başına 'gerçek zamanlı' nitelemesi bu kodu vermeye yetmez."
+},
+"P055": {
+"id": "P055",
+"codes": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"deployment/system/app"
+],
+"reason": "B korunur. SN-YOLO slim-neck, GSConv ve VoVGSCSP ile yapı değişikliği ve hafifletme var, Deep OC-SORT ile konuşlandırılabilir sistem kuruluyor. 'Proprietary dataset' yalnızca değerlendirmede kullanılan, sahibi olunan bir veri seti; metin onun yeni toplandığını, etiketlendiğini ya da tanıtıldığını söylemiyor. Bu yüzden new-dataset koşulu karşılanmıyor."
+},
+"P086": {
+"id": "P086",
+"codes": [
+"data-augmentation/synthetic",
+"attention-module"
+],
+"reason": "A korunur. Tespit tarafındaki katkı sentetik görüntülerle veri artırma; YOLOv8 dedektörünün yapısında değişiklik yok. Kod kitabına göre yalnızca veri değişikliği architecture-improvement almaz, AsphaltGAN da dedektör değil veri üreten bir ağ. Öte yandan 'attention mechanisms' önerilen modelin parçası olarak açıkça belirtildiği için attention-module kalır."
+},
+"P109": {
+"id": "P109",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"lightweight/edge",
+"new-dataset"
+],
+"reason": "A korunur. MPCA dikkat modülü omurgaya ekleniyor, Slim-neck yapısı kullanılıyor ve hesap yükü %9,88 azalıyor, yani hafiflik açık bir hedef. Bunlara ek olarak 'self-built data set' RDD2022 dışında yazarların kendi oluşturduğu, yeni toplanmış bir veri seti; new-dataset koşulunu karşılıyor."
+},
+"P170": {
+"id": "P170",
+"codes": [
+"lightweight/edge",
+"ensemble/TTA"
+],
+"reason": "B tutuldu. Özet doğruluk ile çıkarım hızını dengelemeyi ve kaynak optimizasyonunu açık hedef olarak koyuyor; bu yüzden lightweight/edge kodu verildi. Test zamanı artırma (\"Optimized Test-Time Augmentation\") yöntemin parçası olduğu için ensemble/TTA da verildi. Veri artırmada ise yeni bir yöntem önerilmiyor: başlık \"Utilizing Augmentation\" diyor ve Bounding-Box-Safe Random Crop adı konmuş, mevcut bir artırma olarak kullanılıyor. \"Advanced\" sıfatı yöntemi yeni yapmıyor. Kod kitabına göre standart artırmanın kullanılması data-augmentation/synthetic kodunu almaz."
+},
+"W015": {
+"id": "W015",
+"codes": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"reason": "A korundu. Boyunda PConv kullanılması, modeli hafifletmek için yapılan bir evrişim değişikliği. Metin FPN/PAN topolojisinde, ölçekler arası bağlantılarda ya da yeni bir füzyon modülünde bir değişiklik bildirmiyor. Kod kitabı hafifletme amaçlı yapısal değişiklikleri architecture-improvement altında topluyor; boyuna füzyon dışı bir blok eklemek de, dikkat bloğu istisnasında olduğu gibi, neck/feature-fusion kodu için yeterli değil. Mobil cihaz hedefi lightweight/edge kodunu karşılıyor."
+},
+"W004": {
+"id": "W004",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV"
+],
+"reason": "B korundu. Transformer yapısı ve explicit vision center ile GELU değişikliği architecture-improvement kodunu karşılıyor. Başlıktaki öz-dikkat (self-attention) vurgusu attention-module kodunu karşılıyor. Çalışmanın odağı İHA denetimi olduğu için drone/UAV kodu veriliyor. UAV uçuş platformu ise özette algoritmanın performansını değerlendirmek için, yani veri toplama ve test amacıyla kurulmuş. Tespitin etrafında bir uygulama, araç üstü sistem, haritalama ya da bildirim sistemi tanımlanmadığı için deployment/system/app kodu verilmiyor."
+},
+"P194": {
+"id": "P194",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"reason": "B kabul. GSPConv omurgayı değiştiriyor, RepGFPN füzyonu iyileştiriliyor, WNIoU kaybı öneriliyor ve \"relatively small defects\" açık hedef. Ayrıca GhostConv ile değiştirilen RepGFPN'in \"reduces the computational and operational load\" ettiği katkının parçası olarak açıkça yazıyor. Bu, kod kitabındaki \"hesaplama yükünün azaltılması\" koşulunu karşılıyor."
+},
+"P278": {
+"id": "P278",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"loss/IoU",
+"small-object",
+"lightweight/edge"
+],
+"reason": "B kabul. Özet, aşılması hedeflenen sorunlar arasında \"accurately detecting minor defects\" diyor ve \"To overcome these issues\" ile modeli bunlara bağlıyor. MCA'nın farklı ölçeklere uyumu da aynı yönde. Bu yüzden küçük hasar tespiti açık bir hedef. Öteki kodlarda (MCA dikkati, MFF füzyonu, ağırlıklı kayıp, \"fast\"/\"maintaining speed\") iki kodlayıcı aynı görüşte."
+},
+"P474": {
+"id": "P474",
+"codes": [
+"architecture-improvement",
+"neck/feature-fusion",
+"lightweight/edge"
+],
+"reason": "B kabul. Başlıktaki \"Real-Time\" çıkarım hızını açık bir hedef olarak koyuyor. Özetin sonundaki \"highly efficient and deployable solution\" ifadesi de verimliliği ve kullanıma alınabilirliği katkı olarak sunuyor. Bu, hafif model / hız koşulunu karşılıyor. CGLU ve DyT omurga değişikliği, CGRFPN ise boyun/füzyon değişikliği olarak iki kodlayıcıda da var."
+},
+"N001": {
+"id": "N001",
+"codes": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"segmentation"
+],
+"reason": "A korundu. Özet önerilen mimarinin bileşenleri olarak 'multi-scale feature extraction' ve 'multi-scale alignment' sayıyor; farklı uzamsal çözünürlüklerdeki öznitelikleri hizalayan bu bileşen, ölçekler arası bağlantı ya da çok ölçekli füzyon değişikliği sayılır. Başlıkta da 'multi-scale' geçiyor ve ablasyon her bileşenin katkısını doğruluyor. Ayrıca yeni çok görevli mimari, 'contextual attention' ve 'boundary-aware segmentation' açıkça belirtildiği için diğer üç kod da yerinde."
+},
+"X001": {
+"id": "X001",
+"codes": [
+"lightweight/edge"
+],
+"reason": "A korundu. Başlıkta 'Lightweight' geçtiği için hafifletme açık bir hedef. Ancak ön inceleme notunda omurga, boyun, başlık ya da blok düzeyinde bir yapısal değişiklik belirtilmiyor. Notta yalnızca veri bölmesi, karşılaştırılan modeller ve başarım artışı var. 'Improved YOLOv8n' ifadesi ve YOLOv8-Crack adı neyin değiştirildiğini söylemiyor. Kod kitabı model adından çıkarım yapılmasını yasakladığı için architecture-improvement verilmedi."
+}
+},
+"final": {
+"P260": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P251": [
+"deployment/system/app",
+"drone/UAV",
+"new-dataset",
+"segmentation"
+],
+"P253": [
+"architecture-improvement",
+"attention-module",
+"data-augmentation/synthetic",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P255": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P257": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"new-dataset"
+],
+"P390": [
+"architecture-improvement",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"P410": [
+"architecture-improvement",
+"attention-module"
+],
+"P430": [
+"architecture-improvement",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P440": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P450": [
+"other"
+],
+"P391": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P401": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"P421": [
+"benchmark/comparison",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P431": [
+"benchmark/comparison"
+],
+"P441": [
+"deployment/system/app",
+"lightweight/edge",
+"multimodal/VLM/LLM",
+"segmentation"
+],
+"P451": [
+"architecture-improvement",
+"segmentation",
+"semi/self-supervised"
+],
+"P382": [
+"data-augmentation/synthetic",
+"lightweight/edge"
+],
+"P392": [
+"benchmark/comparison",
+"severity/quantification"
+],
+"P402": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P442": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset",
+"segmentation"
+],
+"P452": [
+"architecture-improvement",
+"attention-module"
+],
+"P383": [
+"benchmark/comparison",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"P413": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P423": [
+"architecture-improvement",
+"multimodal/VLM/LLM"
+],
+"P433": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P503": [
+"benchmark/comparison",
+"drone/UAV"
+],
+"P384": [
+"architecture-improvement",
+"attention-module"
+],
+"P404": [
+"architecture-improvement",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P454": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA",
+"transfer/domain-generalization"
+],
+"P484": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P385": [
+"architecture-improvement",
+"attention-module"
+],
+"P395": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"P405": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P415": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object",
+"transfer/domain-generalization"
+],
+"P425": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"ensemble/TTA",
+"lightweight/edge",
+"small-object"
+],
+"P435": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"segmentation",
+"severity/quantification"
+],
+"P445": [
+"deployment/system/app",
+"ensemble/TTA",
+"segmentation",
+"severity/quantification"
+],
+"P455": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P545": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P396": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"small-object"
+],
+"P406": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"P426": [
+"deployment/system/app",
+"new-dataset",
+"severity/quantification"
+],
+"P436": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P446": [
+"benchmark/comparison",
+"drone/UAV"
+],
+"P397": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"new-dataset",
+"small-object"
+],
+"P407": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P427": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P437": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P447": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"P388": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P408": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"P498": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"transfer/domain-generalization"
+],
+"P508": [
+"deployment/system/app"
+],
+"P389": [
+"benchmark/comparison"
+],
+"P399": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P409": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"P419": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P429": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P439": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"small-object"
+],
+"P449": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P469": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"W042": [
+"architecture-improvement",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"W043": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"W044": [
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"W045": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"W046": [
+"benchmark/comparison",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"W047": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"W048": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"W049": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"W052": [
+"architecture-improvement",
+"attention-module"
+],
+"W053": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"W054": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"W055": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"W056": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"W058": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"small-object"
+],
+"W062": [
+"deployment/system/app",
+"ensemble/TTA"
+],
+"P035": [
+"architecture-improvement",
+"attention-module"
+],
+"P046": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object",
+"transfer/domain-generalization"
+],
+"P047": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"P056": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P066": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P067": [
+"deployment/system/app",
+"lightweight/edge",
+"multimodal/VLM/LLM",
+"severity/quantification"
+],
+"P068": [
+"architecture-improvement",
+"deployment/system/app",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"small-object"
+],
+"P075": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P076": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"ensemble/TTA",
+"neck/feature-fusion"
+],
+"P081": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"small-object"
+],
+"P091": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P104": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P106": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"P114": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"P122": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P123": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P125": [
+"architecture-improvement",
+"drone/UAV",
+"lightweight/edge"
+],
+"P161": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"P162": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"P154": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P155": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P156": [
+"architecture-improvement",
+"attention-module",
+"new-dataset",
+"segmentation",
+"severity/quantification"
+],
+"P180": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P181": [
+"architecture-improvement"
+],
+"P183": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"P186": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P230": [
+"deployment/system/app"
+],
+"P250": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P231": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P232": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P224": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P234": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P225": [
+"architecture-improvement",
+"attention-module",
+"transfer/domain-generalization"
+],
+"P235": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P245": [
+"architecture-improvement"
+],
+"P226": [
+"severity/quantification"
+],
+"P227": [
+"benchmark/comparison"
+],
+"P228": [
+"architecture-improvement",
+"attention-module",
+"segmentation",
+"semi/self-supervised"
+],
+"P229": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P239": [
+"semi/self-supervised"
+],
+"P249": [
+"benchmark/comparison",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P300": [
+"benchmark/comparison"
+],
+"P310": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P320": [
+"architecture-improvement",
+"ensemble/TTA"
+],
+"P330": [
+"architecture-improvement",
+"attention-module",
+"small-object"
+],
+"P340": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P380": [
+"architecture-improvement",
+"attention-module"
+],
+"P301": [
+"lightweight/edge",
+"semi/self-supervised"
+],
+"P311": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"P321": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"P331": [
+"benchmark/comparison",
+"new-dataset"
+],
+"P341": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"transfer/domain-generalization"
+],
+"P361": [
+"benchmark/comparison"
+],
+"P381": [
+"transfer/domain-generalization"
+],
+"P312": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P322": [
+"architecture-improvement",
+"attention-module",
+"small-object",
+"transfer/domain-generalization"
+],
+"P332": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P362": [
+"benchmark/comparison",
+"drone/UAV"
+],
+"P313": [
+"other"
+],
+"P323": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"P304": [
+"benchmark/comparison"
+],
+"P314": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P324": [
+"data-augmentation/synthetic",
+"lightweight/edge",
+"loss/IoU"
+],
+"P334": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"P305": [
+"deployment/system/app",
+"ensemble/TTA",
+"transfer/domain-generalization"
+],
+"P315": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P325": [
+"architecture-improvement",
+"attention-module"
+],
+"P335": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"P306": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P316": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P326": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P336": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P307": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P317": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P327": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P337": [
+"benchmark/comparison"
+],
+"P357": [
+"loss/IoU"
+],
+"P308": [
+"benchmark/comparison",
+"deployment/system/app",
+"severity/quantification"
+],
+"P318": [
+"other"
+],
+"P328": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P338": [
+"architecture-improvement",
+"attention-module"
+],
+"P309": [
+"architecture-improvement"
+],
+"P319": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"P329": [
+"ensemble/TTA",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"P339": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P349": [
+"architecture-improvement",
+"drone/UAV",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"W017": [
+"architecture-improvement",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"W018": [
+"multimodal/VLM/LLM",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"W019": [
+"semi/self-supervised",
+"transfer/domain-generalization"
+],
+"W022": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"W023": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"W024": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"small-object"
+],
+"W027": [
+"benchmark/comparison"
+],
+"W034": [
+"benchmark/comparison",
+"deployment/system/app",
+"lightweight/edge",
+"severity/quantification"
+],
+"W036": [
+"architecture-improvement",
+"attention-module",
+"data-augmentation/synthetic",
+"severity/quantification"
+],
+"W038": [
+"architecture-improvement",
+"small-object"
+],
+"W039": [
+"architecture-improvement",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"W040": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object",
+"transfer/domain-generalization"
+],
+"P002": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P010": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P011": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P012": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"P016": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P018": [
+"deployment/system/app",
+"new-dataset",
+"severity/quantification",
+"transfer/domain-generalization"
+],
+"P026": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P027": [
+"transfer/domain-generalization"
+],
+"P030": [
+"benchmark/comparison",
+"drone/UAV",
+"lightweight/edge"
+],
+"P033": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P048": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"P052": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P055": [
+"architecture-improvement",
+"deployment/system/app",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P065": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P072": [
+"benchmark/comparison",
+"lightweight/edge"
+],
+"P073": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P074": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset"
+],
+"P080": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"P086": [
+"attention-module",
+"data-augmentation/synthetic"
+],
+"P109": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset"
+],
+"P133": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P134": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"lightweight/edge",
+"neck/feature-fusion",
+"small-object"
+],
+"P135": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"new-dataset",
+"segmentation",
+"transfer/domain-generalization"
+],
+"P137": [
+"attention-module",
+"transfer/domain-generalization"
+],
+"P138": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P151": [
+"other"
+],
+"P152": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA",
+"lightweight/edge"
+],
+"P170": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"P171": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"P173": [
+"ensemble/TTA"
+],
+"P167": [
+"transfer/domain-generalization"
+],
+"P168": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P210": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"P220": [
+"data-augmentation/synthetic",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"P211": [
+"architecture-improvement",
+"attention-module"
+],
+"P212": [
+"benchmark/comparison",
+"deployment/system/app"
+],
+"P213": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P215": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P216": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"P217": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"P218": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P209": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"P219": [
+"ensemble/TTA",
+"lightweight/edge"
+],
+"P290": [
+"benchmark/comparison"
+],
+"P281": [
+"benchmark/comparison"
+],
+"P275": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"P276": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"P288": [
+"benchmark/comparison"
+],
+"P289": [
+"new-dataset",
+"transfer/domain-generalization"
+],
+"W006": [
+"data-augmentation/synthetic"
+],
+"W007": [
+"benchmark/comparison"
+],
+"W008": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"W015": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"W041": [
+"deployment/system/app",
+"transfer/domain-generalization"
+],
+"P000": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P003": [
+"benchmark/comparison",
+"drone/UAV"
+],
+"P019": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P020": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"P034": [
+"deployment/system/app",
+"segmentation"
+],
+"P058": [
+"new-dataset"
+],
+"P089": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P098": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"new-dataset"
+],
+"P099": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"small-object"
+],
+"P108": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU",
+"neck/feature-fusion",
+"new-dataset"
+],
+"P267": [
+"architecture-improvement",
+"attention-module"
+],
+"P268": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"W003": [
+"benchmark/comparison"
+],
+"W004": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV"
+],
+"P007": [
+"benchmark/comparison"
+],
+"P051": [
+"ensemble/TTA"
+],
+"P060": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"P071": [
+"ensemble/TTA"
+],
+"P083": [
+"ensemble/TTA"
+],
+"P129": [
+"transfer/domain-generalization"
+],
+"P148": [
+"ensemble/TTA"
+],
+"W000": [
+"architecture-improvement",
+"attention-module",
+"ensemble/TTA"
+],
+"W001": [
+"ensemble/TTA"
+],
+"P024": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P028": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"P054": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P090": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P120": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P124": [
+"architecture-improvement",
+"attention-module",
+"loss/IoU"
+],
+"P164": [
+"benchmark/comparison"
+],
+"P174": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"P194": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P200": [
+"benchmark/comparison",
+"transfer/domain-generalization"
+],
+"P233": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P244": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"P278": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"P394": [
+"architecture-improvement",
+"drone/UAV",
+"lightweight/edge"
+],
+"P414": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"P420": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"P432": [
+"architecture-improvement",
+"benchmark/comparison",
+"drone/UAV",
+"ensemble/TTA",
+"lightweight/edge",
+"transfer/domain-generalization"
+],
+"P434": [
+"deployment/system/app",
+"lightweight/edge"
+],
+"P464": [
+"architecture-improvement",
+"attention-module",
+"deployment/system/app",
+"severity/quantification"
+],
+"P474": [
+"architecture-improvement",
+"lightweight/edge",
+"neck/feature-fusion"
+],
+"P483": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU"
+],
+"P494": [
+"deployment/system/app"
+],
+"P043": [
+"architecture-improvement",
+"lightweight/edge",
+"small-object"
+],
+"P189": [
+"benchmark/comparison",
+"new-dataset",
+"transfer/domain-generalization"
+],
+"P193": [
+"other"
+],
+"P417": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion"
+],
+"P428": [
+"architecture-improvement",
+"neck/feature-fusion",
+"small-object"
+],
+"P493": [
+"drone/UAV"
+],
+"P526": [
+"benchmark/comparison",
+"new-dataset"
+],
+"N001": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"segmentation"
+],
+"N002": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"N006": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion",
+"small-object"
+],
+"N007": [
+"architecture-improvement",
+"attention-module",
+"neck/feature-fusion"
+],
+"N010": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"loss/IoU"
+],
+"N011": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge"
+],
+"N012": [
+"architecture-improvement",
+"attention-module",
+"drone/UAV",
+"loss/IoU",
+"multimodal/VLM/LLM",
+"new-dataset"
+],
+"N014": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"neck/feature-fusion",
+"small-object"
+],
+"N015": [
+"architecture-improvement",
+"attention-module",
+"lightweight/edge",
+"neck/feature-fusion",
+"new-dataset",
+"small-object",
+"transfer/domain-generalization"
+],
+"N016": [
+"deployment/system/app",
+"severity/quantification"
+],
+"N017": [
+"architecture-improvement",
+"attention-module"
+],
+"N018": [
+"architecture-improvement",
+"lightweight/edge",
+"loss/IoU",
+"new-dataset"
+],
+"N021": [
+"loss/IoU"
+],
+"N022": [
+"architecture-improvement",
+"neck/feature-fusion"
+],
+"N023": [
+"architecture-improvement",
+"lightweight/edge"
+],
+"X001": [
+"lightweight/edge"
+],
+"X002": [
+"benchmark/comparison",
+"deployment/system/app"
+]
+},
+"src": {
+"P260": "uyum",
+"P251": "uyum",
+"P253": "uyum",
+"P255": "uyum",
+"P257": "uyum",
+"P390": "uyum",
+"P410": "uyum",
+"P430": "uyum",
+"P440": "uyum",
+"P450": "uyum",
+"P391": "uyum",
+"P401": "uyum",
+"P421": "uyum",
+"P431": "uyum",
+"P441": "uyum",
+"P451": "uyum",
+"P382": "uyum",
+"P392": "uyum",
+"P402": "hakem",
+"P442": "uyum",
+"P452": "uyum",
+"P383": "uyum",
+"P413": "uyum",
+"P423": "hakem",
+"P433": "hakem",
+"P503": "uyum",
+"P384": "uyum",
+"P404": "uyum",
+"P454": "uyum",
+"P484": "uyum",
+"P385": "uyum",
+"P395": "uyum",
+"P405": "uyum",
+"P415": "uyum",
+"P425": "uyum",
+"P435": "uyum",
+"P445": "uyum",
+"P455": "uyum",
+"P545": "uyum",
+"P396": "uyum",
+"P406": "uyum",
+"P426": "uyum",
+"P436": "hakem",
+"P446": "uyum",
+"P397": "uyum",
+"P407": "uyum",
+"P427": "uyum",
+"P437": "uyum",
+"P447": "uyum",
+"P388": "uyum",
+"P408": "uyum",
+"P498": "uyum",
+"P508": "uyum",
+"P389": "uyum",
+"P399": "uyum",
+"P409": "uyum",
+"P419": "uyum",
+"P429": "uyum",
+"P439": "uyum",
+"P449": "uyum",
+"P469": "hakem",
+"W042": "hakem",
+"W043": "uyum",
+"W044": "uyum",
+"W045": "uyum",
+"W046": "uyum",
+"W047": "uyum",
+"W048": "uyum",
+"W049": "uyum",
+"W052": "uyum",
+"W053": "uyum",
+"W054": "uyum",
+"W055": "uyum",
+"W056": "uyum",
+"W058": "uyum",
+"W062": "hakem",
+"P035": "uyum",
+"P046": "hakem",
+"P047": "uyum",
+"P056": "hakem",
+"P066": "hakem",
+"P067": "uyum",
+"P068": "uyum",
+"P075": "uyum",
+"P076": "uyum",
+"P081": "uyum",
+"P091": "uyum",
+"P104": "uyum",
+"P106": "uyum",
+"P114": "uyum",
+"P122": "uyum",
+"P123": "uyum",
+"P125": "hakem",
+"P161": "uyum",
+"P162": "uyum",
+"P154": "uyum",
+"P155": "uyum",
+"P156": "uyum",
+"P180": "uyum",
+"P181": "hakem",
+"P183": "hakem",
+"P186": "uyum",
+"P230": "uyum",
+"P250": "uyum",
+"P231": "uyum",
+"P232": "uyum",
+"P224": "uyum",
+"P234": "uyum",
+"P225": "uyum",
+"P235": "uyum",
+"P245": "uyum",
+"P226": "uyum",
+"P227": "uyum",
+"P228": "hakem",
+"P229": "uyum",
+"P239": "uyum",
+"P249": "hakem",
+"P300": "uyum",
+"P310": "uyum",
+"P320": "hakem",
+"P330": "uyum",
+"P340": "uyum",
+"P380": "uyum",
+"P301": "uyum",
+"P311": "uyum",
+"P321": "uyum",
+"P331": "uyum",
+"P341": "uyum",
+"P361": "uyum",
+"P381": "uyum",
+"P312": "uyum",
+"P322": "uyum",
+"P332": "uyum",
+"P362": "uyum",
+"P313": "uyum",
+"P323": "uyum",
+"P304": "uyum",
+"P314": "uyum",
+"P324": "uyum",
+"P334": "uyum",
+"P305": "uyum",
+"P315": "uyum",
+"P325": "uyum",
+"P335": "uyum",
+"P306": "uyum",
+"P316": "uyum",
+"P326": "uyum",
+"P336": "uyum",
+"P307": "uyum",
+"P317": "uyum",
+"P327": "uyum",
+"P337": "hakem",
+"P357": "uyum",
+"P308": "uyum",
+"P318": "uyum",
+"P328": "uyum",
+"P338": "hakem",
+"P309": "uyum",
+"P319": "uyum",
+"P329": "uyum",
+"P339": "uyum",
+"P349": "uyum",
+"W017": "hakem",
+"W018": "uyum",
+"W019": "uyum",
+"W022": "uyum",
+"W023": "uyum",
+"W024": "uyum",
+"W027": "uyum",
+"W034": "uyum",
+"W036": "uyum",
+"W038": "uyum",
+"W039": "uyum",
+"W040": "uyum",
+"P002": "uyum",
+"P010": "uyum",
+"P011": "uyum",
+"P012": "uyum",
+"P016": "uyum",
+"P018": "uyum",
+"P026": "uyum",
+"P027": "uyum",
+"P030": "uyum",
+"P033": "uyum",
+"P048": "uyum",
+"P052": "uyum",
+"P055": "hakem",
+"P065": "uyum",
+"P072": "uyum",
+"P073": "uyum",
+"P074": "uyum",
+"P080": "uyum",
+"P086": "hakem",
+"P109": "hakem",
+"P133": "uyum",
+"P134": "uyum",
+"P135": "uyum",
+"P137": "uyum",
+"P138": "uyum",
+"P151": "uyum",
+"P152": "uyum",
+"P170": "hakem",
+"P171": "uyum",
+"P173": "uyum",
+"P167": "uyum",
+"P168": "uyum",
+"P210": "uyum",
+"P220": "uyum",
+"P211": "uyum",
+"P212": "uyum",
+"P213": "uyum",
+"P215": "uyum",
+"P216": "uyum",
+"P217": "uyum",
+"P218": "uyum",
+"P209": "uyum",
+"P219": "uyum",
+"P290": "uyum",
+"P281": "uyum",
+"P275": "uyum",
+"P276": "uyum",
+"P288": "uyum",
+"P289": "uyum",
+"W006": "uyum",
+"W007": "uyum",
+"W008": "uyum",
+"W015": "hakem",
+"W041": "uyum",
+"P000": "uyum",
+"P003": "uyum",
+"P019": "uyum",
+"P020": "uyum",
+"P034": "uyum",
+"P058": "uyum",
+"P089": "uyum",
+"P098": "uyum",
+"P099": "uyum",
+"P108": "uyum",
+"P267": "uyum",
+"P268": "uyum",
+"W003": "uyum",
+"W004": "hakem",
+"P007": "uyum",
+"P051": "uyum",
+"P060": "uyum",
+"P071": "uyum",
+"P083": "uyum",
+"P129": "uyum",
+"P148": "uyum",
+"W000": "uyum",
+"W001": "uyum",
+"P024": "uyum",
+"P028": "uyum",
+"P054": "uyum",
+"P090": "uyum",
+"P120": "uyum",
+"P124": "uyum",
+"P164": "uyum",
+"P174": "uyum",
+"P194": "hakem",
+"P200": "uyum",
+"P233": "uyum",
+"P244": "uyum",
+"P278": "hakem",
+"P394": "uyum",
+"P414": "uyum",
+"P420": "uyum",
+"P432": "uyum",
+"P434": "uyum",
+"P464": "uyum",
+"P474": "hakem",
+"P483": "uyum",
+"P494": "uyum",
+"P043": "uyum",
+"P189": "uyum",
+"P193": "uyum",
+"P417": "uyum",
+"P428": "uyum",
+"P493": "uyum",
+"P526": "uyum",
+"N001": "hakem",
+"N002": "uyum",
+"N006": "uyum",
+"N007": "uyum",
+"N010": "uyum",
+"N011": "uyum",
+"N012": "uyum",
+"N014": "uyum",
+"N015": "uyum",
+"N016": "uyum",
+"N017": "uyum",
+"N018": "uyum",
+"N021": "uyum",
+"N022": "uyum",
+"N023": "uyum",
+"X001": "hakem",
+"X002": "uyum"
+}
+}

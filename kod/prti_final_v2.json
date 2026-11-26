@@ -1,0 +1,5490 @@
+{
+"P334": {
+"pid": "P334",
+"access_level": "tam_metin",
+"source_url": "https://arxiv.org/pdf/2510.16115",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.1: iki deney adlandırılmış; (1) Çin alt kümesi (China_Drone ve China_MotorBike), (2) altı ülkeden tam RDD2022."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 4.1: Çin alt kümesi rastgele 8:1:1; tam veride sağlanan eğitim kümesi 8:2 eğitim/doğrulama. Görüntü sayısı verilmemiş ama oranlar ve 47.420 toplamı çelişmiyor."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.1: D00, D10, D20, D40 adlarıyla sıralı; Repair sınıfı çıkarılmış, dört sınıf bırakılmış. Tablo 1-2 sınıf bazında AP50 veriyor."
+},
+"K4": {
+"score": 1,
+"evidence": "Bölüm 4.3: mAP50 için IoU 0,5, mAP50:95 için 0,5-0,95 adım 0,05 açıkça yazılı. Tablo 1-2'de değerler var. F1 için IoU eşiği yazılmamış."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum değeri veya doğruluk için tekrar yok. Tablo 3 dipnotu yalnızca hız ölçümünün üç çıkarımın ortalaması olduğunu söylüyor; doğruluk metriklerine sapma verilmemiş."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 4.2: NVIDIA RTX 4090; 150 epok, 640×640 girdi, yığın 40, başlangıç öğrenme oranı 0,01 (beşte dört; eniyileyici yok)."
+},
+"K7": {
+"score": 0,
+"evidence": "Makalede kod veya ağırlık bağlantısı yok; PDF'teki tek URL Bölüm 4.1'deki CRDDC'2022 gönderim platformu."
+},
+"K8": {
+"score": 1,
+"evidence": "Bölüm 4.1(2) ve Tablo 3: resmî test etiketleri kapalı olduğu için tespitler CRDDC'2022 platformuna gönderilip F1 alınmış (koşul a)."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": true,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "İki deney: Çin alt kümesi (China_Drone + China_MotorBike) ve tam RDD2022 (altı ülke). Ana sonuç tam RDD2022.",
+"china_type": "ikisi",
+"n_classes": 4,
+"classes": "D00 boyuna çatlak, D10 enine çatlak, D20 timsah çatlağı, D40 çukur",
+"split": "Tam veri: resmî eğitim kümesi 8:2 eğitim/doğrulama, resmî test platformda. Çin alt kümesi: rastgele 8:1:1 eğitim/doğrulama/test, tohum yok. Görüntü sayısı verilmemiş.",
+"test_def": "resmi_gizli",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Tam RDD2022, resmî test, CRDDC'2022 platformu (Tablo 3)",
+"subset": "Tam RDD2022 (altı ülke)",
+"metric": "F1/%",
+"value": "80.33",
+"model": "StripRFNet",
+"is_main": true
+},
+{
+"experiment": "Tam RDD2022, resmî test (Tablo 3)",
+"subset": "Tam RDD2022 (altı ülke)",
+"metric": "Speed/ms",
+"value": "37.4",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "F1/%",
+"value": "81.6",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50/%",
+"value": "84.4",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50:95/%",
+"value": "52.0",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D00",
+"value": "83.9",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D10",
+"value": "85.9",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D20",
+"value": "82.5",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D40",
+"value": "85.4",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1 (Tablo 2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "Speed/ms",
+"value": "12.0",
+"model": "StripRFNet",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "F1/%",
+"value": "77.2",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50/%",
+"value": "81.5",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50:95/%",
+"value": "48.6",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D00",
+"value": "81.7",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D10",
+"value": "82.5",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D20",
+"value": "80.1",
+"model": "YOLO11s",
+"is_main": false
+},
+{
+"experiment": "Çin alt kümesi 8:1:1, temel model (Tablo 1-2)",
+"subset": "China_Drone + China_MotorBike",
+"metric": "AP50/% D40",
+"value": "81.7",
+"model": "YOLO11s",
+"is_main": false
+}
+]
+},
+"notes_tr": "arXiv PDF'i tamamen okundu. C1b yanlış kodlandı çünkü ek sınıf yok (uygulanamaz durumu). C4a, C4b yalnızca Çin alt kümesinden geliyor; tam veride sadece F1 var. Temel modelin (YOLO11s) resmî test F1'i verilmemiş, yani 80,33 için aynı protokolde temel karşılaştırma yok. Tam verideki model ayrıca üç aşamalı öğrenmeyle ve önceden eğitilmiş ağırlıkla sürdürülmüş (Bölüm 4.2); Bölüm 4.6 ise özel veri artırımı yok diyor. Sonuç bölümü 80,33'ü ORDDC'2024 Phase 2 ile, Bölüm 4.1 CRDDC'2022 platformuyla ilişkilendiriyor; hangi sıralama olduğu belirsiz. Bölüm 4.6 37,4 ms'nin 37,2 ms'yi geçtiğini söylüyor, oysa sayısal olarak daha yavaş. Tablo 1-2'nin doğrulama mı test mi olduğu tablolarda açık yazılmamış; Çin alt kümesi için test tanımı ayri_test sayılabilir ama üyelik yeniden kurulamaz."
+},
+"P016": {
+"pid": "P016",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/applsci/applsci-14-03360/article_deploy/applsci-14-03360.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.1: altı ülke adlarıyla sayılmış, resmî eğitim kümesinin tamamı bölünmüş. Tablo 2'de sütun adı F1 (6 Countries). Şekil 11 China_M ve China_D'yi ayrı gösteriyor."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 4.1: resmî eğitim kümesi 7:3 eğitim/doğrulama, resmî test kümesi deney testi. Şekil 11 sayıları 38.385 + 9.035 = 47.420 ile tutarlı."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.1 ve Tablo 1: D00, D10, D20, D40 adlarıyla ve örnek sayılarıyla verilmiş; sınıf sayısı dört."
+},
+"K4": {
+"score": 1,
+"evidence": "Bölüm 4.3: mAP50 IoU 0,5, mAP50-95 0,5-0,95 adım 0,05; F1'in dayandığı TP tanımı IoU>0,5. Tablo 1-3'te değerler var."
+},
+"K5": {
+"score": 0,
+"evidence": "Metinde tohum değeri yok, tekrar yok; Tablo 1-3 tek değer veriyor, sapma raporlanmamış."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve 4.4: NVIDIA RTX 4090; 640×640 girdi, öğrenme oranı 0,01, SGD, 180 tur (beşte dört; yığın boyutu yok)."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Erişilebilirliği bölümündeki tek bağlantı RDD2022 veri deposu (sekilab). Yazarların kodu veya ağırlığı için bağlantı yok."
+},
+"K8": {
+"score": 1,
+"evidence": "Bölüm 4.1: model resmî test kümesinde sınanmış, sonuçlar CRDDC'2022 sitesine gönderilmiş; Tablo 2-3 F1 değerleri (koşul a)."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": true,
+"C2b": true,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": false,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Altı ülkenin tamamı: Japonya, Hindistan, Çekya, Norveç, ABD, Çin. Ülke bazında F1: Hindistan, Japonya, ABD.",
+"china_type": "ikisi",
+"n_classes": 4,
+"classes": "D00 boyuna çatlak, D10 enine çatlak, D20 timsah çatlağı, D40 çukur",
+"split": "Resmî eğitim kümesi 7:3 eğitim/doğrulama; resmî test kümesi (etiketsiz) deney testi. Oran dışında deney bölmesi sayısı yok; Şekil 11 resmî sayıları veriyor.",
+"test_def": "resmi_gizli",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Resmî test, CRDDC'2022 sitesi (Tablo 2, Tablo 3)",
+"subset": "Altı ülke",
+"metric": "F1 (6 Countries), TP için IoU>0.5",
+"value": "69.6",
+"model": "RDD-YOLO",
+"is_main": true
+},
+{
+"experiment": "Resmî test, CRDDC'2022 sitesi (Tablo 2)",
+"subset": "Hindistan",
+"metric": "F1 (India), TP için IoU>0.5",
+"value": "53.0",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Resmî test, CRDDC'2022 sitesi (Tablo 2)",
+"subset": "Japonya",
+"metric": "F1 (Japan), TP için IoU>0.5",
+"value": "70.2",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Resmî test, CRDDC'2022 sitesi (Tablo 2)",
+"subset": "ABD",
+"metric": "F1 (United States), TP için IoU>0.5",
+"value": "73.6",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Resmî test, temel model (Tablo 2, Tablo 3)",
+"subset": "Altı ülke",
+"metric": "F1 (6 Countries), TP için IoU>0.5",
+"value": "66.8",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Resmî test, temel model (Tablo 2)",
+"subset": "Hindistan",
+"metric": "F1 (India), TP için IoU>0.5",
+"value": "43.6",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Resmî test, temel model (Tablo 2)",
+"subset": "Japonya",
+"metric": "F1 (Japan), TP için IoU>0.5",
+"value": "66.3",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Resmî test, temel model (Tablo 2)",
+"subset": "ABD",
+"metric": "F1 (United States), TP için IoU>0.5",
+"value": "71.5",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1, ALL)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50",
+"value": "62.5 (+2.6)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1, ALL)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50-95",
+"value": "36.4 (+5.2)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1, ALL)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50",
+"value": "59.9",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1, ALL)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50-95",
+"value": "31.2",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D00",
+"value": "62.8 (+3.5)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D10",
+"value": "61.4 (+1.7)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D20",
+"value": "69.2 (+1.5)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D40",
+"value": "57.4 (+4.5)",
+"model": "RDD-YOLO",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D00",
+"value": "59.3",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D10",
+"value": "59.7",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D20",
+"value": "67.7",
+"model": "YOLOv8x",
+"is_main": false
+},
+{
+"experiment": "Doğrulama kümesi, temel model (Tablo 1)",
+"subset": "Altı ülke, 7:3 doğrulama",
+"metric": "mAP50 D40",
+"value": "52.9",
+"model": "YOLOv8x",
+"is_main": false
+}
+]
+},
+"notes_tr": "PDF tamamen okundu, Şekil 11 görsel olarak incelendi. Çin türü metinde yalnızca China olarak geçiyor; ikisi kodu Şekil 11'deki China_M ve China_D satırlarına ve eğitim kümesinin tamamının kullanılmasına dayanıyor. Makale içi tutarsızlık: Bölüm 4.4 metni mAP50 62,8 ve mAP50-95 36,7 diyor; Tablo 1 ALL satırı ve özet 62,5 ve 36,4 veriyor. İyileşme özette 2,5, Tablo 1'de +2,6. Tablodaki değer kaydedildi. mAP doğrulamada, F1 resmî testte; iki metrik farklı kümelere ait. Görüntü başına süre verilmemiş, yalnızca ablasyon metninde hız etkilenmedi deniyor, bu yüzden C5c yanlış. C1b yanlış kodlandı çünkü ek sınıf yok. Tablo 2 Norveç ve Çekya için ayrı F1 vermiyor."
+},
+"P012": {
+"pid": "P012",
+"access_level": "ozet",
+"source_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/TITS.2024.3416508?fields=title,abstract,externalIds,openAccessPdf,isOpenAccess,url",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özet yalnızca RDD2022 kullanıldığını söylüyor, ülke alt kümesi belirtmiyor."
+},
+"K2": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette oran veya görüntü sayısı yok."
+},
+"K3": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette yalnızca çatlak ve çukur geçiyor, sınıf kodu ve sınıf sayısı yok."
+},
+"K4": {
+"score": 1,
+"evidence": "Özet: mAP50 adıyla 0,610 raporlanmış; eşik metrik adında açık."
+},
+"K5": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette tohum veya tekrar bilgisi yok."
+},
+"K6": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette donanım ve eğitim ayarı yok."
+},
+"K7": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette ve erişilen kayıtlarda kod veya ağırlık bağlantısı görülmedi; makale içinde olup olmadığı doğrulanamadı."
+},
+"K8": {
+"score": 0,
+"evidence": "Tam metin okunamadı. Özette test protokolü tanımlanmıyor; F1 ve mAP50'nin hangi kümeden geldiği yazmıyor."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": false,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": false,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Özette yalnızca RDD2022; alt küme belirtilmemiş",
+"china_type": "belirtilmemiş",
+"n_classes": null,
+"classes": "Özette belirtilmemiş (yalnızca çatlak ve çukur ifadesi)",
+"split": "Özette belirtilmemiş",
+"test_def": "tanimsiz",
+"input_size": "Özette belirtilmemiş",
+"results": [
+{
+"experiment": "RDD2022, küme özette belirtilmemiş (özet)",
+"subset": "RDD2022, alt küme belirtilmemiş",
+"metric": "F1 score",
+"value": "0.601",
+"model": "FPDDN",
+"is_main": true
+},
+{
+"experiment": "RDD2022, küme özette belirtilmemiş (özet)",
+"subset": "RDD2022, alt küme belirtilmemiş",
+"metric": "mAP50",
+"value": "0.610",
+"model": "FPDDN",
+"is_main": true
+},
+{
+"experiment": "RDD2022, küme özette belirtilmemiş (özet)",
+"subset": "RDD2022, alt küme belirtilmemiş",
+"metric": "inference speed",
+"value": "1.8ms",
+"model": "FPDDN",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metne yasal açık yoldan erişilemedi, yalnızca özet okundu. Denenenler: Unpaywall, OpenAlex ve Semantic Scholar kapalı erişim; IEEE Xplore'da tam metin abonelik gerektiriyor; Europe PMC, CORE, arXiv ve CityU arşivinde açık kopya bulunamadı. Bu nedenle sıfırlar makalede bilgi olmadığını değil, doğrulanamadığını gösterir; K1-K3, K5-K8 ve C maddeleri tam metinle yeniden kodlanmalı. Özet parametre sayısını yalnızca YOLO v8x'in beşte biri diye göreli veriyor, sayı olmadığı için C5a yanlış. Temel model değerleri özette yok. Atıf yapan makalelerden bilgi alınmadı."
+},
+"P002": {
+"pid": "P002",
+"access_level": "tam_metin",
+"source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11130172/fullTextXML",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Veri Kümeleri/RDD2022: altı ülke adlarıyla sayılmış; deneyde bu altı ülkeden rastgele 10.000 fotoğraf seçilmiş."
+},
+"K2": {
+"score": 1,
+"evidence": "Veri Kümeleri/RDD2022: 10.000 fotoğraftan 8.000 eğitim, 2.000 doğrulama, oran 8:2; sayılar kendi içinde tutarlı ve 47.420 toplamıyla çelişmiyor."
+},
+"K3": {
+"score": 1,
+"evidence": "Veri Kümeleri/RDD2022 ve Tablo 7: D00, D10, D20, D40 adlarıyla verilmiş, sınıf bazında sonuç var."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 1, 5, 7: mAP50 ve mAP50:95 metrik adlarıyla raporlanmış; eşik adında açık (kod kitabındaki mAP50 örneği). F1 için IoU yazılmamış."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum veya tekrar yok; tablolar tek değer veriyor. Yalnızca 10.000 fotoğrafın rastgele seçildiği söyleniyor."
+},
+"K6": {
+"score": 1,
+"evidence": "Değerlendirme Parametreleri: NVIDIA RTX 2060 6 GB; 640×640, SGD, 300 epok, yığın 16, öğrenme oranı 0,01 (beşte beş)."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Erişilebilirliği: bağlantı yalnızca sekilab veri deposu; tam veri ve kod için sorumlu yazara e-posta isteniyor (istek üzerine)."
+},
+"K8": {
+"score": 0,
+"evidence": "Yalnızca eğitim ve doğrulama bölmesi tanımlı; ayrı test kümesi yok, resmî test kullanılmamış, görüntü listesi veya tohum paylaşılmamış."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Altı ülke (Japonya, Hindistan, Çekya, Norveç, ABD, Çin) arasından rastgele seçilmiş 10.000 fotoğraf",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "D00 boyuna çatlak, D10 enine çatlak, D20 timsah çatlağı, D40 çukur",
+"split": "Rastgele 10.000 görüntü; 8.000 eğitim, 2.000 doğrulama (8:2); tohum yok",
+"test_def": "dogrulama_test_sayilmis",
+"input_size": "640×640(×3)",
+"results": [
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2 (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50",
+"value": "0.706",
+"model": "YOLOv8-PD",
+"is_main": true
+},
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2 (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50:95",
+"value": "0.395",
+"model": "YOLOv8-PD",
+"is_main": true
+},
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2 (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "F1-score",
+"value": "0.68",
+"model": "YOLOv8-PD",
+"is_main": true
+},
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2, temel model (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50",
+"value": "0.692",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2, temel model (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50:95",
+"value": "0.38",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Rastgele 10.000 görüntü, 8:2, temel model (Tablo 1, 5, 6)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "F1-score",
+"value": "0.67",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D00",
+"value": "76.2(+2.0)",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D10",
+"value": "79.7(+0.4)",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D20",
+"value": "73.3(+1.4)",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D40",
+"value": "53.1(+1.9)",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında, temel model (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D00",
+"value": "74.2",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında, temel model (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D10",
+"value": "79.3",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında, temel model (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D20",
+"value": "71.9",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Sınıf bazında, temel model (Tablo 7)",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "mAP50 (%) D40",
+"value": "51.2",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Tartışma bölümü, süre",
+"subset": "Altı ülkeden 10.000 görüntü",
+"metric": "frames per second",
+"value": "111.9",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "mAP50",
+"value": "0.642",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "mAP50:95",
+"value": "0.293",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "F1-score",
+"value": "0.63",
+"model": "YOLOv8-PD",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri, temel model (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "mAP50",
+"value": "0.601",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri, temel model (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "mAP50:95",
+"value": "0.272",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Genelleme, RDD2022 dışı veri, temel model (Tablo 6)",
+"subset": "RoadDamage (RDD2022 değil), 8:2",
+"metric": "F1-score",
+"value": "0.58",
+"model": "YOLOv8n",
+"is_main": false
+}
+]
+},
+"notes_tr": "PMC tam metin XML'i okundu; Nature sayfası da indirildi. Sonuç tablolarının hangi kümeden hesaplandığı açık yazılmamış; tanımlı tek ayrılmış küme doğrulama olduğu ve metin test örneklerinden söz ettiği için test tanımı dogrulama_test_sayilmis kodlandı, bu bir yorumdur. 47.420 sayısı etiketsiz resmî test görüntülerini de içeriyor olabilir; rastgele seçimin etiketli görüntülerle sınırlı olup olmadığı yazmıyor. Makale içi tutarsızlıklar: Tablo 7'de sınıf bazlı mAP50:95 ortalaması ALL satırını vermiyor (YOLOv8-PD 35,3'e karşı 39,5; temel 34,5'e karşı 38). Tablo 4'teki +C2fGhost satırı Tablo 1'deki satırdan farklı. GFLOPs bir yerde 6,2, başka yerde 6,1. Veri Erişilebilirliği verinin kendi toplandığını söylüyor ama sekilab deposunu gösteriyor. FPS yalnızca Tartışma'da geçiyor, tablolarda yok. C1b yanlış kodlandı çünkü ek sınıf yok."
+},
+"P019": {
+"pid": "P019",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/algorithms/algorithms-16-00452/article_deploy/algorithms-16-00452.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.1-4.2: Japonya, ABD, Norveç, Çekya, Hindistan, China Motorbike ve China Drone adlandırılmış; China-Drone'un çıkarıldığı açıkça belirtilmiş."
+},
+"K2": {
+"score": 0,
+"evidence": "Bölüm 4.2: 36.000 etiketli görüntüden yaklaşık 14.700 boş dosyanın çıkarıldığı, Çin İHA’nın kullanılmadığı ve seyrek sınıfların elendiği yazılı; bölmelerin toplamı ise 15.382 (10.798 + 3.042 + 1.542). 36.000’in Çin İHA’yı içerip içermediği yazılmamış (resmî eğitim sayısı Çin İHA hariç 35.984, dâhil 38.385); bu yüzden bu adımlardan sonra kalması gereken sayı yaklaşık 18.900 ile 21.300 arasındadır. Seyrek sınıf elemesinin kaç görüntü düşürdüğü yazılmadığından son toplamla aradaki yaklaşık 3.500–5.900 görüntülük (%19–28) fark sayı olarak açıklanmıyor; parçalar ile toplam arasında %1’i aşan fark olarak çelişki sayıldı.",
+"first_pass": 1
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve Şekil 6-7: D00, D10, D20, D40 adlarıyla verilmiş; diğer etiketler elenmiş, dört sınıf tutulmuş."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 2-5: ana metrik mAP@0.5 (%) sütun başlığında eşikle birlikte raporlanmış. F1 için IoU eşiği yazılmamış."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum yok, tekrar yok; tablolar tek çalıştırma değeri veriyor, sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve Tablo 1: Nvidia A100 GPU (Google Colab Pro); SGD, 100 epok, yığın 16, 640×640 (beşte dört; öğrenme oranı yok)."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Erişilebilirliği yalnızca Figshare RDD2022 veri bağlantısı veriyor; kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Bölüm 4.2: ayrı %10 test kümesi var (1.542) ama görüntü listesi, bölme dosyası veya tohum yok; resmî gizli test kullanılmamış."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japonya, ABD, Norveç, Çekya, Hindistan, China Motorbike (China Drone çıkarılmış); boş etiketli görüntüler elenmiş",
+"china_type": "motosiklet",
+"n_classes": 4,
+"classes": "D00 boyuna çatlak, D10 enine çatlak, D20 timsah çatlağı, D40 çukur",
+"split": "70:20:10; 10.798 eğitim, 3.042 doğrulama, 1.542 test (toplam 15.382, ön işleme sonrası); tohum yok",
+"test_def": "ayri_test",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Altı ülke, China Drone hariç, 70:20:10 (Tablo 4, 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "F1 Score (%)",
+"value": "66.51",
+"model": "Improved YOLOv5s",
+"is_main": true
+},
+{
+"experiment": "Altı ülke, China Drone hariç, 70:20:10 (Tablo 4, 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "mAP@0.5 (%)",
+"value": "67.81",
+"model": "Improved YOLOv5s",
+"is_main": true
+},
+{
+"experiment": "Ablasyon son satırı (Tablo 4)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "Precision (%)",
+"value": "70.14",
+"model": "Improved YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Ablasyon son satırı (Tablo 4)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "Recall (%)",
+"value": "63.24",
+"model": "Improved YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Süre (Tablo 4, 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "FPS",
+"value": "58",
+"model": "Improved YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model (Tablo 4, 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "F1 Score (%)",
+"value": "65.22",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model (Tablo 2, 4, 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "mAP@0.5 (%)",
+"value": "65.91",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model (Tablo 2, 4)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "Precision (%)",
+"value": "66.70",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model (Tablo 2, 4)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "Recall (%)",
+"value": "63.80",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model, süre (Tablo 4)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "FPS",
+"value": "68",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Temel model, süre (Tablo 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "FPS",
+"value": "63",
+"model": "YOLOv5s",
+"is_main": false
+},
+{
+"experiment": "Karşılaştırma modeli (Tablo 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "F1 Score (%)",
+"value": "66.46",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Karşılaştırma modeli (Tablo 5)",
+"subset": "Altı ülke, China Motorbike ile, 15.382 görüntü",
+"metric": "mAP@0.5 (%)",
+"value": "67.70",
+"model": "YOLOv8s",
+"is_main": false
+}
+]
+},
+"notes_tr": "PDF tamamen okundu, Şekil 7 görsel olarak incelendi. K2 değerlendirme notu: makale 36.000 etiketli görüntüden yaklaşık 14.700 boş dosyanın çıkarıldığını söylüyor, bu yaklaşık 21.300 eder; son toplam 15.382. Aradaki yaklaşık 5.900 görüntünün tamamı sayısal olarak açıklanmıyor; China-Drone çıkarımı ve seyrek sınıfların elenmesi kısmen açıklayabilir. Doğrudan çelişki saymayıp 1 verdim, ama ikinci kodlayıcıyla uzlaşmada bakılması gereken yer burası. Bölme yönteminin rastgele olup olmadığı yazmıyor. Tablo sonuçlarının test kümesinden geldiği tablolarda açık yazılmamış; Bölüm 4.2 modelin 1.542 görüntüyle değerlendirildiğini söylüyor. Temel model tutarsızlıkları: parametre 7,01 ve 7,06, FPS 68 ve 63. Bölüm 4.8 66,46 değerini başka çalışmaya atfediyor, Tablo 6'da bu değer yazarların YOLOv8s satırında, atıf yapılan YOLOv7 satırında 66,30. C1b yanlış kodlandı çünkü ek sınıf yok."
+},
+"P161": {
+"pid": "P161",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/applsci/applsci-15-09664/article_deploy/applsci-15-09664.pdf",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.2: Deney için Çin, Çek Cumhuriyeti ve ABD adlarıyla seçilmiş; bu üç ülkeden RDD2022_Mix kurulmuş."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 4.2: 12.012 görüntü 7:1:2 oranıyla eğitim/doğrulama/test olarak ayrılmış. Sayı RDD2022 veri makalesindeki eğitim sayılarıyla uyuşuyor (China_M 1977 + China_D 2401 + Czech 2829 + US 4805 = 12.012); çelişki yok."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve Şekil 5: D00, D10, D20, D40 ve Repair kodlarıyla beş sınıf sıralanmış; Block crack az örnek nedeniyle çıkarılmış."
+},
+"K4": {
+"score": 1,
+"evidence": "Bölüm 4.4 ve Tablo 3: ana metrik %50 IoU eşiğinde mAP olarak tanımlanmış, sütun adı map@0.5/%."
+},
+"K5": {
+"score": 0,
+"evidence": "Yöntem ve sonuç bölümlerinde tohum değeri yok; Tablo 3-4 tek değer veriyor, tekrar veya sapma raporlanmamış."
+},
+"K6": {
+"score": 1,
+"evidence": "Tablo 1: NVIDIA GeForce RTX 4050. Tablo 2: imgsz 640, epochs 200, batch 32, SGD, lr0 0.01 (beş ayarın beşi)."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability Statement: veriler yazardan makul istek üzerine; kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Bölüm 4.2: yalnızca 7:1:2 oranı var; resmî gizli test kullanılmamış, görüntü listesi veya bölme tohumu verilmemiş, test üyeliği yeniden kurulamaz."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China, Czech Republic, United States (RDD2022_Mix)",
+"china_type": "belirtilmemiş",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair",
+"split": "Toplam 12.012 görüntü; eğitim/doğrulama/test 7:1:2 (kendi bölmesi)",
+"test_def": "ayri_test",
+"input_size": "640",
+"results": [
+{
+"experiment": "Tablo 3-4, önerilen model, RDD2022_Mix",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "71.49",
+"model": "RS-YOLOv11n",
+"is_main": true
+},
+{
+"experiment": "Tablo 3-4, önerilen model, RDD2022_Mix",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "F1/% (eşik yazılmamış)",
+"value": "68.45",
+"model": "RS-YOLOv11n",
+"is_main": true
+},
+{
+"experiment": "Tablo 3-4, önerilen model, RDD2022_Mix",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "P/%",
+"value": "75.56",
+"model": "RS-YOLOv11n",
+"is_main": true
+},
+{
+"experiment": "Tablo 3-4, önerilen model, RDD2022_Mix",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "R/%",
+"value": "64.43",
+"model": "RS-YOLOv11n",
+"is_main": true
+},
+{
+"experiment": "Tablo 3-4, taban model",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "70.85",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3-4, taban model",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "F1/% (eşik yazılmamış)",
+"value": "67.84",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3-4, taban model",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "P/%",
+"value": "74.96",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3-4, taban model",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "R/%",
+"value": "63.40",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, ablasyon",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "72.16",
+"model": "YOLOv11n+RHGNetv2",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, ablasyon",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "70.88",
+"model": "YOLOv11n+SEAM",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, karşılaştırma",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "68.67",
+"model": "YOLOv5n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, karşılaştırma",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "67.37",
+"model": "YOLOv6n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, karşılaştırma",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "71.09",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, karşılaştırma",
+"subset": "China+Czech+US, 5 sınıf",
+"metric": "map@0.5/%",
+"value": "68.99",
+"model": "YOLOv10n",
+"is_main": false
+}
+]
+},
+"notes_tr": "MDPI PDF'i tümüyle okundu; Şekil 5 görsel olarak kontrol edildi (D00 11842, D10 6053, D20 1929, Repair 1046, D40 653). Çin türü makalede yazmıyor; 12.012 toplamı iki Çin alt kümesinin de dahil olduğunu düşündürüyor ama bu benim hesabım, makalenin ifadesi değil. C1a false: ana sonuçta Repair ile beş sınıf var. C1b false: sınıf bazlı sonuç tablosu yok. C4b false: mAP@0.5:0.95 yalnızca Şekil 7'de eğri olarak var, sayısal değer yok. C5d false: Denklem 5 ve açıklaması yalnızca ortalama çıkarım süresinden söz ediyor. Bölüm 4.4 sonuçları test kümesine bağlıyor. Tablo 3'te yalnız RHGNetv2 varyantı (72.16) tam modelden (71.49) yüksek."
+},
+"P091": {
+"pid": "P091",
+"access_level": "ozet",
+"source_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tim.2025.3582316",
+"code_url": "https://github.com/Lrc-1109/MMR-DETR",
+"weights_url": "https://github.com/Lrc-1109/MMR-DETR/tree/main/results/best%20and%20last%20weights",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Özet: veri seti yalnızca RDD2022 adıyla geçiyor, ülke alt kümesi yok. Tam metne erişilemedi."
+},
+"K2": {
+"score": 0,
+"evidence": "Özette bölme oranı veya görüntü sayısı yok. Tam metne erişilemedi."
+},
+"K3": {
+"score": 0,
+"evidence": "Özette sınıf adları ve sınıf sayısı yok. Tam metne erişilemedi."
+},
+"K4": {
+"score": 1,
+"evidence": "Özet: karşılaştırma metrikleri arasında eşiğiyle birlikte mAP@0.5 adlandırılmış (sayısal değer verilmemiş)."
+},
+"K5": {
+"score": 0,
+"evidence": "Özette tohum veya tekrar bilgisi yok. Depodaki args.yaml'da seed: 0 var ama yalnız-özet kuralı gereği puanlanmadı (notlara bakınız)."
+},
+"K6": {
+"score": 0,
+"evidence": "Özette donanım ve eğitim ayarı yok. Depodaki ayarlar yalnız-özet kuralı gereği puanlanmadı (notlara bakınız)."
+},
+"K7": {
+"score": 1,
+"evidence": "Özetin son cümlesi kodun GitHub adresini veriyor (Lrc-1109/MMR-DETR); depo herkese açık olarak doğrulandı."
+},
+"K8": {
+"score": 0,
+"evidence": "Özette test protokolü yok; resmî test veya yeniden kurulabilir test üyeliği doğrulanamadı."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": false,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": false,
+"C5d": false,
+"C5e": false,
+"C6a": true,
+"C6b": true
+},
+"comparability": {
+"subsets": "Belirtilmemiş (özette yalnızca RDD2022)",
+"china_type": "belirtilmemiş",
+"n_classes": null,
+"classes": "Özette yok",
+"split": "Özette yok",
+"test_def": "tanimsiz",
+"input_size": "Özette yok",
+"results": []
+},
+"notes_tr": "Tam metne erişilemedi, bu kayıt yalnızca özete dayanıyor; 0 puanların çoğu 'makalede yok' değil 'okunamadı' anlamına geliyor. Denenen yollar: IEEE Xplore sayfası (kapalı erişim), Unpaywall ve OpenAlex (kapalı erişim, depo kopyası yok), Semantic Scholar (PDF yok), arXiv ve Europe PMC (kayıt yok), web araması (açık kopya bulunamadı). Ödeme duvarı aşılmaya çalışılmadı; özet Semantic Scholar API'sinden alındı. Karar noktası C6b: özet ağırlıktan söz etmiyor, ama verdiği depoda RDD2022-MMR-DETR_best.pt ve _last.pt var (LFS dosyası, best için HEAD 200, 39.187.477 bayt; dosya indirilmedi). Kod kitabı makalenin verdiği bağlantıları kabul ettiği için true kodlandı; 'yalnız özet' kuralı dar okunursa false olmalı. Puanlanmayan depo bilgisi (results/RDDresults/args.yaml): epochs 72, batch 8, imgsz 640, AdamW, lr0 0.0001, seed 0, split val; README: üç adet RTX 2080Ti. Bu dosyanın makaledeki deneye ait olduğu doğrulanamadığından K5 ve K6'ya yansıtılmadı. Tam metin bulunursa yeniden kodlanmalı; K5 ve K6 değişebilir. Özet UAPD ve UAVPDD-2023 veri setlerini de anıyor. C4a false: özet mAP@0.5 için değer vermiyor. Sayısal sonuç olmadığı için results boş."
+},
+"P260": {
+"pid": "P260",
+"access_level": "tam_metin",
+"source_url": "https://www.nature.com/articles/s41598-026-49498-9",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Dataset bölümü: RDD2022'nin altı ülkesi (India, Japan, Czech Republic, Norway, United States, China) adlarıyla sayılmış; ülke dışlaması yok."
+},
+"K2": {
+"score": 0,
+"evidence": "Oran var (Benchmark comparison: 8:1:1) ama Dataset bölümü 47.420 görüntünün 38.385'inin eğitimde kullanıldığını söylüyor. 8:1:1 ile eğitim 47.420 üzerinden 37.936, 38.385 üzerinden 30.708 eder; ikisi de 38.385 değil. Bölme havuzu da yazılmamış."
+},
+"K3": {
+"score": 1,
+"evidence": "Dataset bölümü: D00, D10, D20, D40 kodları ve adlarıyla dört sınıf sıralanmış."
+},
+"K4": {
+"score": 1,
+"evidence": "Evaluation metrics: mAP@50 IoU>0.5 olarak tanımlı; Benchmark comparison değerlendirme IoU eşiğini 0.5 veriyor; Tablo 1-2 mAP@50 (%)."
+},
+"K5": {
+"score": 0,
+"evidence": "Metinde tohum yok; Tablo 1-3 tek değer veriyor, tekrar veya sapma raporlanmamış."
+},
+"K6": {
+"score": 1,
+"evidence": "Experiments girişi: NVIDIA A100. Benchmark comparison: 100 epok, yığın 32, SGD, başlangıç öğrenme oranı 0.01, 640×640."
+},
+"K7": {
+"score": 0,
+"evidence": "Data availability yalnızca RDD2022 ve UAV-PDD2023 veri bağlantılarını veriyor; önerilen modelin kodu veya ağırlığı için bağlantı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Benchmark comparison: yalnızca 8:1:1 oranı; resmî gizli test yok, görüntü listesi veya bölme tohumu verilmemiş."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "India, Japan, Czech Republic, Norway, United States, China (altı ülke)",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "D00, D10, D20, D40",
+"split": "Eğitim/doğrulama/test 8:1:1 (havuz belirtilmemiş); ayrıca 47.420 görüntünün 38.385'i eğitim için deniyor",
+"test_def": "ayri_test",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Tablo 2, seçilen yapılandırma",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50 (%)",
+"value": "65.3",
+"model": "YOLO_SE6",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, seçilen yapılandırma",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50–95 (%)",
+"value": "34.5",
+"model": "YOLO_SE6",
+"is_main": true
+},
+{
+"experiment": "Tablo 1-2, taban model",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50 (%)",
+"value": "63.6",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1-2, taban model",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50–95 (%)",
+"value": "33.7",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, taban model",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "F1 (%) (değerlendirme IoU 0.5)",
+"value": "62.5",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, taban model",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "Precision (%)",
+"value": "67.4",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, taban model",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "Recall (%)",
+"value": "58.4",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, karşılaştırma",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50 (%)",
+"value": "62.7",
+"model": "YOLOv11l",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, karşılaştırma",
+"subset": "RDD2022, altı ülke, kendi 8:1:1 bölmesi",
+"metric": "mAP@50 (%)",
+"value": "63.2",
+"model": "RT-DETRv3-R50",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, dış veri seti",
+"subset": "UAV-PDD2023 (RDD2022 değil)",
+"metric": "mAP@50 (%)",
+"value": "56.5",
+"model": "YOLO_SE6",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, dış veri seti",
+"subset": "UAV-PDD2023 (RDD2022 değil)",
+"metric": "F1 (%)",
+"value": "58.1",
+"model": "YOLO_SE6",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, dış veri seti",
+"subset": "UAV-PDD2023 (RDD2022 değil)",
+"metric": "mAP@50 (%)",
+"value": "51.8",
+"model": "YOLOv8l",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, dış veri seti",
+"subset": "UAV-PDD2023 (RDD2022 değil)",
+"metric": "F1 (%)",
+"value": "56.5",
+"model": "YOLOv8l",
+"is_main": false
+}
+]
+},
+"notes_tr": "Nature HTML metni ve Tablo 1-3 sayfaları okundu. Karar noktası K2: 38.385 resmî eğitim sayısıdır (RDD2022 veri makalesi) ve 8:1:1'in bu etiketli havuza uygulandığı düşünülebilir, ama makale bunu söylemiyor. Oran 47.420'nin tamamına uygulansaydı 9.035 resmî test görüntüsünün etiketi kamuya açık olmadığı için RDD2022 ile de çelişirdi. Bu nedenle kod kitabı sözel olarak uygulanıp 0 verildi; hoşgörülü okumada 1 olabilir. C3a yine true, çünkü oran verilmiş. Karar noktası test_def: 8:1:1 ayrı test kümesi tanımlıyor ama metin Tablo 1-2'nin hangi bölümden hesaplandığını açıkça söylemiyor; ayri_test kodlandı, tanimsiz da savunulabilir. YOLO_SE6 için RDD2022 üzerinde F1 sayısal olarak verilmemiş; Şekil 8 yalnızca sınıf bazlı grafik sunuyor, sayısı okunmadı. C5d false: Latency tanımlanmamış, ön ve son işlem kapsamı yazmıyor. Tablo 3'teki deney metinde 'validation' olarak anılan dış veri seti sınamasıdır."
+},
+"P033": {
+"pid": "P033",
+"access_level": "tam_metin",
+"source_url": "https://link.springer.com/article/10.1007/s42452-024-06129-0",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.1: RDD2022'nin altı ülkesi (Japan, India, Czech Republic, Norway, United States, China) sayılmış; ülke dışlaması yok."
+},
+"K2": {
+"score": 0,
+"evidence": "Oran var (Bölüm 4.1: 7:1:2) ama Tablo 1 test kümesini 4171 görüntü veriyor. %20'si 4171 eden toplam 20.855'tir; makale 47.420 diyor (%20'si 9484), resmî eğitim kümesi 38.385 (%20'si 7677). Sayılar bağdaşmıyor."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.1: eğitim ve testte D00, D10, D20, D40 kodlu dört sınıf adlarıyla sıralanmış."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 1-2: mAP@.5 (%) ve mAP@.5:.95 (%); Bölüm 4.3 metni de eşiği 0.5 olarak yazıyor."
+},
+"K5": {
+"score": 0,
+"evidence": "Bölüm 4.1 ve 4.3'te tohum yok; tekrar veya sapma raporlanmamış."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 4.1: GTX 1080Ti, yığın 32, öğrenme oranı 0,01; metin 300 tur ile birlikte 150. epoktan söz ettiğinden tur epok anlamındadır; uygulama kuralına göre epok sayıldı (beş ayarın üçü).",
+"first_pass": 0
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability: veriler sorumlu yazardan istek üzerine; kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Bölüm 4.1: yalnızca 7:1:2 oranı; resmî gizli test yok, görüntü listesi veya bölme tohumu verilmemiş."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japan, India, Czech Republic, Norway, United States, China (altı ülke; 4171 test sayısı tam küme ile uyuşmuyor)",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "D00, D10, D20, D40",
+"split": "Eğitim/doğrulama/test 7:1:2; test 4171 görüntü; toplam 47.420 ile bağdaşmıyor",
+"test_def": "ayri_test",
+"input_size": "Belirtilmemiş (yalnızca 'fixed input size' ifadesi)",
+"results": [
+{
+"experiment": "Tablo 1-2, önerilen model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5 (%)",
+"value": "65.7",
+"model": "Ours / Our method",
+"is_main": true
+},
+{
+"experiment": "Tablo 1, önerilen model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5:.95 (%)",
+"value": "34.8",
+"model": "Ours",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, önerilen model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "Precision (%)",
+"value": "68.8",
+"model": "Our method",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, önerilen model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "Recall (%)",
+"value": "59.9",
+"model": "Our method",
+"is_main": true
+},
+{
+"experiment": "Tablo 1-2, taban model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5 (%)",
+"value": "61.8",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, taban model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5:.95 (%)",
+"value": "32.3",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "Precision (%)",
+"value": "65.4",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "Recall (%)",
+"value": "56.9",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, ablasyon",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5 (%)",
+"value": "64.4",
+"model": "+ C2fDAttn",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, ablasyon",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5 (%)",
+"value": "62.3",
+"model": "+ Slim Neck",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, ablasyon",
+"subset": "RDD2022, kendi test kümesi 4171 görüntü",
+"metric": "mAP@.5 (%)",
+"value": "62.7",
+"model": "+ WPDiou",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, belirtilen standart veri seti",
+"metric": "mAP@.5 (%)",
+"value": "60.7",
+"model": "Faster R-CNN",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, belirtilen standart veri seti",
+"metric": "mAP@.5 (%)",
+"value": "53.9",
+"model": "SSD",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, belirtilen standart veri seti",
+"metric": "mAP@.5 (%)",
+"value": "56.7",
+"model": "YOLOv5s",
+"is_main": false
+}
+]
+},
+"notes_tr": "Erişim: 3 Kasım 2026’da makale yayıncı sayfasından yeniden doğrulandı; Bölüm 4.1 ile Tablo 1-2 yayımlanmış sürümden doğrulandı ve önceki kayıtla aynı çıktı. Karar noktası K6: metin başka yerde 150. epok ve 50 epok erken durdurmadan söz ettiği için '300 iterations' epok sayılırsa açık ayar sayısı üç olur ve K6=1 çıkar; sözel okumada 0 verildi. Karar noktası C5a: Tablo sütunu 'Parm(MB)' ama metin aynı sayıları model boyutu olarak anıyor; parametre sayısı verilmediği için false. K1=1 sözel kurala göre verildi, ancak 4171 test sayısı tam küme kullanıldığı iddiasıyla bağdaşmıyor. F1 yalnızca Şekil 6'da eğri olarak var, sayısal değer yok. Metin kaybı adıyla da tutarsız (MPDIoU / WPDiou)."
+},
+"P234": {
+"pid": "P234",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-17-10973/article_deploy/sustainability-17-10973.pdf",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Bölüm 2.1 Japonya, Hindistan ve Çekya'yı RDD2022'nin içeriği olarak anıyor, seçilen 6000 görüntünün bu ülkelerden geldiğini yazmıyor (alt küme için yalnızca bölgesel çeşitlilik, Bölüm 3.2'de 'multiple countries' deniyor), dolayısıyla deneyin alt kümesi açıkça adlandırılmamış."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 2.1: 6000 görüntü 8:1:1 oranıyla 4800/600/600 ayrılmış; sayılar kendi içinde ve RDD2022 ile çelişmiyor. Yordam çelişkisi için notlara bakınız."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 2.1: LCrack ile aynı dört kategori, adları longitudinal, transverse, alligator, pothole; Şekil 5 açıklaması da RDD2022 için aynı dört sınıfı sıralıyor."
+},
+"K4": {
+"score": 0,
+"evidence": "Bölüm 2.3.2 ve Tablo 2: yalnızca eşiksiz mAP (%); metnin hiçbir yerinde IoU eşiği veya mAP@0.5 yok."
+},
+"K5": {
+"score": 0,
+"evidence": "Bölüm 2.3'te ve sonuçlarda tohum yok; tekrar veya sapma raporlanmamış."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 2.3.1: RTX 4090, 150 epok, yığın 32, öğrenme oranı 0.01; Bölüm 2.2.1: girdi 630×630. Eniyileyici yazılmamış, beş ayarın dördü var."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability Statement: içerik makalede, diğer sorular yazara; kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Bölüm 2.1: 600 test görüntüsünün listesi veya bölme tohumu yok; resmî gizli test kullanılmamış."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": false,
+"C3c": false,
+"C4a": false,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Açıkça belirtilmemiş: RDD2022'den 6000 görüntülük seçim; metin RDD2022'yi Japonya, Hindistan ve Çekya ile tanıtıyor",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "Longitudinal Crack, Transverse Crack, Alligator Crack, Pothole (D kodları kullanılmamış)",
+"split": "6000 görüntü; 8:1:1; 4800/600/600. Bölüm 3.2 ise modelin yalnızca LCrack üzerinde eğitildiğini söylüyor",
+"test_def": "dis_test",
+"input_size": "630×630",
+"results": [
+{
+"experiment": "Tablo 2, RDD2022 genelleme değerlendirmesi",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "61.2",
+"model": "CrackLite-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, RDD2022 genelleme değerlendirmesi",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "F1 (%)",
+"value": "58.6",
+"model": "CrackLite-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, RDD2022 genelleme değerlendirmesi",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "Precision (%)",
+"value": "65.5",
+"model": "CrackLite-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, RDD2022 genelleme değerlendirmesi",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "Recall (%)",
+"value": "53.0",
+"model": "CrackLite-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "60.8",
+"model": "YOLO12",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "F1 (%)",
+"value": "57.2",
+"model": "YOLO12",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "Precision (%)",
+"value": "64.8",
+"model": "YOLO12",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, taban model",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "Recall (%)",
+"value": "51.2",
+"model": "YOLO12",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "57.2",
+"model": "RT-DETR",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "53.6",
+"model": "Swin-T",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "53.3",
+"model": "YOLO11",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "52.6",
+"model": "YOLO10",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "51.8",
+"model": "DETR",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "RDD2022, 6000 görüntülük seçim",
+"metric": "mAP (%) (eşik yazılmamış)",
+"value": "50.1",
+"model": "EfficientDet",
+"is_main": false
+}
+]
+},
+"notes_tr": "MDPI PDF'i okundu; makalenin ana veri seti LCrack, RDD2022 ek deney. Karar noktası K1: ülke adları RDD2022'yi tanıtan cümlede, 6000 görüntünün kaynağı olarak değil; sözel okumayla 0 ve C3b false verildi. Hoşgörülü okumada K1=1 olabilir. Çin türü: metin RDD2022'de Çin'den hiç söz etmiyor; dışlandığı da açıkça yazmadığı için 'yok' yerine 'belirtilmemiş' seçildi. Karar noktası test_def: Bölüm 2.1 RDD2022 alt kümesini eğitim/doğrulama/test diye ayırıyor, Bölüm 3.2 ise Tablo 2'nin LCrack üzerinde eğitilmiş modelin veri setleri arası sınaması olduğunu söylüyor. Sonuçlar bölümünün ifadesi esas alınarak dis_test kodlandı; yöntem bölümüne göre ayri_test olurdu. Bu çelişki K2'nin sayısal koşulunu bozmadığı için K2=1 kaldı. C1a true: sınıflar kodla değil adla verilmiş, dört resmî sınıfa karşılık geliyor. C5c true: Tartışma bölümünde 132 FPS (RTX 4090), ama veri seti ve kapsam belirtilmemiş. Diğer tutarsızlıklar: LCrack için mAP özette ve Tablo 1'de 92.3, Tablo 2-3'te 93.3; RT-DETR parametresi Tablo 2'de 20.0 M, metinde 32.0 M."
+},
+"P255": {
+"pid": "P255",
+"access_level": "tam_metin",
+"source_url": "https://link.springer.com/article/10.1007/s40747-026-02273-9",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Dataset bölümü (RDD2022 paragrafı): bölme sayıları için Hindistan, Çin ve Çekya bölgeleri adıyla veriliyor. Tartışma kısmı da aynı üç ülkeyi sayıyor. Literal uygulama: alt kümeler adlandırılmış. Ama sayılar tüm veri setine denk (notlara bakınız)."
+},
+"K2": {
+"score": 0,
+"evidence": "Dataset bölümü: 26.336 eğitim, 8.000 doğrulama, 13.084 test verilip resmî bölüm olduğu söyleniyor. Toplam 47.420 tutuyor, ama RDD2022 veri makalesi 38.385 eğitim ve 9.035 test veriyor, resmî doğrulama yok. Ayrıca adı geçen üç ülke yalnız 18.081 görüntü eder. Sayılar RDD2022 ile çelişiyor."
+},
+"K3": {
+"score": 1,
+"evidence": "Dataset bölümü: dört standart sınıf adıyla sayılıyor (boyuna, enine, ağ/mesh, çukur). Kod (D00 vb.) yok, ama ad ve sayı açık."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 3, 5 ve 10: mAP@50 ve mAP@50-95 adlandırılmış; eşik metrik adının içinde."
+},
+"K5": {
+"score": 1,
+"evidence": "Tablo 3: üç tohum (1234, 2027, 3407), her tohum için değer ve Ortalama ± Std veriliyor. RDD2022 mAP@50: 57.37 ± 0.22. Deney ayarları bölümü tohum 1234 ve deterministik modu da belirtiyor."
+},
+"K6": {
+"score": 1,
+"evidence": "Tablo 1: RTX 3090 (24 GB). Tablo 2: öğrenme oranı 0.01, görüntü 640 × 640, SGD, yığın 64, epok 200. Beş ayarın beşi de var."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability yalnız veri seti bağlantılarını veriyor (SIMD, RDD2022, VisDrone). Kod ya da ağırlık bağlantısı bulunamadı."
+},
+"K8": {
+"score": 0,
+"evidence": "Yarışma sunucusuna gönderim ve resmî gizli test F1'i yok. Test kümesi 13.084 görüntü olarak anılıyor ama görüntü listesi/bölme dosyası yok. Tohumlar eğitim için, bölme tohumu değil. Raporlanan mAP'nin doğrulamadan mı testten mi geldiği yazılmıyor."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": true,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Makaleye göre Hindistan, Çin, Çekya; ancak bölme sayıları toplamı 47.420 (tüm RDD2022) ile uyumsuz",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "longitudinal, transverse, mesh, potholes (kod verilmemiş; D00, D10, D20, D40 karşılığı)",
+"split": "26.336 eğitim / 8.000 doğrulama / 13.084 test; makale resmî bölme diyor, RDD2022 veri makalesiyle (38.385 / 9.035, doğrulama yok) uyuşmuyor",
+"test_def": "ayri_test",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 3 ve 10 / tohum 1234, ana sonuç",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50",
+"value": "57.4",
+"model": "MEAFF-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 3 ve 5 / tohum 1234, ana sonuç",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50-95",
+"value": "29.1",
+"model": "MEAFF-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 3 / üç tohum ortalaması",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50 Mean ± Std",
+"value": "57.37 ± 0.22",
+"model": "MEAFF-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3 / üç tohum ortalaması",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50-95 Mean ± Std",
+"value": "29.07 ± 0.22",
+"model": "MEAFF-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 10",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "P/%",
+"value": "63.1",
+"model": "MEAFF-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 10",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "R/%",
+"value": "55.2",
+"model": "MEAFF-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, 5 ve 10 / taban model, tohum 1234",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50",
+"value": "54.8",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3 ve 5 / taban model, tohum 1234",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50-95",
+"value": "28.0",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3 / taban model, üç tohum ortalaması",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50 Mean ± Std",
+"value": "54.80 ± 0.35",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3 / taban model, üç tohum ortalaması",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "mAP@50-95 Mean ± Std",
+"value": "28.00 ± 0.35",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 10 / taban model",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "P/%",
+"value": "61.9",
+"model": "YOLOv11n",
+"is_main": false
+},
+{
+"experiment": "Tablo 10 / taban model",
+"subset": "RDD2022 (makaledeki tanım)",
+"metric": "R/%",
+"value": "50.7",
+"model": "YOLOv11n",
+"is_main": false
+}
+]
+},
+"notes_tr": "Erişim: 3 Kasım 2026’da makale yayıncı sayfasından yeniden doğrulandı; 26.336 / 8.000 / 13.084 bölmesi, ülke adları, tohumlar (1234, 2027, 3407) ve Tablo 2 ayarları doğrulandı. Tartışmalı karar K1: üç ülke adı açık, literal olarak 1 verdim; ama 47.420 toplamı altı ülkenin tamamına karşılık geliyor, gerçek alt küme belirsiz, ikinci kodlayıcı 0 verebilir. test_def: 'ayri_test' verdim çünkü test kümesi tanımlı, ancak sonuçların hangi kümeden geldiği yazmıyor; 'tanimsiz' de savunulabilir. 26.336 sayısı RDD2022 veri makalesinde RDD2020'nin toplamı olarak geçiyor. Parametre sayısı (3.75 M) yalnız Tablo 9'da (SIMD) var; aynı model olduğu için C5a evet. C1b: ek sınıf yok, hayır kodlandı. C5d: gecikmenin ön/son işlemi kapsadığı yazmıyor. Anomaliler: Tablo 3 sapmaları üç değerden yeniden hesaplanamıyor (MEAFF mAP@50 için örneklem SD 0.252, kitle SD 0.205, basılan 0.22; YOLOv11n için 0.40/0.327, basılan 0.35). Tablo 12'deki doğruluklar SIMD değerleri, RDD2022 değil. Metinde 'RTX 3090 (45 GB)' geçiyor, Tablo 1'de GPU 24 GB, bellek 45 GB."
+},
+"P227": {
+"pid": "P227",
+"access_level": "ozet",
+"source_url": "https://doi.org/10.1109/icce63647.2025.10930019",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Özet (Semantic Scholar API): yalnız RDD2022 ile eğitildiği yazıyor, ülke alt kümesi yok. Tam metin okunamadı."
+},
+"K2": {
+"score": 0,
+"evidence": "Özette eğitim/doğrulama/test oranı ya da sayısı yok."
+},
+"K3": {
+"score": 0,
+"evidence": "Özette sınıf adı ya da sayısı yok."
+},
+"K4": {
+"score": 1,
+"evidence": "Özet: AP, IoU 0.5, 0.75 ve 0.5-0.95 eşikleriyle açıkça veriliyor (62.1%, 37.1%, 36.2%)."
+},
+"K5": {
+"score": 0,
+"evidence": "Özette tohum ya da tekrar bilgisi yok."
+},
+"K6": {
+"score": 0,
+"evidence": "Özette donanım ya da eğitim ayarı yok."
+},
+"K7": {
+"score": 0,
+"evidence": "Özetteki tek bağlantı YouTube ek malzemesi; video açıklamasında da kod ya da ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Özette test protokolü, resmî gizli test ya da yeniden kurulabilir test kümesi bilgisi yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": false,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": false,
+"C5d": false,
+"C5e": false,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "belirtilmemiş (özette yalnız RDD2022)",
+"china_type": "belirtilmemiş",
+"n_classes": null,
+"classes": "belirtilmemiş",
+"split": "belirtilmemiş",
+"test_def": "tanimsiz",
+"input_size": "belirtilmemiş",
+"results": [
+{
+"experiment": "Özet / en yüksek AP",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AP IoU 0.5",
+"value": "62.1%",
+"model": "YOLOS",
+"is_main": true
+},
+{
+"experiment": "Özet / en yüksek AP",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AP IoU 0.75",
+"value": "37.1%",
+"model": "YOLOS",
+"is_main": false
+},
+{
+"experiment": "Özet / en yüksek AP",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AP IoU 0.5-0.95",
+"value": "36.2%",
+"model": "YOLOS",
+"is_main": false
+},
+{
+"experiment": "Özet / en yüksek AR",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AR Large",
+"value": "42.1%",
+"model": "YOLOS",
+"is_main": false
+},
+{
+"experiment": "Özet / en yüksek AR",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AR Medium",
+"value": "60.3%",
+"model": "YOLOS",
+"is_main": false
+},
+{
+"experiment": "Özet / en yüksek AR",
+"subset": "RDD2022 (alt küme belirtilmemiş)",
+"metric": "AR Small",
+"value": "75.4%",
+"model": "YOLOS",
+"is_main": false
+}
+]
+},
+"notes_tr": "Yalnız özet okundu. Makale IEEE Xplore'da kapalı erişimli: Unpaywall ve OpenAlex kapalı erişim gösteriyor, Semantic Scholar'da açık PDF yok, aramada başka kopya bulunamadı. Bu nedenle 0 puanlar 'makalede yok' değil, 'özette yok' anlamındadır; K1, K2, K3, K5, K6, K7, K8 tam metinle değişebilir. Taban model ya da veri temizliği öncesi/sonrası karşılaştırması özette sayısal olarak verilmemiş. Özetteki AR sırası (Large 42.1, Medium 60.3, Small 75.4) olağandışı; yazıldığı gibi aktardım, sıralama hatası olabilir."
+},
+"P011": {
+"pid": "P011",
+"access_level": "tam_metin",
+"source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11359682/fullTextXML",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4: altı ülke adıyla sayılıyor, görüntü boyutu nedeniyle Norveç çıkarılıyor. Kullanılan küme: Norveç dışındaki ülkeler."
+},
+"K2": {
+"score": 0,
+"evidence": "Bölüm 4: yalnız eğitim kümesi sayısı var (16.648). Doğrulama ya da test sayısı/oranı yok; bu yüzden bölme tanımlanmamış."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4 ve Tablo 2: D00, D10, D20, D40 adları ve kodlarıyla sayılıyor; sonuçlar da bu dört sınıf için."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 1-3: mAP50/% ve mAP50-95/%; eşik metrik adında."
+},
+"K5": {
+"score": 0,
+"evidence": "RDD2022 deneyi için tohum ya da tekrar yok. Bölüm 5.2.3'teki beş katlı çapraz doğrulama yalnız Wall Crack veri seti için."
+},
+"K6": {
+"score": 1,
+"evidence": "Bölüm 5.1: RTX 4090, 640 × 640, SGD, 300 epok, yığın 16, başlangıç öğrenme oranı 0.01."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability: veriler istek üzerine. Makalede kod ya da ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok; doğrulamadan ayrı test kümesi tanımlanmamış; görüntü listesi ya da tohum yok."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": false,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japonya, Hindistan, Çekya, ABD, Çin (Norveç hariç)",
+"china_type": "belirtilmemiş",
+"n_classes": 4,
+"classes": "D00, D10, D20, D40",
+"split": "Yalnız eğitim kümesi sayısı: 16.648 görüntü; doğrulama/test tanımlanmamış; seçim yöntemi açıklanmamış",
+"test_def": "tanimsiz",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 1 ve 3 / ana sonuç",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "93.5",
+"model": "YOLOv8-CD",
+"is_main": true
+},
+{
+"experiment": "Tablo 1 ve 3 / ana sonuç",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50-95/%",
+"value": "71.4",
+"model": "YOLOv8-CD",
+"is_main": true
+},
+{
+"experiment": "Tablo 1 ve 3 / ana sonuç",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "F1/%",
+"value": "93.2",
+"model": "YOLOv8-CD",
+"is_main": true
+},
+{
+"experiment": "Tablo 1, 2 ve 3 / taban model",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "78.3",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, 2 ve 3 / taban model",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50-95/%",
+"value": "48.7",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 1 / taban model",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "F1/%",
+"value": "78.5",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3 / taban model ('YOLOv8' etiketiyle)",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "F1/%",
+"value": "78.4",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D00",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "89.0",
+"model": "YOLOv8-CD",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D10",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "93.3",
+"model": "YOLOv8-CD",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D20",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "99.1",
+"model": "YOLOv8-CD",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D40",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "92.8",
+"model": "YOLOv8-CD",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D00",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "74.4",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D10",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "75.0",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D20",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "91.0",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2 / D40",
+"subset": "Norveç hariç 16.648 eğitim görüntüsü",
+"metric": "mAP50/%",
+"value": "72.7",
+"model": "YOLOv8n",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin Europe PMC XML (PMC11359682) üzerinden okundu. Tartışmalı karar C3a: yalnız eğitim sayısı var, bölme verilmediği için hayır kodladım; 'sayı verilmiş' diye okuyan biri evet diyebilir. C1b: ek sınıf yok, hayır kodlandı. C5a: sayısal parametre değeri yok, yalnız GFLOPs ve FPS var. Sonuçların hangi kümede hesaplandığı yazmıyor. Anomaliler: Data Availability verilerin gizlilik nedeniyle açık olmadığını söylüyor, oysa RDD2022 herkese açık. YOLOv8n F1'i Tablo 1'de 78.5, Tablo 3'te 78.4. YOLOv7'nin mAP50 (57.9) ve mAP50-95 (25.6) değerleri RDD2022 (Tablo 3) ile Wall Crack (Tablo 5) için aynı. Tablo 1'de YOLOv8n-L, F1 ve mAP50'de tam model ile aynı (93.2/93.5). Wall Crack sonuçları RDD2022 olmadığı için satırlara alınmadı."
+},
+"P000": {
+"pid": "P000",
+"access_level": "tam_metin",
+"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10610575/",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.2: Çin görüntüleri seçilmiş; 2401 drone ve 1977 araç üstü kamera diye ayrılmış."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 4.2: 8:1:1; toplam 4.398 deniyor, parçalar 2.401 + 1.977 = 4.378 (fark %0,46); filtre sonrası 4.373; uygulama kuralına göre çelişki sayılmadı.",
+"first_pass": 0
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve Tablo 4: beş sınıf adı ve koduyla: D00, D10, D20, D40, Repair."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 5-8: mAP@0.5/%; Bölüm 4.2 eşiği 0.5 olarak tanımlıyor."
+},
+"K5": {
+"score": 0,
+"evidence": "Metin ve tablolarda tohum ya da tekrar/ortalama-sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "Tablo 2: RTX 3090 (24 GB). Tablo 3: öğrenme oranı 0.01, 640 × 640, SGD, yığın 64, epok 160."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability yalnız RDD2022 veri bağlantısını veriyor; kod ya da ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Bölüm 4.2: 8:1:1 rastgele oran; görüntü listesi ya da bölme tohumu yok. Resmî gizli testte değerlendirme yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Çin (China_Drone ve China_MotorBike; makalede drone ve araç üstü kamera)",
+"china_type": "ikisi",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair",
+"split": "8:1:1 eğitim/doğrulama/test; filtre sonrası 4373 görüntü (başlangıç 4398 deniyor, parçalar 4378 ediyor); tohum yok",
+"test_def": "ayri_test",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 7 ve 8 / ana sonuç",
+"subset": "Çin (drone + araç üstü)",
+"metric": "mAP@0.5/%",
+"value": "90.7",
+"model": "BL-YOLOv8s",
+"is_main": true
+},
+{
+"experiment": "Tablo 8 / ana sonuç",
+"subset": "Çin (drone + araç üstü)",
+"metric": "F1-Score",
+"value": "0.87",
+"model": "BL-YOLOv8s",
+"is_main": true
+},
+{
+"experiment": "Tablo 7 ve 8 / taban model",
+"subset": "Çin (drone + araç üstü)",
+"metric": "mAP@0.5/%",
+"value": "87.4",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 8 / taban model",
+"subset": "Çin (drone + araç üstü)",
+"metric": "F1-Score",
+"value": "0.83",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 6 / dikkat modülü karşılaştırması",
+"subset": "Çin (drone + araç üstü)",
+"metric": "mAP@0.5/%",
+"value": "90.5",
+"model": "YOLOv8s + BiFPN + LSK-attention",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin Europe PMC XML (PMC10610575) üzerinden okundu; şekiller görsel olarak incelenmedi. Tartışmalı kararlar: K2'yi 4398/4378 çelişkisi nedeniyle 0 verdim; oran verilmiş olduğu için C3a evet. C4b: mAP@0.5:0.95 yalnız Şekil 9 eğrisinde var, sayısal değer yok, hayır. C1b: Repair için sınıf bazında AP yok, yalnız Şekil 10 karışıklık matrisi var, hayır. test_def: 8:1:1 test kümesi tanımlı ama tablolardaki değerlerin testten mi doğrulamadan mı geldiği yazmıyor; 'tanimsiz' de savunulabilir. Anomaliler: Tablo 4 sınıf sayıları (D00 3270, D10 1895, D20 756, D40 255) RDD2022 veri makalesindeki Çin toplamlarının (4104, 2359, 934, 321) yaklaşık %80'i; 'veri setindeki' sayı denmesine karşın eğitim kısmı gibi duruyor. LSK varyantı Tablo 6'da 90.5 / 7.83 M / 25.7 GFLOPs / 103 FPS, Tablo 7'de 90.7 / 7.82 M / 25.5 / 98 FPS. YOLOv8s FPS Tablo 7'de 128, Tablo 8'de 120. Bölüm 4.5 'SimSPPF +2 FPS' diyor, SPPF için 6.93 ms, SimSPPF için 5.73 ms."
+},
+"P075": {
+"pid": "P075",
+"access_level": "tam_metin",
+"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12469154/",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Bölüm 4.2: Çin alt kümesi seçilmiş, China_M (motosiklet) ve China_D (drone) adıyla. Tablo 9 ayrıca 'RDD2022 global' deneyini raporluyor."
+},
+"K2": {
+"score": 1,
+"evidence": "Bölüm 4.2: toplam 4.878; eğitim 3.410, doğrulama 968, yaklaşık 7:2:1. China_M 1.977 + 500, China_D 2.401 değerleri RDD2022 veri makalesiyle uyumlu; 3.410 + 968 = 4.378, 500 ile 4.878."
+},
+"K3": {
+"score": 1,
+"evidence": "Bölüm 4.2 ve Tablo 3: beş sınıf koduyla (D40, D20, Repair, D10, D00). Bölüm 4.3 RD2022 için dört sınıf diyor; veri seti geneline dair bu cümleyi kullanılan küme tanımının önüne geçirilmedi."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 4-10: mAP@0.50 ve mAP@0.50:0.95 adlandırılmış."
+},
+"K5": {
+"score": 0,
+"evidence": "Metin ve tablolarda tohum ya da tekrar/ortalama-sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "Tablo 1: NVIDIA Tesla V100S (32 GB). Tablo 2: 640 × 640, yığın 64, epok 300, SGD, öğrenme oranı 0.01."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability yalnız RDD2022 veri bağlantılarını veriyor (crddc2022 ve sekilab deposu); bunlar veri kaynağı, yazarların kodu ya da ağırlığı değil."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test sunucusu kullanılmamış. Bölüm 4.2'deki test kümesi anlaşılan China_M'nin 500 görüntüsü, ama görüntü listesi, bölme dosyası ya da tohum yok. Tablo 9'da da yalnız 'özgün oranlar' deniyor."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": false,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Çin (China_M + China_D) ana sonuç; ek olarak Tablo 9'da 'RDD2022 global' (ülkeler bu deney için ayrıca sayılmamış, Bölüm 4.2 altı ülkeyi listeliyor)",
+"china_type": "ikisi",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair (Bölüm 4.3'te 'dört sınıf' çelişkisi var)",
+"split": "Çin: 3.410 eğitim / 968 doğrulama / 500 test (China_M testi olduğu anlaşılıyor), yaklaşık 7:2:1, toplam 4.878; global deney: özgün oranlara göre eğitim/test, sayı yok",
+"test_def": "ayri_test",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 7, 8 ve 10 / ana sonuç",
+"subset": "Çin (China_M + China_D)",
+"metric": "mAP@0.50",
+"value": "91.4%",
+"model": "YOLOv11s-ATL",
+"is_main": true
+},
+{
+"experiment": "Tablo 7, 8 ve 10 / ana sonuç",
+"subset": "Çin (China_M + China_D)",
+"metric": "mAP@0.50:0.95",
+"value": "79.5%",
+"model": "YOLOv11s-ATL",
+"is_main": true
+},
+{
+"experiment": "Tablo 7, 8 ve 10 / ana sonuç",
+"subset": "Çin (China_M + China_D)",
+"metric": "F1 Score",
+"value": "0.914",
+"model": "YOLOv11s-ATL",
+"is_main": true
+},
+{
+"experiment": "Tablo 4-8 ve 10 / taban model",
+"subset": "Çin (China_M + China_D)",
+"metric": "mAP@0.50",
+"value": "88.2%",
+"model": "YOLOv11s",
+"is_main": false
+},
+{
+"experiment": "Tablo 4-8 ve 10 / taban model",
+"subset": "Çin (China_M + China_D)",
+"metric": "mAP@0.50:0.95",
+"value": "76.4%",
+"model": "YOLOv11s",
+"is_main": false
+},
+{
+"experiment": "Tablo 4-8 ve 10 / taban model",
+"subset": "Çin (China_M + China_D)",
+"metric": "F1 Score",
+"value": "0.889",
+"model": "YOLOv11s",
+"is_main": false
+},
+{
+"experiment": "Tablo 9 / global deney",
+"subset": "RDD2022 global",
+"metric": "mAP@0.50",
+"value": "90.1%",
+"model": "YOLOv11s-ATL",
+"is_main": false
+},
+{
+"experiment": "Tablo 9 / global deney",
+"subset": "RDD2022 global",
+"metric": "mAP@0.50:0.95",
+"value": "78.3%",
+"model": "YOLOv11s-ATL",
+"is_main": false
+},
+{
+"experiment": "Tablo 9 / global deney",
+"subset": "RDD2022 global",
+"metric": "F1 Score",
+"value": "0.901",
+"model": "YOLOv11s-ATL",
+"is_main": false
+},
+{
+"experiment": "Tablo 8 / en büyük ölçek",
+"subset": "Çin (China_M + China_D)",
+"metric": "mAP@0.50",
+"value": "92.3%",
+"model": "YOLOv11x-ATL",
+"is_main": false
+},
+{
+"experiment": "Tablo 9 / en büyük ölçek, global",
+"subset": "RDD2022 global",
+"metric": "mAP@0.50",
+"value": "91.7%",
+"model": "YOLOv11x-ATL",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin Europe PMC XML (PMC12469154) üzerinden okundu. Tartışmalı kararlar: K3'ü beş sınıf açıkça sıralandığı için 1 verdim, ama Bölüm 4.3 dört sınıf diyor, ikinci kodlayıcı 0 verebilir. K8: 500 test görüntüsü resmî China_M testi olsa üyelik kurulabilir, ama makale bunu açıkça bağlamıyor ve kuraldaki liste/dosya/tohum şartı yok, 0 verdim. test_def: tablolardaki Çin sonuçlarının hangi kümeden geldiği yazmıyor; 'tanimsiz' de savunulabilir. C1b: Repair için sınıf bazında sonuç yok. C5c: FPS ya da süre verilmemiş. Anomaliler: Makale China_M testinin 1.046 etiketli olduğunu söylüyor; RDD2022 veri makalesi yalnız eğitim etiketlerini veriyor (4.650), bu değeri doğrulayamadım. Tablo 3 sınıf sayıları BL-YOLOv8 Tablo 4 ile aynı ve Çin toplamlarının yaklaşık %80'i. Tablo 10'da birçok rakip modelin mAP/Param/GFLOPs değerleri BL-YOLOv8 Tablo 8 ile aynı (Faster R-CNN 73.2, YOLOv5s 85.2, YOLOX 89.0, BL-YOLOv8 90.7) ama 'aynı koşullarda çalıştırıldı' deniyor. YOLOv11s-ATL F1 metinde 0.918, tablolarda 0.914. Kazanç 3.2/3.1 puan olarak da 3.6/4.1 olarak da yazılmış. Tablo 8'de YOLOv11m-ATL parametresi 11.56 (s modeliyle aynı, muhtemel hata). Tablo 9 global deneyinin alt küme ve bölme ayrıntısı yok."
+},
+"P035": {
+"pid": "P035",
+"access_level": "tam_metin",
+"source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11784705/fullTextXML",
+"code_url": "https://github.com/wulihuge/OBC-YOLOv8",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Dataset bölümü: RDD2022'nin Çin kısmı (RDD-China) kullanılıyor; 2.401 dron ve 1.977 araç üstü kamera görüntüsü ayrı ayrı veriliyor. Genelleme deneyi RDD-Japan olarak adlandırılmış."
+},
+"K2": {
+"score": 1,
+"evidence": "Dataset bölümü: toplam 4.378 görüntü, eğitim/doğrulama/test 8:1:1. 2.401+1.977=4.378 kendi içinde tutarlı ve RDD2022 Çin eğitim sayılarıyla çelişmiyor. Puan ana (Çin) deneyine göre verildi; Japonya deneyinde bölme yok."
+},
+"K3": {
+"score": 1,
+"evidence": "Dataset bölümü beş sınıfı sıralıyor: D00, D10, D20, D40 ve yol onarımı. Şekil 8 aynı beş sınıfı ve tüm sınıf ortalamasını gösteriyor."
+},
+"K4": {
+"score": 1,
+"evidence": "Evaluation metrics bölümü ile Tablo 3, 6, 7: ana metrik mAP@0.5 eşiğiyle açıkça adlandırılmış."
+},
+"K5": {
+"score": 0,
+"evidence": "Makalede tohum değeri, tekrar sayısı veya ortalama/sapma yok. Bağlantılı koddaki default.yaml içinde genel bir varsayılan tohum var, ancak yazarlar bunu deney tohumu olarak raporlamıyor."
+},
+"K6": {
+"score": 1,
+"evidence": "Experimental environment ve Tablo 1: NVIDIA RTX 4080 (16 GB); öğrenme oranı 0,01, girdi 640×640, yığın 16, 300 epok (beşten dördü)."
+},
+"K7": {
+"score": 1,
+"evidence": "Data Availability bölümü GitHub (wulihuge/OBC-YOLOv8) ve Zenodo (10.5281/zenodo.13912921) kod bağlantısı veriyor."
+},
+"K8": {
+"score": 0,
+"evidence": "Dataset bölümü: yalnızca 8:1:1 oranı var, tohum veya görüntü listesi yok. Depodaki RDDChina.yaml sadece klasör yolları içeriyor, bölme dosyası yok. Resmî gizli test kullanılmamış."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": true,
+"C6b": false
+},
+"comparability": {
+"subsets": "China_Drone ve araç üstü kamera (RDD-China, 2.401+1.977); genelleme için RDD-Japan",
+"china_type": "ikisi",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair",
+"split": "4.378 görüntü, 8:1:1 eğitim/doğrulama/test (tohum ve liste yok)",
+"test_def": "ayri_test",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Tablo 6-7, OBC-YOLOv8 tam model, 8:1:1",
+"subset": "RDD-China",
+"metric": "mAP@0.5/%",
+"value": "86",
+"model": "OBC-YOLOv8",
+"is_main": true
+},
+{
+"experiment": "Tablo 6-7, OBC-YOLOv8 tam model, 8:1:1",
+"subset": "RDD-China",
+"metric": "F1-score/%",
+"value": "81.9",
+"model": "OBC-YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Tablo 7, verimlilik karşılaştırması",
+"subset": "RDD-China",
+"metric": "FPS",
+"value": "222",
+"model": "OBC-YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Tablo 3-7, temel model",
+"subset": "RDD-China",
+"metric": "mAP@0.5/%",
+"value": "84.2",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3-7, temel model",
+"subset": "RDD-China",
+"metric": "F1-score/%",
+"value": "80.3",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, temel model",
+"subset": "RDD-China",
+"metric": "mAP@0.5−0.95/%",
+"value": "57.6",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, ölçek deneyi",
+"subset": "RDD-China",
+"metric": "mAP@0.5/%",
+"value": "86.2",
+"model": "OBC-YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, ölçek deneyi",
+"subset": "RDD-China",
+"metric": "mAP@0.5/%",
+"value": "86.4",
+"model": "OBC-YOLOv8m",
+"is_main": false
+},
+{
+"experiment": "Şekil 11, genelleme deneyi",
+"subset": "RDD-Japan (7 sınıf)",
+"metric": "mAP@0.5",
+"value": "0.595",
+"model": "OBC-YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 11, genelleme deneyi",
+"subset": "RDD-Japan (7 sınıf)",
+"metric": "mAP@0.5",
+"value": "0.58",
+"model": "YOLOv8n",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin Europe PMC XML kaydından okundu. Şekil 8 ve 11 PeerJ'in herkese açık şekil sunucusundan görüldü. C1b: Şekil 8'de Repair dahil sınıf bazında değerler var; eksen metriği adlandırılmamış, 'All classes' değeri 0.86 ile mAP@0.5'e denk. C4b yanlış kodlandı: mAP@0.5−0.95 yalnızca temel model ve CA varyantları için var (Tablo 4-5), önerilen tam model için yok. C6b yanlış kodlandı: depodaki best.pt ve updated-model.pt yüklenmeden (çalıştırılmadan) içerik dizgileri incelendi; COCO sınıf adları ve coco128 içeriyor, ODConv/BoTNet/CoordAtt izine rastlanmadı, yani önerilen modelin RDD ağırlığı görünmüyor. test_def: makale ayrı test kümesi tanımlıyor ama tablo değerlerinin hangi bölmeden geldiğini söylemiyor; depodaki val.py doğrulama kümesi için yorum taşıyor, default.yaml split değeri val. Tutarsızlıklar: görselleştirme bölümü Çin eğitiminde çukur sınıfı olmadığını söylüyor, oysa D40 listelenmiş ve Şekil 8'de değeri var; RDDChina.yaml 6 sınıf (Block crack dahil) içeriyor, makale 5 diyor; train.py epochs=400, makale 300; Tablo 5'in CA'sız ilk satırı mAP@0.5 85.5, temel model ise 84.2. Zenodo kaydına doğrudan erişilemedi."
+},
+"P020": {
+"pid": "P020",
+"access_level": "ozet",
+"source_url": "https://iopscience.iop.org/article/10.1088/1361-6501/ace929",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Özet yalnızca farklı yol hasarı veri setlerinden söz ediyor; RDD2022 veya ülke alt kümesi adı yok."
+},
+"K2": {
+"score": 0,
+"evidence": "Özette bölme oranı veya görüntü sayısı yok."
+},
+"K3": {
+"score": 0,
+"evidence": "Özette sınıf adı veya sayısı yok."
+},
+"K4": {
+"score": 0,
+"evidence": "Özet: ortalama mAP %85,8 veriliyor, IoU eşiği yok."
+},
+"K5": {
+"score": 0,
+"evidence": "Özette tohum veya tekrar bilgisi yok."
+},
+"K6": {
+"score": 0,
+"evidence": "Özette donanım ve eğitim ayarı yok."
+},
+"K7": {
+"score": 0,
+"evidence": "Özette kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Özette test protokolü tanımı yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": false,
+"C3c": false,
+"C4a": false,
+"C4b": false,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": false,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "özette belirtilmemiş",
+"china_type": "belirtilmemiş",
+"n_classes": null,
+"classes": "özette belirtilmemiş",
+"split": "özette belirtilmemiş",
+"test_def": "tanimsiz",
+"input_size": "özette belirtilmemiş",
+"results": [
+{
+"experiment": "Özet, farklı veri setleri üzerinden ortalama",
+"subset": "adları özette yok",
+"metric": "average mAP",
+"value": "85.8%",
+"model": "İyileştirilmiş YOLOv7",
+"is_main": false
+},
+{
+"experiment": "Özet, farklı veri setleri üzerinden ortalama",
+"subset": "adları özette yok",
+"metric": "F1 value",
+"value": "0.697",
+"model": "İyileştirilmiş YOLOv7",
+"is_main": false
+},
+{
+"experiment": "Özet, farklı veri setleri üzerinden ortalama",
+"subset": "adları özette yok",
+"metric": "FPS",
+"value": "62.13 fps",
+"model": "İyileştirilmiş YOLOv7",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metne ulaşılamadı: IOPscience ödeme duvarı arkasında; Unpaywall, Semantic Scholar ve OpenAlex kapalı erişim diyor; Europe PMC ve arXiv'de kayıt yok; web aramasında açık kopya bulunmadı. Yalnızca özet kodlandı. Ön sınıflandırma listesi çalışmayı Çin alt kümesi grubuna koyuyor, ancak özet bunu doğrulamıyor. Sayfanın kaynakça üst verisinde RDD2022 makalesi atıf olarak geçiyor; bu kullanım kanıtı sayılmadı. Değerler birkaç veri setinin ortalaması olduğundan ve RDD2022'ye ait olduğu doğrulanamadığından is_main işaretlenmedi. Baseline değeri özette yok. Params ve FLOPs için yalnızca düştüğü söyleniyor, sayı yok, bu yüzden C5a ve C5b yanlış."
+},
+"P235": {
+"pid": "P235",
+"access_level": "tam_metin",
+"source_url": "https://ope.lightpublishing.cn/rc-pub/front/front-article/download/152721079/lowqualitypdf/RSF-DETR：空频增强与上下文重构的路面损伤检测.pdf",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§4.1: RDD2022'den yalnızca Çin görüntülerinin seçildiği belirtiliyor. Dron/motosiklet ayrımı yok, ama ülke alt kümesi adlandırılmış."
+},
+"K2": {
+"score": 1,
+"evidence": "§4.1: 7:1:2 rastgele bölme; 3.061/437/875 görüntü, toplam 4.373. Etiketsizler çıkarılmış; sayılar kendi içinde tutarlı ve RDD2022 ile çelişmiyor."
+},
+"K3": {
+"score": 1,
+"evidence": "§4.1 ve Tablo 2: D00, D10, D20, D40 ve Repair olmak üzere beş sınıf sıralanmış."
+},
+"K4": {
+"score": 1,
+"evidence": "§4.4 ve Tablo 4-5: mAP@0.5 ve mAP@0.5:0.95 eşikleriyle veriliyor."
+},
+"K5": {
+"score": 0,
+"evidence": "§4.2-4.6: tohum yok, tekrar veya ortalama/sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "§4.2: NVIDIA RTX 4090; girdi 640×640, yığın 8, öğrenme oranı 0,001, 250 epok, SGD (beşinin tamamı)."
+},
+"K7": {
+"score": 0,
+"evidence": "Metinde ve son notlarda kod veya ağırlık bağlantısı bulunamadı (GitHub/kod araması sonuçsuz)."
+},
+"K8": {
+"score": 0,
+"evidence": "§4.1: ayrı test kümesi var ama rastgele oranla ayrılmış; tohum veya görüntü listesi paylaşılmamış. Resmî gizli test yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "RDD2022 Çin; ek olarak RDD2022 Norveç (benzetimli yağmur) ve RDD2022 dışı UAV-PDD2023",
+"china_type": "belirtilmemiş",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair",
+"split": "Rastgele 7:1:2 (3.061/437/875, toplam 4.373); ek deneyde 8:1:1",
+"test_def": "ayri_test",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Tablo 4-5, tam model, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5",
+"value": "0.858",
+"model": "RSF-DETR (Ours)",
+"is_main": true
+},
+{
+"experiment": "Tablo 4-5, tam model, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5∶0.95",
+"value": "0.561",
+"model": "RSF-DETR (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 5, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "FPS (bs=1)",
+"value": "52.3",
+"model": "RSF-DETR (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 4-5, temel model, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5",
+"value": "0.839",
+"model": "RT-DETR",
+"is_main": false
+},
+{
+"experiment": "Tablo 4-5, temel model, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5∶0.95",
+"value": "0.544",
+"model": "RT-DETR",
+"is_main": false
+},
+{
+"experiment": "Tablo 5, temel model, 7:1:2",
+"subset": "RDD2022 Çin",
+"metric": "FPS (bs=1)",
+"value": "66.4",
+"model": "RT-DETR",
+"is_main": false
+},
+{
+"experiment": "Tablo 6, 8:1:1 bölme",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5",
+"value": "0.866",
+"model": "Baseline+FreSCal+RSDFPN+DGCST",
+"is_main": false
+},
+{
+"experiment": "Tablo 6, 8:1:1 bölme",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5∶0.95",
+"value": "0.577",
+"model": "Baseline+FreSCal+RSDFPN+DGCST",
+"is_main": false
+},
+{
+"experiment": "Tablo 6, 8:1:1 bölme",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5",
+"value": "0.844",
+"model": "Baseline",
+"is_main": false
+},
+{
+"experiment": "Tablo 6, 8:1:1 bölme",
+"subset": "RDD2022 Çin",
+"metric": "mAP@0.5∶0.95",
+"value": "0.556",
+"model": "Baseline",
+"is_main": false
+},
+{
+"experiment": "Tablo 7, benzetimli yağmur, 8:1:1",
+"subset": "RDD2022 Norveç (2.652 görüntü)",
+"metric": "mAP@0.5",
+"value": "0.293",
+"model": "Baseline+FreSCal+RSDFPN+DGCST",
+"is_main": false
+},
+{
+"experiment": "Tablo 7, benzetimli yağmur, 8:1:1",
+"subset": "RDD2022 Norveç (2.652 görüntü)",
+"metric": "mAP@0.5",
+"value": "0.275",
+"model": "Baseline",
+"is_main": false
+},
+{
+"experiment": "Tablo 8, RDD2022 dışı veri",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5",
+"value": "0.858",
+"model": "Baseline+FreSCal+RSDFPN+DGCST",
+"is_main": false
+},
+{
+"experiment": "Tablo 8, RDD2022 dışı veri",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5",
+"value": "0.821",
+"model": "Baseline",
+"is_main": false
+}
+]
+},
+"notes_tr": "Yayıncı PDF'i (Unpaywall yayımcı konumu) tam okundu; metin Çince, İngilizce özetli. C1b yanlış: sınıf bazında sonuç tabloları (Tablo 9-10) yalnızca UAV-PDD2023 için; RDD2022 Çin için sınıf bazında sonuç yok, Repair ayrı raporlanmamış. test_def ayri_test kodlandı, çünkü 875 görüntülük test kümesi tanımlı; ancak metin tablo değerlerinin hangi bölmeden geldiğini açıkça söylemiyor. Çin türü metinde ayrılmıyor. F1 raporlanmıyor."
+},
+"P401": {
+"pid": "P401",
+"access_level": "tam_metin",
+"source_url": "https://pdf.elspublishing.com/paper/pj/open/pcs/2026/pcs20260012.pdf",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§5.1: RDD2022'nin Çin kısmı; China_Drone ve China_MotorBike alt kümeleri adlarıyla verilmiş."
+},
+"K2": {
+"score": 0,
+"evidence": "Sayılar çelişiyor: özet 26.620 görüntü, §5.1 3.853 görüntü diyor. 8:1:1 oranı verilmiş olsa da kural gereği 0."
+},
+"K3": {
+"score": 1,
+"evidence": "§5.1: D00, D10, D20, D40 dört sınıf adlarıyla sıralanmış."
+},
+"K4": {
+"score": 1,
+"evidence": "§4.2 ve Tablo 1-2: mAP@0.5 ve mAP@0.5:0.95 (adım 0,05) tanımlı."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum, tekrar veya ortalama/sapma yok (§4-5)."
+},
+"K6": {
+"score": 0,
+"evidence": "§4.1 yalnızca donanım ve yazılımı veriyor (NVIDIA 4090D); epok, yığın, öğrenme oranı, eniyileyici yok. 512×512 görüntü boyutu sayılsa bile beşten biri."
+},
+"K7": {
+"score": 0,
+"evidence": "Makalede kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "§5.1: 8:1:1 oranı dışında tohum veya görüntü listesi yok; test üyeliği yeniden kurulamaz. Resmî gizli test yok."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China_Drone, China_MotorBike",
+"china_type": "ikisi",
+"n_classes": 4,
+"classes": "D00, D10, D20, D40",
+"split": "8:1:1 eğitim/doğrulama/test; 3.853 görüntü (§5.1), özette 26.620 (çelişkili)",
+"test_def": "ayri_test",
+"input_size": "512×512 (veri seti görüntü boyutu; eğitim girdisi ayrıca belirtilmemiş)",
+"results": [
+{
+"experiment": "Tablo 1-2, tam model, test kümesi",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50",
+"value": "0.860",
+"model": "ELW-YOLO",
+"is_main": true
+},
+{
+"experiment": "Tablo 1-2, tam model, test kümesi",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50-95",
+"value": "0.559",
+"model": "ELW-YOLO",
+"is_main": false
+},
+{
+"experiment": "Tablo 1-2, tam model",
+"subset": "China_Drone + China_MotorBike",
+"metric": "FPS",
+"value": "74",
+"model": "ELW-YOLO",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, temel model",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50",
+"value": "0.824",
+"model": "YOLOv26n",
+"is_main": false
+},
+{
+"experiment": "Tablo 1, temel model",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50-95",
+"value": "0.515",
+"model": "YOLOv26n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50",
+"value": "0.807",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma",
+"subset": "China_Drone + China_MotorBike",
+"metric": "mAP50-95",
+"value": "0.502",
+"model": "YOLOv8n",
+"is_main": false
+}
+]
+},
+"notes_tr": "Yayıncı PDF'i tam okundu. C1b yanlış: ek sınıf yok, madde uygulanmıyor. Tablo 2 metni sonuçları test kümesine bağlıyor; Tablo 1 için aynı ifade yok ama aynı ELW-YOLO satırı iki tabloda da yer alıyor. F1 raporlanmıyor. Metin-tablo tutarsızlıkları: §5.3 EMA2 için mAP50-95 artışını %0,88 diyor, Tablo 1 0.515'ten 0.525'e; §5.4 LQE için iki metrikte de %2,5 diyor, Tablo 1 0.843'ten 0.858'e ve 0.525'ten 0.558'e. Şekil 4 başlığı bölme oranı dese de görselde sınıf ve kutu dağılımları var, bölme sayısı yok. Temel model adı metinde hem YOLOv2026n hem YOLOv26n."
+},
+"P056": {
+"pid": "P056",
+"access_level": "ozet",
+"source_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/jiot.2025.3537640?fields=title,abstract,openAccessPdf",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Özet: RDD2022 kullanıldığı ve 1976 etiketli görüntünün Çin'den geldiği belirtiliyor; ülke alt kümesi adlandırılmış."
+},
+"K2": {
+"score": 0,
+"evidence": "Özette yalnızca toplam 1976 görüntü var; eğitim/doğrulama/test oranı veya sayısı yok."
+},
+"K3": {
+"score": 0,
+"evidence": "Özette sınıf adı veya sayısı yok."
+},
+"K4": {
+"score": 0,
+"evidence": "Özet mAP ve F1 iyileşmesinden söz ediyor; IoU eşiği ve değer yok."
+},
+"K5": {
+"score": 0,
+"evidence": "Özette tohum veya tekrar bilgisi yok."
+},
+"K6": {
+"score": 0,
+"evidence": "Özette donanım ve eğitim ayarı yok."
+},
+"K7": {
+"score": 0,
+"evidence": "Özette kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Özette test protokolü tanımı yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": true,
+"C3c": false,
+"C4a": false,
+"C4b": false,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": false,
+"C5d": false,
+"C5e": false,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "RDD2022 Çin (özette 1976 görüntü)",
+"china_type": "belirtilmemiş",
+"n_classes": null,
+"classes": "özette belirtilmemiş",
+"split": "özette belirtilmemiş",
+"test_def": "tanimsiz",
+"input_size": "özette belirtilmemiş",
+"results": []
+},
+"notes_tr": "Tam metne ulaşılamadı: IEEE Xplore'da kapalı erişimli; Unpaywall, Semantic Scholar ve OpenAlex kapalı erişim gösteriyor; Europe PMC, arXiv ve web aramasında açık kopya bulunmadı. Özet Semantic Scholar üzerinden okundu. Özette sayısal mAP/F1 değeri olmadığından results boş, baseline değeri de yok. Çin türü özette geçmiyor; 1976 sayısından tür çıkarımı yapılmadı. Özet ifadesi RDD2022'nin tamamını 1976 görüntü gibi anlatıyor; alt küme mi yoksa ifade hatası mı olduğu tam metin olmadan sınanamıyor."
+},
+"P026": {
+"pid": "P026",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/electronics/electronics-13-02413/article_deploy/electronics-13-02413.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§3.1: RDD2022 içinden Çin görüntülerinin seçildiği ülke adıyla yazılı; deney yalnızca bu alt kümede."
+},
+"K2": {
+"score": 1,
+"evidence": "§3.1 seçilen 2000 görüntü, §3.4 eğitim/doğrulama/test 7:2:1. 2000, RDD2022 Çin toplamının altında ve seçim açıkça yazılı; çelişki yok."
+},
+"K3": {
+"score": 1,
+"evidence": "§3.1: D00, D10, D20, D40 ve repair sıralanmış; beş sınıf. Şekil 13-14 lejandı da aynı beş sınıfı veriyor."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 2-3 ve Şekil 13-14: ana metrik mAP@0.5 olarak eşiğiyle verilmiş."
+},
+"K5": {
+"score": 0,
+"evidence": "§3.2-3.6: tohum değeri yok; tablolarda tek değer var, tekrar veya ortalama/sapma bildirilmemiş."
+},
+"K6": {
+"score": 1,
+"evidence": "§3.2 RTX 3090; Tablo 1 epok 150, yığın 4, imgsz 640, SGD, lr0 0.01 (beşinin beşi)."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Kullanılabilirliği beyanı verinin makalede olduğunu söylüyor; metinde kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test kullanılmamış. §3.4 yalnızca 7:2:1 oranı veriyor; tohum, görüntü listesi veya bölme dosyası yok; 2000 görüntünün listesi de yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China (RDD2022'den seçilmiş 2000 görüntü)",
+"china_type": "ikisi",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair",
+"split": "2000 görüntü; eğitim:doğrulama:test = 7:2:1 (§3.4); tohum yok",
+"test_def": "ayri_test",
+"input_size": "imgsz 640 (özgün görüntü 512×512)",
+"results": [
+{
+"experiment": "Tablo 2 satır E ve Tablo 3, önerilen model",
+"subset": "China (2000 görüntü)",
+"metric": "mAP@0.5",
+"value": "0.774",
+"model": "Improved YOLOv8",
+"is_main": true
+},
+{
+"experiment": "Tablo 2-3, temel model",
+"subset": "China (2000 görüntü)",
+"metric": "mAP@0.5",
+"value": "0.746",
+"model": "YOLOv8s (Tablo 2'de YOLOv8)",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, hız",
+"subset": "China (2000 görüntü)",
+"metric": "FPS",
+"value": "43",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, hız",
+"subset": "China (2000 görüntü)",
+"metric": "FPS",
+"value": "38",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Şekil 14 sınıf bazında",
+"subset": "China (2000 görüntü), D00",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.704",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 14 sınıf bazında",
+"subset": "China (2000 görüntü), D10",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.764",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 14 sınıf bazında",
+"subset": "China (2000 görüntü), D20",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.823",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 14 sınıf bazında",
+"subset": "China (2000 görüntü), D40",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.762",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 14 sınıf bazında",
+"subset": "China (2000 görüntü), Repair",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.815",
+"model": "Improved YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 13 sınıf bazında",
+"subset": "China (2000 görüntü), D00",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.712",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 13 sınıf bazında",
+"subset": "China (2000 görüntü), D10",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.783",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 13 sınıf bazında",
+"subset": "China (2000 görüntü), D20",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.766",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 13 sınıf bazında",
+"subset": "China (2000 görüntü), D40",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.668",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Şekil 13 sınıf bazında",
+"subset": "China (2000 görüntü), Repair",
+"metric": "AP (mAP@0.5 eğrisi lejandı)",
+"value": "0.803",
+"model": "YOLOv8",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tablo değerlerinin hangi kümeden (doğrulama/test) geldiği açıkça yazılmıyor; bölmede ayrı test kümesi tanımlı olduğu için test_def=ayri_test seçildi (kodlayıcı kararı), hakem incelemesine uygun. 2000 görüntünün nasıl seçildiği açıklanmıyor. mAP@0.5:0.95 yalnızca Şekil 10'da sayısız eğri olarak var, bu nedenle C4b=hayır. GFLOPs bildirilmemiş. Ana sonuç Repair dahil 5 sınıflı; 4 resmî sınıf ortalaması makalede verilmiyor."
+},
+"P010": {
+"pid": "P010",
+"access_level": "tam_metin",
+"source_url": "https://www.nature.com/articles/s41598-024-67953-3",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Dataset and evaluation metrics bölümü: görüntüler Çin'den seçilmiş; Results bölümünde ABD ve Hindistan deneyleri de adlandırılmış (Tablo 9-11). Makale veri bölümünde veri setini RDD2020 olarak adlandırmakta, kaynakçası ve veri erişilebilirliği bölümü RDD2022’yi göstermekte, görüntü sayıları RDD2022 Çin alt kümesiyle aynı olmaktadır."
+},
+"K2": {
+"score": 1,
+"evidence": "Dataset bölümü: 4378 görüntü (2401 drone, 1977 araç kamerası), 8:1:1. Toplam, RDD2022 China_D 2401 ve China_M eğitim 1977 ile uyumlu; sayı çelişkisi yok."
+},
+"K3": {
+"score": 1,
+"evidence": "Dataset bölümü ve Tablo 4: D00, D10, D20, D40, Repair, Block crack; altı sınıf kodlarıyla sıralı."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 5-12: ana metrik mAP@0.5 eşiğiyle verilmiş."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum değeri yok; tablolarda tek değerler var, tekrar ve ortalama/sapma yok. Metindeki 'repetitions' DyHead blok sayısı anlamında (Tablo 7)."
+},
+"K6": {
+"score": 1,
+"evidence": "Tablo 2 RTX 3090; Tablo 3 öğrenme oranı 0.01, 640×640, SGD, yığın 64, epok 200."
+},
+"K7": {
+"score": 0,
+"evidence": "Data availability yalnızca veri seti deposunu (sekilab/RoadDamageDetector) gösteriyor; modele ait kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok. Dataset bölümünde yalnızca 8:1:1 oranı var; tohum, liste veya bölme dosyası verilmemiş."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China (drone + araç kamerası, 4378 görüntü) ana deney; ek deneyler United States ve India; ayrıca GRDDC (RDD2022 dışı)",
+"china_type": "ikisi",
+"n_classes": 6,
+"classes": "D00, D10, D20, D40, Repair, Block crack",
+"split": "4378 görüntü; eğitim:doğrulama:test = 8:1:1; tohum yok",
+"test_def": "ayri_test",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 9, Deney 1",
+"subset": "China",
+"metric": "mAP@0.5/%",
+"value": "0.757",
+"model": "Ours (improved YOLOv8s)",
+"is_main": true
+},
+{
+"experiment": "Tablo 9, Deney 1",
+"subset": "China",
+"metric": "mAP@0.5/%",
+"value": "0.699",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 9, hız",
+"subset": "China",
+"metric": "FPS",
+"value": "136.7",
+"model": "Ours (improved YOLOv8s)",
+"is_main": false
+},
+{
+"experiment": "Tablo 9, hız",
+"subset": "China",
+"metric": "FPS",
+"value": "384.6",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 10, Deney 2",
+"subset": "United States",
+"metric": "mAP@0.5/%",
+"value": "0.579",
+"model": "Ours (improved YOLOv8s)",
+"is_main": false
+},
+{
+"experiment": "Tablo 10, Deney 2",
+"subset": "United States",
+"metric": "mAP@0.5/%",
+"value": "0.553",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 11, Deney 3",
+"subset": "India",
+"metric": "mAP@0.5/%",
+"value": "0.421",
+"model": "Ours (improved YOLOv8s)",
+"is_main": false
+},
+{
+"experiment": "Tablo 11, Deney 3",
+"subset": "India",
+"metric": "mAP@0.5/%",
+"value": "0.381",
+"model": "YOLOv8s",
+"is_main": false
+},
+{
+"experiment": "Tablo 12, Deney 4 (RDD2022 dışı)",
+"subset": "GRDDC",
+"metric": "mAP@0.5/%",
+"value": "0.652",
+"model": "Ours (improved YOLOv8s)",
+"is_main": false
+},
+{
+"experiment": "Tablo 12, Deney 4 (RDD2022 dışı)",
+"subset": "GRDDC",
+"metric": "mAP@0.5/%",
+"value": "0.646",
+"model": "YOLOv8s",
+"is_main": false
+}
+]
+},
+"notes_tr": "Dataset bölümü veri setine RDD2020 diyor; ancak kaynak 35 RDD2022 veri makalesi, Data availability RDD2022 diyor ve görüntü sayıları RDD2022 Çin sayılarıyla aynı. RDD2022 makalesine göre Çin verisi RDD2020'ye sonradan eklenmiş. Adlandırma tutarsızlığı olarak not edildi, K1 ve K2 düşürülmedi. 1977 görüntü makalede 'on-board camera' diye geçiyor, motosiklet denmiyor; sayı China_MotorBike ile aynı olduğu için china_type=ikisi. Ana değerlerin hangi kümeden geldiği açık değil: Tablo 5 metninde 'validation results' ifadesi var ve aynı temel değer 0.699 Tablo 8-9'da yineleniyor; ayrı test kümesi tanımlı olduğundan ayri_test seçildi (kodlayıcı kararı). Deney 3/4 anlatımı Hindistan ile GRDDC'yi karıştırıyor. Block crack Tablo 4'te yalnızca 3 örnek. C1b=hayır: sınıf bazında AP yok, Şekil 7 karışıklık matrisinde Repair var ama Block crack sütunu boş. C4b=hayır: mAP@0.5:0.95 yalnızca Şekil 6'da sayısız eğri. C2a=hayır: F1 formülü var, F1 değeri yok."
+},
+"P046": {
+"pid": "P046",
+"access_level": "tam_metin",
+"source_url": "https://arxiv.org/pdf/2507.23225",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§4.1: RDD2022_China_Drone ve RDD2022_China_Motorbike adlarıyla belirtilmiş."
+},
+"K2": {
+"score": 0,
+"evidence": "§4.1: ana deneyin China_Drone kümesi eğitim ve doğrulama için kullanılmış ama yalnızca toplam 2401 verilmiş; eğitim/doğrulama oranı veya sayısı yok. 1977/500 yalnızca genelleme kümesi için."
+},
+"K3": {
+"score": 1,
+"evidence": "§4.1: D00, D10, D20, D40 adlarıyla ve kodlarıyla sıralı; dört sınıf."
+},
+"K4": {
+"score": 1,
+"evidence": "§4.3: mAP50 için IoU 0.5 ve mAP50:95 için 0.5-0.95 açıkça tanımlı; Tablo 2 ve 4."
+},
+"K5": {
+"score": 0,
+"evidence": "§4.2 ve Tablo 2-5: tohum yok, tekrar veya ortalama/sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "§4.2: RTX 4090D; SGD, öğrenme oranı 0.01, 300 epok, yığın 64, 640×640."
+},
+"K7": {
+"score": 0,
+"evidence": "Ön baskı metninde kod veya ağırlık bağlantısı yok; IOP sayfasındaki veri beyanı yalnızca RDD2022 DOI'sini (10.1002/gdj3.260) gösteriyor."
+},
+"K8": {
+"score": 0,
+"evidence": "§4.1: resmî gizli test değerlendirmesi veya F1 yok; ana kümede test kümesi tanımlanmamış, liste veya tohum da yok."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": true,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China_Drone (ana sonuç); China_Motorbike (genelleme deneyi, ayrı ayrı)",
+"china_type": "ikisi",
+"n_classes": 4,
+"classes": "D00, D10, D20, D40",
+"split": "China_Drone: 2401 görüntü, eğitim/doğrulama ayrımı verilmemiş. China_Motorbike: 1977 eğitim, 500 test olarak tanımlanmış (§4.1)",
+"test_def": "dogrulama_test_sayilmis",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Tablo 2, karşılaştırma (SGD)",
+"subset": "China_Drone",
+"metric": "mAP50",
+"value": "0.676",
+"model": "YOLO-ROC (Ours)",
+"is_main": true
+},
+{
+"experiment": "Tablo 2, karşılaştırma (SGD)",
+"subset": "China_Drone",
+"metric": "mAP50:95",
+"value": "0.397",
+"model": "YOLO-ROC (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma (SGD)",
+"subset": "China_Drone",
+"metric": "mAP50",
+"value": "0.662",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 2, karşılaştırma (SGD)",
+"subset": "China_Drone",
+"metric": "mAP50:95",
+"value": "0.397",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, hız (ön ve son işlem dahil)",
+"subset": "China_Drone",
+"metric": "FPS (Total)",
+"value": "120.19",
+"model": "YOLO-ROC (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, hız (ön ve son işlem dahil)",
+"subset": "China_Drone",
+"metric": "FPS (Total)",
+"value": "123.71",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, genelleme (Adam)",
+"subset": "China_Motorbike",
+"metric": "mAP50",
+"value": "0.866",
+"model": "YOLO-ROC (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, genelleme (Adam)",
+"subset": "China_Motorbike",
+"metric": "mAP50:95",
+"value": "0.518",
+"model": "YOLO-ROC (Ours)",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, genelleme (Adam)",
+"subset": "China_Motorbike",
+"metric": "mAP50",
+"value": "0.869",
+"model": "YOLOv8n",
+"is_main": false
+},
+{
+"experiment": "Tablo 4, genelleme (Adam)",
+"subset": "China_Motorbike",
+"metric": "mAP50:95",
+"value": "0.538",
+"model": "YOLOv8n",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin olarak yalnızca arXiv ön baskısı (2507.23225) okundu; IOP'daki yayımlanmış sürüm erişime kapalı, oradan sadece özet ve veri beyanı okunabildi. Özetler farklı: ön baskı YOLOv8n'e göre 2.11% artış ve D40 mAP50'de 16.8% iyileşme diyor; yayımlanmış özet 1.4% ve D40 recall'da 19% diyor. Yayımlanmış sürümün tablo ve yöntemlerinin ön baskıyla aynı olup olmadığı sınanamadı. test_def çıkarımdır: §4.1 Drone kümesini eğitim ve doğrulama için kullanılmış diye tanımlıyor, test kümesi yok; değerlerin doğrulamadan geldiği ayrıca yazılmıyor (kodlayıcı kararı). C3a=evet yalnızca China_Motorbike 1977/500 sayıları nedeniyle; ana deney için bölme yok, bu yüzden K2=0. Motorbike 500 test görüntüsünün kullanıldığı açıkça doğrulanamıyor; Tablo 4'ün hangi kümeden geldiği yazmıyor."
+},
+"P106": {
+"pid": "P106",
+"access_level": "tam_metin",
+"source_url": "https://media.sciltp.com/articles/2512002529/2512002529.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§4.1: yalnızca China drone, China motorbike ve United States alt kümelerinin seçildiği adlarıyla yazılı."
+},
+"K2": {
+"score": 0,
+"evidence": "§4.1 Tablo 1: 8:1:1 ve sayılar kendi içinde tutarlı. Ama China drone toplamı 1919 (RDD2022: 2401), China motorbike 1934 (RDD2022 eğitim: 1977); eleme açıklanmıyor. US 4805 uyuyor."
+},
+"K3": {
+"score": 1,
+"evidence": "§4.1: RDD2022 için boyuna, enine, timsah çatlağı ve çukur adlarıyla sıralı; dört sınıf (D kodları kullanılmamış)."
+},
+"K4": {
+"score": 1,
+"evidence": "§4.1: mAP50 için IoU 0.5, mAP50-95 için 0.5-0.95 aralığı tanımlı; Tablo 3."
+},
+"K5": {
+"score": 0,
+"evidence": "§4.1 ve Tablo 3: tohum yok, tekrar veya ortalama/sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "§4.1: RTX 4070 Ti SUPER; 300 epok, yığın 8, öğrenme oranı 0.01, Adam, RDD2022 için 320×320."
+},
+"K7": {
+"score": 0,
+"evidence": "Data Availability yalnızca veri setlerini gösteriyor (Zenodo 8429208, sekilab GitHub); modele ait kod veya ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok. §4.1 Tablo 1 ayrı test kümesi veriyor ama yalnızca oran ve sayı var; tohum, liste veya bölme dosyası yok."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China drone, China motorbike, United States (genelleme deneyleri; birincil veri seti UAV-PDD2023 RDD2022 dışı)",
+"china_type": "ikisi",
+"n_classes": 4,
+"classes": "longitudinal cracks, transverse cracks, alligator cracks, potholes",
+"split": "8:1:1; China drone 1535/192/192; China motorbike 1547/193/194; United States 3844/480/481 (Tablo 1)",
+"test_def": "ayri_test",
+"input_size": "RDD2022 için 320 × 320 (UAV-PDD2023 için 1024 × 1024)",
+"results": [
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China drone",
+"metric": "mAP50 (%)",
+"value": "51.7",
+"model": "ALC-Net",
+"is_main": true
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China drone",
+"metric": "mAP50 95 (%)",
+"value": "27.2",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China drone",
+"metric": "mAP50 (%)",
+"value": "49.3",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China drone",
+"metric": "mAP50 95 (%)",
+"value": "25.8",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China motorbike",
+"metric": "mAP50 (%)",
+"value": "79.1",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China motorbike",
+"metric": "mAP50 95 (%)",
+"value": "47.4",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China motorbike",
+"metric": "mAP50 (%)",
+"value": "75.5",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "China motorbike",
+"metric": "mAP50 95 (%)",
+"value": "41.7",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "United States",
+"metric": "mAP50 (%)",
+"value": "35.6",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "United States",
+"metric": "mAP50 95 (%)",
+"value": "17.3",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "United States",
+"metric": "mAP50 (%)",
+"value": "34.7",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 3, genelleme",
+"subset": "United States",
+"metric": "mAP50 95 (%)",
+"value": "16.8",
+"model": "YOLOv11",
+"is_main": false
+},
+{
+"experiment": "Tablo 2-3, birincil veri seti (RDD2022 dışı)",
+"subset": "UAV-PDD2023",
+"metric": "mAP50 (%)",
+"value": "75.0",
+"model": "ALC-Net",
+"is_main": false
+},
+{
+"experiment": "Tablo 2-3, birincil veri seti (RDD2022 dışı)",
+"subset": "UAV-PDD2023",
+"metric": "mAP50 (%)",
+"value": "67.4",
+"model": "YOLOv11",
+"is_main": false
+}
+]
+},
+"notes_tr": "Makalenin birincil veri seti UAV-PDD2023; RDD2022 yalnızca genelleme için kullanılmış ve makale tek bir ana RDD2022 sonucu seçmiyor. İHA odağı nedeniyle China drone satırı is_main işaretlendi (kodlayıcı kararı). K2=0 kararı hakem incelemesine uygun: referans sayılar RDD2022 veri makalesinden (arXiv 2209.08538) doğrulandı; açıklanmamış fark olduğu için çelişki sayıldı, oysa yalnızca etiketsiz görüntülerin elenmiş olması da mümkündür ama makale bunu yazmıyor. Tablo 3 değerlerinin test kümesinden geldiği açıkça yazılmıyor ('final results'); ayrı test kümesi tanımlı olduğundan ayri_test seçildi (kodlayıcı kararı). Parametre, FPS ve GFLOPs yalnızca UAV-PDD2023 üzerinde (Tablo 4), RDD2022 ve 320 girdi için verilmemiş. Metin tüm metriklerin iyileştiğini söylüyor; oysa United States precision'ı 62.3 ile YOLOv11'in 65.0 değerinin altında."
+},
+"P027": {
+"pid": "P027",
+"access_level": "tam_metin",
+"source_url": "https://web.archive.org/web/20250614220729/https://onlinelibrary.wiley.com/doi/pdf/10.1111/mice.13186",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Tam metin §3.1: JRDD Japonya, MRDD Japonya, Hindistan ve ABD olarak adlandırılmış; §4.2'de Çek Cumhuriyeti ayrıca değerlendirilmiş."
+},
+"K2": {
+"score": 1,
+"evidence": "Tablo 1 JRDD 7.377 ve MRDD 15.283 görüntü, §3.1 yalnızca hasarlı görüntü elemesi, §4.1 90:10, §4.2 30/30/30/10 veriyor; sayılar RDD2022 veri makalesi s.4'teki ülke eğitim toplamlarının altında (Japonya 10.506; üç ülke 23.017), çelişki yok."
+},
+"K3": {
+"score": 1,
+"evidence": "§3.1 ve Tablo 1 boyuna, enine, timsah çatlağı ve çukuru adlarıyla sıralıyor, §3.3 dört tür olduğunu belirtiyor."
+},
+"K4": {
+"score": 1,
+"evidence": "§3.5 ana parametreyi mAP@IoU=0.5 olarak adlandırıyor; Şekil 3 ekseni aynı eşiği gösteriyor."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum yok, tekrar veya ortalama/sapma yok; §3.4 en iyi mAP'li modellerin karşılaştırmaya alındığını söylüyor."
+},
+"K6": {
+"score": 1,
+"evidence": "§4 NVIDIA T4 GPU; §4.1-4.2 640×640 girdi, yığın 4, epok 60/45; §3.3 SGD: donanım artı beş ayardan dördü (öğrenme oranı yok)."
+},
+"K7": {
+"score": 0,
+"evidence": "Metinde kod veya ağırlık bağlantısı ve kullanılabilirlik beyanı yok; kaynakçadaki figshare bağlantısı yalnızca RDD2022 verisine ait."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok. §4.1-4.2 test kümelerini rastgele %10 olarak ayırıyor; tohum, liste veya bölme dosyası verilmemiş."
+}
+},
+"C": {
+"C1a": true,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": false,
+"C5c": false,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japan (JRDD); Japan, India, United States (MRDD); Czech Republic (dış ülke değerlendirmesi ve yerel model)",
+"china_type": "yok",
+"n_classes": 4,
+"classes": "longitudinal crack, transverse crack, alligator crack, pothole",
+"split": "Yalnızca hasarlı görüntüler. JRDD 7377: 3 parça, her biri 90:10 eğitim/test. MRDD 15283: IID ülke başına 30/30/30/10; non-IID 90:10. Doğrulama kümesi tanımlanmamış; tohum yok",
+"test_def": "ayri_test",
+"input_size": "640 × 640",
+"results": [
+{
+"experiment": "Şekil 6a, non-IID FL (gerçek dağılım)",
+"subset": "MRDD_Test (Japan, India, United States)",
+"metric": "mAP@IoU=0.5",
+"value": "0.455",
+"model": "FL_Non IID (YOLOv5l + FedAvg)",
+"is_main": true
+},
+{
+"experiment": "Şekil 6a, IID FL",
+"subset": "MRDD_Test (Japan, India, United States)",
+"metric": "mAP@IoU=0.5",
+"value": "0.542",
+"model": "FL_IID (YOLOv5l + FedAvg)",
+"is_main": false
+},
+{
+"experiment": "Şekil 6a, merkezî temel model",
+"subset": "MRDD_Test (Japan, India, United States)",
+"metric": "mAP@IoU=0.5",
+"value": "0.608",
+"model": "Centralised_MRDD (YOLOv5l)",
+"is_main": false
+},
+{
+"experiment": "Şekil 3a, tek ülke FL",
+"subset": "JRDD_Test (Japan)",
+"metric": "mAP@IoU=0.5",
+"value": "0.445",
+"model": "FL_JRDD (YOLOv5l + FedAvg)",
+"is_main": false
+},
+{
+"experiment": "Şekil 3a, merkezî temel model",
+"subset": "JRDD_Test (Japan)",
+"metric": "mAP@IoU=0.5",
+"value": "0.566",
+"model": "Centralised_JRDD (YOLOv5l)",
+"is_main": false
+},
+{
+"experiment": "Şekil 3b, tek istemci",
+"subset": "JRDD istemci testi (Japan)",
+"metric": "mAP@IoU=0.5",
+"value": "0.473",
+"model": "FL_JRDD",
+"is_main": false
+},
+{
+"experiment": "Şekil 3b, tek istemci",
+"subset": "JRDD istemci testi (Japan)",
+"metric": "mAP@IoU=0.5",
+"value": "0.485",
+"model": "Centralised_Client",
+"is_main": false
+},
+{
+"experiment": "Şekil 6b, ülke testi",
+"subset": "Japan testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.574",
+"model": "Centralised_Japan",
+"is_main": false
+},
+{
+"experiment": "Şekil 6b, ülke testi",
+"subset": "Japan testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.515",
+"model": "FL_IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 6b, ülke testi",
+"subset": "Japan testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.506",
+"model": "FL_Non IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 6c, ülke testi",
+"subset": "India testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.565",
+"model": "Centralised_India",
+"is_main": false
+},
+{
+"experiment": "Şekil 6c, ülke testi",
+"subset": "India testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.477",
+"model": "FL_IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 6c, ülke testi",
+"subset": "India testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.276",
+"model": "FL_Non IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 6d, ülke testi",
+"subset": "United States testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.55",
+"model": "Centralised_USA",
+"is_main": false
+},
+{
+"experiment": "Şekil 6d, ülke testi",
+"subset": "United States testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.565",
+"model": "FL_IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 6d, ülke testi",
+"subset": "United States testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.49",
+"model": "FL_Non IID",
+"is_main": false
+},
+{
+"experiment": "Şekil 7, yerel modeller küresel testte",
+"subset": "MRDD_Test",
+"metric": "mAP@IoU=0.5",
+"value": "0.173",
+"model": "Centralised_India",
+"is_main": false
+},
+{
+"experiment": "Şekil 7, yerel modeller küresel testte",
+"subset": "MRDD_Test",
+"metric": "mAP@IoU=0.5",
+"value": "0.449",
+"model": "Centralised_Japan",
+"is_main": false
+},
+{
+"experiment": "Şekil 7, yerel modeller küresel testte",
+"subset": "MRDD_Test",
+"metric": "mAP@IoU=0.5",
+"value": "0.343",
+"model": "Centralised_USA",
+"is_main": false
+},
+{
+"experiment": "Şekil 8, eğitime katılmayan ülke",
+"subset": "Czech Republic testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.208",
+"model": "FL_MRDD",
+"is_main": false
+},
+{
+"experiment": "Şekil 8, eğitime katılmayan ülke",
+"subset": "Czech Republic testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.205",
+"model": "Centralised_MRDD",
+"is_main": false
+},
+{
+"experiment": "Şekil 8, yerel model",
+"subset": "Czech Republic testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.261",
+"model": "Centralised_Czech",
+"is_main": false
+},
+{
+"experiment": "Şekil 8, yerel model küresel testte",
+"subset": "MRDD_Test",
+"metric": "mAP@IoU=0.5",
+"value": "0.0643",
+"model": "Centralised_Czech",
+"is_main": false
+},
+{
+"experiment": "Şekil 8, topluluk",
+"subset": "Czech Republic testi",
+"metric": "mAP@IoU=0.5",
+"value": "0.27",
+"model": "Ensemble (FL_MRDD + Centralised_Czech)",
+"is_main": false
+}
+]
+},
+"notes_tr": "Erişim notu: Unpaywall ve Semantic Scholar makaleyi CC BY açık erişimli gösteriyor. Wiley sayfasındaki erişim kısıtı nedeniyle tam metin, Internet Archive'daki arşiv kopyasından (14 Haziran 2025, yayımlanmış sürüm) okundu. Sonuç değerleri tablo değil, grafik üzerindeki sayılardan alındı. Makale yeni detektör değil FL yaklaşımı öneriyor; §4.2 non-IID sürümün gerçek dağılımı yansıttığını söylediği için FL_Non IID/MRDD_Test 0.455 is_main seçildi (kodlayıcı kararı); merkezî temel 0.608. Doğrulama kümesi tanımlanmıyor ve §3.4'teki en iyi mAP seçiminin hangi kümeye göre yapıldığı yazmıyor; bu nedenle test değerleri seçim yanlılığı taşıyabilir. Metin Çek sonuçlarını yuvarlayarak veriyor (0.21, 0.26, 0.27, 0.06). C5c=hayır: yalnızca eğitim süresi var (Şekil 11), görüntü başına süre yok. C5a=evet: YOLOv5l için 46,154,449 parametre (§3.3). Çin alt kümesi kullanılmamış."
+},
+"P440": {
+"pid": "P440",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/electronics/electronics-15-04463/article_deploy/electronics-15-04463.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "Özet, §5.9 ve Tablo 17: RDD2022'nin Hindistan, Japonya ve Çek alt kümeleri adıyla veriliyor."
+},
+"K2": {
+"score": 0,
+"evidence": "§5.9 ve Tablo 17: RDD2022 alt kümeleri için görüntü sayısı veya eğitim/test oranı yok, ince ayar deneyi dahil. Tablo 3'teki 1708/366/366 bölmesi yalnız UAV-PDD2023'e ait."
+},
+"K3": {
+"score": 0,
+"evidence": "Tablo 17 başlığı, §5.9 ve §8 yalnız dört eşlenmiş sınıftan söz ediyor; sınıf adı veya D00 gibi kod metinde hiç geçmiyor (metin taramasıyla doğrulandı)."
+},
+"K4": {
+"score": 1,
+"evidence": "Tablo 17 ve Özet: RDD2022 metriği eşiğiyle birlikte mAP@0.5 olarak verilmiş."
+},
+"K5": {
+"score": 1,
+"evidence": "§5.1: tüm rastgele işlemlerde tohum 2024; §4.2: bölme tohumları 2024, 42, 123. Tablo 17 değerleri ortalama±ss biçiminde."
+},
+"K6": {
+"score": 0,
+"evidence": "§5.1 ve Tablo 4: RTX 4060 var. Beş ayardan yalnız ikisi var: girdi 640×640 ve eniyileyici (YOLO için AdamW, 'Unified Core Evaluation Constraints'). Toplam epok, eğitim yığın boyutu ve öğrenme oranı yok; yığın 1 yalnız süre ölçümü için (§5.8)."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Erişilebilirliği Beyanı: kod ve ağırlıkların şu aşamada açık olmadığı, gerekçeli istek üzerine verilebileceği yazıyor; bağlantı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test kullanılmamış. RDD2022 aktarım testinde hangi görüntülerin kullanıldığı tanımlı değil; liste veya tohum yok. §4.2'deki tohumlar yalnız UAV-PDD2023 bölmelerine ait."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": false,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": false,
+"C4c": true,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Hindistan, Japonya, Çek (yalnız aktarım/stres testi); ana eğitim verisi UAV-PDD2023",
+"china_type": "yok",
+"n_classes": 4,
+"classes": "Dört eşlenmiş sınıf; adları makalede verilmemiş. Ana UAV-PDD2023 deneyi 6 sınıf: LC, TC, AC, OC, RP, PH",
+"split": "RDD2022 için bölme verilmemiş. UAV-PDD2023: ana parent-frame ayrık bölme 1708/366/366 (tohum 2024), ayrıca tohum 42 ve 123",
+"test_def": "dis_test",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "Doğrudan aktarım, Tablo 17",
+"subset": "RDD2022 Hindistan",
+"metric": "mAP@0.5",
+"value": "0.418±0.015",
+"model": "YOLO-MCG",
+"is_main": true
+},
+{
+"experiment": "Doğrudan aktarım, Tablo 17",
+"subset": "RDD2022 Japonya",
+"metric": "mAP@0.5",
+"value": "0.392±0.018",
+"model": "YOLO-MCG",
+"is_main": true
+},
+{
+"experiment": "Doğrudan aktarım, Tablo 17",
+"subset": "RDD2022 Çek",
+"metric": "mAP@0.5",
+"value": "0.374±0.020",
+"model": "YOLO-MCG",
+"is_main": true
+},
+{
+"experiment": "Tam ince ayar, Tablo 17",
+"subset": "RDD2022 Hindistan",
+"metric": "mAP@0.5",
+"value": "0.487±0.012",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Tam ince ayar, Tablo 17",
+"subset": "RDD2022 Japonya",
+"metric": "mAP@0.5",
+"value": "0.461±0.014",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Tam ince ayar, Tablo 17",
+"subset": "RDD2022 Çek",
+"metric": "mAP@0.5",
+"value": "0.438±0.016",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Üç bölme ortalaması, Tablo 5 (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5",
+"value": "0.564±0.004",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Üç bölme ortalaması, Tablo 5 (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5:0.95",
+"value": "0.309±0.006",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Üç bölme ortalaması, Tablo 6 (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "Micro-averaged F1 (IoU 0.5)",
+"value": "0.614±0.008",
+"model": "YOLO-MCG",
+"is_main": false
+},
+{
+"experiment": "Üç bölme ortalaması, Tablo 5, temel model (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5",
+"value": "0.499±0.005",
+"model": "YOLOv10n",
+"is_main": false
+},
+{
+"experiment": "Üç bölme ortalaması, Tablo 5, temel model (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5:0.95",
+"value": "0.258±0.006",
+"model": "YOLOv10n",
+"is_main": false
+},
+{
+"experiment": "Ana bölme, Özet (RDD2022 değil)",
+"subset": "UAV-PDD2023",
+"metric": "mAP@0.5",
+"value": "0.562",
+"model": "YOLO-MCG",
+"is_main": false
+}
+]
+},
+"notes_tr": "Kod kitabının ilk tümcesi gereği K ve C puanları RDD2022 deneyine göre verildi. UAV-PDD2023 ana deneyine göre verilseydi K2 ve K3 1 olurdu; K8(b) de tohumlar verildiği için 1 olabilirdi. C3a, C4b ve C4c de aynı nedenle false: bölme ve mAP@0.5:0.95 yalnız UAV-PDD2023 için var; Tablo 17'deki ± için tekrar sayısı açıkça yazılmamış (Tablo 16 tek bölmede de ± veriyor). Temel modelin RDD2022 sonucu makalede yok. C5d false: §5.8 süre ölçümünden görüntü çözme ve son işlemin hariç olduğunu söylüyor."
+},
+"P183": {
+"pid": "P183",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/symmetry/symmetry-17-01654/article_deploy/symmetry-17-01654.pdf",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§4.1 RDD2022 paragrafı: Japonya, Hindistan ve Çek Cumhuriyeti adıyla veriliyor; Tablo 4'te RDD-Japan ve RDD-India ayrıca geçiyor."
+},
+"K2": {
+"score": 0,
+"evidence": "§4.1 ve Tablo 1: 70/10/20 oranı var, fakat RDD2022 26,336 görüntü olarak tanımlanmış; RDD2022 veri makalesinde toplam 47,420. Üç ülke olarak okunsa bile 26,336 etiketi yayımlanmamış test görüntülerini içerir (etiketli eğitim 21,041) ve resmî denen 70/10/20 bölmesi yoktur."
+},
+"K3": {
+"score": 1,
+"evidence": "§4.1: dört sınıf adıyla sıralanmış (crack, pothole, rutting, other); Tablo 1'de 4-class. Adlar resmî kodlarla örtüşmüyor, ama ölçüt yalnız ad ve sayı istiyor."
+},
+"K4": {
+"score": 1,
+"evidence": "§4.2 Evaluation Metrics: mAP@50:95 ve AP@50 tanımlı; §4.3'te RDD2022 için mAP50:95; Tablo 4 başlığında mAP@0.5."
+},
+"K5": {
+"score": 1,
+"evidence": "§4.2: sonuçlar üç denemenin ortalaması olarak bildiriliyor; Tablo 5 dipnotu üç tohum ortalaması diyor. Tohum değeri ve tablolarda sapma yok."
+},
+"K6": {
+"score": 1,
+"evidence": "§4.2 Optimization ve Backbone: 8×A100 40 GB; 150 epok, yığın 64, AdamW, öğrenme oranı 4e-4 ve 1e-3, girdi 640×640."
+},
+"K7": {
+"score": 0,
+"evidence": "§4.2 Framework: kod ve ağırlıkların yayımlanınca paylaşılacağı söyleniyor, bağlantı yok. Veri Beyanı yalnız RDD2022 veri deposunu (sekilab) veriyor; diğer veriler istek üzerine."
+},
+"K8": {
+"score": 0,
+"evidence": "§4.1: resmî gizli test yok; %20 test var ve OSM yol parçası ayrıklığı öne sürülüyor, fakat görüntü listesi, bölme dosyası veya tohum verilmemiş."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japonya, Hindistan, Çek (makale bunu RDD2022 olarak adlandırıyor); çapraz alan deneyinde eğitim RDD-Japan, test RDD-India ve CRDDC'22",
+"china_type": "yok",
+"n_classes": 4,
+"classes": "crack, pothole, rutting, other (resmî D00/D10/D20/D40 değil)",
+"split": "70/10/20 eğitim/doğrulama/test, 26,336 görüntü, OSM yol parçası ayrık; liste veya tohum yok",
+"test_def": "ayri_test",
+"input_size": "640×640 (FPS ölçümü 1024×1024)",
+"results": [
+{
+"experiment": "SOTA karşılaştırması, Tablo 2 ve §4.3",
+"subset": "RDD2022 (Japonya, Hindistan, Çek)",
+"metric": "mAP50:95 (Tablo 2 başlığı yalnız mAP)",
+"value": "61.8",
+"model": "GMRD",
+"is_main": true
+},
+{
+"experiment": "Temel model, Tablo 2 ve Tablo 5",
+"subset": "RDD2022 (Japonya, Hindistan, Çek)",
+"metric": "mAP50:95 (Tablo başlığı yalnız mAP)",
+"value": "57.9",
+"model": "EffViM-T1 (no graph)",
+"is_main": false
+},
+{
+"experiment": "SOTA karşılaştırması, Tablo 2",
+"subset": "RDD2022 (Japonya, Hindistan, Çek)",
+"metric": "mAP50:95 (Tablo 2 başlığı yalnız mAP)",
+"value": "50.5",
+"model": "YOLOv8-s",
+"is_main": false
+},
+{
+"experiment": "SOTA karşılaştırması, Tablo 2",
+"subset": "RDD2022 (Japonya, Hindistan, Çek)",
+"metric": "mAP50:95 (Tablo 2 başlığı yalnız mAP)",
+"value": "59.2",
+"model": "Mamba-Adaptor-Det",
+"is_main": false
+},
+{
+"experiment": "Çapraz alan: eğitim RDD-Japan, Tablo 4",
+"subset": "RDD-India",
+"metric": "mAP@0.5",
+"value": "69.5",
+"model": "GMRD",
+"is_main": false
+},
+{
+"experiment": "Çapraz alan: eğitim RDD-Japan, Tablo 4",
+"subset": "RDD-India",
+"metric": "mAP@0.5",
+"value": "62.7",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Çapraz alan: eğitim RDD-Japan, Tablo 4",
+"subset": "CRDDC'22",
+"metric": "mAP@0.5",
+"value": "61.0",
+"model": "GMRD",
+"is_main": false
+},
+{
+"experiment": "Çapraz alan: eğitim RDD-Japan, Tablo 4",
+"subset": "CRDDC'22",
+"metric": "mAP@0.5",
+"value": "55.8",
+"model": "YOLOv8",
+"is_main": false
+},
+{
+"experiment": "Ablasyon, Tablo 5 (üç tohum ortalaması)",
+"subset": "CRDDC'22",
+"metric": "mAP (başlıkta eşik yok)",
+"value": "62.4",
+"model": "Full GMRD",
+"is_main": false
+},
+{
+"experiment": "Ablasyon, Tablo 5 (üç tohum ortalaması)",
+"subset": "CRDDC'22",
+"metric": "mAP (başlıkta eşik yok)",
+"value": "58.1",
+"model": "Baseline (EffViM only)",
+"is_main": false
+}
+]
+},
+"notes_tr": "K2 bir yorum kararıdır. Kontrol için RDD2022 veri makalesi (arXiv 2209.08538) okundu: Japonya 13133, Hindistan 9665, Çek 3538, toplamı 26,336; eğitim etiketli 21,041; test etiketleri yayımlanmamış. Yani 26,336 sayısı üç ülke toplamına uyuyor, ama makale bunu RDD2022 toplamı gibi sunuyor ve 70/10/20'yi resmî diye niteliyor. Yalnız oran verilmesi yeterli sayılırsa K2 1 olur. C4c false: üç deneme belirtiliyor ama sapma değeri hiçbir tabloda basılmamış. C5d false: gecikme ön işlemi ve grafik kurulumunu dışarıda bırakıyor. Makale içi tutarsızlık: GFLOPs hem 1.5 (INT8) hem 12; Tablo 5 CRDDC'22 62.4 iken Tablo 4 CRDDC'22 61.0 farklı deneylerdir."
+},
+"P018": {
+"pid": "P018",
+"access_level": "tam_metin",
+"source_url": "https://repositorio.unican.es/rest/api/core/bitstreams/c5f756d7-0f1a-4384-81a4-8517b97280f1/content",
+"code_url": "",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "s.6, RDD2022 paragrafı: RDD2022'den özellikle China_M alt kümesinin seçildiği yazıyor."
+},
+"K2": {
+"score": 0,
+"evidence": "§2.3 China_M alt kümesinin 259 görüntüden oluştuğunu söylüyor, RDD2022 veri makalesi s.4 ise 2.477 (1.977+500) veriyor; CPRI'nin aksine RDD2022 için seçim kuralı yazılmadığından sayı resmî alt kümeyle çelişiyor, 70/15/15 bunu gidermiyor."
+},
+"K3": {
+"score": 1,
+"evidence": "Tablo 5: RDD2022 için D2, D4, D6, D9, D10, D11 (altı sınıf), tanımları §2.1'de. s.6 metni D10 yerine D8 yazıyor; değerlendirme tablosu esas alındı."
+},
+"K4": {
+"score": 1,
+"evidence": "§3.4 ve Tablo 5: mAP@.5 eşikle veriliyor (RDD2022 için 0.563)."
+},
+"K5": {
+"score": 0,
+"evidence": "Metinde tohum yok; Tablo 4 ve 5 tek değer veriyor. §3.1.1'deki ± yalnız saf tespit oranlarında ve tekrar sayısı açıklanmıyor."
+},
+"K6": {
+"score": 1,
+"evidence": "s.6: RTX 3080 Ti; Tablo 2: 300 epok, SGD, öğrenme oranı 0.01, yığın 16; s.4: girdi 640×640×3."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Beyanı yalnız veri bağlantısının gönderim adımında eklendiğini söylüyor; PDF'in metninde ve bağlantı açıklamalarında kod veya ağırlık linki yok. Ultralytics referansı yazarların kodu değil."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test kullanılmamış. RDD2022 değerlendirmesi dış test; 259 görüntünün listesi veya üyelik kuralı paylaşılmamış, tohum yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": false,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China_M (259 görüntü); ayrıca CPRI, eğitim verisi Mosquitonet",
+"china_type": "motosiklet",
+"n_classes": 6,
+"classes": "D2 alligator, D4 longitudinal, D6 transversal, D9 pothole, D10 drain, D11 manhole (yazarların kendi 13 sınıflı kodları; resmî RDD kodu değil)",
+"split": "Eğitim Mosquitonet 70/15/15 (7099 görüntü, Tablo 1); RDD2022 China_M 259 görüntü yalnız dış test",
+"test_def": "dis_test",
+"input_size": "640×640×3 (China_M görüntüleri 512×512×3)",
+"results": [
+{
+"experiment": "Genelleme, Tablo 5 ve §3.4, tüm sınıflar ortalaması",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5",
+"value": "0.563",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": true
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D2",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.45 / 0.15",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D4",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.60 / 0.34",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D6",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.25 / 0.10",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D9",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.49 / 0.28",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D10",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.61 / 0.34",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Genelleme, Tablo 5, sınıf D11",
+"subset": "RDD2022 China_M",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.98 / 0.60",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Kendi veri kümesi testi, Tablo 4 (RDD2022 değil)",
+"subset": "Mosquitonet",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.59 / 0.38",
+"model": "YOLOv5l",
+"is_main": false
+},
+{
+"experiment": "Kendi veri kümesi, son işlemle, §3.3 (RDD2022 değil)",
+"subset": "Mosquitonet",
+"metric": "mAP@.5",
+"value": "0.56",
+"model": "YOLOv5l + kural tabanlı son işlem",
+"is_main": false
+},
+{
+"experiment": "Kendi veri kümesi testi, Tablo 4 (RDD2022 değil)",
+"subset": "Mosquitonet",
+"metric": "mAP@.5 / mAP@.5-.95",
+"value": "0.60 / 0.38",
+"model": "YOLOv5x",
+"is_main": false
+}
+]
+},
+"notes_tr": "Tam metin Cantabria Üniversitesi deposundaki yayımlanmış PDF'ten okundu (handle 10902/32210). K2 yorum kararıdır: 259 sayısı China_M'in 2,477 görüntülük toplamından küçük olduğu için seçilmiş alt küme de olabilir, ama makale seçimden söz etmiyor; alt küme kabul edilirse K2 1 olur. Sınıf listesi metin (D8) ile Tablo 5 (D10) arasında farklı. Temel modelin (son işlemsiz YOLOv5l) RDD2022 sonucu yok. Mosquitonet'in açık olduğu söyleniyor, ancak PDF'te bağlantı görünmüyor; bu yüzden C3c false."
+},
+"P003": {
+"pid": "P003",
+"access_level": "tam_metin",
+"source_url": "https://ieeexplore.ieee.org/ielx7/6287639/10005208/10155434.pdf?arnumber=10155434",
+"code_url": "https://github.com/luisaugustos/Pothole-Recognition",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§III.B ve Tablo 3: RDD2022'den Çin drone alt kümesi (Ch_UAV, China_Drone) adıyla veriliyor; İspanya verisiyle birleştirilmiş."
+},
+"K2": {
+"score": 0,
+"evidence": "Tablo 4: 4000/584/289 (4.873) kendi içinde tutarlı; §III.B’de her eğitim örneğinden iki çıktı üretildiği yazılı olduğundan (2.893−873)×2 = 4.040 ile tablodaki 4.000 arasındaki fark %1’i aşmıyor. Ancak metin Çin İHA görüntülerinin küçük bir kısmının kullanıldığını söylüyor, sayı yazılmamış; Tablo 3 ise alt kümenin resmî etiketlerinin tamamını (3.068) veriyor. Alt kümenin tamamı kullanıldıysa da 2.401+568 = 2.969 ile 2.893 arasındaki %2,6’lık fark açıklanmıyor. Uygulama kuralına göre çelişki sayıldı.",
+"first_pass": 0
+},
+"K3": {
+"score": 1,
+"evidence": "§III.D ve Tablo 7: D00, D10, D20, D40 ve Repair sıralı; §IV.C Block crack sınıfının çıkarıldığını söylüyor."
+},
+"K4": {
+"score": 1,
+"evidence": "§IV başı ve Tablo 7: mAP, IoU 0.5 eşiğiyle (mAP@.5) tanımlı."
+},
+"K5": {
+"score": 0,
+"evidence": "Tohum yok, ortalama/sapma yok. §IV.C ve Şekil 8'deki on eğitim hiperparametre araması, aynı deneyin tekrarı değil."
+},
+"K6": {
+"score": 1,
+"evidence": "§III.D: RTX3090 24 GB; §IV.C: 300 epok, yığın 16; §III.B: girdi 640×640. Üç ayar var; öğrenme oranı ve eniyileyici yok."
+},
+"K7": {
+"score": 0,
+"evidence": "Dipnot 1 bağlantısı §III.B'de önceki çalışmanın veri deposu olarak veriliyor. Depoda iki sınıflı YOLOv4 not defteri ve İspanya verisi var, son güncelleme Nisan 2022; bu makalenin RDD2022 deneyinin kodu veya ağırlığı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok. Tablo 6-9 584 görüntüyle raporlanıyor; bu sayı Tablo 4'te doğrulama kümesi, §IV.F ise test diye anıyor. 289'luk test için sonuç, liste veya tohum yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": true,
+"C4b": true,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "China_Drone (Ch_UAV) + yazarların İspanya İHA verisi",
+"china_type": "İHA",
+"n_classes": 5,
+"classes": "D00, D10, D20, D40, Repair (YOLOv7 ana sonucu, Tablo 7); YOLOv5 tablosunda ek olarak Block crack var",
+"split": "Eğitim 4000 / doğrulama 584 / test 289, toplam 4873 (büyütme sonrası, Tablo 4); büyütme öncesi 2893; sonuçlar 584 görüntüde",
+"test_def": "dogrulama_test_sayilmis",
+"input_size": "640×640",
+"results": [
+{
+"experiment": "YOLOv7 (en iyi YOLOv7x-W6), Tablo 7",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@.5",
+"value": "0.737",
+"model": "YOLOv7",
+"is_main": true
+},
+{
+"experiment": "YOLOv7, Özet ve Sonuç",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@.5",
+"value": "73.20%",
+"model": "YOLOv7",
+"is_main": false
+},
+{
+"experiment": "YOLOv7, Tablo 7",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@.95 (tablo başlığı; ölçüt mAP@.5:.95 olarak anılıyor)",
+"value": "0.453",
+"model": "YOLOv7",
+"is_main": false
+},
+{
+"experiment": "YOLOv7, Tablo 9",
+"subset": "China_Drone + İspanya",
+"metric": "@.5 / .5:.95",
+"value": "0.73 / 0.289",
+"model": "YOLOv7",
+"is_main": false
+},
+{
+"experiment": "YOLOv7, §IV.C ve Şekil 10",
+"subset": "China_Drone + İspanya",
+"metric": "F1 (IoU belirtilmemiş)",
+"value": "59% (0.59 at 0.372)",
+"model": "YOLOv7",
+"is_main": false
+},
+{
+"experiment": "YOLOv5 + TPH, Tablo 8",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@.5 / mAP@.95",
+"value": "0.657 / 0.35",
+"model": "YOLOv5 + Transformer Prediction Head",
+"is_main": false
+},
+{
+"experiment": "YOLOv5 + TPH, Şekil 13",
+"subset": "China_Drone + İspanya",
+"metric": "F1 (IoU belirtilmemiş)",
+"value": "0.69 at 0.371",
+"model": "YOLOv5 + Transformer Prediction Head",
+"is_main": false
+},
+{
+"experiment": "YOLOv5, Tablo 6",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@.5 / mAP@.95",
+"value": "0.599 / 0.344",
+"model": "YOLOv5x",
+"is_main": false
+},
+{
+"experiment": "YOLOv5, Tablo 9",
+"subset": "China_Drone + İspanya",
+"metric": "@.5 / .5:.95",
+"value": "0.59 / 0.895",
+"model": "YOLOv5x",
+"is_main": false
+},
+{
+"experiment": "YOLOv5, §IV.B ve Şekil 7",
+"subset": "China_Drone + İspanya",
+"metric": "F1 (IoU belirtilmemiş)",
+"value": "70% (0.70 at 0.050)",
+"model": "YOLOv5x",
+"is_main": false
+},
+{
+"experiment": "YOLOv4, §IV.A",
+"subset": "China_Drone + İspanya",
+"metric": "mAP@0.50",
+"value": "0.268638 (26.86%)",
+"model": "YOLOv4",
+"is_main": false
+},
+{
+"experiment": "YOLOv4, §IV.A",
+"subset": "China_Drone + İspanya",
+"metric": "F1 (IoU belirtilmemiş)",
+"value": "0.39",
+"model": "YOLOv4",
+"is_main": false
+}
+]
+},
+"notes_tr": "K7 yorum kararıdır: makaledeki GitHub bağlantısı herkese açık ve YOLOv4 kodu içeriyor; bağlantı code_url alanına yazıldı, ancak önceki çalışmaya ait olduğu ve RDD2022 deneyini kapsamadığı için K7, C6a 0/false. Bağlantı tek başına yeterli sayılırsa K7 1 olur. K2 1 verildi, çünkü Tablo 4 kendi içinde tutarlı; 584/289 çelişkisi K8'de değerlendirildi. Metin Çin verisinin küçük bir kısmının kullanıldığını söylerken Tablo 3 Ch_UAV'ın Tablo 2'deki dört sınıf sayılarının tamamını gösteriyor. Tablo 9 ile Tablo 6-7 çelişiyor: YOLOv7 için P/R 0.65/0.78 ve 0.788/0.714; .5:.95 için 0.289 ve 0.453; YOLOv5x için 0.895 ve 0.344. C5d false: YOLOv5 için ön işlem, çıkarım ve NMS ayrı veriliyor, fakat ana model YOLOv7'nin toplam süresi ön işlemi kapsamıyor. Tablolar PDF'te sayfa görüntüsünden okundu."
+},
+"P451": {
+"pid": "P451",
+"access_level": "tam_metin",
+"source_url": "https://ieeexplore.ieee.org/ielx8/8784355/11300375/11505821.pdf?arnumber=11505821",
+"code_url": "https://github.com/EdaTsujimoto/F-UNET",
+"weights_url": "",
+"K": {
+"K1": {
+"score": 1,
+"evidence": "§III.A ve Tablo 1: RDD2022-J kaynağı, 1000 görüntü; §IV.E ve Tablo 6: RDD2022-Japan."
+},
+"K2": {
+"score": 0,
+"evidence": "§IV.A: toplam 3535; etiketli 707 (566+141), etiketsiz 2828 ve ayrıca sabit test 141. 707+2828 zaten 3535 ettiği için test sayısı toplamla kapanmıyor. Tablo 6'daki RDD2022-Japan deneyinin bölmesi de verilmemiş."
+},
+"K3": {
+"score": 1,
+"evidence": "§IV.E ve Tablo 6: background, road, D41, D20, D05, D40, D70 (yedi sınıf) sıralı; karma deneyin 11 sınıfı Özet ve §III.A'da adlarıyla var."
+},
+"K4": {
+"score": 0,
+"evidence": "§IV.B1: ana metrik mIoU, ayrıca Precision, Recall, F1; mAP veya IoU eşiği yok. 0.5 ve 0.8 eşikleri güven eşiğidir, IoU eşiği değil."
+},
+"K5": {
+"score": 0,
+"evidence": "Metinde tohum yok, tekrar sayısı veya ortalama/sapma yok; Tablo 7 p-değerleri görüntü başına farklardan hesaplanmış."
+},
+"K6": {
+"score": 1,
+"evidence": "§IV.B1: RTX 3060 8 GB; Teacher için 120 epok, yığın 16, Adam 1e-4, girdi 128×128."
+},
+"K7": {
+"score": 1,
+"evidence": "Özetin sonunda kaynak kodun github.com/EdaTsujimoto/F-UNET adresinde olduğu yazıyor; depo erişilebilir, not defterleri arşivde. Ağırlık bağlantısı yok."
+},
+"K8": {
+"score": 0,
+"evidence": "Resmî gizli test yok. §IV.A sabit 141 görüntülük test diyor, ancak makalede liste, bölme dosyası veya tohum yok; Tablo 6 için ayrı test tanımı da yok."
+}
+},
+"C": {
+"C1a": false,
+"C1b": true,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": true,
+"C3c": false,
+"C4a": false,
+"C4b": false,
+"C4c": false,
+"C5a": true,
+"C5b": true,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": true,
+"C6b": false
+},
+"comparability": {
+"subsets": "Japonya (RDD2022-J, 1000 görüntü); karma deneyde PDRDD-J ve SoDR ile birlikte",
+"china_type": "yok",
+"n_classes": 11,
+"classes": "RDD2022-Japan ablasyonu: background, road, D41, D20, D05, D40, D70. Karma deney 11 sınıf: ek olarak D61, D62, D51, D52. Kodlar yazarların kendi taksonomisi; segmentasyon görevi",
+"split": "Karma veri 3535: etiketli 707 (566 eğitim, 141 doğrulama), etiketsiz 2828, sabit test 141; RDD2022-Japan için ayrı bölme yok",
+"test_def": "ayri_test",
+"input_size": "128×128",
+"results": [
+{
+"experiment": "RDD2022-Japan ablasyonu, Tablo 6",
+"subset": "RDD2022 Japonya",
+"metric": "mIoU (IoU eşiksiz)",
+"value": "0.7614",
+"model": "F-UNet",
+"is_main": true
+},
+{
+"experiment": "RDD2022-Japan ablasyonu, Tablo 6",
+"subset": "RDD2022 Japonya",
+"metric": "mIoU (IoU eşiksiz)",
+"value": "0.7477",
+"model": "F-UNet-np",
+"is_main": false
+},
+{
+"experiment": "RDD2022-Japan ablasyonu, Tablo 6, temel model",
+"subset": "RDD2022 Japonya",
+"metric": "mIoU (IoU eşiksiz)",
+"value": "0.7178",
+"model": "U-Net",
+"is_main": false
+},
+{
+"experiment": "RDD2022-Japan ablasyonu, Tablo 6",
+"subset": "RDD2022 Japonya",
+"metric": "mIoU (IoU eşiksiz)",
+"value": "0.7184",
+"model": "U-Net++",
+"is_main": false
+},
+{
+"experiment": "Karma veri, %20 etiketli, Teacher, Tablo 3",
+"subset": "PDRDD-J + SoDR + RDD2022-J",
+"metric": "mIoU / F1",
+"value": "0.8652 / 0.9796",
+"model": "F-UNet",
+"is_main": false
+},
+{
+"experiment": "Karma veri, %20 etiketli, Student, Tablo 3",
+"subset": "PDRDD-J + SoDR + RDD2022-J",
+"metric": "mIoU / F1",
+"value": "0.8727 / 0.9809",
+"model": "F-UNet",
+"is_main": false
+},
+{
+"experiment": "Karma veri, %20 etiketli, Teacher, temel model, Tablo 3",
+"subset": "PDRDD-J + SoDR + RDD2022-J",
+"metric": "mIoU / F1",
+"value": "0.7488 / 0.9720",
+"model": "U-Net",
+"is_main": false
+},
+{
+"experiment": "Karma veri, %20 etiketli, Student, temel model, Tablo 3",
+"subset": "PDRDD-J + SoDR + RDD2022-J",
+"metric": "mIoU / F1",
+"value": "0.8026 / 0.9710",
+"model": "U-Net",
+"is_main": false
+}
+]
+},
+"notes_tr": "is_main, tek RDD2022 ayrık sonuç olan Tablo 6'ya verildi; makalenin başlıca sonucu 11 sınıflı karma deneydir (0.8652 ve 0.8727). n_classes bu yüzden 7. Tüm değerler segmentasyon mIoU'su, tespit mAP'iyle karşılaştırılamaz. K8 ve C3c sınırlılığı: depodaki F-Unet.rar içinde trainvaltestfile_maker.ipynb dosyası listeleniyor, ancak RAR arşivi bozuk sağlama hatası nedeniyle açılamadı, içeriği okunamadı; makale liste veya tohum paylaşıldığını söylemediği için 0/false verildi. Depoda bölme dosyası veya tohum bulunursa yeniden bakılmalı. Sabit testin 141 olması doğrulama sayısıyla aynı; ayrık olup olmadığı toplamdan doğrulanamıyor. C5d false: süre kapsamı belirtilmemiş. Tablo 3 ve 4'te U-Net 0.7488/0.7489 gibi küçük farklar var. Tablolar sayfa görüntüsünden okundu."
+},
+"P251": {
+"pid": "P251",
+"access_level": "tam_metin",
+"source_url": "https://mdpi-res.com/d_attachment/drones/drones-10-00119/article_deploy/drones-10-00119.pdf",
+"K": {
+"K1": {
+"score": 0,
+"evidence": "Makale 400 görüntünün tüm RDD2022 koleksiyonundan elle seçildiğini, RDD2022'nin 'multiple countries' kapsadığını söylüyor; deneyde kullanılan ülke veya alt küme adı yok (§2.2). Makalenin verdiği Zenodo arşivinde 400 dosyanın tamamı China_Drone_ önekli, ama bu ne makalede ne README'de yazılı; dosya adından çıkarım olduğu için puan verilmedi."
+},
+"K2": {
+"score": 1,
+"evidence": "400 görüntü 65/15/20 oranıyla 260/60/80'e bölünmüş; toplam ve oranlar tutarlı, 400'lük alt küme RDD2022 ile çelişmiyor (§2.2). §2.2'deki RDD2022 toplamı 38.385, RDD2022 veri makalesi özetinde 47.420; bu sayı deney bölmesi olmadığı için puanı etkilemedi."
+},
+"K3": {
+"score": 1,
+"evidence": "Görev ikili segmentasyon: her piksel defect veya background (§3.1, §3.2). Tek ön plan sınıfı crack-like defect olarak adlandırılmış, sınıf sayısı belli. D00/D10/D20/D40 kodlarına eşleme verilmemiş."
+},
+"K4": {
+"score": 0,
+"evidence": "Ana metrikler piksel düzeyinde Dice ve IoU (Tablo 8; §4.3 örtüşme metriklerini birincil gösterge sayıyor). Bunlarda IoU eşiği yok; τ*=0.66 olasılık eşiği. IoU≥0.50 yalnızca örnek düzeyi TP sayımında geçiyor (§3.4.2, Tablo 7) ve §6.4 bunu birincil değil tamamlayıcı gösterge sayıyor."
+},
+"K5": {
+"score": 1,
+"evidence": "Rastgele tohum 42 açıkça verilmiş (§3.1, Tablo 1). Ayrıca beş farklı tohumla tekrar sonuçları listelenmiş (§4.1.2, Tablo 5)."
+},
+"K6": {
+"score": 1,
+"evidence": "GPU NVIDIA GeForce RTX 4070 SUPER (§3.7, Tablo 3). Tablo 1 ve §3.3.3: epok 8/10, yığın 4, azami öğrenme oranı 1e-4, Adam, girdi 512x512; beşinin beşi var. §3.8 GPU'yu RTX 4070 Ti SUPER diye anıyor."
+},
+"K7": {
+"score": 0,
+"evidence": "Veri Erişilebilirliği bölümü yalnızca Zenodo veri kümesini gösteriyor; kod veya ağırlık bağlantısı yok. Zenodo arşivi dataset_400_clean.zip listelendi: yalnızca jpg, png, txt, md dosyaları var, kod veya ağırlık dosyası yok."
+},
+"K8": {
+"score": 1,
+"evidence": "(b) yolu: 80 görüntülük test kümesi doğrulamadan ayrı (§2.2, Tablo 8) ve bölmeyi anlatan tümcede tohum 42 verilmiş (§3.1). Uyarı: Zenodo bölme dosyaları 320/60/20; ana deneyin 80'lik test listesi paylaşılmamış, bölme kodu da yok. Puan yalnızca 'bölme tohumu verilmiş' koşulundan geliyor."
+}
+},
+"C": {
+"C1a": false,
+"C1b": false,
+"C2a": false,
+"C2b": false,
+"C3a": true,
+"C3b": false,
+"C3c": true,
+"C4a": false,
+"C4b": false,
+"C4c": false,
+"C5a": false,
+"C5b": false,
+"C5c": true,
+"C5d": false,
+"C5e": true,
+"C6a": false,
+"C6b": false
+},
+"comparability": {
+"subsets": "Makale metninde adlandırılmamış (yalnızca tüm RDD2022 koleksiyonundan elle seçilmiş 400 görüntü, §2.2). Makalenin verdiği Zenodo arşivindeki 400 görüntünün tamamı China_Drone_ önekli.",
+"china_type": "İHA",
+"n_classes": 1,
+"classes": "İkili piksel segmentasyonu: tek ön plan sınıfı crack-like defect, arka plana karşı. RDD2022 kodlarına eşleme verilmemiş; maskeler yazarlarca elle üretilmiş.",
+"split": "Ana deney: 400 görüntü, eğitim/doğrulama/test 260/60/80 (65/15/20), tohum 42 (§2.2, §3.1). Kararlılık analizinde test 20/60/80/100, doğrulama sabit 60 (§3.6). Zenodo'daki bölme dosyaları ise 320/60/20.",
+"test_def": "ayri_test",
+"input_size": "512 × 512 (sıfır dolgulu yeniden boyutlandırma, §3.1)",
+"results": [
+{
+"experiment": "Nihai piksel düzeyi test, V0_raw (Tablo 8)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice coefficient (piksel düzeyi, τ*=0.66)",
+"value": "0.665",
+"model": "U-Net + ResNet-34, BCE+Dice, V0_raw",
+"is_main": true
+},
+{
+"experiment": "Nihai piksel düzeyi test, V0_raw (Tablo 8)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Intersection-over-Union (IoU) (piksel düzeyi, τ*=0.66)",
+"value": "0.521",
+"model": "U-Net + ResNet-34, BCE+Dice, V0_raw",
+"is_main": true
+},
+{
+"experiment": "Nihai piksel düzeyi test, V0_raw (Tablo 8)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi, τ*=0.66)",
+"value": "0.667",
+"model": "U-Net + ResNet-34, BCE+Dice, V0_raw",
+"is_main": true
+},
+{
+"experiment": "Nihai piksel düzeyi test, V0_raw (Tablo 8)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi, τ*=0.66)",
+"value": "0.700",
+"model": "U-Net + ResNet-34, BCE+Dice, V0_raw",
+"is_main": true
+},
+{
+"experiment": "Nihai piksel düzeyi test, V0_raw (Tablo 8)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Pixel Accuracy (τ*=0.66)",
+"value": "0.987",
+"model": "U-Net + ResNet-34, BCE+Dice, V0_raw",
+"is_main": true
+},
+{
+"experiment": "Test boyutu kararlılığı, test=20, τ*=0.28 (Tablo 4)",
+"subset": "400'lük alt küme, test=20",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.612",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=20, τ*=0.28 (Tablo 4)",
+"subset": "400'lük alt küme, test=20",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.472",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=60, τ*=0.90 (Tablo 4)",
+"subset": "400'lük alt küme, test=60",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.668",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=60, τ*=0.90 (Tablo 4)",
+"subset": "400'lük alt küme, test=60",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.530",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=80, τ*=0.66 (Tablo 4)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.665",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=80, τ*=0.66 (Tablo 4)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.521",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=100, τ*=0.52 (Tablo 4)",
+"subset": "400'lük alt küme, test=100",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.670",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Test boyutu kararlılığı, test=100, τ*=0.52 (Tablo 4)",
+"subset": "400'lük alt küme, test=100",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.532",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 1, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.631",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 1, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.487",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 1, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.671",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 1, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.646",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 7, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.645",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 7, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.502",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 7, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.671",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 7, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.660",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 13, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.645",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 13, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.501",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 13, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.654",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 13, τ*=0.54 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.670",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 21, τ*=0.50 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.651",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 21, τ*=0.50 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.507",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 21, τ*=0.50 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.683",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 21, τ*=0.50 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.667",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 42, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.665",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 42, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.521",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 42, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.668",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Tohum 42, τ*=0.66 (Tablo 5)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.700",
+"model": "U-Net + ResNet-34",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V0_raw, τ*=0.66 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.665",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V0_raw, τ*=0.66 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.521",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V0_raw, τ*=0.66 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.667",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V0_raw, τ*=0.66 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.700",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V1_area, τ*=0.62 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.664",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V1_area, τ*=0.62 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.522",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V1_area, τ*=0.62 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.680",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V1_area, τ*=0.62 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.688",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V2_morph, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.627",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V2_morph, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.481",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V2_morph, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.602",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V2_morph, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.698",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V3_morph_area, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Dice (piksel düzeyi)",
+"value": "0.608",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V3_morph_area, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "IoU (piksel düzeyi)",
+"value": "0.463",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V3_morph_area, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Precision (piksel düzeyi)",
+"value": "0.614",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Son işlem karşılaştırması, V3_morph_area, τ*=0.10 (Tablo 6)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Recall (piksel düzeyi)",
+"value": "0.658",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V0_raw, τ*=0.66 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "TP Inst. (≥0.5), sınırlayıcı kutu IoU",
+"value": "219",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V0_raw, τ*=0.66 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Matches (>0)",
+"value": "535",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V0_raw, τ*=0.66 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "%IoU ≥ 0.5",
+"value": "40.9",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V1_area, τ*=0.62 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "TP Inst. (≥0.5), sınırlayıcı kutu IoU",
+"value": "175",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V1_area, τ*=0.62 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Matches (>0)",
+"value": "377",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V1_area, τ*=0.62 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "%IoU ≥ 0.5",
+"value": "46.4",
+"model": "U-Net + ResNet-34, V1_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V2_morph, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "TP Inst. (≥0.5), sınırlayıcı kutu IoU",
+"value": "137",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V2_morph, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Matches (>0)",
+"value": "550",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V2_morph, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "%IoU ≥ 0.5",
+"value": "24.9",
+"model": "U-Net + ResNet-34, V2_morph",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V3_morph_area, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "TP Inst. (≥0.5), sınırlayıcı kutu IoU",
+"value": "120",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V3_morph_area, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Matches (>0)",
+"value": "410",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi, V3_morph_area, τ*=0.10 (Tablo 7)",
+"subset": "400'lük alt küme, test=80",
+"metric": "%IoU ≥ 0.5",
+"value": "29.3",
+"model": "U-Net + ResNet-34, V3_morph_area",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi eşleşme istatistikleri, V0_raw (Tablo 9)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Mean IoU across all matches (IoU > 0)",
+"value": "0.425",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi eşleşme istatistikleri, V0_raw (Tablo 9)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Fraction of matches with IoU ≥ 0.30",
+"value": "63.18%",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi eşleşme istatistikleri, V0_raw (Tablo 9)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Fraction of matches with IoU ≥ 0.50",
+"value": "40.93%",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi eşleşme istatistikleri, V0_raw (Tablo 9)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Fraction of matches with IoU ≥ 0.70",
+"value": "19.63%",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi TP istatistikleri, V0_raw (Tablo 10)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Number of images with at least one TP (IoU ≥ 0.5)",
+"value": "68",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi TP istatistikleri, V0_raw (Tablo 10)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Total number of TP instances (IoU ≥ 0.5)",
+"value": "219",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Örnek düzeyi TP istatistikleri, V0_raw (Tablo 10)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Mean IoU across TP instances (IoU ≥ 0.5)",
+"value": "0.714",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Çıkarım süresi, yığın=1, GPU (Tablo 11)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Mean latency (ms/image)",
+"value": "13.54 ± 0.14",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Çıkarım süresi, yığın=1, GPU (Tablo 11)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Median latency p50 (ms/image)",
+"value": "13.53",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Çıkarım süresi, yığın=1, GPU (Tablo 11)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Tail latency p95 (ms/image)",
+"value": "13.73",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Çıkarım süresi, yığın=1, GPU (Tablo 11)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Throughput (FPS, from mean)",
+"value": "73.85",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+},
+{
+"experiment": "Çıkarım süresi, yığın=1, GPU (Tablo 11)",
+"subset": "400'lük alt küme, test=80",
+"metric": "Throughput (FPS, from p95)",
+"value": "72.82",
+"model": "U-Net + ResNet-34, V0_raw",
+"is_main": false
+}
+]
+},
+"notes_tr": "Erişim: Makalenin 36 sayfalık PDF'i ve Zenodo veri kaydı (dataset_400_clean.zip dosya listesi) incelendi.\n\nUzlaştırmada bakılacak yargı noktaları:\n1) K1/C3b ile china_type: Metin alt kümeyi adlandırmadığı için K1=0 ve C3b=false. china_type=İHA ise makalenin verdiği bağlantıdan geliyor: arşivdeki 400 görüntü ve 400 maskenin tümü China_Drone_ önekli. Kod kitabı bağlantıları kapsama aldığı için K1=1 de savunulabilir; görev kuralı açıkça metinde olmasını istediğinden 0 verdim. Bu bulgu, metindeki çok ülkeli çeşitlilik izlenimiyle uyuşmuyor.\n2) Bölme uyuşmazlığı (K8, C3c): Makalenin ana deneyi 260/60/80. Zenodo README'si ve splits/ dosyaları 320/60/20; bu, makalenin §4.1.1'de güvenilmez bulduğu 20 görüntülük test yapılandırmasına karşılık geliyor. DataCite'a göre kaydın tek sürümü var. Yani Tablo 8'in 80'lik test listesi paylaşılmamış. K8=1 yalnızca tohum 42 koşulundan geliyor; bölme kodu olmadığından üyelik pratikte kurulamayabilir. C3c=true, çünkü bir bölme dosyası gerçekten paylaşılmış, ama ana deneye ait değil.\n3) K4: Piksel Dice/IoU için IoU eşiği doğası gereği yok, kod kitabında 'uygulanamaz' seçeneği de yok; bu yüzden 0. Bu sıfır, segmentasyon protokolünden kaynaklanıyor olabilir.\n4) K3: Binary defect/background adlandırması 1 sayıldı; RDD2022 kodlarına eşleme yok. n_classes=1 ön plan sınıfını sayıyor, arka planla 2.\n5) K2: Makale RDD2022'yi 38.385 görüntü diye tanımlıyor, RDD2022 veri makalesinin özeti 47.420 diyor. Kaynak olarak Kaggle kopyası gösterilmiş (kaynak 21). Bu sayı deney bölmesi olmadığından K2=1 kaldı.\n6) C4c=false: Tablo 5'te beş tohumun değerleri tek tek var, ortalama ve sapma basılmamış. C5d=false: süre ileri geçiş, aktivasyon ve eşiklemeyi kapsıyor; ön işlem belirtilmemiş (§3.8, §4.5).\n\nSonucun yorumunu etkileyen gözlemler:\n- Ana sonuç beş tohumun en yüksek Dice değerini veren tohum 42'ye ait. Benim hesabım (makalede yok): Dice ortalaması 0.6474, örneklem sapması 0.0123.\n- Son işlem seçimi test kümesi sonuçlarıyla karşılaştırılarak yapılmış (§3.5.1, §4.2); eşik ise doğrulamada seçilmiş. test_def=ayri_test olarak kodlandı, ama test kümesi yapılandırma seçiminde tamamen kullanılmamış değil.\n- Taban model yok. BCE+Focal ve Focal Tversky denenmiş, ancak sayısal sonuçları verilmemiş (§3.3.2).\n- Sonuçlar elle üretilmiş ikili piksel maskeleri üzerinde; RDD2022 kutu tabanlı mAP/F1 sonuçlarıyla doğrudan karşılaştırılamaz.\n\nMakale içi tutarsızlıklar: GPU §3.7'de RTX 4070 SUPER, §3.8'de RTX 4070 Ti SUPER. §3.3.4 'PyTorch 3.13.5', §3.7 PyTorch 2.2.2 ve Python 3.13.5 diyor. §3.6 her yapılandırmanın yeniden eğitildiğini söylerken §4.1.1 ve Tablo 4 tek eğitilmiş model diyor. Tohum 42 kesinliği Tablo 5'te 0.668, Tablo 6 ve 8'de 0.667."
+}
+}

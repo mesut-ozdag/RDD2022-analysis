@@ -1,0 +1,1997 @@
+{
+ "n_conf": 297,
+ "n_unv": 50,
+ "conf_by_arm": {
+  "OpenAlex": 244,
+  "Hedefli tarama (12 Ekim 2026)": 36,
+  "Belgelenmiş tarama (2 Kasım 2026)": 17
+ },
+ "unv_by_arm": {
+  "OpenAlex": 24,
+  "Hedefli tarama (12 Ekim 2026)": 25,
+  "Belgelenmiş tarama (2 Kasım 2026)": 1
+ },
+ "evidence_levels_conf": {
+  "tam_metin": 90,
+  "ozet_veya_yayinci": 205,
+  "tam_metin_tez": 1,
+  "alinti_veya_dizin": 1
+ },
+ "dup_map": {
+  "P403": "P003",
+  "P277": "P167",
+  "P166": "P033",
+  "P130": "P007",
+  "P119": "P002",
+  "P223": "P046",
+  "P400": "P003",
+  "P412": "P003",
+  "P150": "P003",
+  "P270": "P018",
+  "P424": "P455",
+  "P453": "P003"
+ },
+ "dup_pairs": 6,
+ "dup_repo": 1,
+ "dup_repeat": 5,
+ "targeted": {
+  "assessed": 65,
+  "conf": 36,
+  "unv": 25,
+  "not_using": 1,
+  "merged": 2,
+  "pubtype": 1
+ },
+ "targeted_other": [
+  {
+   "id": "W020",
+   "year": 2025,
+   "title": "Insights from the Road Damage Detection Challenge Series (2018–2024)",
+   "venue": "Nature Machine Intelligence",
+   "url": "https://doi.org/10.1038/s42256-025-01132-5",
+   "decision": "Dışlandı: perspektif yazısı",
+   "level": "",
+   "note": "Yarışma serisini değerlendiren perspektif yazısı; özgün deney bildirmiyor.",
+   "source": ""
+  },
+  {
+   "id": "W025",
+   "year": 2025,
+   "title": "Research on road damage detection and classification based on YOLOv11",
+   "venue": "SPIE Proceedings (AIPT 2025)",
+   "url": "https://doi.org/10.1117/12.3077182",
+   "decision": "Dışlandı: veri seti tanıtımı",
+   "level": "ozet_veya_yayinci",
+   "note": "Özet (OpenAlex kaydı): Mevcut veri setlerinin kusur türü bakımından yetersizliğinden yola çıkılarak yedi sınıflı yeni veri seti kurulduğu (5.994 özgün görüntü, artırmayla 10.320), YOLOv11 modelinin bu veride denendiği (yaya geçidi aşınması mAP@0.5 0,717; boyuna çatlak 0,238) ve veri setinin yeni kıyas kümesi olarak sunulduğu belirtiliyor. RDD2022, CRDDC veya ORDDC adı geçmiyor.",
+   "source": "https://api.openalex.org/works/doi:10.1117/12.3077182"
+  },
+  {
+   "id": "W026",
+   "year": 2025,
+   "title": "Research on the Improved YOLOv8-Based Road Damage Detection Model",
+   "venue": "ISCTIS 2025 (IEEE)",
+   "url": "https://doi.org/10.1109/ISCTIS65944.2025.11065007",
+   "decision": "Birleştirildi: P035 ile aynı çalışma",
+   "level": "ozet_veya_yayinci",
+   "note": "Özet (OpenAlex kaydı) ile P035 eşleşmesi: aynı model adı OBC-YOLOv8; aynı üç modül (ODConv, Bottleneck Transformer/BoTNet, boyundaki Coordinate Attention); aynı veri (RDD-China / RDD2022-China); aynı sayılar: mAP@0.5'te +%1,8 ve F1'de +%1,6. P035 tam metni (Dataset bölümü) RDD-China'yı RDD2022'nin iki parçası olarak tanımlıyor ve aynı %1,8 ile %1,6 değerlerini veriyor. Yazarlar farklı (Yuqi Wu / Zhang, Liu, Wang, Huang).",
+   "source": "https://api.openalex.org/works/doi:10.1109/ISCTIS65944.2025.11065007"
+  },
+  {
+   "id": "W035",
+   "year": 2025,
+   "title": "Real-Time On-Device Vision-Based Road Anomaly Detection with Frame Span Interval (FSI) Event Counting",
+   "venue": "IEEE/ACS AICCSA 2025",
+   "url": "https://doi.org/10.1109/AICCSA66935.2025.11315341",
+   "decision": "Birleştirildi: W034 ile aynı çalışma",
+   "level": "ozet_veya_yayinci",
+   "note": "W034 ile eşleşme: W034'ün arXiv yayın atfı bu bildiriyi (AICCSA 2025) gösteriyor; üç yazar aynı; bildirinin Crossref'teki 23 kaynağı W034'ün [1]-[23] kaynaklarıyla aynı sırada; iki özet Raspberry Pi, kamera modülü ve dizüstüyle çukur ve aynı çatlak türlerinin algılanmasını anlatıyor. Bildiri özeti FSI'yı öne çıkarıyor, arka uç bütünleşmesini ve bildirimleri gelecek çalışma sayıyor. Tam metin kapalı olduğundan sayısal sonuçlar karşılaştırılamadı; kullanım kanıtı W034'ün tam metnidir.",
+   "source": "https://arxiv.org/abs/2505.08882"
+  }
+ ],
+ "other": {
+  "reg_added": 15,
+  "web_added": 2,
+  "reg_not_using": 6,
+  "added": 53,
+  "assessed": 104,
+  "not_added": 51
+ },
+ "flow": {
+  "oa_conf": 244,
+  "rel_unclear": 133,
+  "survey": 30,
+  "dataset": 28,
+  "unv_oa": 24,
+  "rel_no": 66,
+  "merged": 12,
+  "irrelevant": 16,
+  "pubtype": 1,
+  "direct": 256,
+  "excluded": 298
+ },
+ "years": [
+  {
+   "y": 2022,
+   "core": 7,
+   "web": 2,
+   "unverified": 1,
+   "related": 2,
+   "survey": 1,
+   "dataset": 3
+  },
+  {
+   "y": 2023,
+   "core": 14,
+   "web": 2,
+   "unverified": 3,
+   "related": 13,
+   "survey": 3,
+   "dataset": 0
+  },
+  {
+   "y": 2024,
+   "core": 54,
+   "web": 7,
+   "unverified": 14,
+   "related": 27,
+   "survey": 11,
+   "dataset": 6
+  },
+  {
+   "y": 2025,
+   "core": 94,
+   "web": 20,
+   "unverified": 15,
+   "related": 74,
+   "survey": 8,
+   "dataset": 10
+  },
+  {
+   "y": 2026,
+   "core": 75,
+   "web": 22,
+   "unverified": 17,
+   "related": 83,
+   "survey": 7,
+   "dataset": 9
+  }
+ ],
+ "year_total": 604,
+ "family": [
+  [
+   "YOLOv8",
+   104
+  ],
+  [
+   "YOLO11",
+   42
+  ],
+  [
+   "YOLOv5",
+   22
+  ],
+  [
+   "Diğer",
+   21
+  ],
+  [
+   "RT-DETR",
+   20
+  ],
+  [
+   "Topluluk (ensemble)",
+   12
+  ],
+  [
+   "YOLO (diğer)",
+   12
+  ],
+  [
+   "YOLOv7",
+   11
+  ],
+  [
+   "YOLOv10",
+   9
+  ],
+  [
+   "CNN sınıflandırıcı",
+   8
+  ],
+  [
+   "Transformer (ViT/Swin)",
+   6
+  ],
+  [
+   "YOLOv12",
+   5
+  ],
+  [
+   "YOLOv9",
+   5
+  ],
+  [
+   "Faster / Cascade R-CNN",
+   5
+  ],
+  [
+   "Mamba",
+   4
+  ],
+  [
+   "YOLO26",
+   3
+  ],
+  [
+   "Segmentasyon ağı",
+   3
+  ],
+  [
+   "Görsel-dil modeli",
+   3
+  ],
+  [
+   "Diğer dedektör",
+   1
+  ],
+  [
+   "DETR ailesi",
+   1
+  ]
+ ],
+ "yolo_n": 213,
+ "yolo_pct": 71.71717171717171,
+ "detr_n": 21,
+ "family_year": {
+  "YOLOv8": {
+   "2026": 31,
+   "2025": 43,
+   "2024": 28,
+   "2023": 2
+  },
+  "CNN sınıflandırıcı": {
+   "2026": 4,
+   "2025": 3,
+   "2024": 1
+  },
+  "Diğer": {
+   "2026": 9,
+   "2025": 6,
+   "2024": 4,
+   "2023": 1,
+   "2022": 1
+  },
+  "YOLO11": {
+   "2026": 19,
+   "2025": 23
+  },
+  "YOLOv10": {
+   "2026": 3,
+   "2025": 4,
+   "2024": 2
+  },
+  "YOLO26": {
+   "2026": 3
+  },
+  "Segmentasyon ağı": {
+   "2026": 1,
+   "2025": 1,
+   "2024": 1
+  },
+  "Transformer (ViT/Swin)": {
+   "2026": 1,
+   "2025": 3,
+   "2024": 1,
+   "2023": 1
+  },
+  "YOLOv12": {
+   "2026": 3,
+   "2025": 2
+  },
+  "Mamba": {
+   "2026": 2,
+   "2025": 2
+  },
+  "Topluluk (ensemble)": {
+   "2026": 1,
+   "2025": 1,
+   "2024": 2,
+   "2022": 8
+  },
+  "RT-DETR": {
+   "2026": 9,
+   "2025": 9,
+   "2024": 2
+  },
+  "YOLO (diğer)": {
+   "2026": 5,
+   "2025": 3,
+   "2024": 4
+  },
+  "YOLOv5": {
+   "2026": 2,
+   "2025": 4,
+   "2024": 9,
+   "2023": 7
+  },
+  "Görsel-dil modeli": {
+   "2026": 1,
+   "2025": 2
+  },
+  "YOLOv7": {
+   "2026": 1,
+   "2025": 3,
+   "2024": 3,
+   "2023": 4
+  },
+  "YOLOv9": {
+   "2025": 4,
+   "2024": 1
+  },
+  "Faster / Cascade R-CNN": {
+   "2025": 1,
+   "2024": 2,
+   "2023": 1,
+   "2026": 1
+  },
+  "Diğer dedektör": {
+   "2024": 1
+  },
+  "DETR ailesi": {
+   "2026": 1
+  }
+ },
+ "contrib": [
+  [
+   "Mimari iyileştirme",
+   208,
+   70.03367003367003
+  ],
+  [
+   "Dikkat modülü",
+   139,
+   46.801346801346796
+  ],
+  [
+   "Hafif model / uç cihaz",
+   128,
+   43.09764309764309
+  ],
+  [
+   "Boyun / öznitelik füzyonu",
+   111,
+   37.37373737373738
+  ],
+  [
+   "Kayıp fonksiyonu / IoU",
+   55,
+   18.51851851851852
+  ],
+  [
+   "Küçük nesne",
+   50,
+   16.835016835016837
+  ],
+  [
+   "Transfer / alanlar arası genelleme",
+   49,
+   16.4983164983165
+  ],
+  [
+   "Model karşılaştırması",
+   37,
+   12.457912457912458
+  ],
+  [
+   "Yeni veri seti",
+   36,
+   12.121212121212121
+  ],
+  [
+   "Sistem / uygulama",
+   24,
+   8.080808080808081
+  ],
+  [
+   "İHA (drone)",
+   21,
+   7.07070707070707
+  ],
+  [
+   "Topluluk (ensemble) / TTA",
+   21,
+   7.07070707070707
+  ],
+  [
+   "Şiddet / ölçüm",
+   13,
+   4.377104377104377
+  ],
+  [
+   "Segmentasyon",
+   11,
+   3.7037037037037033
+  ],
+  [
+   "Veri artırma / sentetik veri",
+   7,
+   2.356902356902357
+  ],
+  [
+   "Görsel-dil modeli (VLM/LLM)",
+   7,
+   2.356902356902357
+  ],
+  [
+   "Yarı / öz-denetimli",
+   5,
+   1.6835016835016834
+  ]
+ ],
+ "contrib_other": 5,
+ "deep_status": {
+  "teyit": 40,
+  "siniflandirma_disi": 3
+ },
+ "deep_outside": [
+  "P015",
+  "P400",
+  "P256"
+ ],
+ "oa_conf": 244,
+ "oa_unspec": 153,
+ "oa_unspec_pct": 62.704918032786885,
+ "web_conf": 53,
+ "oa_core_yes": 202,
+ "oa_named_in_abstract": 192,
+ "oa_no_abstract_core_yes": 0,
+ "unclear_n": 133,
+ "unclear_no_oa_abs": 49,
+ "unclear_no_abs": 49,
+ "resmi_test": {
+  "katilimci": 15,
+  "ozet": 2,
+  "diger": 3,
+  "yarisma": 17,
+  "n": 20,
+  "pct": 6.7340067340067336
+ },
+ "resmi_test_ids": [
+  "P051",
+  "P060",
+  "P071",
+  "P083",
+  "P129",
+  "P148",
+  "W000",
+  "W001",
+  "P170",
+  "P171",
+  "P173",
+  "P218",
+  "P219",
+  "P220",
+  "P152",
+  "P007",
+  "P072",
+  "P016",
+  "P334",
+  "P225"
+ ],
+ "contrib_union": 222,
+ "contrib_union_pct": 74.74747474747475,
+ "contrib_rel": {
+  "n": 297,
+  "exact": 267,
+  "adjudicated": 30,
+  "no_abstract": 28,
+  "per_code": {
+   "Mimari iyileştirme": {
+    "po": 99.32659932659934,
+    "kappa": 0.9838525526015333
+   },
+   "Dikkat modülü": {
+    "po": 98.98989898989899,
+    "kappa": 0.9797394092366465
+   },
+   "Hafif model / uç cihaz": {
+    "po": 97.64309764309765,
+    "kappa": 0.9519006084723411
+   },
+   "Boyun / öznitelik füzyonu": {
+    "po": 98.65319865319864,
+    "kappa": 0.9713320463320463
+   },
+   "Model karşılaştırması": {
+    "po": 98.98989898989899,
+    "kappa": 0.9542302357836341
+   },
+   "Transfer / alanlar arası genelleme": {
+    "po": 99.32659932659934,
+    "kappa": 0.9755595786701778
+   },
+   "Küçük nesne": {
+    "po": 98.98989898989899,
+    "kappa": 0.9642125557296062
+   },
+   "Kayıp fonksiyonu / IoU": {
+    "po": 100.0,
+    "kappa": 1.0
+   },
+   "Diğer": {
+    "po": 100.0,
+    "kappa": 1.0
+   },
+   "Sistem / uygulama": {
+    "po": 99.32659932659934,
+    "kappa": 0.9563235294117649
+   },
+   "İHA (drone)": {
+    "po": 99.32659932659934,
+    "kappa": 0.94876660341556
+   },
+   "Veri artırma / sentetik veri": {
+    "po": 99.66329966329967,
+    "kappa": 0.9316140916417227
+   },
+   "Topluluk (ensemble) / TTA": {
+    "po": 99.66329966329967,
+    "kappa": 0.9749303621169918
+   },
+   "Yeni veri seti": {
+    "po": 98.98989898989899,
+    "kappa": 0.9531570369591507
+   },
+   "Segmentasyon": {
+    "po": 100.0,
+    "kappa": 1.0
+   },
+   "Şiddet / ölçüm": {
+    "po": 100.0,
+    "kappa": 1.0
+   },
+   "Yarı / öz-denetimli": {
+    "po": 100.0,
+    "kappa": 1.0
+   },
+   "Görsel-dil modeli (VLM/LLM)": {
+    "po": 100.0,
+    "kappa": 1.0
+   }
+  },
+  "kappa_min": 0.9316140916417227,
+  "kappa_max": 1.0
+ },
+ "pair_yolo_year": {
+  "y23": 16,
+  "y24": 61,
+  "v8_23": 2,
+  "v8_24": 28
+ },
+ "rescreen_counts": {
+  "teyit|tam_metin": 10,
+  "teyit|ozet_veya_yayinci": 15,
+  "yinelenen_surum|tam_metin": 3,
+  "dogrulanamadi|tam_metin": 1,
+  "dogrulanamadi|ozet_veya_yayinci": 1,
+  "yinelenen_surum|ozet_veya_yayinci": 1
+ },
+ "verify_counts": {
+  "teyit|tam_metin": 17,
+  "dogrulanamadi|ozet_veya_yayinci": 18,
+  "teyit|ozet_veya_yayinci": 13,
+  "kullanmiyor|tam_metin": 1
+ },
+ "prti_rows": [
+  {
+   "pid": "P016",
+   "short": "RDD-YOLO",
+   "group": "i",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 1
+   },
+   "total": 6,
+   "total7": 5,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": true,
+    "C2b": true,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": false,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P334",
+   "short": "StripRFNet",
+   "group": "i",
+   "year": 2025,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 1
+   },
+   "total": 6,
+   "total7": 5,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": true,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P002",
+   "short": "YOLOv8-PD",
+   "group": "ii",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P011",
+   "short": "YOLOv8-CD",
+   "group": "ii",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": false,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": false,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P019",
+   "short": "İyileştirilmiş YOLOv5s",
+   "group": "ii",
+   "year": 2023,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P033",
+   "short": "İyileştirilmiş YOLOv8n",
+   "group": "ii",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": false,
+    "C5b": false,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": null
+  },
+  {
+   "pid": "P161",
+   "short": "RS-YOLOv11n",
+   "group": "ii",
+   "year": 2025,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": false,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": null
+  },
+  {
+   "pid": "P260",
+   "short": "YOLO_SE6",
+   "group": "ii",
+   "year": 2026,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": null
+  },
+  {
+   "pid": "P000",
+   "short": "BL-YOLOv8",
+   "group": "iii",
+   "year": 2023,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": false,
+    "C1b": true,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P010",
+   "short": "İyileştirilmiş YOLOv8s (Sci. Rep.)",
+   "group": "iii",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": false,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P026",
+   "short": "İyileştirilmiş YOLOv8s",
+   "group": "iii",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": false,
+    "C1b": true,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": false,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P035",
+   "short": "OBC-YOLOv8",
+   "group": "iii",
+   "year": 2025,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 1,
+    "K8": 0
+   },
+   "total": 6,
+   "total7": 6,
+   "C": {
+    "C1a": false,
+    "C1b": true,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": true,
+    "C6b": false
+   },
+   "code": "https://github.com/wulihuge/OBC-YOLOv8"
+  },
+  {
+   "pid": "P046",
+   "short": "YOLO-ROC",
+   "group": "iii",
+   "year": 2026,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": true,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P075",
+   "short": "YOLOv11s-ATL",
+   "group": "iii",
+   "year": 2025,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": false,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": false,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P106",
+   "short": "ALC-Net",
+   "group": "iii",
+   "year": 2025,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  },
+  {
+   "pid": "P401",
+   "short": "ELW-YOLO",
+   "group": "iii",
+   "year": 2026,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 0,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 3,
+   "total7": 3,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": true,
+    "C5b": true,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": null
+  },
+  {
+   "pid": "P003",
+   "short": "İHA ile hasar tespiti",
+   "group": "iv",
+   "year": 2023,
+   "K": {
+    "K1": 1,
+    "K2": 0,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 4,
+   "total7": 4,
+   "C": {
+    "C1a": false,
+    "C1b": true,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": true,
+    "C4c": false,
+    "C5a": false,
+    "C5b": false,
+    "C5c": true,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": "https://github.com/luisaugustos/Pothole-Recognition"
+  },
+  {
+   "pid": "P027",
+   "short": "Federe öğrenme",
+   "group": "iv",
+   "year": 2024,
+   "K": {
+    "K1": 1,
+    "K2": 1,
+    "K3": 1,
+    "K4": 1,
+    "K5": 0,
+    "K6": 1,
+    "K7": 0,
+    "K8": 0
+   },
+   "total": 5,
+   "total7": 5,
+   "C": {
+    "C1a": true,
+    "C1b": false,
+    "C2a": false,
+    "C2b": false,
+    "C3a": true,
+    "C3b": true,
+    "C3c": false,
+    "C4a": true,
+    "C4b": false,
+    "C4c": false,
+    "C5a": true,
+    "C5b": false,
+    "C5c": false,
+    "C5d": false,
+    "C5e": true,
+    "C6a": false,
+    "C6b": false
+   },
+   "code": ""
+  }
+ ],
+ "prti_crit": {
+  "K1": 18,
+  "K2": 10,
+  "K3": 18,
+  "K4": 18,
+  "K5": 0,
+  "K6": 17,
+  "K7": 1,
+  "K8": 2
+ },
+ "prti_median": 5.0,
+ "prti_min": 3,
+ "prti_max": 6,
+ "prti_dist": {
+  "3": 1,
+  "4": 7,
+  "5": 7,
+  "6": 3
+ },
+ "prti_q1": 4.0,
+ "prti_q3": 5.0,
+ "prti_off": [
+  6,
+  6
+ ],
+ "prti_off7": [
+  5,
+  5
+ ],
+ "prti_oth_median": 4.5,
+ "prti_oth7_median": 4.5,
+ "prti_oth7_max": 6,
+ "prti_rho": -0.11394336570225304,
+ "prti_rho_p": 0.65135,
+ "prti_by_year": {
+  "2023": [
+   4,
+   5,
+   4
+  ],
+  "2024": [
+   6,
+   5,
+   4,
+   4,
+   5,
+   5,
+   5
+  ],
+  "2025": [
+   6,
+   5,
+   6,
+   5,
+   4
+  ],
+  "2026": [
+   4,
+   4,
+   3
+  ]
+ },
+ "prti_by_group": {
+  "i": [
+   6,
+   6
+  ],
+  "ii": [
+   5,
+   4,
+   4,
+   4,
+   5,
+   4
+  ],
+  "iii": [
+   5,
+   5,
+   5,
+   6,
+   4,
+   5,
+   4,
+   3
+  ],
+  "iv": [
+   4,
+   5
+  ]
+ },
+ "prti_rel": {
+  "K1": {
+   "po": 94.44444444444444,
+   "kappa": 0.0
+  },
+  "K2": {
+   "po": 88.88888888888889,
+   "kappa": 0.7777777777777777
+  },
+  "K3": {
+   "po": 94.44444444444444,
+   "kappa": 0.0
+  },
+  "K4": {
+   "po": 94.44444444444444,
+   "kappa": 0.0
+  },
+  "K5": {
+   "po": 100.0,
+   "kappa": null
+  },
+  "K6": {
+   "po": 94.44444444444444,
+   "kappa": 0.7692307692307692
+  },
+  "K7": {
+   "po": 100.0,
+   "kappa": 1.0
+  },
+  "K8": {
+   "po": 100.0,
+   "kappa": 1.0
+  }
+ },
+ "prti_rel_all": {
+  "po": 95.83333333333334,
+  "kappa": 0.915492957746479,
+  "n": 144,
+  "disagree": 6
+ },
+ "prti_disputes_in_18": [
+  "P000",
+  "P035",
+  "P046",
+  "P027",
+  "P003"
+ ],
+ "prti_no_rules": {
+  "K2": 10,
+  "K6": 16,
+  "median": 5.0,
+  "oth_median": 4.5,
+  "oth7_median": 4.5,
+  "rho": -0.08305085406131285,
+  "p": 0.741,
+  "dist": {
+   "3": 2,
+   "4": 6,
+   "5": 7,
+   "6": 3
+  }
+ },
+ "prti_strict_reason": {
+  "K2": 8,
+  "K6": 17,
+  "median": 4.0,
+  "oth_median": 4.0,
+  "oth7_median": 4.0,
+  "rho": -0.06202649775344091,
+  "p": 0.80535,
+  "dist": {
+   "3": 1,
+   "4": 9,
+   "5": 5,
+   "6": 3
+  }
+ },
+ "ft26_strict": {
+  "K2": 11,
+  "median": 4.0
+ },
+ "checklist": {
+  "C1a": 11,
+  "C1b": 4,
+  "C2a": 2,
+  "C2b": 1,
+  "C3a": 17,
+  "C3b": 18,
+  "C3c": 0,
+  "C4a": 18,
+  "C4b": 12,
+  "C4c": 0,
+  "C5a": 15,
+  "C5b": 14,
+  "C5c": 15,
+  "C5d": 1,
+  "C5e": 18,
+  "C6a": 1,
+  "C6b": 0
+ },
+ "checklist_all": {
+  "sinif": 11,
+  "resmi": 1,
+  "bolme": 0,
+  "metrik": 0,
+  "verim": 1,
+  "kod": 0
+ },
+ "checklist_extra_class": 7,
+ "pairs_total": 153,
+ "pairs_subset": 26,
+ "pairs_classes": 70,
+ "pairs_test": 70,
+ "pairs_three": [
+  [
+   "P016",
+   "P334"
+  ],
+  [
+   "P033",
+   "P260"
+  ],
+  [
+   "P000",
+   "P026"
+  ],
+  [
+   "P000",
+   "P035"
+  ],
+  [
+   "P000",
+   "P075"
+  ],
+  [
+   "P026",
+   "P035"
+  ],
+  [
+   "P026",
+   "P075"
+  ],
+  [
+   "P035",
+   "P075"
+  ]
+ ],
+ "pairs_four": [
+  [
+   "P016",
+   "P334"
+  ],
+  [
+   "P000",
+   "P035"
+  ],
+  [
+   "P026",
+   "P075"
+  ]
+ ],
+ "pairs_two_plus": 45,
+ "pairs_zero": 40,
+ "matrix_order": [
+  "P016",
+  "P334",
+  "P002",
+  "P011",
+  "P019",
+  "P033",
+  "P161",
+  "P260",
+  "P000",
+  "P010",
+  "P026",
+  "P035",
+  "P046",
+  "P075",
+  "P106",
+  "P401",
+  "P003",
+  "P027"
+ ],
+ "matrix_vars": {
+  "P016": [
+   "6 ülke",
+   "4",
+   "resmi",
+   "resmi"
+  ],
+  "P334": [
+   "6 ülke",
+   "4",
+   "resmi",
+   "resmi"
+  ],
+  "P002": [
+   "6 ülke",
+   "4",
+   "dogrulama",
+   "8:2"
+  ],
+  "P011": [
+   "5 ülke",
+   "4",
+   "tanimsiz",
+   "tanimsiz"
+  ],
+  "P019": [
+   "6 ülke, Çin İHA hariç",
+   "4",
+   "ayri",
+   "7:2:1"
+  ],
+  "P033": [
+   "6 ülke",
+   "4",
+   "ayri",
+   "7:1:2"
+  ],
+  "P161": [
+   "Çin + Çekya + ABD",
+   "5",
+   "ayri",
+   "7:1:2"
+  ],
+  "P260": [
+   "6 ülke",
+   "4",
+   "ayri",
+   "8:1:1"
+  ],
+  "P000": [
+   "Çin",
+   "5",
+   "ayri",
+   "8:1:1"
+  ],
+  "P010": [
+   "Çin",
+   "6",
+   "ayri",
+   "8:1:1"
+  ],
+  "P026": [
+   "Çin",
+   "5",
+   "ayri",
+   "7:2:1"
+  ],
+  "P035": [
+   "Çin",
+   "5",
+   "ayri",
+   "8:1:1"
+  ],
+  "P046": [
+   "Çin İHA",
+   "4",
+   "dogrulama",
+   "tanimsiz"
+  ],
+  "P075": [
+   "Çin",
+   "5",
+   "ayri",
+   "7:2:1"
+  ],
+  "P106": [
+   "Çin İHA",
+   "4",
+   "ayri",
+   "8:1:1"
+  ],
+  "P401": [
+   "Çin",
+   "4",
+   "ayri",
+   "8:1:1"
+  ],
+  "P003": [
+   "Çin İHA + İspanya",
+   "5",
+   "dogrulama",
+   "özel"
+  ],
+  "P027": [
+   "Japonya + Hindistan + ABD",
+   "4",
+   "ayri",
+   "9:1"
+  ]
+ },
+ "class_counts": {
+  "4": 11,
+  "5": 6,
+  "6": 1
+ },
+ "test_counts": {
+  "resmi": 2,
+  "dogrulama": 3,
+  "tanimsiz": 1,
+  "ayri": 12
+ },
+ "values": {
+  "ii": [
+   [
+    "P002",
+    70.6,
+    "4"
+   ],
+   [
+    "P019",
+    67.8,
+    "4"
+   ],
+   [
+    "P161",
+    71.5,
+    "5"
+   ],
+   [
+    "P260",
+    65.3,
+    "4"
+   ],
+   [
+    "P033",
+    65.7,
+    "4"
+   ]
+  ],
+  "iii": [
+   [
+    "P000",
+    90.7,
+    "5"
+   ],
+   [
+    "P075",
+    91.4,
+    "5"
+   ],
+   [
+    "P035",
+    86.0,
+    "5"
+   ],
+   [
+    "P401",
+    86.0,
+    "4"
+   ],
+   [
+    "P026",
+    77.4,
+    "5"
+   ],
+   [
+    "P010",
+    75.7,
+    "6"
+   ],
+   [
+    "P046",
+    67.6,
+    "4"
+   ],
+   [
+    "P046",
+    86.6,
+    "4"
+   ],
+   [
+    "P106",
+    51.7,
+    "4"
+   ],
+   [
+    "P106",
+    79.1,
+    "4"
+   ]
+  ]
+ },
+ "med_ii": 67.8,
+ "med_iii": 82.55,
+ "gap": 14.75,
+ "n_ii": 5,
+ "n_iii": 10,
+ "rng_ii": [
+  65.3,
+  71.5
+ ],
+ "rng_iii": [
+  51.7,
+  91.4
+ ],
+ "med_ii4": 66.75,
+ "med_iii4": 79.1,
+ "med_iii5": 86.0,
+ "gap4": 12.349999999999994,
+ "n_ii4": 4,
+ "n_iii4": 5,
+ "n_iii5": 5,
+ "sensitivity": {
+  "taban": {
+   "iii": 82.55,
+   "ii": 67.8,
+   "gap": 14.75
+  },
+  "aykırı eklendi": {
+   "iii": 82.55,
+   "ii": 69.19999999999999,
+   "gap": 13.350000000000009
+  },
+  "resmî grup ek sonuçları": {
+   "iii": 84.4,
+   "ii": 66.75,
+   "gap": 17.650000000000006
+  },
+  "ikisi birden": {
+   "iii": 84.4,
+   "ii": 67.8,
+   "gap": 16.60000000000001
+  }
+ },
+ "ft26_crit": {
+  "K1": 24,
+  "K2": 13,
+  "K3": 25,
+  "K4": 23,
+  "K5": 4,
+  "K6": 24,
+  "K7": 2,
+  "K8": 3
+ },
+ "ft26_n": 26,
+ "ft26_median": 5.0,
+ "ft26_min": 3,
+ "ft26_max": 6,
+ "outside_k": {
+  "K1": 6,
+  "K2": 3,
+  "K3": 7,
+  "K4": 5,
+  "K5": 4,
+  "K6": 7,
+  "K7": 1,
+  "K8": 1
+ },
+ "sens_one_value": {
+  "a": 81.7,
+  "b": 86.0,
+  "gap_a": 13.900000000000006,
+  "gap_b": 18.200000000000003
+ },
+ "sens_all": {
+  "taban": {
+   "iii": 82.55,
+   "ii": 67.8,
+   "gap": 14.75
+  },
+  "ek_resmi": {
+   "iii": 84.4,
+   "ii": 66.75,
+   "gap": 17.650000000000006
+  },
+  "belirsiz_test": {
+   "iii": 82.55,
+   "ii": 70.6,
+   "gap": 11.950000000000003
+  },
+  "ikisi": {
+   "iii": 84.4,
+   "ii": 69.19999999999999,
+   "gap": 15.200000000000017
+  },
+  "dogrulama_cikar": {
+   "iii": 86.0,
+   "ii": 66.75,
+   "gap": 19.25
+  },
+  "belirsiz_motosiklet_cikar": {
+   "iii": 79.1,
+   "ii": 67.8,
+   "gap": 11.299999999999997
+  }
+ },
+ "sens_range": [
+  11.299999999999997,
+  19.25
+ ],
+ "strict_studies": [
+  "P002",
+  "P026",
+  "P401",
+  "P033",
+  "P106"
+ ],
+ "strict_pairs": [
+  [
+   "P016",
+   "P334"
+  ],
+  [
+   "P016",
+   "P260"
+  ],
+  [
+   "P334",
+   "P260"
+  ],
+  [
+   "P000",
+   "P010"
+  ],
+  [
+   "P000",
+   "P035"
+  ],
+  [
+   "P000",
+   "P075"
+  ],
+  [
+   "P010",
+   "P035"
+  ],
+  [
+   "P010",
+   "P075"
+  ],
+  [
+   "P035",
+   "P075"
+  ]
+ ],
+ "strict_subset": 9,
+ "strict_three": 4,
+ "strict_four": 2,
+ "within_pairs": 45,
+ "within_three": 8,
+ "gain_median_excl_official": 2.5999999999999996,
+ "gains": {
+  "P000": 3.3,
+  "P075": 3.2,
+  "P035": 1.8,
+  "P401": 3.6,
+  "P026": 2.8,
+  "P010": 5.8,
+  "P046": 1.4,
+  "P106": 2.4,
+  "P002": 1.4,
+  "P019": 1.9,
+  "P161": 0.64,
+  "P260": 1.7,
+  "P033": 3.9,
+  "P011": 15.2,
+  "P016": 2.6,
+  "P334": 2.9
+ },
+ "gain_median": 2.7,
+ "gain_min": 0.64,
+ "gain_max_excl_cd": 5.8,
+ "gain_cd": 15.2,
+ "gain_table": {
+  "P000": [
+   87.4,
+   90.7
+  ],
+  "P075": [
+   88.2,
+   91.4
+  ],
+  "P035": [
+   84.2,
+   86.0
+  ],
+  "P401": [
+   82.4,
+   86.0
+  ],
+  "P026": [
+   74.6,
+   77.4
+  ],
+  "P010": [
+   69.9,
+   75.7
+  ],
+  "P046": [
+   66.2,
+   67.6
+  ],
+  "P106": [
+   49.3,
+   51.7
+  ],
+  "P002": [
+   69.2,
+   70.6
+  ],
+  "P019": [
+   65.91,
+   67.81
+  ],
+  "P161": [
+   70.85,
+   71.49
+  ],
+  "P260": [
+   63.6,
+   65.3
+  ],
+  "P033": [
+   61.8,
+   65.7
+  ],
+  "P011": [
+   78.3,
+   93.5
+  ],
+  "P016": [
+   59.9,
+   62.5
+  ],
+  "P334": [
+   81.5,
+   84.4
+  ]
+ },
+ "repair_iii": 5,
+ "n_iii_studies": 8,
+ "repair_ii": 1,
+ "n_ii_studies": 6
+}

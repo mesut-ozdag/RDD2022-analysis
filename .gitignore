@@ -1,0 +1,24 @@
+# İşletim sistemi ve düzenleyici dosyaları
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Makale dosyaları ve arşivler (dergi süreci bitmeden depoya girmemeli)
+*.docx
+*.pdf
+*.zip
+
+# İç çalışma notları
+Inceleme_Raporu.md
+
+# Yayıncı metni içerdiği için paylaşılmayan girdiler (kod/BENIOKU.md)
+corpus.json
+abstract_alt.json
+oa/
