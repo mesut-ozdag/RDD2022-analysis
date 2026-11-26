@@ -4,7 +4,10 @@
 
 Bu depo, **"RDD2022 Tabanlı Yol Hasarı Tespiti Çalışmalarında Değerlendirme Protokolleri ve Raporlama Tamlığının Nicel Analizi"** başlıklı makalenin ek veri dosyasını, tarama ve analiz kodlarını ve kod kitaplarını içerir.
 
-**Yazarlar:** Mesut ÖZDAĞ, Gökay BOYNUKISA, Sude Yaren ÇELİK, Esra CANPOLAT, Saliha Cansu PULAT, Meryem ÜNALDI (Karabük Üniversitesi)
+**Yazarlar:** Mesut ÖZDAĞ¹, Gökay BOYNUKISA¹, Sude Yaren ÇELİK², Esra CANPOLAT², Saliha Cansu PULAT², Meryem ÜNALDI²
+
+¹ Karabük Üniversitesi, Bilişim Teknolojileri Meslek Yüksekokulu, Karabük, Türkiye  
+² Karabük Üniversitesi, Bilgisayar ve Bilişim Bilimleri Fakültesi, Karabük, Türkiye
 
 ## İçerik
 
