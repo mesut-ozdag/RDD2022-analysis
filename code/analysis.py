@@ -1,4 +1,5 @@
-"""Builds the final study list and most analysis numbers used in the manuscript; search-flow counts (Table 1, S1) are transcribed by hand from the records. Output: ../out/results.json, ../data/final_studies.json."""
+"""Builds the final study list and most analysis numbers used in the manuscript; search-flow counts (Table 1, S1) are transcribed by hand from the records.
+Inputs: unshared intermediate files in ../data, ../out and ../batches (listed in README.md). Output: ../out/results.json, ../out/prci_final_v2.json, ../out/status_final.json, ../data/final_studies.json."""
 import collections, glob, json, os, random, re, statistics as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -6,7 +7,7 @@ D = os.path.join(HERE, '..', 'data'); O = os.path.join(HERE, '..', 'out')
 papers = json.load(open(f'{D}/papers.json'))
 status = json.load(open(f'{O}/use_status_interim.json'))
 wf = json.load(open(f'{O}/wf_main.json')); new = {n['id']: n for n in json.load(open(f'{O}/new_candidates.json'))}
-prti = json.load(open(f'{O}/prti_final.json')); sel = json.load(open(f'{D}/analysis_18.json'))
+prti = json.load(open(f'{O}/prci_final.json')); sel = json.load(open(f'{D}/analysis_21.json'))   # analysis set: all 21 studies meeting the eligibility criteria
 corpus = {r['pid']: r for r in json.load(open(f'{D}/corpus.json'))}
 wf1 = json.load(open(f'{D}/wf1_result.json')); cls = {c['pid']: c for c in wf1['classified']}
 nb = {}
@@ -122,18 +123,18 @@ if RC.get('A001', {}).get('verdict') in ('teyit', 'dogrulanamadi'):
     x = RC['A001']
     out.append(dict(id='A001', arm='Hedefli tarama (12 Ekim 2026)', status=status['A001']['status'], year=2025, title='Accelerating Road Maintenance and Repair Processes: YOLO and Large Language Model for Detection and Classification of Defects in Flexible Pavements', authors=x.get('authors') or '', venue=x.get('venue') or 'Springer kitap bölümü', cites=None,
                     url='https://doi.org/10.1007/978-3-031-86039-3_16', family=x.get('family') or '', method=x.get('family') or '', contrib=[CONTRIB_TR[k] for k in x.get('contribution_types', [])], subset=x.get('subset_used') or '', summary=x.get('summary_tr') or '', evidence_level=x['evidence_level'], inclusion_reason=x['evidence_tr'], evidence_url=x['source_url'], in_analysis=False))
-ids18 = {s['pid'] for s in sel}
+ids_set = {s['pid'] for s in sel}
 deep = {d['pid']: d for d in json.load(open(f'{D}/deep_result.json'))['deep']}
 for r in out:
-    if r['id'] in ids18: r['in_analysis'] = True
-    # studies read in full during the detailed review carry full-text evidence
+    if r['id'] in ids_set: r['in_analysis'] = True
+    # studies read in full during the detailed examination carry full-text evidence
     if r['id'] in deep and deep[r['id']].get('full_text_accessed') and r['status'] == 'teyit' and r['evidence_level'] == 'ozet_veya_yayinci' and r['id'] not in VERDICT and r['id'] not in RC:
         r['evidence_level'] = 'tam_metin'
         r['inclusion_reason'] = 'Ayrıntılı incelemede (12 Ekim 2026) tam metinden doğrulandı.'
         r['evidence_url'] = deep[r['id']].get('verified_url') or r['evidence_url']
-# contribution types: one coding pass over all confirmed studies with the written code book (code/katki_turu_kod_kitabi.md);
-# two coding passes per study, disagreements settled by a third pass (out/katki_kodlama_v4_ham.json)
-KV4 = json.load(open(f'{O}/katki_kodlari_v4.json'))
+# contribution types: coded for all confirmed studies with the written codebook (code/contribution_type_codebook.md);
+# two coding passes per study, disagreements settled by a third pass (out/contribution_coding_v4_raw.json)
+KV4 = json.load(open(f'{O}/contribution_codes_v4.json'))
 for r in out:
     if r['status'] == 'teyit': r['contrib'] = [CONTRIB_TR[k] for k in KV4[r['id']]]
 json.dump(out, open(f'{D}/final_studies.json', 'w'), ensure_ascii=False, indent=0)
@@ -226,9 +227,9 @@ cid_ = {r['id'] for r in conf}
 R['resmi_test'] = dict(katilimci=sum(i_ in cid_ for i_ in RT_PART), ozet=sum(i_ in cid_ for i_ in RT_SUM), diger=sum(i_ in cid_ for i_ in RT_OTH)); R['resmi_test']['yarisma'] = R['resmi_test']['katilimci'] + R['resmi_test']['ozet']; R['resmi_test']['n'] = R['resmi_test']['yarisma'] + R['resmi_test']['diger']; R['resmi_test']['pct'] = R['resmi_test']['n'] / len(conf) * 100; R['resmi_test_ids'] = RT_PART + RT_SUM + RT_OTH
 TPL = {'Dikkat modülü', 'Boyun / öznitelik füzyonu', 'Hafif model / uç cihaz', 'Kayıp fonksiyonu / IoU'}
 R['contrib_union'] = sum(1 for r in conf if TPL & set(r['contrib'])); R['contrib_union_pct'] = R['contrib_union'] / len(conf) * 100
-KH = json.load(open(f'{O}/katki_kodlama_v4_ham.json')); ids_ = [r['id'] for r in conf]
+KH = json.load(open(f'{O}/contribution_coding_v4_raw.json')); ids_ = [r['id'] for r in conf]
 R['contrib_rel'] = dict(n=len(ids_), exact=sum(sorted(KH['A'][i]['codes']) == sorted(KH['B'][i]['codes']) for i in ids_), adjudicated=sum(KH['src'][i] == 'hakem' for i in ids_),
-                        no_abstract=sum(1 for x in json.load(open(f'{D}/katki_girdi_297.json')) if x['text_src'] != 'özet'))
+                        no_abstract=sum(1 for x in json.load(open(f'{D}/contribution_coding_input_297.json')) if x['text_src'] != 'özet'))
 kap_ = {}
 for k_ in CONTRIB_TR:
     if k_ == 'survey': continue
@@ -243,19 +244,19 @@ R['rescreen_counts'] = {f"{k[0]}|{k[1]}": v for k, v in collections.Counter((x['
 R['verify_counts'] = collections.Counter((x['verdict'], x['evidence_level']) for x in wf['verify'])
 R['verify_counts'] = {f'{a}|{b}': v for (a, b), v in R['verify_counts'].items()}
 
-# ------- PRTİ on the 18
+# ------- PRCI on the studies of the analysis set (criteria C1-C8 are stored as K1-K8)
 K = ['K1', 'K2', 'K3', 'K4', 'K5', 'K6', 'K7', 'K8']
 C = ['C1a', 'C1b', 'C2a', 'C2b', 'C3a', 'C3b', 'C3c', 'C4a', 'C4b', 'C4c', 'C5a', 'C5b', 'C5c', 'C5d', 'C5e', 'C6a', 'C6b']
 A, B = wf['coderA'], wf['coderB']
 YEAR = {s['pid']: s['year'] for s in sel}; YEAR['P046'] = 2026   # Crossref: vol. 37, 2026
-# K2 threshold and K6 epoch rule, settled after coding and reported as application rules (codebook section 'Uygulama kuralları')
+# K2 threshold and K6 epoch rule, settled after coding and reported as application rules (PRCI_codebook.md, section 'Application rules')
 RECODE = {('P000', 'K2'): (1, 'Bölüm 4.2: 8:1:1; toplam 4.398 deniyor, parçalar 2.401 + 1.977 = 4.378 (fark %0,46); filtre sonrası 4.373; uygulama kuralına göre çelişki sayılmadı.'),
           ('P003', 'K2'): (0, 'Tablo 4: 4000/584/289 (4.873) kendi içinde tutarlı; §III.B’de her eğitim örneğinden iki çıktı üretildiği yazılı olduğundan (2.893−873)×2 = 4.040 ile tablodaki 4.000 arasındaki fark %1’i aşmıyor. Ancak metin Çin İHA görüntülerinin küçük bir kısmının kullanıldığını söylüyor, sayı yazılmamış; Tablo 3 ise alt kümenin resmî etiketlerinin tamamını (3.068) veriyor. Alt kümenin tamamı kullanıldıysa da 2.401+568 = 2.969 ile 2.893 arasındaki %2,6’lık fark açıklanmıyor. Uygulama kuralına göre çelişki sayıldı.'),
           ('P019', 'K2'): (0, 'Bölüm 4.2: 36.000 etiketli görüntüden yaklaşık 14.700 boş dosyanın çıkarıldığı, Çin İHA’nın kullanılmadığı ve seyrek sınıfların elendiği yazılı; bölmelerin toplamı ise 15.382 (10.798 + 3.042 + 1.542). 36.000’in Çin İHA’yı içerip içermediği yazılmamış (resmî eğitim sayısı Çin İHA hariç 35.984, dâhil 38.385); bu yüzden bu adımlardan sonra kalması gereken sayı yaklaşık 18.900 ile 21.300 arasındadır. Seyrek sınıf elemesinin kaç görüntü düşürdüğü yazılmadığından son toplamla aradaki yaklaşık 3.500–5.900 görüntülük (%19–28) fark sayı olarak açıklanmıyor; parçalar ile toplam arasında %1’i aşan fark olarak çelişki sayıldı.'),
           ('P033', 'K6'): (1, 'Bölüm 4.1: GTX 1080Ti, yığın 32, öğrenme oranı 0,01; metin 300 tur ile birlikte 150. epoktan söz ettiğinden tur epok anlamındadır; uygulama kuralına göre epok sayıldı (beş ayarın üçü).')}
 for (p_, k_), (v_, why) in RECODE.items():
     prti[p_]['K'][k_]['first_pass'] = prti[p_]['K'][k_]['score']; prti[p_]['K'][k_]['score'] = v_; prti[p_]['K'][k_]['evidence'] = why
-json.dump(prti, open(f'{O}/prti_final_v2.json', 'w'), ensure_ascii=False, indent=0)
+json.dump(prti, open(f'{O}/prci_final_v2.json', 'w'), ensure_ascii=False, indent=0)
 rows = []
 for s in sel:
     f = prti[s['pid']]; sc = {k: f['K'][k]['score'] for k in K}
@@ -283,7 +284,7 @@ for _ in range(20000):
 R['prti_rho'] = rho; R['prti_rho_p'] = hits / 20000
 R['prti_by_year'] = {y: [r['total'] for r in rows if r['year'] == y] for y in sorted(set(xs))}
 R['prti_by_group'] = {g: [r['total'] for r in rows if r['group'] == g] for g in ('i', 'ii', 'iii', 'iv')}
-# reliability of the two coders before adjudication
+# agreement of the two assessments (same coder, different times) before adjudication
 def kappa(a, b):
     n = len(a); po = sum(x == y for x, y in zip(a, b)) / n; pa = sum(a) / n; pb = sum(b) / n; pe = pa * pb + (1 - pa) * (1 - pb)
     return po, ((po - pe) / (1 - pe) if pe < 1 else None)
@@ -293,7 +294,17 @@ for k in K:
     a = [A[i]['K'][k]['score'] for i in ids]; b = [B[i]['K'][k]['score'] for i in ids]; allA += a; allB += b
     po, kp = kappa(a, b); per[k] = dict(po=po * 100, kappa=kp)
 R['prti_rel'] = per; po, kp = kappa(allA, allB); R['prti_rel_all'] = dict(po=po * 100, kappa=kp, n=len(allA), disagree=sum(x != y for x, y in zip(allA, allB)))
-R['prti_disputes_in_18'] = [d['pid'] for d in wf['disputes'] if d['pid'] in ids]
+R['prti_disputes_in_set'] = [d['pid'] for d in wf['disputes'] if d['pid'] in ids]
+# details of the two coding rounds within the analysis set (all items: PRCI criteria, checklist sub-items, comparability variables)
+R['prti_disputes_items'] = {d['pid']: [i_['item'] for i_ in d['items']] for d in wf['disputes'] if d['pid'] in ids}
+R['prti_adjudications_in_set'] = [(a_['pid'], a_['item']) for a_ in wf['adjudications'] if a_['pid'] in ids]
+R['prti_rel_counts'] = {k: dict(agree=sum(A[i]['K'][k]['score'] == B[i]['K'][k]['score'] for i in ids), n=len(ids)) for k in K}
+_pe = lambda a, b: (sum(a) / len(a)) * (sum(b) / len(b)) + (1 - sum(a) / len(a)) * (1 - sum(b) / len(b))
+R['prti_rel_all']['pe_pooled'] = _pe(allA, allB)
+R['prti_rel_all']['pe_mean_within'] = st.mean(_pe([A[i]['K'][k]['score'] for i in ids], [B[i]['K'][k]['score'] for i in ids]) for k in K)
+ids_x = [i for i in ids if i != 'P027']   # federated learning study: different full-text access in the two rounds
+R['prti_rel_excl_P027'] = dict(agree=sum(A[i]['K'][k]['score'] == B[i]['K'][k]['score'] for i in ids_x for k in K), n=len(ids_x) * len(K))
+R['prti_disagree_by_study'] = {i: [k for k in K if A[i]['K'][k]['score'] != B[i]['K'][k]['score']] for i in ids if any(A[i]['K'][k]['score'] != B[i]['K'][k]['score'] for k in K)}
 # effect of the application rules on the headline numbers
 def prti_scenario(over):
     tot = {r['pid']: sum({**r['K'], **over.get(r['pid'], {})}[k] for k in K) for r in rows}
@@ -306,6 +317,10 @@ def prti_scenario(over):
     return dict(K2=k2, K6=k6, median=st.median(v), oth_median=st.median(o), oth7_median=st.median(o7), rho=rho_, p=h_ / 20000, dist=dict(sorted(collections.Counter(v).items())))
 R['prti_no_rules'] = prti_scenario({'P000': {'K2': 0}, 'P019': {'K2': 1}, 'P033': {'K6': 0}})   # first adjudicated decisions
 R['prti_strict_reason'] = prti_scenario({'P002': {'K2': 0}, 'P026': {'K2': 0}})   # a written reason required for every selection, not only a written selection
+# CrackLite-Net (P234) also states a 6,000-image selection; whether it states the reason was not coded, so this variant is reported separately
+R['prti_strict_reason_plus_P234'] = prti_scenario({'P002': {'K2': 0}, 'P026': {'K2': 0}, 'P234': {'K2': 0}})
+R['prti_by_year_median'] = {y: st.median(v) for y, v in R['prti_by_year'].items()}
+R['prti_by_group_median'] = {g: (st.median(v) if v else None) for g, v in R['prti_by_group'].items()}
 ft_ = [p_ for p_, f_ in prti.items() if f_['access_level'] == 'tam_metin']
 R['ft26_strict'] = dict(K2=sum(prti[p_]['K']['K2']['score'] for p_ in ft_) - 2, median=st.median(sum(prti[p_]['K'][k]['score'] for k in K) - (p_ in ('P002', 'P026')) for p_ in ft_))
 # checklist
@@ -313,6 +328,7 @@ R['checklist'] = {c: sum(1 for r in rows if r['C'][c]) for c in C}
 all_of = lambda cs: sum(1 for r in rows if all(r['C'][c] for c in cs))
 R['checklist_all'] = dict(sinif=R['checklist']['C1a'], resmi=all_of(['C2a', 'C2b']), bolme=all_of(['C3a', 'C3b', 'C3c']), metrik=all_of(['C4a', 'C4b', 'C4c']), verim=all_of(['C5a', 'C5b', 'C5c', 'C5d', 'C5e']), kod=all_of(['C6a', 'C6b']))
 R['checklist_extra_class'] = sum(1 for r in rows if not r['C']['C1a'])
+R['checklist_extra_reported'] = sum(1 for r in rows if not r['C']['C1a'] and r['C']['C1b'])
 # ------- comparability matrix (main experiment of each study, normalised from the coded fields)
 M = {  # subset composition, class set, test definition, split
  'P016': ('6 ülke', '4', 'resmi', 'resmi'), 'P334': ('6 ülke', '4', 'resmi', 'resmi'),
@@ -320,7 +336,9 @@ M = {  # subset composition, class set, test definition, split
  'P033': ('6 ülke', '4', 'ayri', '7:1:2'), 'P161': ('Çin + Çekya + ABD', '5', 'ayri', '7:1:2'), 'P260': ('6 ülke', '4', 'ayri', '8:1:1'),
  'P000': ('Çin', '5', 'ayri', '8:1:1'), 'P010': ('Çin', '6', 'ayri', '8:1:1'), 'P026': ('Çin', '5', 'ayri', '7:2:1'), 'P035': ('Çin', '5', 'ayri', '8:1:1'),
  'P046': ('Çin İHA', '4', 'dogrulama', 'tanimsiz'), 'P075': ('Çin', '5', 'ayri', '7:2:1'), 'P106': ('Çin İHA', '4', 'ayri', '8:1:1'), 'P401': ('Çin', '4', 'ayri', '8:1:1'),
- 'P003': ('Çin İHA + İspanya', '5', 'dogrulama', 'özel'), 'P027': ('Japonya + Hindistan + ABD', '4', 'ayri', '9:1')}
+ 'P003': ('Çin İHA + İspanya', '5', 'dogrulama', 'özel'), 'P027': ('Japonya + Hindistan + ABD', '4', 'ayri', '9:1'),
+ # coded test_def 'dis_test' (external / cross-dataset test of a model trained on another dataset) is kept as its own category
+ 'P234': ('Belirtilmemiş (6.000 görüntü seçimi)', '4', 'dis', '8:1:1'), 'P235': ('Çin', '5', 'ayri', '7:1:2'), 'P440': ('Hindistan + Japonya + Çekya', '4', 'dis', 'tanimsiz')}
 order = [r['pid'] for r in sorted(rows, key=lambda r: (['i', 'ii', 'iii', 'iv'].index(r['group']), r['pid']))]
 mat = {}; pairs = []
 for a_ in range(len(order)):
@@ -333,10 +351,23 @@ R['pairs_three'] = [(p['a'], p['b']) for p in pairs if p['three']]; R['pairs_fou
 R['pairs_two_plus'] = sum(1 for p in pairs if sum([p['subset'], p['classes'], p['test']]) >= 2); R['pairs_zero'] = sum(1 for p in pairs if sum([p['subset'], p['classes'], p['test']]) == 0)
 R['matrix_order'] = order; R['matrix_vars'] = M
 R['class_counts'] = dict(collections.Counter(M[i][1] for i in order)); R['test_counts'] = dict(collections.Counter(M[i][2] for i in order))
+G0_ = {r['pid']: r['group'] for r in rows}
+R['pairs_within'] = sum(1 for p in pairs if G0_[p['a']] == G0_[p['b']]); R['pairs_between'] = len(pairs) - R['pairs_within']
+R['pairs_three_between'] = sum(1 for p in pairs if p['three'] and G0_[p['a']] != G0_[p['b']])
+_pc = lambda v: round(v / len(pairs) * 100, 1)
+R['pairs_pct'] = dict(subset=_pc(R['pairs_subset']), classes=_pc(R['pairs_classes']), test=_pc(R['pairs_test']), three=_pc(len(R['pairs_three'])), four=_pc(len(R['pairs_four'])), zero=_pc(R['pairs_zero']), two_plus=_pc(R['pairs_two_plus']))
+# studies stating explicitly that the reported values come from their separate test split (sheet S11, last column)
+EXPLICIT_TEST = ['P019', 'P033', 'P161', 'P401', 'P027']
+R['test_ayri_explicit'] = [i for i in order if M[i][2] == 'ayri' and i in EXPLICIT_TEST]; R['test_ayri_not_explicit'] = [i for i in order if M[i][2] == 'ayri' and i not in EXPLICIT_TEST]
 # ------- reported own-split mAP@0.5 values
-VAL = {  # (value, classes, study) as coded from the source tables
+VAL = {  # (study, value, number of classes) as coded from the source tables
  'ii': [('P002', 70.6, '4'), ('P019', 67.8, '4'), ('P161', 71.5, '5'), ('P260', 65.3, '4'), ('P033', 65.7, '4')],
- 'iii': [('P000', 90.7, '5'), ('P075', 91.4, '5'), ('P035', 86.0, '5'), ('P401', 86.0, '4'), ('P026', 77.4, '5'), ('P010', 75.7, '6'), ('P046', 67.6, '4'), ('P046', 86.6, '4'), ('P106', 51.7, '4'), ('P106', 79.1, '4')]}
+ 'iii': [('P000', 90.7, '5'), ('P075', 91.4, '5'), ('P035', 86.0, '5'), ('P401', 86.0, '4'), ('P026', 77.4, '5'), ('P010', 75.7, '6'), ('P046', 67.6, '4'), ('P046', 86.6, '4'), ('P106', 51.7, '4'), ('P106', 79.1, '4'),
+         ('P235', 85.8, '5')]}   # RSF-DETR: Tables 4-5, 7:1:2 split; test split defined but the source split of the values is not stated
+# reported values kept out of all medians, ranges and gain statistics (marked in the tables):
+# P011 93.5 (test split undefined; OUTLIER below) and P234 61.2 ('mAP' without an IoU threshold, cross-dataset test of a model trained on another dataset)
+VAL_EXCLUDED = {'P011': (93.5, '4', 'test split undefined'), 'P234': (61.2, '4', 'mAP without IoU threshold; cross-dataset test of a model trained on another dataset')}
+R['values_excluded'] = VAL_EXCLUDED
 OUTLIER = 93.5
 m2, m3 = st.median(v for _, v, _ in VAL['ii']), st.median(v for _, v, _ in VAL['iii'])
 R['values'] = VAL; R['med_ii'] = m2; R['med_iii'] = m3; R['gap'] = m3 - m2; R['n_ii'] = len(VAL['ii']); R['n_iii'] = len(VAL['iii'])
@@ -351,15 +382,23 @@ ALL_FT = [p_ for p_, f_ in prti.items() if f_['access_level'] == 'tam_metin']
 R['ft26_crit'] = {k: sum(prti[p_]['K'][k]['score'] for p_ in ALL_FT) for k in K}; R['ft26_n'] = len(ALL_FT)
 t26 = [sum(prti[p_]['K'][k]['score'] for k in K) for p_ in ALL_FT]; R['ft26_median'] = st.median(t26); R['ft26_min'] = min(t26); R['ft26_max'] = max(t26)
 R['outside_k'] = {k: sum(prti[p_]['K'][k]['score'] for p_ in ALL_FT if p_ not in ids) for k in K}
+R['outside_ids'] = [p_ for p_ in ALL_FT if p_ not in ids]; R['outside_n'] = len(R['outside_ids'])
 # one value per study (China motorbike or drone choice shown as a range)
 def med(v): return st.median(v)
-one_a = [90.7, 91.4, 86.0, 86.0, 77.4, 75.7, 67.6, 51.7]; one_b = [90.7, 91.4, 86.0, 86.0, 77.4, 75.7, 86.6, 79.1]
+one_a = [v for p_, v, _ in VAL['iii'] if p_ not in ('P046', 'P106')] + [67.6, 51.7]; one_b = [v for p_, v, _ in VAL['iii'] if p_ not in ('P046', 'P106')] + [86.6, 79.1]   # UAV or motorbike value of YOLO-ROC and ALC-Net
 R['sens_one_value'] = dict(a=med(one_a), b=med(one_b), gap_a=med(one_a) - m2, gap_b=med(one_b) - m2)
 base3 = iii_all; base2 = ii_all
 opts = {'taban': (base3, base2), 'ek_resmi': (base3 + [84.4], base2 + [62.5]), 'belirsiz_test': (base3, base2 + [93.5, 90.1]), 'ikisi': (base3 + [84.4], base2 + [62.5, 93.5, 90.1]),
         'dogrulama_cikar': ([v for v in base3 if v != 67.6], [v for v in base2 if v != 70.6]), 'belirsiz_motosiklet_cikar': ([v for v in base3 if v != 86.6], base2)}
 R['sens_all'] = {k: dict(iii=med(a_), ii=med(b_), gap=med(a_) - med(b_)) for k, (a_, b_) in opts.items()}
 R['sens_range'] = (min(v['gap'] for v in R['sens_all'].values()), max(v['gap'] for v in R['sens_all'].values()))
+R['sens_one_value']['n'] = len(one_a)
+# only values explicitly stated to come from the test split
+R['explicit_test_values'] = dict(ii=[v for p_, v, _ in VAL['ii'] if p_ in EXPLICIT_TEST], iii=[v for p_, v, _ in VAL['iii'] if p_ in EXPLICIT_TEST])
+R['explicit_test_values']['med_ii'] = med(R['explicit_test_values']['ii']); R['explicit_test_values']['med_iii'] = med(R['explicit_test_values']['iii'])
+# sensitivity only (the manuscript excludes it): CrackLite-Net's unthresholded 61.2% added to group (ii)
+_ii234 = ii_all + [61.2]; _ii4_234 = ii4 + [61.2]
+R['sens_with_P234'] = dict(n_ii=len(_ii234), med_ii=med(_ii234), gap=m3 - med(_ii234), rng_ii=(min(_ii234), max(_ii234)), med_ii4=med(_ii4_234), gap4=R['med_iii4'] - med(_ii4_234))
 # stricter subset coding: sampled selections counted as different subsets
 M2 = dict(M); M2['P002'] = ('6 ülke: 10.000 seçim',) + M['P002'][1:]; M2['P026'] = ('Çin: 2.000 seçim',) + M['P026'][1:]; M2['P401'] = ('Çin: 3.853 seçim',) + M['P401'][1:]; M2['P033'] = ('6 ülke: sayılar bağdaşmıyor',) + M['P033'][1:]; M2['P106'] = ('Çin İHA: 1.919 görüntü',) + M['P106'][1:]
 p2 = []
@@ -376,10 +415,15 @@ R['strict_subset'] = sum(p[0] for p in p2); R['strict_three'] = sum(all(p[:3]) f
 R['within_pairs'] = within; R['within_three'] = within3
 # reported gains (proposed minus baseline, main experiment)
 GAIN = {'P000': (87.4, 90.7), 'P075': (88.2, 91.4), 'P035': (84.2, 86.0), 'P401': (82.4, 86.0), 'P026': (74.6, 77.4), 'P010': (69.9, 75.7), 'P046': (66.2, 67.6), 'P106': (49.3, 51.7), 'P002': (69.2, 70.6), 'P019': (65.91, 67.81),
-        'P161': (70.85, 71.49), 'P260': (63.6, 65.3), 'P033': (61.8, 65.7), 'P011': (78.3, 93.5), 'P016': (59.9, 62.5), 'P334': (81.5, 84.4)}
+        'P161': (70.85, 71.49), 'P260': (63.6, 65.3), 'P033': (61.8, 65.7), 'P011': (78.3, 93.5), 'P016': (59.9, 62.5), 'P334': (81.5, 84.4), 'P235': (83.9, 85.8)}
+GAIN_EXCLUDED = {'P234': (60.8, 61.2)}   # unthresholded mAP in a cross-dataset test; YOLO-MCG (P440) reports no RDD2022 baseline result
+R['gain_excluded'] = GAIN_EXCLUDED
 g_ = {k: round(b - a, 2) for k, (a, b) in GAIN.items()}
 R['gain_median_excl_official'] = med(v_ for k_, v_ in g_.items() if k_ not in ('P016', 'P334'))
 R['gains'] = g_; R['gain_median'] = med(g_.values()); R['gain_min'] = min(g_.values()); R['gain_max_excl_cd'] = max(v for k, v in g_.items() if k != 'P011'); R['gain_cd'] = g_['P011']; R['gain_table'] = GAIN
+R['gain_n'] = len(g_); R['gain_median_excl_cd'] = med(v for k, v in g_.items() if k != 'P011')
+_g234 = list(g_.values()) + [round(GAIN_EXCLUDED['P234'][1] - GAIN_EXCLUDED['P234'][0], 2)]
+R['gain_with_P234'] = dict(n=len(_g234), median=med(_g234), min=min(_g234))   # sensitivity only
 R['repair_iii'] = sum(1 for r in rows if r['group'] == 'iii' and M[r['pid']][1] != '4'); R['n_iii_studies'] = sum(1 for r in rows if r['group'] == 'iii'); R['repair_ii'] = sum(1 for r in rows if r['group'] == 'ii' and M[r['pid']][1] != '4'); R['n_ii_studies'] = sum(1 for r in rows if r['group'] == 'ii')
 json.dump(R, open(f'{O}/results.json', 'w'), ensure_ascii=False, indent=1, default=str)
 for k, v in R.items():

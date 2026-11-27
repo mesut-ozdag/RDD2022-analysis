@@ -1,0 +1,25 @@
+"""Cell text of the comparability matrix (Table 7 of the article), keyed by study code.
+Columns: subset, number of classes, split, test definition, reported value, protocol group. ** marks bold text."""
+CELLS = {
+ 'P016': ['6 countries', '4', 'Official training set 7:3', 'Official hidden', 'F1 0.696; validation 62.5%', '(i)'],
+ 'P334': ['6 countries; also China', '4', 'Official training set 8:2; China 8:1:1', 'Official hidden', 'F1 0.803; China 84.4%', '(i)'],
+ 'P002': ['10,000 images from 6 countries', '4', '8:2', '**Validation**', '70.6%', '(ii)'],
+ 'P011': ['5 countries (excluding Norway)', '4', 'Training count only', '**Undefined**', '93.5%*', '(ii)'],
+ 'P019': ['6 countries (excluding China UAV)', '4', '7:2:1 (inconsistent counts)', 'Test split defined', '67.8%', '(ii)'],
+ 'P033': ['6 countries', '4', '7:1:2 (inconsistent counts)', 'Test split defined', '65.7%', '(ii)'],
+ 'P161': ['China + Czech Republic + United States', '**5**', '7:1:2', 'Test split defined', '71.5%', '(ii)'],
+ 'P234': ["6,000 selected images (countries not specified)", "4", "8:1:1 (4,800 / 600 / 600)", "External (cross-dataset) test", "mAP 61.2% (no IoU threshold)¶", "(ii)"],
+ 'P260': ['6 countries', '4', '8:1:1 (inconsistent counts)', 'Test split defined§', '65.3%', '(ii)'],
+ 'P000': ['China', '**5**', '8:1:1', 'Test split defined§', '90.7%', '(iii)'],
+ 'P010': ['China; United States and India separately', '**6**', '8:1:1', 'Test split defined§', 'China 75.7%; United States 57.9%; India 42.1%', '(iii)'],
+ 'P026': ['2,000 images from China', '**5**', '7:2:1', 'Test split defined§', '77.4%', '(iii)'],
+ 'P035': ['China; Japan separately', '**5**', '8:1:1', 'Test split defined§', '86.0%', '(iii)'],
+ 'P046': ['China UAV; motorbike separately', '4', 'UAV: none; motorbike 1,977/500', '**Validation**; motorbike unclear', '67.6%; 86.6%', '(iii)'],
+ 'P075': ['China; also a “global” experiment', '**5**', 'Approximately 7:2:1', 'Test split defined§', 'China 91.4%; global 90.1%‡', '(iii)'],
+ 'P106': ['China UAV, motorbike, United States separately (generalization experiment)', '4', '8:1:1 (inconsistent counts)', 'Test split defined§', '51.7%; 79.1%; United States 35.6%', '(iii)'],
+ 'P235': ["China; Norway (simulated rain) separately", "**5**", "7:1:2 (3,061 / 437 / 875); also 8:1:1", "Test split defined§", "China 85.8%; Norway (simulated rain) 29.3%", "(iii)"],
+ 'P401': ['China (3,853 images)', '4', '8:1:1 (inconsistent counts)', 'Test split defined', '86.0%', '(iii)'],
+ 'P003': ['China UAV (partial) + Spain', '**5**', '4,000 / 584 / 289 (inconsistent counts)', '**Validation**', '73.2% (73.7% in the original table)', '(iv)'],
+ 'P027': ['Japan; Japan + India + United States', '4', '9:1', 'Test split defined', 'Centralized 60.8%; federated 45.5%†', '(iv)'],
+ 'P440': ["India, Japan, Czech Republic separately (transfer test); main data UAV-PDD2023", "4 (mapped; names not given)", "Not given for RDD2022", "External (transfer) test; **test images undefined**", "Direct transfer: India 41.8 ± 1.5%; Japan 39.2 ± 1.8%; Czech Republic 37.4 ± 2.0%", "(iv)"],
+}

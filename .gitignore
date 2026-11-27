@@ -1,4 +1,4 @@
-# İşletim sistemi ve düzenleyici dosyaları
+# Operating system and editor files
 .DS_Store
 Thumbs.db
 ~$*
@@ -10,15 +10,15 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 
-# Makale dosyaları ve arşivler (dergi süreci bitmeden depoya girmemeli)
+# Manuscript files and archives (kept out of the repository while the manuscript is under review)
 *.docx
 *.pdf
 *.zip
 
-# İç çalışma notları
+# Internal working notes (local file)
 Inceleme_Raporu.md
 
-# Yayıncı metni içerdiği için paylaşılmayan girdiler (kod/BENIOKU.md)
+# Inputs not shared because they contain publisher text (see code/README.md)
 corpus.json
 abstract_alt.json
 oa/

@@ -1,4 +1,4 @@
-tarih	sorgu_grubu	sorgu	baglanti_sayisi
+date	query_group	query	n_result_links
 2026-10-12	turkish-ecosystem	"""RDD2022"" yol hasarı tespiti dergipark"	27
 2026-10-12	turkish-ecosystem	"dergipark ""yol hasarı"" tespiti YOLO derin öğrenme RDD"	18
 2026-10-12	turkish-ecosystem	"""çukur tespiti"" derin öğrenme YOLO dergipark"	9

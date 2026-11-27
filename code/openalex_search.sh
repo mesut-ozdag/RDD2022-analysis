@@ -1,5 +1,5 @@
 #!/bin/sh
-# OpenAlex queries of the main search arm (run on 12 October 2026). Running the script writes responses to oa/; the 12 October responses were not kept (see BENIOKU.md).
+# OpenAlex queries of the main search arm (run on 12 October 2026). Running the script writes responses to oa/; the 12 October responses were not kept (see README.md).
 mkdir -p oa
 fetch() { # $1 name, $2 filter
   cursor="*"; i=0
